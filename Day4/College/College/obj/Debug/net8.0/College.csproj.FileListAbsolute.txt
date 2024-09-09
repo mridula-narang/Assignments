@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day4\College\College\bin\Debug\net8.0\College.exe
+D:\C_sharp and dot net projects\Day4\College\College\bin\Debug\net8.0\College.deps.json
+D:\C_sharp and dot net projects\Day4\College\College\bin\Debug\net8.0\College.runtimeconfig.json
+D:\C_sharp and dot net projects\Day4\College\College\bin\Debug\net8.0\College.dll
+D:\C_sharp and dot net projects\Day4\College\College\bin\Debug\net8.0\College.pdb
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\College.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\College.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\College.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\College.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\College.sourcelink.json
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\College.dll
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\refint\College.dll
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\College.pdb
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\College.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day4\College\College\obj\Debug\net8.0\ref\College.dll
