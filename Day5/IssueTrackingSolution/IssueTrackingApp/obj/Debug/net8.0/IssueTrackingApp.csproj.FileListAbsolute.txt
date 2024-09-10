@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\bin\Debug\net8.0\IssueTrackingApp.exe
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\bin\Debug\net8.0\IssueTrackingApp.deps.json
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\bin\Debug\net8.0\IssueTrackingApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\bin\Debug\net8.0\IssueTrackingApp.dll
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\bin\Debug\net8.0\IssueTrackingApp.pdb
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\IssueTrackingApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\IssueTrackingApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\IssueTrackingApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\IssueTrackingApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\IssueTrackingApp.sourcelink.json
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\IssueTrackingApp.dll
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\refint\IssueTrackingApp.dll
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\IssueTrackingApp.pdb
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\IssueTrackingApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day5\IssueTrackingSolution\IssueTrackingApp\obj\Debug\net8.0\ref\IssueTrackingApp.dll
