@@ -17,12 +17,6 @@ namespace VotingApp
             }
             return customerAge;
         }
-        public void ValidateCustomerByAge(Customer customer)
-        {
-            var age = CalculateAge(customer.DateOfBirth);
-            PrintResult(customer, age);
-        }
-
         private void PrintResult(Customer customer, int age)
         {
             var salutation = customer.Gender == "M" ? "Mr" : "Ms";
@@ -34,6 +28,12 @@ namespace VotingApp
             {
                 Console.WriteLine($"Dear {salutation}. {customer.Name} you are {age} years old and so you are eligible to vote.");
             }
+        }
+
+        void IValidateCustomer.ValidateCustomerByAge(Customer customer)
+        {
+            var age = CalculateAge(customer.DateOfBirth);
+            PrintResult(customer, age);
         }
     }
 }

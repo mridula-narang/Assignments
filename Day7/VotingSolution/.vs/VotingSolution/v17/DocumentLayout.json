@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|d:\\c_sharp and dot net projects\\day7\\votingsolution\\votingapp\\validatecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|solutionrelative:votingapp\\validatecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|d:\\c_sharp and dot net projects\\day7\\votingsolution\\votingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|solutionrelative:votingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|d:\\c_sharp and dot net projects\\day7\\votingsolution\\votingapp\\ivalidatecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|solutionrelative:votingapp\\ivalidatecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|d:\\c_sharp and dot net projects\\day7\\votingsolution\\votingapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|solutionrelative:votingapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|d:\\c_sharp and dot net projects\\day7\\votingsolution\\votingapp\\validatecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|solutionrelative:votingapp\\validatecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|d:\\c_sharp and dot net projects\\day7\\votingsolution\\votingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|solutionrelative:votingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|d:\\c_sharp and dot net projects\\day7\\votingsolution\\votingapp\\premiumcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|solutionrelative:votingapp\\premiumcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|d:\\c_sharp and dot net projects\\day7\\votingsolution\\votingapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F124CD0E-E819-451B-A5DA-B7FBA26F5B53}|VotingApp\\VotingApp.csproj|solutionrelative:votingapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "PremiumCustomer.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\VotingApp\\PremiumCustomer.cs",
+              "RelativeDocumentMoniker": "VotingApp\\PremiumCustomer.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\VotingApp\\PremiumCustomer.cs",
+              "RelativeToolTip": "VotingApp\\PremiumCustomer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA1wBEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T06:37:25.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ValidateCustomer.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\VotingApp\\ValidateCustomer.cs",
               "RelativeDocumentMoniker": "VotingApp\\ValidateCustomer.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\VotingApp\\ValidateCustomer.cs",
               "RelativeToolTip": "VotingApp\\ValidateCustomer.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAowCMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T05:13:06.099Z",
               "EditorCaption": ""
@@ -49,37 +70,33 @@
               "RelativeDocumentMoniker": "VotingApp\\IValidateCustomer.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\VotingApp\\IValidateCustomer.cs",
               "RelativeToolTip": "VotingApp\\IValidateCustomer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T05:11:53.283Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\VotingApp\\Customer.cs",
               "RelativeDocumentMoniker": "VotingApp\\Customer.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\VotingApp\\Customer.cs",
               "RelativeToolTip": "VotingApp\\Customer.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwBoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T05:01:49.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\VotingApp\\Program.cs",
               "RelativeDocumentMoniker": "VotingApp\\Program.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\VotingSolution\\VotingApp\\Program.cs",
               "RelativeToolTip": "VotingApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwB0AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T05:01:33.364Z",
               "EditorCaption": ""

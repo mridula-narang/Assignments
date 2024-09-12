@@ -23,7 +23,7 @@ namespace VotingApp
             Gender = gender;
         }
 
-        public void CustomerDetails()
+        public virtual void CustomerDetails()
         {
             Console.WriteLine("Enter the customer name:");
             Name = Console.ReadLine() ?? "";

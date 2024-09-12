@@ -8,6 +8,6 @@ namespace VotingApp
 {
     internal interface IValidateCustomer
     {
-        int ValidateCustomerByAge(Customer customer);
+        void ValidateCustomerByAge(Customer customer);
     }
 }
