@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WordProcessorApp2/1.0.0": {
+        "runtime": {
+          "WordProcessorApp2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WordProcessorApp2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

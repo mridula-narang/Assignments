@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\bin\Debug\net8.0\ValidateCardApp.exe
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\bin\Debug\net8.0\ValidateCardApp.deps.json
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\bin\Debug\net8.0\ValidateCardApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\bin\Debug\net8.0\ValidateCardApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\bin\Debug\net8.0\ValidateCardApp.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\ValidateCardApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\ValidateCardApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\ValidateCardApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\ValidateCardApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\ValidateCardApp.sourcelink.json
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\ValidateCardApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\refint\ValidateCardApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\ValidateCardApp.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\ValidateCardApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day7\Assignment\ValidateCardSolution\ValidateCardApp\obj\Debug\net8.0\ref\ValidateCardApp.dll

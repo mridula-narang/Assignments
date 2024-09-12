@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\DoctorSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED3D9725-DD67-4AD1-A303-98ACE41ECE85}|DoctorApp\\DoctorApp.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\doctorsolution\\doctorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED3D9725-DD67-4AD1-A303-98ACE41ECE85}|DoctorApp\\DoctorApp.csproj|solutionrelative:doctorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED3D9725-DD67-4AD1-A303-98ACE41ECE85}|DoctorApp\\DoctorApp.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\doctorsolution\\doctorapp\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED3D9725-DD67-4AD1-A303-98ACE41ECE85}|DoctorApp\\DoctorApp.csproj|solutionrelative:doctorapp\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{ED3D9725-DD67-4AD1-A303-98ACE41ECE85}|DoctorApp\\DoctorApp.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\doctorsolution\\doctorapp\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED3D9725-DD67-4AD1-A303-98ACE41ECE85}|DoctorApp\\DoctorApp.csproj|solutionrelative:doctorapp\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3D9725-DD67-4AD1-A303-98ACE41ECE85}|DoctorApp\\DoctorApp.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\doctorsolution\\doctorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED3D9725-DD67-4AD1-A303-98ACE41ECE85}|DoctorApp\\DoctorApp.csproj|solutionrelative:doctorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Hospital.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\DoctorSolution\\DoctorApp\\Hospital.cs",
               "RelativeDocumentMoniker": "DoctorApp\\Hospital.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\DoctorSolution\\DoctorApp\\Hospital.cs",
               "RelativeToolTip": "DoctorApp\\Hospital.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAiwFwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAuwF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T09:03:21.469Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "IDoctor.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\DoctorSolution\\DoctorApp\\IDoctor.cs",
               "RelativeDocumentMoniker": "DoctorApp\\IDoctor.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\DoctorSolution\\DoctorApp\\IDoctor.cs",
               "RelativeToolTip": "DoctorApp\\IDoctor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T09:02:13.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Doctor.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\DoctorSolution\\DoctorApp\\Doctor.cs",
               "RelativeDocumentMoniker": "DoctorApp\\Doctor.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\DoctorSolution\\DoctorApp\\Doctor.cs",
               "RelativeToolTip": "DoctorApp\\Doctor.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAqwBoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T08:53:13.666Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\DoctorSolution\\DoctorApp\\Program.cs",
               "RelativeDocumentMoniker": "DoctorApp\\Program.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\DoctorSolution\\DoctorApp\\Program.cs",
               "RelativeToolTip": "DoctorApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAuwGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T08:42:48.892Z",
               "EditorCaption": ""

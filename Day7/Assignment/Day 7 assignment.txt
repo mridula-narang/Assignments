@@ -1,0 +1,733 @@
+Question 1:
+Program.cs file
+using System.Drawing;
+
+namespace DoctorApp
+{
+    internal class Program
+    {
+        Hospital hospital;
+        public void PrintMenu()
+        {
+            Console.WriteLine("Welcome to the hospital!");
+            Console.WriteLine("1. Add Doctor");
+            Console.WriteLine("2. Assign Department");
+            Console.WriteLine("3. Display Doctor");
+            Console.WriteLine("4. Exit");
+        }
+
+        public void CreateDoctor()
+        {
+            Console.WriteLine("Please enter the number of doctors you would like to add:");
+            int size = Convert.ToInt32(Console.ReadLine());
+            hospital = new Hospital(size);
+            for (int i = 0; i < size; i++)
+            {
+                Console.WriteLine($"\nPlease enter details for Doctor {i + 1}:");
+
+                Console.WriteLine("Enter doctor's id:");
+                int id = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter doctor's name:");
+                string name = Console.ReadLine();
+
+                Console.WriteLine("Enter doctor's department id:");
+                int department = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter doctor's age:");
+                int age = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter doctor's level:");
+                string level = Console.ReadLine();
+
+                Doctor doctor = new Doctor(id, name, department, age, level);
+                hospital.AddDoctor(doctor);
+            }
+        }
+
+        public void DepartmentAssignment()
+        {
+            int size = hospital.Doctors.Length;
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write($"\nEnter the Department ID to assign to Doctor {hospital.Doctors[i].Name}: ");
+                int departmentId = Convert.ToInt32(Console.ReadLine());
+
+                hospital.AssignDepartment(hospital.Doctors[i], departmentId);
+            }
+        }
+
+        public void ViewDoctors()
+        {
+            hospital.DisplayDoctor();
+        }
+
+        public void MainInteraction()
+        {
+            int choice;
+            do
+            {
+                PrintMenu();
+                choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        CreateDoctor();
+                        break;
+                    case 2:
+                        DepartmentAssignment();
+                        break;
+                    case 3:
+                        ViewDoctors();
+                        break;
+                    case 4:
+                        Console.WriteLine("Exiting...");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
+                }
+            } while (choice != 4);
+        }
+
+        static void Main(string[] args)
+        {
+            new Program().MainInteraction();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------
+Doctor.cs file
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DoctorApp
+{
+    internal class Doctor
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public int Department { get; set; }
+        public int Age { get; set; }
+        public string Level { get; set; } = string.Empty;
+
+        public Doctor()
+        {
+        }
+        public Doctor(int id, string name, int department, int age, string level)
+        {
+            Id = id;
+            Name = name;
+            Department = department;
+            Age = age;
+            Level = level;
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------
+IDoctor interface
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DoctorApp
+{
+    internal interface IDoctor
+    {
+        void AddDoctor(Doctor doctor);
+        void AssignDepartment(Doctor doctor, int departmentId); //assign/ change the department of the doctor
+        void DisplayDoctor();
+
+    }
+}
+---------------------------------------------------------------------------------------------------------------
+Hospital.cs file
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Emit;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+namespace DoctorApp
+{
+    internal class Hospital : IDoctor
+    {
+        private Doctor[] doctors;
+        private int count = 0;
+        public Hospital(int size)
+        {
+            doctors = new Doctor[size];
+        }
+        public void AddDoctor(Doctor doctor)
+        {
+            try
+            {
+                if (doctor == null)
+                {
+                    throw new ArgumentNullException(nameof(doctor), "Doctor name cannot be null.");
+                }
+                if (count>=doctors.Length)
+                {
+                    throw new InvalidOperationException("All positions in the hospital are full. Cannot recruit more doctors.");
+                }
+                doctors[count] = doctor;
+                count++;
+                Console.WriteLine("Doctor successfully added");
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine("Name cannot be null");
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine("No empty positions");
+            }
+        }
+        public void AssignDepartment(Doctor doctor, int departmentId)
+        {
+            try
+            {
+                if (doctor == null)
+                {
+                    throw new ArgumentNullException(nameof(doctor), "Doctor name cannot be null.");
+                }
+                if (doctor.Department <= 0)
+                {
+                    throw new InvalidOperationException("Invalid department id. Department id must be greater than 0");
+                }
+                doctor.Department = departmentId;
+                Console.WriteLine($"Doctor {doctor.Name} is assigned to department {doctor.Department}");
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine("Name cannot be null");
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine("Department cannot be null");
+            }
+        }
+
+        public void DisplayDoctor()
+        {
+            try
+            {
+                if (count == 0)
+                {
+                    Console.WriteLine("No doctors to display.");
+                    return;
+                }
+
+                for (int i = 0; i < count; i++)
+                {
+                    Doctor doctor = doctors[i];
+                    Console.WriteLine($"Doctor ID: {doctor.Id}, Name: {doctor.Name}, Department ID: {doctor.Department}, Age: {doctor.Age}, Level: {doctor.Level}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error displaying doctors: {ex.Message}");
+            }
+        }
+        public Doctor[] Doctors
+        {
+            get { return doctors; }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question 2:
+
+Program.cs file
+
+namespace WordProcessorApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+			try
+			{
+                Console.WriteLine("Enter words separated by commas:");
+                string input = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    throw new ArgumentException("Input cannot be empty or null.");
+                }
+
+                string[] words = input.Split(',');
+                for (int i = 0; i < words.Length; i++)
+                {
+                    words[i] = words[i].Trim();
+                }
+                IWordProcessor processor = new WordProcessor();
+                processor.ValidateInput(words);
+                string longestWord = processor.LongestWord(words);
+                string shortestWord = processor.ShortestWord(words);
+
+                Console.WriteLine($"Longest word: {longestWord}");
+                Console.WriteLine($"Shortest word: {shortestWord}");
+            }
+			catch (ArgumentException ex)
+			{
+                Console.WriteLine("Input cannot be empty or null. Please provide an input");
+			}
+            catch (InvalidInput ex)
+            {
+                Console.WriteLine("Please enter words only. Numbers are not accepted.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------
+IWordProcessor interface
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WordProcessorApp1
+{
+    internal interface IWordProcessor
+    {
+        string LongestWord(string[] words);
+        string ShortestWord(string[] words);
+        void ValidateInput(string[] words);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------
+WordProcessor.cs file
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WordProcessorApp1
+{
+    internal class WordProcessor : IWordProcessor
+    {
+        public string LongestWord(string[] words)
+        {
+            if (words.Length == 0)
+            {
+                throw new Exception("No words to process");
+            }
+            string longestWord = words[0];
+            foreach (string word in words)
+            {
+                if (word.Length > longestWord.Length)
+                {
+                    longestWord = word;
+                }
+            }
+            return longestWord;
+        }
+        public string ShortestWord(string[] words)
+        {
+            if (words.Length == 0)
+            {
+                throw new Exception("No words to process");
+            }
+            string shortestWord = words[0];
+            foreach (string word in words)
+            {
+                if (word.Length < shortestWord.Length)
+                {
+                    shortestWord = word;
+                }
+            }
+            return shortestWord;
+        }
+        public void ValidateInput(string[] words)
+        {
+            foreach (var word in words)
+            {
+                if (int.TryParse(word, out _))
+                {
+                    throw new InvalidInput();
+                }
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+InvalidInput.cs file
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WordProcessorApp1
+{
+    public class InvalidInput : Exception
+    {
+        string message;
+        public InvalidInput() 
+        {
+            message = "Input provided is numbers which is invalid. Please enter words.";
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------
+
+Question 3
+
+Program.cs file
+namespace WordProcessorApp2
+{
+    internal class Program
+    {
+        // Function to count repeating vowels in a word
+        static int CountRepeatingVowels(string word)
+        {
+            HashSet<char> vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u' };
+            HashSet<char> foundVowels = new HashSet<char>();
+            int count = 0;
+
+            foreach (char ch in word.ToLower())
+            {
+                if (vowels.Contains(ch))
+                {
+                    if (foundVowels.Contains(ch))
+                    {
+                        count++; // It's a repeating vowel
+                    }
+                    else
+                    {
+                        foundVowels.Add(ch); // Mark the vowel as found
+                    }
+                }
+            }
+
+            return count;
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter words separated by commas:");
+            string input = Console.ReadLine();
+
+            // Split the input string by commas
+            string[] words = input.Split(',');
+
+            // Find the word(s) with the least number of repeating vowels
+            List<string> result = new List<string>();
+            int minRepeatingVowels = int.MaxValue;
+
+            foreach (string word in words)
+            {
+                int repeatCount = CountRepeatingVowels(word.Trim());
+                if (repeatCount < minRepeatingVowels)
+                {
+                    minRepeatingVowels = repeatCount;
+                    result.Clear();
+                    result.Add(word.Trim());
+                }
+                else if (repeatCount == minRepeatingVowels)
+                {
+                    result.Add(word.Trim());
+                }
+            }
+
+            // Print the result
+            Console.WriteLine(string.Join(" ", result));
+        }
+
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+Question 4
+
+PrimeNumbers.cs file
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PrimeNumbersApp
+{
+    public class PrimeNumbers
+    {
+        public bool IsPrime(int number)
+        {
+            if (number <= 1)
+                return false;
+            if (number == 2)
+                return true;
+            if (number % 2 == 0)
+                return false;
+
+            for (int i = 3; i * i <= number; i += 2)
+            {
+                if (number % i == 0)
+                    return false;
+            }
+
+            return true;
+        }
+    }
+}
+    public class StorePrimes
+    {
+        private List<int> primeNumbers = new List<int>();
+
+        public void AddPrimeNumber(int number)
+        {
+            primeNumbers.Add(number);
+        }
+
+        public void PrintPrimes()
+        {
+            Console.WriteLine("Prime numbers entered:");
+            if (primeNumbers.Count > 0)
+            {
+                foreach (var prime in primeNumbers)
+                {
+                    Console.WriteLine(prime);
+                }
+            }
+            else
+            {
+                Console.WriteLine("No prime numbers were entered.");
+            }
+        }
+
+    }
+---------------------------------------------------------------------------------------
+Program.cs file
+
+namespace PrimeNumbersApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            PrimeNumbers primeNumbers = new PrimeNumbers();
+            StorePrimes storePrimes = new StorePrimes();
+            while (true)
+            {
+                Console.Write("Enter a number (0 to stop): ");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out int number))
+                {
+                    if (number == 0)
+                        break;
+
+                    if (primeNumbers.IsPrime(number))
+                    {
+                        storePrimes.AddPrimeNumber(number);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Please enter a valid integer.");
+                }
+            }
+
+            storePrimes.PrintPrimes();
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------
+Question 5
+
+Program.cs file
+
+namespace ValidateCardApp
+{
+    internal class Program
+    {
+        //implement the validation of the card number by taking user input
+        static bool ValidateCard(string cardNumber)
+        {
+            // Step 1: Reverse the card number
+            string reversedCardNumber = ReverseString(cardNumber);
+
+            int sum = 0;
+
+            // Step 2: Loop through the reversed card number
+            for (int i = 0; i < reversedCardNumber.Length; i++)
+            {
+                int currentDigit = int.Parse(reversedCardNumber[i].ToString());
+
+                // Step 3: Identify even positions (1-based index, but 0-based loop)
+                if (i % 2 == 1)
+                {
+                    currentDigit *= 2;
+
+                    // Step 4: If the result is a two-digit number, sum the digits
+                    if (currentDigit > 9)
+                    {
+                        currentDigit = currentDigit - 9; // Same as summing digits of the number
+                    }
+                }
+
+                // Add the current digit to the sum
+                sum += currentDigit;
+            }
+
+            // Step 5: Check if sum is divisible by 10
+            return (sum % 10 == 0);
+        }
+
+        static string ReverseString(string input)
+        {
+            char[] array = input.ToCharArray();
+            Array.Reverse(array);
+            return new string(array);
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter card number without spaces");
+            string cardNumber = Console.ReadLine();
+            bool isValid = ValidateCard(cardNumber);
+
+            if (isValid)
+                Console.WriteLine("The card number is valid.");
+            else
+                Console.WriteLine("The card number is invalid.");
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------
+
+Question 6
+
+Program.cs file
+
+namespace AuthenticationApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            IAuthService authService = new AuthService();
+            AuthManager authManager = new AuthManager(authService);
+
+            authManager.Login();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------
+IAuthService interface
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AuthenticationApp
+{
+    public interface IAuthService
+    {
+        bool ValidateCredentials(string username, string password);
+    }
+}
+--------------------------------------------------------------------------------------------------
+
+AuthService.cs file
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AuthenticationApp
+{
+    internal class AuthService : IAuthService
+    {
+        private const string ValidUsername = "ABC";
+        private const string ValidPassword = "123";
+
+        public bool ValidateCredentials(string username, string password)
+        {
+            return username == ValidUsername && password == ValidPassword;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------
+AuthManager.cs file
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Authentication;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AuthenticationApp
+{
+    public class AuthManager
+    {
+        private readonly IAuthService _authService;
+        private const int MaxAttempts = 3;
+
+        public AuthManager(IAuthService authService)
+        {
+            _authService = authService;
+        }
+
+        public void Login()
+        {
+            int attempts = 0;
+            while (attempts < MaxAttempts)
+            {
+                Console.Write("Enter username: ");
+                string username = Console.ReadLine();
+
+                Console.Write("Enter password: ");
+                string password = Console.ReadLine();
+
+                try
+                {
+                    if (_authService.ValidateCredentials(username, password))
+                    {
+                        Console.WriteLine("Login successful!");
+                        return;
+                    }
+                    else
+                    {
+                        throw new InvalidCredentialException("Username or password is incorrect.");
+                    }
+                }
+                catch (InvalidCredentialException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    attempts++;
+                    if (attempts == MaxAttempts)
+                    {
+                        Console.WriteLine("You have exceeded the number of attempts.");
+                    }
+                }
+            }
+        }
+    }
+}
+-----------------------------------------------------------------------------------------
