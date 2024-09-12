@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\WordProcessorSolution1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56449597-F7E9-4869-9666-7DECF1DD1D0F}|WordProcessorApp1\\WordProcessorApp1.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\wordprocessorsolution1\\wordprocessorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56449597-F7E9-4869-9666-7DECF1DD1D0F}|WordProcessorApp1\\WordProcessorApp1.csproj|solutionrelative:wordprocessorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56449597-F7E9-4869-9666-7DECF1DD1D0F}|WordProcessorApp1\\WordProcessorApp1.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\wordprocessorsolution1\\wordprocessorapp1\\iwordprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56449597-F7E9-4869-9666-7DECF1DD1D0F}|WordProcessorApp1\\WordProcessorApp1.csproj|solutionrelative:wordprocessorapp1\\iwordprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56449597-F7E9-4869-9666-7DECF1DD1D0F}|WordProcessorApp1\\WordProcessorApp1.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\wordprocessorsolution1\\wordprocessorapp1\\wordprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56449597-F7E9-4869-9666-7DECF1DD1D0F}|WordProcessorApp1\\WordProcessorApp1.csproj|solutionrelative:wordprocessorapp1\\wordprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56449597-F7E9-4869-9666-7DECF1DD1D0F}|WordProcessorApp1\\WordProcessorApp1.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\wordprocessorsolution1\\wordprocessorapp1\\invalidinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56449597-F7E9-4869-9666-7DECF1DD1D0F}|WordProcessorApp1\\WordProcessorApp1.csproj|solutionrelative:wordprocessorapp1\\invalidinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InvalidInput.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\WordProcessorSolution1\\WordProcessorApp1\\InvalidInput.cs",
+              "RelativeDocumentMoniker": "WordProcessorApp1\\InvalidInput.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\WordProcessorSolution1\\WordProcessorApp1\\InvalidInput.cs",
+              "RelativeToolTip": "WordProcessorApp1\\InvalidInput.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T10:59:31.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WordProcessor.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\WordProcessorSolution1\\WordProcessorApp1\\WordProcessor.cs",
+              "RelativeDocumentMoniker": "WordProcessorApp1\\WordProcessor.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\WordProcessorSolution1\\WordProcessorApp1\\WordProcessor.cs",
+              "RelativeToolTip": "WordProcessorApp1\\WordProcessor.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAiwCoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T10:50:05.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IWordProcessor.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\WordProcessorSolution1\\WordProcessorApp1\\IWordProcessor.cs",
+              "RelativeDocumentMoniker": "WordProcessorApp1\\IWordProcessor.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\WordProcessorSolution1\\WordProcessorApp1\\IWordProcessor.cs",
+              "RelativeToolTip": "WordProcessorApp1\\IWordProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T10:48:59.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\WordProcessorSolution1\\WordProcessorApp1\\Program.cs",
+              "RelativeDocumentMoniker": "WordProcessorApp1\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\WordProcessorSolution1\\WordProcessorApp1\\Program.cs",
+              "RelativeToolTip": "WordProcessorApp1\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAIAxwAwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T10:47:31.839Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
