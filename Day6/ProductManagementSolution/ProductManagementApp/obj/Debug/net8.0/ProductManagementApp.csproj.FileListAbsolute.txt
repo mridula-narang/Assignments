@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\bin\Debug\net8.0\ProductManagementApp.exe
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\bin\Debug\net8.0\ProductManagementApp.deps.json
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\bin\Debug\net8.0\ProductManagementApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\bin\Debug\net8.0\ProductManagementApp.dll
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\bin\Debug\net8.0\ProductManagementApp.pdb
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\ProductManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\ProductManagementApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\ProductManagementApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\ProductManagementApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\ProductManagementApp.sourcelink.json
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\ProductManagementApp.dll
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\refint\ProductManagementApp.dll
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\ProductManagementApp.pdb
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\ProductManagementApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day6\ProductManagementSolution\ProductManagementApp\obj\Debug\net8.0\ref\ProductManagementApp.dll

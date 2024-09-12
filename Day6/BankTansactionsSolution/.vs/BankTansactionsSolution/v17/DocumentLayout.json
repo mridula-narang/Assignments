@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day6\\BankTansactionsSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C562845-7FEE-4A7F-B0F1-4699D48C3BAE}|BankTansactionsApp\\BankTansactionsApp.csproj|d:\\c_sharp and dot net projects\\day6\\banktansactionssolution\\banktansactionsapp\\itransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C562845-7FEE-4A7F-B0F1-4699D48C3BAE}|BankTansactionsApp\\BankTansactionsApp.csproj|solutionrelative:banktansactionsapp\\itransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C562845-7FEE-4A7F-B0F1-4699D48C3BAE}|BankTansactionsApp\\BankTansactionsApp.csproj|d:\\c_sharp and dot net projects\\day6\\banktansactionssolution\\banktansactionsapp\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C562845-7FEE-4A7F-B0F1-4699D48C3BAE}|BankTansactionsApp\\BankTansactionsApp.csproj|solutionrelative:banktansactionsapp\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C562845-7FEE-4A7F-B0F1-4699D48C3BAE}|BankTansactionsApp\\BankTansactionsApp.csproj|d:\\c_sharp and dot net projects\\day6\\banktansactionssolution\\banktansactionsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C562845-7FEE-4A7F-B0F1-4699D48C3BAE}|BankTansactionsApp\\BankTansactionsApp.csproj|solutionrelative:banktansactionsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Accounts.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\BankTansactionsSolution\\BankTansactionsApp\\Accounts.cs",
+              "RelativeDocumentMoniker": "BankTansactionsApp\\Accounts.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\BankTansactionsSolution\\BankTansactionsApp\\Accounts.cs",
+              "RelativeToolTip": "BankTansactionsApp\\Accounts.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:29:59.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ITransaction.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\BankTansactionsSolution\\BankTansactionsApp\\ITransaction.cs",
+              "RelativeDocumentMoniker": "BankTansactionsApp\\ITransaction.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\BankTansactionsSolution\\BankTansactionsApp\\ITransaction.cs",
+              "RelativeToolTip": "BankTansactionsApp\\ITransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:28:18.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\BankTansactionsSolution\\BankTansactionsApp\\Program.cs",
+              "RelativeDocumentMoniker": "BankTansactionsApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\BankTansactionsSolution\\BankTansactionsApp\\Program.cs",
+              "RelativeToolTip": "BankTansactionsApp\\Program.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:27:22.37Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
