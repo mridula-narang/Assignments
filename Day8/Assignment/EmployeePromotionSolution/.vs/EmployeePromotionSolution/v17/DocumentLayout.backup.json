@@ -54,9 +54,9 @@
               "Title": "EmployeeManagement.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\EmployeeManagement.cs",
               "RelativeDocumentMoniker": "EmployeePromotionApp\\EmployeeManagement.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\EmployeeManagement.cs",
-              "RelativeToolTip": "EmployeePromotionApp\\EmployeeManagement.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\EmployeeManagement.cs*",
+              "RelativeToolTip": "EmployeePromotionApp\\EmployeeManagement.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T10:35:09.502Z",
               "EditorCaption": ""
@@ -81,10 +81,9 @@
               "RelativeDocumentMoniker": "EmployeePromotionApp\\Program.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\Program.cs",
               "RelativeToolTip": "EmployeePromotionApp\\Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAUwC0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwCoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T08:53:04.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T08:53:04.122Z"
             },
             {
               "$type": "Document",
@@ -94,10 +93,9 @@
               "RelativeDocumentMoniker": "EmployeePromotionApp\\Employee.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\Employee.cs",
               "RelativeToolTip": "EmployeePromotionApp\\Employee.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwDMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T08:53:35.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T08:53:35.281Z"
             }
           ]
         }

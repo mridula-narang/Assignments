@@ -9,7 +9,7 @@ namespace EmployeePromotionApp
     internal class EmployeeManagement
     {
         private Dictionary<int, Employee> employees = new Dictionary<int, Employee>();
-        private List<Employee> employeeList = new List<Employee>();
+       // private List<Employee> employeeList = new List<Employee>();
         public void AddEmployee(Employee employee)
         {
             try
@@ -19,7 +19,7 @@ namespace EmployeePromotionApp
                     throw new ArgumentException("Duplicate Id.");
                 }
                 employees.Add(employee.Id, employee);
-                employeeList.Add(employee);  // Add to the employee list
+                //employeeList.Add(employee);  // Add to the employee list
                 Console.WriteLine("Employee added successfully.");
             }
             catch (ArgumentException)
@@ -47,22 +47,19 @@ namespace EmployeePromotionApp
         {
             return employees.Values.ToList();
         }
-        public void FindEmployeesByName(string name)
+        public List<Employee> FindEmployeesByName(string name)
         {
-            List<Employee> foundEmployees = employeeList.Where(e => e.Name.Equals(name, StringComparison.OrdinalIgnoreCase)).ToList();
+            List<Employee> matchingEmployees = new List<Employee>();
 
-            if (foundEmployees.Count > 0)
+            foreach (var employee in employees.Values)
             {
-                Console.WriteLine($"Employees with the name '{name}':");
-                foreach (Employee emp in foundEmployees)
+                if (employee.Name == name)
                 {
-                    Console.WriteLine(emp);
+                    matchingEmployees.Add(employee);
                 }
             }
-            else
-            {
-                Console.WriteLine($"No employees found with the name '{name}'.");
-            }
+
+            return matchingEmployees;
         }
     }
 
