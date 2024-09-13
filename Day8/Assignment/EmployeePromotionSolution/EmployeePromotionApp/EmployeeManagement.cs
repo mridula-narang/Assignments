@@ -47,20 +47,68 @@ namespace EmployeePromotionApp
         {
             return employees.Values.ToList();
         }
-        public List<Employee> FindEmployeesByName(string name)
+
+
+        public void FindEmployeesByName(string name)
         {
-            List<Employee> matchingEmployees = new List<Employee>();
+            //List<Employee> matchingEmployees = new List<Employee>();
 
             foreach (var employee in employees.Values)
             {
+
                 if (employee.Name == name)
                 {
-                    matchingEmployees.Add(employee);
+
+                    Console.WriteLine($"Employee id: {employee.Id}");
+                    Console.WriteLine($"Employee name: {employee.Name}");
+                    Console.WriteLine($"Emloyee age:{employee.Age}");
+                    Console.WriteLine($"Employee salary:{employee.Salary}");
+                    Console.WriteLine("----------------------------------");
                 }
             }
 
-            return matchingEmployees;
         }
+        public void FindElderEmployees()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\nEnter the ID of the employee to find elders:");
+            Console.ResetColor();
+
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            if (employees.ContainsKey(id))
+            {
+                Employee givenEmployee = employees[id];
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Employees older than {givenEmployee.Name}:");
+                Console.ResetColor();
+
+                bool foundElder = false; // Flag to track if any older employees are found
+
+                foreach (var employee in employees.Values)
+                {
+                    if (employee.Age > givenEmployee.Age)
+                    {
+                        Console.WriteLine(employee.Name);
+                        foundElder = true;
+                    }
+                }
+
+                if (!foundElder)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("No employees older than the specified employee.");
+                    Console.ResetColor();
+                }
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Employee ID not found.");
+                Console.ResetColor();
+            }
+        }
+
     }
 
 }

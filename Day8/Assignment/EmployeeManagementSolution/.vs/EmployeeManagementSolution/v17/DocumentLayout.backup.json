@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "EmployeeManagementApp\\EmployeeManager.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\EmployeeManager.cs*",
               "RelativeToolTip": "EmployeeManagementApp\\EmployeeManager.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T15:25:36.199Z",
               "EditorCaption": ""
@@ -43,12 +43,11 @@
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Employee.cs",
               "RelativeDocumentMoniker": "EmployeeManagementApp\\Employee.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Employee.cs*",
-              "RelativeToolTip": "EmployeeManagementApp\\Employee.cs*",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Employee.cs",
+              "RelativeToolTip": "EmployeeManagementApp\\Employee.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAswC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T15:24:52.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T15:24:52.234Z"
             },
             {
               "$type": "Document",
@@ -56,9 +55,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Program.cs",
               "RelativeDocumentMoniker": "EmployeeManagementApp\\Program.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Program.cs*",
-              "RelativeToolTip": "EmployeeManagementApp\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAANAAAAAAAAAA==",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Program.cs",
+              "RelativeToolTip": "EmployeeManagementApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T15:19:45.903Z",
               "EditorCaption": ""

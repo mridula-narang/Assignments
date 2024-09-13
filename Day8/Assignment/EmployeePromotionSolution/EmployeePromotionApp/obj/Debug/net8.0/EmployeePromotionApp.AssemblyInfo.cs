@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmployeePromotionApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbb66c79c32e0ba2b2bc4f5933d1db84e5ae8a36")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e75a1dbf89bb6b6c759c9fb27b7138172747a29")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmployeePromotionApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmployeePromotionApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

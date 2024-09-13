@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|d:\\c_sharp and dot net projects\\day8\\assignment\\employeepromotionsolution\\employeepromotionapp\\employeepromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|solutionrelative:employeepromotionapp\\employeepromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|d:\\c_sharp and dot net projects\\day8\\assignment\\employeepromotionsolution\\employeepromotionapp\\employeemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|solutionrelative:employeepromotionapp\\employeemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|solutionrelative:employeepromotionapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|d:\\c_sharp and dot net projects\\day8\\assignment\\employeepromotionsolution\\employeepromotionapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|solutionrelative:employeepromotionapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|d:\\c_sharp and dot net projects\\day8\\assignment\\employeepromotionsolution\\employeepromotionapp\\salarycomparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|solutionrelative:employeepromotionapp\\salarycomparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|d:\\c_sharp and dot net projects\\day8\\assignment\\employeepromotionsolution\\employeepromotionapp\\employeepromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|solutionrelative:employeepromotionapp\\employeepromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|d:\\c_sharp and dot net projects\\day8\\assignment\\employeepromotionsolution\\employeepromotionapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{060ACFAE-3D9E-4AD5-BED6-0DE9B43F622B}|EmployeePromotionApp\\EmployeePromotionApp.csproj|solutionrelative:employeepromotionapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,63 +38,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "SalaryComparer.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\SalaryComparer.cs",
               "RelativeDocumentMoniker": "EmployeePromotionApp\\SalaryComparer.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\SalaryComparer.cs",
               "RelativeToolTip": "EmployeePromotionApp\\SalaryComparer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T11:19:28.529Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EmployeeManagement.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\EmployeeManagement.cs",
               "RelativeDocumentMoniker": "EmployeePromotionApp\\EmployeeManagement.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\EmployeeManagement.cs",
               "RelativeToolTip": "EmployeePromotionApp\\EmployeeManagement.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAIwHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T10:35:09.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EmployeePromotion.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\EmployeePromotion.cs",
               "RelativeDocumentMoniker": "EmployeePromotionApp\\EmployeePromotion.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\EmployeePromotion.cs",
               "RelativeToolTip": "EmployeePromotionApp\\EmployeePromotion.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAcwBMAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAuwGMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:02:25.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:02:25.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\Program.cs",
               "RelativeDocumentMoniker": "EmployeePromotionApp\\Program.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\Program.cs",
               "RelativeToolTip": "EmployeePromotionApp\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAwwCoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwCkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T08:53:04.122Z"
+              "WhenOpened": "2024-09-13T08:53:04.122Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\Employee.cs",
               "RelativeDocumentMoniker": "EmployeePromotionApp\\Employee.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeePromotionSolution\\EmployeePromotionApp\\Employee.cs",
               "RelativeToolTip": "EmployeePromotionApp\\Employee.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAwwDMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T08:53:35.281Z"
             }

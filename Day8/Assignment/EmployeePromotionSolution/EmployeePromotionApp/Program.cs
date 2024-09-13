@@ -21,9 +21,10 @@
                 employee1.TakeEmployeeDetailsFromUser();
                 employeeManagement.AddEmployee(employee1);
 
+
                 Employee employee2 = new Employee();
-                employee1.TakeEmployeeDetailsFromUser();
-                employeeManagement.AddEmployee(employee1);
+                employee2.TakeEmployeeDetailsFromUser();
+                employeeManagement.AddEmployee(employee2);
 
                 //Console.WriteLine("Enter the employee Id to retrieve details: ");
                 //int id = Convert.ToInt32(Console.ReadLine());
@@ -41,6 +42,7 @@
                 Console.WriteLine("Enter the employee name to be searched ");
                 string searchName = Console.ReadLine();
                 employeeManagement.FindEmployeesByName(searchName);
+                employeeManagement.FindElderEmployees();
             }
             catch (ArgumentNullException)
             {
