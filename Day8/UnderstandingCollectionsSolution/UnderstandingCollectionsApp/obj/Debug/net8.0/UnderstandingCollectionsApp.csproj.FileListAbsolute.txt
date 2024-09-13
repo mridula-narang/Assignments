@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\bin\Debug\net8.0\UnderstandingCollectionsApp.exe
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\bin\Debug\net8.0\UnderstandingCollectionsApp.deps.json
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\bin\Debug\net8.0\UnderstandingCollectionsApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\bin\Debug\net8.0\UnderstandingCollectionsApp.dll
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\bin\Debug\net8.0\UnderstandingCollectionsApp.pdb
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\UnderstandingCollectionsApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\UnderstandingCollectionsApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\UnderstandingCollectionsApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\UnderstandingCollectionsApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\UnderstandingCollectionsApp.sourcelink.json
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\UnderstandingCollectionsApp.dll
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\refint\UnderstandingCollectionsApp.dll
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\UnderstandingCollectionsApp.pdb
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\UnderstandingCollectionsApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day8\UnderstandingCollectionsSolution\UnderstandingCollectionsApp\obj\Debug\net8.0\ref\UnderstandingCollectionsApp.dll

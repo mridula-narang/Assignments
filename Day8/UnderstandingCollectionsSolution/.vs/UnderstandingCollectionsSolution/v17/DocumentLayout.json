@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day8\\UnderstandingCollectionsSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB603BA-F743-482C-BDF1-A02BC20D1561}|UnderstandingCollectionsApp\\UnderstandingCollectionsApp.csproj|d:\\c_sharp and dot net projects\\day8\\understandingcollectionssolution\\understandingcollectionsapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDB603BA-F743-482C-BDF1-A02BC20D1561}|UnderstandingCollectionsApp\\UnderstandingCollectionsApp.csproj|solutionrelative:understandingcollectionsapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB603BA-F743-482C-BDF1-A02BC20D1561}|UnderstandingCollectionsApp\\UnderstandingCollectionsApp.csproj|d:\\c_sharp and dot net projects\\day8\\understandingcollectionssolution\\understandingcollectionsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDB603BA-F743-482C-BDF1-A02BC20D1561}|UnderstandingCollectionsApp\\UnderstandingCollectionsApp.csproj|solutionrelative:understandingcollectionsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\UnderstandingCollectionsSolution\\UnderstandingCollectionsApp\\Customer.cs",
+              "RelativeDocumentMoniker": "UnderstandingCollectionsApp\\Customer.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\UnderstandingCollectionsSolution\\UnderstandingCollectionsApp\\Customer.cs",
+              "RelativeToolTip": "UnderstandingCollectionsApp\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T05:13:54.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\UnderstandingCollectionsSolution\\UnderstandingCollectionsApp\\Program.cs",
+              "RelativeDocumentMoniker": "UnderstandingCollectionsApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\UnderstandingCollectionsSolution\\UnderstandingCollectionsApp\\Program.cs",
+              "RelativeToolTip": "UnderstandingCollectionsApp\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T04:43:50.097Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
