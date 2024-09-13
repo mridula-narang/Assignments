@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\bin\Debug\net8.0\EmployeePromotionApp.exe
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\bin\Debug\net8.0\EmployeePromotionApp.deps.json
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\bin\Debug\net8.0\EmployeePromotionApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\bin\Debug\net8.0\EmployeePromotionApp.dll
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\bin\Debug\net8.0\EmployeePromotionApp.pdb
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\EmployeePromotionApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\EmployeePromotionApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\EmployeePromotionApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\EmployeePromotionApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\EmployeePromotionApp.sourcelink.json
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\EmployeePromotionApp.dll
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\refint\EmployeePromotionApp.dll
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\EmployeePromotionApp.pdb
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\EmployeePromotionApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeePromotionSolution\EmployeePromotionApp\obj\Debug\net8.0\ref\EmployeePromotionApp.dll
