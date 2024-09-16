@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\source\\repos\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\UnderstandingDelegatesApp.csproj",
+      "projectUniqueName": "D:\\C_sharp and dot net projects\\Day9\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\UnderstandingDelegatesApp.csproj",
       "projectName": "UnderstandingDelegatesApp",
-      "projectPath": "C:\\Users\\hp\\source\\repos\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\UnderstandingDelegatesApp.csproj",
+      "projectPath": "D:\\C_sharp and dot net projects\\Day9\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\UnderstandingDelegatesApp.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\source\\repos\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\obj\\",
+      "outputPath": "D:\\C_sharp and dot net projects\\Day9\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

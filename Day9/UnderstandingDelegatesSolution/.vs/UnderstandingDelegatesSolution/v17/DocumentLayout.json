@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\UnderstandingDelegatesSolution\\",
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day9\\UnderstandingDelegatesSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D618D50-2AAB-49B1-BB60-F1813A0B91D9}|UnderstandingDelegatesApp\\UnderstandingDelegatesApp.csproj|c:\\users\\hp\\source\\repos\\understandingdelegatessolution\\understandingdelegatesapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D618D50-2AAB-49B1-BB60-F1813A0B91D9}|UnderstandingDelegatesApp\\UnderstandingDelegatesApp.csproj|d:\\c_sharp and dot net projects\\day9\\understandingdelegatessolution\\understandingdelegatesapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D618D50-2AAB-49B1-BB60-F1813A0B91D9}|UnderstandingDelegatesApp\\UnderstandingDelegatesApp.csproj|solutionrelative:understandingdelegatesapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day9\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\Program.cs",
               "RelativeDocumentMoniker": "UnderstandingDelegatesApp\\Program.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day9\\UnderstandingDelegatesSolution\\UnderstandingDelegatesApp\\Program.cs",
               "RelativeToolTip": "UnderstandingDelegatesApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAcwCYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T04:40:31.284Z",
               "EditorCaption": ""
