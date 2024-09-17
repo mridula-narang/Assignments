@@ -10,6 +10,7 @@
         {
             while (true)
             {
+                Console.WriteLine("Welcome to our clinic!! Please select one of the available services.");
                 Console.WriteLine("1. Register Patient");
                 Console.WriteLine("2. Register Doctor");
                 Console.WriteLine("3. Login");
@@ -72,9 +73,15 @@
         public void PatientLogin()
         {
             Console.Write("Enter Username: ");
-            string username = Console.ReadLine();
+            string? username = Console.ReadLine();
             Console.Write("Enter Password: ");
-            string password = Console.ReadLine();
+            string? password = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                Console.WriteLine("Username or password cannot be empty.");
+                return;
+            }
 
             var patient = Patient.Login(patients, username, password);
             if (patient != null)
@@ -84,14 +91,22 @@
             else
             {
                 Console.WriteLine("Invalid username or password.");
+                PatientLogin();
             }
         }
         public void DoctorLogin()
         {
             Console.Write("Enter Username: ");
-            string username = Console.ReadLine();
+            string? username = Console.ReadLine();
             Console.Write("Enter Password: ");
-            string password = Console.ReadLine();
+            string? password = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                Console.WriteLine("Username and password cannot be empty.");
+                return;
+            }
+
             var doctor = Doctor.Login(doctors, username, password);
             if (doctor != null)
             {
@@ -100,12 +115,14 @@
             else
             {
                 Console.WriteLine("Invalid username or password.");
+                DoctorLogin();
             }
         }
         public void HandlePatient(Patient patient)
         {
             while (true)
             {
+                Console.WriteLine($"Welcome dear {patient.Name}. How can we help you today?");
                 Console.WriteLine("1. Book Appointment");
                 Console.WriteLine("2. View Appointments");
                 Console.WriteLine("3. Logout");
@@ -132,6 +149,7 @@
         {
             while (true)
             {
+                Console.WriteLine($"Welcome Dr. {doctor.Name}. What would you like to do today?");
                 Console.WriteLine("1. View Patients");
                 Console.WriteLine("2. View Appointments");
                 Console.WriteLine("3. Logout");

@@ -9,26 +9,26 @@ namespace ClinicManagementApp
     internal class Patient : IPerson
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Disease { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string? Name { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string? Disease { get; set; }
+        public string? Username { get; set; }
+        public string? Password { get; set; }
 
         public List<Appointment> Appointments = new List<Appointment>();
 
         public void TakeInput()
         {
             Console.WriteLine("Please enter patient name: ");
-            Name = Console.ReadLine();
+            Name = Console.ReadLine() ?? string.Empty;
             Console.WriteLine("Please enter patient phone number: ");
-            PhoneNumber = Console.ReadLine();
+            PhoneNumber = Console.ReadLine() ?? string.Empty;
             Console.WriteLine("Please enter patient disease: ");
-            Disease = Console.ReadLine();
+            Disease = Console.ReadLine() ?? string.Empty;
             Console.WriteLine("Please enter patient username: ");
-            Username = Console.ReadLine();
+            Username = Console.ReadLine() ?? string.Empty;
             Console.WriteLine("Please enter patient password: ");
-            Password = Console.ReadLine();
+            Password = Console.ReadLine() ?? string.Empty;
 
         }
 
@@ -59,7 +59,7 @@ namespace ClinicManagementApp
             }
 
             Console.WriteLine("Enter doctor id to book appointment: ");
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
             if (!int.TryParse(input, out int doctorId))
             {
                 throw new FormatException("Invalid input. Please enter a valid doctor ID.");
@@ -67,14 +67,18 @@ namespace ClinicManagementApp
 
             // Find the selected doctor
             var doctor = doctors.FirstOrDefault(doctor => doctor.Id == doctorId);
+            Console.WriteLine("Enter appointment date and time (yyyy-mm-dd HH:mm): ");
+            string? dateInput = Console.ReadLine();
+            if (string.IsNullOrEmpty(dateInput))
+            {
+                throw new ArgumentNullException(nameof(dateInput), "Date input cannot be null or empty.");
+            }
+            DateTime appointmentDate = DateTime.Parse(dateInput);
             if (doctor == null)
             {
                 Console.WriteLine("Invalid Doctor Id.");
                 return;
             }
-
-            Console.WriteLine("Enter appointment date and time (yyyy-mm-dd HH:mm): ");
-            DateTime appointmentDate = DateTime.Parse(Console.ReadLine());
 
             // Check if any existing appointment is within 30 minutes of the requested time
             bool isConflict = allAppointments.Any(a => a.Doctor.Id == doctorId
@@ -105,7 +109,7 @@ namespace ClinicManagementApp
         }
 
 
-        public static Patient Login(List<Patient> patients, string username, string password)
+        public static Patient? Login(List<Patient> patients, string username, string password)
         {
             if (patients == null)
             {
