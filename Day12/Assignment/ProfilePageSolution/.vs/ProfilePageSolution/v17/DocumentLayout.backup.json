@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\profilepagesolution\\profilepageapp\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|solutionrelative:profilepageapp\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\profilepagesolution\\profilepageapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|solutionrelative:profilepageapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\profilepagesolution\\profilepageapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|solutionrelative:profilepageapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\profilepagesolution\\profilepageapp\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|solutionrelative:profilepageapp\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\profilepagesolution\\profilepageapp\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|solutionrelative:profilepageapp\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\profilepagesolution\\profilepageapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8C88B3-C214-4C2A-BE52-7530E6B5662D}|ProfilePageApp\\ProfilePageApp.csproj|solutionrelative:profilepageapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ProfilePageApp\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ProfilePageApp\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-19T11:39:02.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Program.cs",
+              "RelativeDocumentMoniker": "ProfilePageApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Program.cs",
+              "RelativeToolTip": "ProfilePageApp\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T10:35:12.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProfilePageApp\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Views\\Profile\\Index.cshtml*",
+              "RelativeToolTip": "ProfilePageApp\\Views\\Profile\\Index.cshtml*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T09:25:31.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "ProfilePageApp\\Controllers\\ProfileController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "ProfilePageApp\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAACgAAAD7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T09:02:54.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProfilePageApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProfilePageApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T09:00:16.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Models\\Profile.cs",
+              "RelativeDocumentMoniker": "ProfilePageApp\\Models\\Profile.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\Models\\Profile.cs",
+              "RelativeToolTip": "ProfilePageApp\\Models\\Profile.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T08:59:59.43Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
