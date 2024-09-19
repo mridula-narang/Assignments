@@ -1,0 +1,15 @@
+﻿@model IEnumerable<FirstWebApp.Models.Product>
+
+
+<h2>Product List</h2>
+@foreach (var product in Model)
+{
+    <div>
+        <img src="@product.Image" alt="No image" height="200" width="200" />
+        <h4>Product Id : @product.Id</h4>
+        <h4>Product Name : @product.Name</h4>
+        <h4>Product Description: @product.Description</h4>
+        <h4>Product Price : @product.Price</h4>
+
+    </div>
+}
