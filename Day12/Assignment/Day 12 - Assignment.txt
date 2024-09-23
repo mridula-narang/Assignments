@@ -1,0 +1,343 @@
+Day 12 - Assignment
+
+1) Profile page
+
+Model - Profile
+namespace ProfilePageApp.Models
+{
+    public class Profile
+    {
+        public string? Name { get; set; }
+        public string? Title { get; set; }
+        public string? Bio { get; set; }
+        public string? Email { get; set; }
+        public string? LinkedIn { get; set; }
+        public string? GitHub { get; set; }
+        public string? ProfilePicture { get; set; }
+        public Skill[] Skills { get; set; }
+        public Project[] Projects { get; set; }
+    }
+
+    public class Project
+    {
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Image { get; set; }
+    }
+
+    public class Skill
+    {
+        public string SkillName { get; set; }
+        public string Image { get; set; }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Controller - Profile Controller
+
+using Microsoft.AspNetCore.Mvc;
+using ProfilePageApp.Models;
+
+namespace ProfilePageApp.Controllers
+{
+    public class ProfileController : Controller
+    {
+        public IActionResult Index()
+        {
+            var profile = new Profile
+            {
+                Name = "Mridula Narang",
+                Title = "Inventive Developer Blending Creativity with Emerging Tech",
+                Bio = "With a passion for technology that knows no bounds, I’m a versatile developer with expertise spanning AI, mobile apps, and beyond. My journey includes crafting dynamic mobile experiences that captivate users, designing intuitive software solutions, and diving into diverse tech projects that drive innovation. Whether it’s developing robust applications, exploring new frameworks, or tackling complex challenges with creative flair, I bring a curious mind and a knack for problem-solving to every endeavor. From AI to full-stack development, my goal is to blend creativity with emerging tech to build solutions that inspire and make a difference.",
+                Email = "narangmg@gmail.com",
+                LinkedIn = "https://www.linkedin.com/in/mridulagnarang/",
+                GitHub = "https://github.com/mridula-narang",
+                ProfilePicture = "/images/profile.jpg",
+                Skills = new Skill[]
+                {
+                    new Skill{SkillName = "Bootstrap", Image = "/images/Bootstrap.png"},
+                    new Skill{SkillName = "CSharp", Image = "/images/CSharp.png"},
+                    new Skill{SkillName = "CSS", Image = "/images/CSS.png"},
+                    new Skill{SkillName = "Django", Image = "/images/Django.png"},
+                    new Skill{SkillName = "ExpressJS", Image = "/images/ExpressJS.png"},
+                    new Skill{SkillName = "Flutter", Image = "/images/Flutter.png"},
+                    new Skill{SkillName = "Git", Image = "/images/Git.png"},
+                    new Skill{SkillName = "HTML", Image = "/images/HTML.png"},
+                    new Skill{SkillName = "Javascript", Image = "/images/Javascript.png"},
+                    new Skill{SkillName = "MongoDB", Image = "/images/MongoDB.png"},
+                    new Skill{SkillName = "NodeJS", Image = "/images/NodeJS.png"},
+                    new Skill{SkillName = "Python", Image = "/images/Python.png"},
+                    new Skill{SkillName = "SQL", Image = "/images/SQL.png"},
+                    new Skill{SkillName = "TensorFlow", Image = "/images/TensorFlow.png"}
+                },
+                Projects = new Project[]
+                {
+                    new Project { Title = "Zen Mentor: A Yoga Monitoring and Correction Application", Description = "An innovative mobile application that monitors and corrects yoga poses using AI-based pose estimation.", Image = "/images/yoga.png"},
+                    new Project { Title = "Sangeeta Sarangha: Unveiling the Essence of Carnatic Ragas", Description = "A app that identifies Carnatic ragas based on real-time audio analysis and machine learning.", Image = "/images/music.png" },
+                    new Project { Title = "Harnessing Machine Learning to Decode Chest X-Ray Patterns", Description = "A project utilizing convolutional neural networks to classify chest x-rays into various diagnostic categories.", Image = "/images/chest.png" },
+                    new Project { Title = "Bringing Brain MRI Data to Life: Advanced Visualization with Python", Description = "Visualization of brain MRI scans using Python to assist in neurological research and analysis.", Image = "/images/brain.png" }
+                }
+            };
+            return View(profile);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+View - Index.cshtml
+@model ProfilePageApp.Models.Profile
+
+@{
+    ViewBag.Title = "Profile";
+}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <div class="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tech-stack">Tech Stack</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<section id="home" class="container text-center py-3">
+    <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left">
+            <h2>About Me</h2>
+            <h3>@Model.Name</h3>
+            <p>@Model.Title</p>
+            <p>@Model.Bio</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/images/profile.jpg" alt="Profile" class="profile-pic img-fluid" style="max-width: 100%; height: auto;" />
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="container py-5">
+    <h2 class="section-title">Projects</h2>
+    <div class="row">
+        @foreach (var project in Model.Projects)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <img src="@project.Image" alt="Project Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">@project.Title</h5>
+                        <p class="card-text">@project.Description</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+
+
+<section id="tech-stack" class="container text-center py-5">
+    <h2>Tech Stack</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-10 justify-content-center">
+            <div class="row justify-content-center">
+                @for (int i = 0; i < Model.Skills.Length; i += 5)
+                {
+                    <div class="row mb-4">
+                        @for (int j = i; j < i + 5 && j < Model.Skills.Length; j++)
+                        {
+                            <div class="col-md-2 p-3">
+                                <img src="@Model.Skills[j].Image" alt="@Model.Skills[j].SkillName" class="img-fluid" style="width: 100px; height: auto;" />
+                                <p>@Model.Skills[j].SkillName</p>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="container text-center py-5">
+    <h2>Contact Me</h2>
+    <p>Email: @Model.Email</p>
+    <p>GitHub: @Model.GitHub</p>
+    <p>LinkedIn: @Model.LinkedIn<p>
+</section>
+--------------------------------------------------------------------------------------------------------------------------
+CSS file - site.css
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #000;
+}
+
+
+section {
+    padding-top: 0.5rem; /* Adjust as needed */
+    padding-bottom: 0.5rem; /* Adjust as needed */
+}
+
+/*.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}*/
+
+h1, h2,h3,h5, p {
+    color: #E0B0FF;
+}
+.project-card{
+    height = 200px;
+    width = 200px;
+}
+.project-card img {
+    object-fit:contain; 
+    height: 200px; 
+}
+
+    .project-card .card-body {
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        background-color: black;
+    }
+
+
+.profile-pic {
+    max-width: 150px; 
+    height: 150px;
+}
+
+
+.badge {
+    font-size: 14px;
+}
+
+
+.container {
+    margin-top: 50px;
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+2) Doctor application
+
+Model - Doctor
+namespace ClinicManagementApp.Models
+{
+    public class Doctor
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public string? PhoneNumber { get; set; }
+        public string? Department { get; set; }
+        public string? Specialization { get; set; }
+        public string? Image { get; set; }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Controller - Doctor Controller
+using ClinicManagementApp.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace ClinicManagementApp.Controllers
+{
+    public class DoctorController : Controller
+    {
+        List<Doctor> doctors = new List<Doctor>
+        {
+            new Doctor { Id = 1, Name = "Dr. Theodore Altman", PhoneNumber = "7795785774", Department = "Cardiology", Specialization = "Cardiothoracic Surgeon", Image = "/images/1.jpg" },
+            new Doctor { Id = 2, Name = "Dr. Meredith Grey", PhoneNumber = "8867587848", Department = "Neurology", Specialization = "Neuro-oncologist" ,Image = "/images/2.jpg"},
+            new Doctor { Id = 3, Name = "Dr. Miranda Bailey", PhoneNumber = "8869577677", Department = "Ophthalmology", Specialization = "Retina", Image = "/images/3.jpg" },
+        };
+        public IActionResult Index()
+        {
+            return View(doctors);
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+View - Index.cshtml
+@model IEnumerable<ClinicManagementApp.Models.Doctor>
+<h2>Welcome to Lumina Medical Center</h2>
+
+<h3>About us</h3>
+<p class="paragraph">
+    At Lumina Medical Center, we believe in illuminating the path to health and well-being for every individual. Our hospital combines cutting-edge medical technology with compassionate care to deliver personalized treatment that empowers our patients to thrive. We are committed to a brighter, healthier future, where every person receives the highest standard of care.
+</p>
+
+<h2>Meet our team of doctors</h2>
+<div class="row">
+    @foreach (var doctor in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <!-- Adjust the column size as needed -->
+            <div class="card">
+                <img src="@doctor.Image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@doctor.Name</h5>
+                    <p class="card-text">Working at the department of @doctor.Department, Dr. @doctor.Name has 5+ years of experience in @doctor.Specialization.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+------------------------------------------------------------------------------------------------------------------------
+CSS - site.css
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem ;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.card-img-top {
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+}
+
+.paragraph{
+    text-align: justify;
+}

@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\clinicmanagementsolution\\clinicmanagementapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|solutionrelative:clinicmanagementapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\clinicmanagementsolution\\clinicmanagementapp\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|solutionrelative:clinicmanagementapp\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\clinicmanagementsolution\\clinicmanagementapp\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|solutionrelative:clinicmanagementapp\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\clinicmanagementsolution\\clinicmanagementapp\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|solutionrelative:clinicmanagementapp\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|d:\\c_sharp and dot net projects\\day12\\assignment\\clinicmanagementsolution\\clinicmanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30A80683-43C9-429C-946A-22DADEEDED91}|ClinicManagementApp\\ClinicManagementApp.csproj|solutionrelative:clinicmanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\Program.cs",
+              "RelativeDocumentMoniker": "ClinicManagementApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\Program.cs",
+              "RelativeToolTip": "ClinicManagementApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T17:25:56.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ClinicManagementApp\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\wwwroot\\css\\site.css*",
+              "RelativeToolTip": "ClinicManagementApp\\wwwroot\\css\\site.css*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-19T17:24:56.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\Views\\Doctor\\Index.cshtml",
+              "RelativeDocumentMoniker": "ClinicManagementApp\\Views\\Doctor\\Index.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\Views\\Doctor\\Index.cshtml",
+              "RelativeToolTip": "ClinicManagementApp\\Views\\Doctor\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T17:14:44.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "ClinicManagementApp\\Controllers\\DoctorController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "ClinicManagementApp\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAD4vwsAAAClAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T17:14:31.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "ClinicManagementApp\\Models\\Doctor.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ClinicManagementSolution\\ClinicManagementApp\\Models\\Doctor.cs",
+              "RelativeToolTip": "ClinicManagementApp\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T16:46:56.27Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
