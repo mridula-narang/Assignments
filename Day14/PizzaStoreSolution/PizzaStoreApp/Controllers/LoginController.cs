@@ -23,7 +23,8 @@ namespace PizzaStoreApp.Controllers
             {
                 if (_loginService.Login(user.Username, user.Password))
                 {
-                    return RedirectToAction("Index", "Home");
+                    HttpContext.Session.SetString("username", user.Username);
+                    return RedirectToAction("Index", "Pizza");
                 }
                 ViewBag.Message = "Unable to login.";
                 return View();

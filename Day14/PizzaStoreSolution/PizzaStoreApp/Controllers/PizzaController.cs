@@ -15,6 +15,12 @@ namespace PizzaStoreApp.Controllers
         {
             try
             {
+                var username = HttpContext.Session.GetString("username");
+                if (string.IsNullOrEmpty(username))
+                {
+                    return RedirectToAction("UserLogin", "Login");
+                }
+                ViewBag.username = username;
                 var pizzas = _pizzaService.GetAllPizzas();
                 return View(pizzas);
             }

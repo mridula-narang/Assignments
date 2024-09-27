@@ -11,6 +11,8 @@ namespace PizzaStoreApp
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddSession(); 
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<IPizzaService,PizzaService>();
@@ -33,6 +35,8 @@ namespace PizzaStoreApp
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",
