@@ -14,8 +14,12 @@ namespace PizzaStoreApp
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<IPizzaService,PizzaService>();
+            builder.Services.AddScoped<ILoginService, LoginService>();
+
+
             builder.Services.AddScoped<IRepository<int, PizzaImages>,PizzaImageRepository>();
-            builder.Services.AddScoped<IRepository<int, Pizza>, PizzaRepository>(); 
+            builder.Services.AddScoped<IRepository<int, Pizza>, PizzaRepository>();
+            builder.Services.AddScoped<IRepository<string, User>, UserRepository>();
 
             var app = builder.Build();
 
@@ -32,7 +36,7 @@ namespace PizzaStoreApp
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Pizza}/{action=Index}/{id?}");
+                pattern: "{controller=Login}/{action=UserLogin}/{id?}");
 
             app.Run();
         }

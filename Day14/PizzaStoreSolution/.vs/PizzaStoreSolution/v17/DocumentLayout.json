@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\views\\login\\userlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\views\\login\\userlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\services\\pizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\services\\pizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\interfaces\\ipizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\interfaces\\ipizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\views\\pizza\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\views\\pizza\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\repositories\\pizzarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\repositories\\pizzarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\repositories\\pizzaimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\repositories\\pizzaimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|d:\\c_sharp and dot net projects\\day14\\pizzastoresolution\\pizzastoreapp\\services\\pizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4214A500-81F6-4D28-80BE-026365632FC1}|PizzaStoreApp\\PizzaStoreApp.csproj|solutionrelative:pizzastoreapp\\services\\pizzaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,59 +50,73 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Views\\Pizza\\Index.cshtml",
-              "RelativeDocumentMoniker": "PizzaStoreApp\\Views\\Pizza\\Index.cshtml",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Views\\Pizza\\Index.cshtml",
-              "RelativeToolTip": "PizzaStoreApp\\Views\\Pizza\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T10:42:07.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PizzaController.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Controllers\\PizzaController.cs",
-              "RelativeDocumentMoniker": "PizzaStoreApp\\Controllers\\PizzaController.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Controllers\\PizzaController.cs",
-              "RelativeToolTip": "PizzaStoreApp\\Controllers\\PizzaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T10:40:06.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Program.cs",
               "RelativeDocumentMoniker": "PizzaStoreApp\\Program.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Program.cs",
               "RelativeToolTip": "PizzaStoreApp\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBUAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T09:50:25.449Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserLogin.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Views\\Login\\UserLogin.cshtml",
+              "RelativeDocumentMoniker": "PizzaStoreApp\\Views\\Login\\UserLogin.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Views\\Login\\UserLogin.cshtml",
+              "RelativeToolTip": "PizzaStoreApp\\Views\\Login\\UserLogin.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T06:45:58.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PizzaService.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Services\\PizzaService.cs",
-              "RelativeDocumentMoniker": "PizzaStoreApp\\Services\\PizzaService.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Services\\PizzaService.cs",
-              "RelativeToolTip": "PizzaStoreApp\\Services\\PizzaService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBAAAAApAAAAAAAAAA==",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "PizzaStoreApp\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "PizzaStoreApp\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowBsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T09:31:37.011Z",
+              "WhenOpened": "2024-09-27T06:43:33.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "PizzaStoreApp\\Services\\LoginService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Services\\LoginService.cs",
+              "RelativeToolTip": "PizzaStoreApp\\Services\\LoginService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBYAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T06:28:11.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Interfaces\\ILoginService.cs",
+              "RelativeDocumentMoniker": "PizzaStoreApp\\Interfaces\\ILoginService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Interfaces\\ILoginService.cs",
+              "RelativeToolTip": "PizzaStoreApp\\Interfaces\\ILoginService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T06:26:50.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IPizzaService.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Interfaces\\IPizzaService.cs",
               "RelativeDocumentMoniker": "PizzaStoreApp\\Interfaces\\IPizzaService.cs",
@@ -107,28 +129,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PizzaRepository.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Repositories\\PizzaRepository.cs",
-              "RelativeDocumentMoniker": "PizzaStoreApp\\Repositories\\PizzaRepository.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Repositories\\PizzaRepository.cs",
-              "RelativeToolTip": "PizzaStoreApp\\Repositories\\PizzaRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "PizzaService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Services\\PizzaService.cs",
+              "RelativeDocumentMoniker": "PizzaStoreApp\\Services\\PizzaService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Services\\PizzaService.cs",
+              "RelativeToolTip": "PizzaStoreApp\\Services\\PizzaService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T09:20:14.715Z",
+              "WhenOpened": "2024-09-26T09:31:37.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "PizzaStoreApp\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "PizzaStoreApp\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA1wBwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T06:03:21.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PizzaImageRepository.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Repositories\\PizzaImageRepository.cs",
-              "RelativeDocumentMoniker": "PizzaStoreApp\\Repositories\\PizzaImageRepository.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Repositories\\PizzaImageRepository.cs",
-              "RelativeToolTip": "PizzaStoreApp\\Repositories\\PizzaImageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PizzaStoreApp\\Models\\User.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day14\\PizzaStoreSolution\\PizzaStoreApp\\Models\\User.cs",
+              "RelativeToolTip": "PizzaStoreApp\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T09:20:17.717Z",
+              "WhenOpened": "2024-09-27T05:24:29.693Z",
               "EditorCaption": ""
             }
           ]
