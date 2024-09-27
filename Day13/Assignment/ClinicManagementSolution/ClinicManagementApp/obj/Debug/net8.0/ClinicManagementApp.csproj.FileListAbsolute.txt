@@ -1,0 +1,93 @@
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.MvcApplicationPartsAssemblyInfo.cache
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.RazorAssemblyInfo.cache
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.RazorAssemblyInfo.cs
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.sourcelink.json
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\appsettings.Development.json
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\appsettings.json
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.staticwebassets.runtime.json
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.exe
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.deps.json
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.dll
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.pdb
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets.build.json
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets.development.json
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.ClinicManagementApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.build.ClinicManagementApp.props
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ClinicManagementApp.props
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ClinicManagementApp.props
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets.pack.json
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\scopedcss\bundle\ClinicManagementApp.styles.css
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\scopedcss\projectbundle\ClinicManagementApp.bundle.scp.css
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.dll
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\refint\ClinicManagementApp.dll
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.pdb
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ref\ClinicManagementApp.dll
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.AssemblyInfoInputs.cache
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.AssemblyInfo.cs
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.csproj.CoreCompileInputs.cache
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.RazorAssemblyInfo.cache
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.RazorAssemblyInfo.cs
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.sourcelink.json
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.dll
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\refint\ClinicManagementApp.dll
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.pdb
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\appsettings.Development.json
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\appsettings.json
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.staticwebassets.runtime.json
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.exe
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.deps.json
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.runtimeconfig.json
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.dll
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.pdb
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets.development.json
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.ClinicManagementApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.build.ClinicManagementApp.props
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ClinicManagementApp.props
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ClinicManagementApp.props
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\scopedcss\bundle\ClinicManagementApp.styles.css
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\scopedcss\projectbundle\ClinicManagementApp.bundle.scp.css
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.genruntimeconfig.cache
+D:\Projects\Misc\mridula\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ref\ClinicManagementApp.dll
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\appsettings.Development.json
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\appsettings.json
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.staticwebassets.runtime.json
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.exe
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.deps.json
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.runtimeconfig.json
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.dll
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.pdb
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.AssemblyInfoInputs.cache
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.AssemblyInfo.cs
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.csproj.CoreCompileInputs.cache
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.MvcApplicationPartsAssemblyInfo.cache
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.RazorAssemblyInfo.cache
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.RazorAssemblyInfo.cs
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.sourcelink.json
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets.build.json
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets.development.json
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.ClinicManagementApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.build.ClinicManagementApp.props
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ClinicManagementApp.props
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ClinicManagementApp.props
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\staticwebassets.pack.json
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\scopedcss\bundle\ClinicManagementApp.styles.css
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\scopedcss\projectbundle\ClinicManagementApp.bundle.scp.css
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.dll
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\refint\ClinicManagementApp.dll
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.pdb
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.genruntimeconfig.cache
+D:\placement_training\Assignments\Assignments\Day12\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ref\ClinicManagementApp.dll
