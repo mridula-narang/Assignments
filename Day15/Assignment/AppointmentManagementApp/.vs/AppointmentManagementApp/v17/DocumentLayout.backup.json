@@ -1,0 +1,302 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\views\\appointment\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\views\\appointment\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\services\\patientloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\services\\patientloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\views\\login\\patientlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\views\\login\\patientlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\repositories\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Program.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Program.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T06:46:31.677Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookAppointment.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Views\\Appointment\\BookAppointment.cshtml",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Views\\Appointment\\BookAppointment.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Views\\Appointment\\BookAppointment.cshtml*",
+              "RelativeToolTip": "AppointmentManagementApp\\Views\\Appointment\\BookAppointment.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T13:12:50.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Controllers\\AppointmentController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T08:27:47.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Services\\AppointmentService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Services\\AppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T08:26:05.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAppointmentService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Interfaces\\IAppointmentService.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Interfaces\\IAppointmentService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Interfaces\\IAppointmentService.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Interfaces\\IAppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T08:00:10.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Repositories\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Repositories\\AppointmentRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Repositories\\AppointmentRepository.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Repositories\\AppointmentRepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T07:59:29.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Models\\Appointment.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Appointment.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Models\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T07:57:53.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Controllers\\PatientController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T07:04:24.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Interfaces\\IRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T07:00:04.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PatientLogin.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Views\\Login\\PatientLogin.cshtml",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Views\\Login\\PatientLogin.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Views\\Login\\PatientLogin.cshtml",
+              "RelativeToolTip": "AppointmentManagementApp\\Views\\Login\\PatientLogin.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T14:21:00.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientLoginService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Services\\PatientLoginService.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Services\\PatientLoginService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Services\\PatientLoginService.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Services\\PatientLoginService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T11:34:32.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Models\\Patient.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Patient.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T07:37:59.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Models\\Doctor.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Doctor.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAywBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T07:36:09.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DoctorRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Repositories\\DoctorRepository.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Repositories\\DoctorRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Repositories\\DoctorRepository.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Repositories\\DoctorRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAgwDcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T07:26:58.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Repositories\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Repositories\\PatientRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Repositories\\PatientRepository.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Repositories\\PatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T06:52:06.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T06:44:04.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Interfaces\\ILoginService.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Interfaces\\ILoginService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Interfaces\\ILoginService.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Interfaces\\ILoginService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T06:36:42.088Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
