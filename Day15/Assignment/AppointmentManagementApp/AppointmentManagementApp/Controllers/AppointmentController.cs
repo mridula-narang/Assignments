@@ -20,13 +20,13 @@ namespace AppointmentManagementApp.Controllers
         public IActionResult BookAppointment()
         {
             var doctors = _doctorRepository.GetAll();
-            return View(doctors); // Pass doctors to view for selection
+            return View(doctors); 
         }
 
         [HttpPost]
         public IActionResult BookAppointment(int doctorId, DateTime appointmentDateTime)
         {
-            int patientId = GetLoggedInPatientId(); // Get the patient ID from the logged-in user
+            int patientId = GetLoggedInPatientId(); 
             try
             {
                 _appointmentService.BookAppointment(patientId, doctorId, appointmentDateTime);
@@ -43,7 +43,7 @@ namespace AppointmentManagementApp.Controllers
 
         private int GetLoggedInPatientId()
         {
-            // Assuming you stored the patient ID in the session during login
+
             var patientId = HttpContext.Session.GetInt32("PatientId");
 
             if (patientId.HasValue)

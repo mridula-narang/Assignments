@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\exceptions\\appointmentoverlapexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\exceptions\\appointmentoverlapexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\exceptions\\doctornotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\exceptions\\doctornotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\exceptions\\duplicatedoctorexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\exceptions\\duplicatedoctorexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\exceptions\\duplicatepatientexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\exceptions\\duplicatepatientexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\exceptions\\noappointmentsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\exceptions\\noappointmentsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\exceptions\\nodoctorsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\exceptions\\nodoctorsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\exceptions\\nopatientsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\exceptions\\nopatientsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|d:\\c_sharp and dot net projects\\day15\\assignment\\appointmentmanagementapp\\appointmentmanagementapp\\exceptions\\patientnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A505106-EC5B-45F0-BAB3-D6944114D541}|AppointmentManagementApp\\AppointmentManagementApp.csproj|solutionrelative:appointmentmanagementapp\\exceptions\\patientnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +47,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Appointment.cs",
-              "RelativeDocumentMoniker": "AppointmentManagementApp\\Models\\Appointment.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Appointment.cs",
-              "RelativeToolTip": "AppointmentManagementApp\\Models\\Appointment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AppointmentOverlapException.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\AppointmentOverlapException.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Exceptions\\AppointmentOverlapException.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\AppointmentOverlapException.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Exceptions\\AppointmentOverlapException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T14:09:23.959Z",
+              "WhenOpened": "2024-09-29T16:56:43.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Patient.cs",
-              "RelativeDocumentMoniker": "AppointmentManagementApp\\Models\\Patient.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Patient.cs",
-              "RelativeToolTip": "AppointmentManagementApp\\Models\\Patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DoctorNotFoundException.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\DoctorNotFoundException.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Exceptions\\DoctorNotFoundException.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\DoctorNotFoundException.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Exceptions\\DoctorNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T14:09:27.285Z",
+              "WhenOpened": "2024-09-29T16:56:12.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Doctor.cs",
-              "RelativeDocumentMoniker": "AppointmentManagementApp\\Models\\Doctor.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Models\\Doctor.cs",
-              "RelativeToolTip": "AppointmentManagementApp\\Models\\Doctor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DuplicateDoctorException.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\DuplicateDoctorException.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Exceptions\\DuplicateDoctorException.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\DuplicateDoctorException.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Exceptions\\DuplicateDoctorException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T14:09:25.175Z",
+              "WhenOpened": "2024-09-29T16:55:47.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DuplicatePatientException.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\DuplicatePatientException.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Exceptions\\DuplicatePatientException.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\DuplicatePatientException.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Exceptions\\DuplicatePatientException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T16:53:36.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NoAppointmentsException.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\NoAppointmentsException.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Exceptions\\NoAppointmentsException.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\NoAppointmentsException.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Exceptions\\NoAppointmentsException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T16:53:04.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NoDoctorsException.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\NoDoctorsException.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Exceptions\\NoDoctorsException.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\NoDoctorsException.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Exceptions\\NoDoctorsException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T16:52:33.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NoPatientsException.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\NoPatientsException.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Exceptions\\NoPatientsException.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\NoPatientsException.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Exceptions\\NoPatientsException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T16:52:09.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PatientNotFoundException.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\PatientNotFoundException.cs",
+              "RelativeDocumentMoniker": "AppointmentManagementApp\\Exceptions\\PatientNotFoundException.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day15\\Assignment\\AppointmentManagementApp\\AppointmentManagementApp\\Exceptions\\PatientNotFoundException.cs",
+              "RelativeToolTip": "AppointmentManagementApp\\Exceptions\\PatientNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T16:50:48.145Z",
               "EditorCaption": ""
             }
           ]
