@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\bin\Debug\net8.0\BuilderDesignPatternApp.exe
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\bin\Debug\net8.0\BuilderDesignPatternApp.deps.json
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\bin\Debug\net8.0\BuilderDesignPatternApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\bin\Debug\net8.0\BuilderDesignPatternApp.dll
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\bin\Debug\net8.0\BuilderDesignPatternApp.pdb
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\BuilderDesignPatternApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\BuilderDesignPatternApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\BuilderDesignPatternApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\BuilderDesignPatternApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\BuilderDesignPatternApp.sourcelink.json
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\BuilderDesignPatternApp.dll
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\refint\BuilderDesignPatternApp.dll
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\BuilderDesignPatternApp.pdb
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\BuilderDesignPatternApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day18\BuilderDesignPatternSolution\BuilderDesignPatternApp\obj\Debug\net8.0\ref\BuilderDesignPatternApp.dll

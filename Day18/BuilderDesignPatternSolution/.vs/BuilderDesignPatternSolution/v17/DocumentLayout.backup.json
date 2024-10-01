@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|d:\\c_sharp and dot net projects\\day18\\builderdesignpatternsolution\\builderdesignpatternapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|solutionrelative:builderdesignpatternapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|d:\\c_sharp and dot net projects\\day18\\builderdesignpatternsolution\\builderdesignpatternapp\\beveragedirector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|solutionrelative:builderdesignpatternapp\\beveragedirector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|d:\\c_sharp and dot net projects\\day18\\builderdesignpatternsolution\\builderdesignpatternapp\\teabuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|solutionrelative:builderdesignpatternapp\\teabuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|d:\\c_sharp and dot net projects\\day18\\builderdesignpatternsolution\\builderdesignpatternapp\\coffeebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|solutionrelative:builderdesignpatternapp\\coffeebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|d:\\c_sharp and dot net projects\\day18\\builderdesignpatternsolution\\builderdesignpatternapp\\beveragebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|solutionrelative:builderdesignpatternapp\\beveragebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|d:\\c_sharp and dot net projects\\day18\\builderdesignpatternsolution\\builderdesignpatternapp\\beverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88AEDF9A-7DC9-4254-A018-F2B14A6EA1DF}|BuilderDesignPatternApp\\BuilderDesignPatternApp.csproj|solutionrelative:builderdesignpatternapp\\beverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BeverageDirector.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\BeverageDirector.cs",
+              "RelativeDocumentMoniker": "BuilderDesignPatternApp\\BeverageDirector.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\BeverageDirector.cs*",
+              "RelativeToolTip": "BuilderDesignPatternApp\\BeverageDirector.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T16:18:16.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeaBuilder.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\TeaBuilder.cs",
+              "RelativeDocumentMoniker": "BuilderDesignPatternApp\\TeaBuilder.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\TeaBuilder.cs*",
+              "RelativeToolTip": "BuilderDesignPatternApp\\TeaBuilder.cs*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T16:14:22.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoffeeBuilder.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\CoffeeBuilder.cs",
+              "RelativeDocumentMoniker": "BuilderDesignPatternApp\\CoffeeBuilder.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\CoffeeBuilder.cs*",
+              "RelativeToolTip": "BuilderDesignPatternApp\\CoffeeBuilder.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T16:09:20.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BeverageBuilder.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\BeverageBuilder.cs",
+              "RelativeDocumentMoniker": "BuilderDesignPatternApp\\BeverageBuilder.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\BeverageBuilder.cs",
+              "RelativeToolTip": "BuilderDesignPatternApp\\BeverageBuilder.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:36:41.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Beverage.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\Beverage.cs",
+              "RelativeDocumentMoniker": "BuilderDesignPatternApp\\Beverage.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\Beverage.cs",
+              "RelativeToolTip": "BuilderDesignPatternApp\\Beverage.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwA0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:34:11.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\Program.cs",
+              "RelativeDocumentMoniker": "BuilderDesignPatternApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\BuilderDesignPatternSolution\\BuilderDesignPatternApp\\Program.cs*",
+              "RelativeToolTip": "BuilderDesignPatternApp\\Program.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:33:45.864Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

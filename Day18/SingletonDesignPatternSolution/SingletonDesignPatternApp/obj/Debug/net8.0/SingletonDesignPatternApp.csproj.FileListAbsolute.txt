@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\bin\Debug\net8.0\SingletonDesignPatternApp.exe
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\bin\Debug\net8.0\SingletonDesignPatternApp.deps.json
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\bin\Debug\net8.0\SingletonDesignPatternApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\bin\Debug\net8.0\SingletonDesignPatternApp.dll
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\bin\Debug\net8.0\SingletonDesignPatternApp.pdb
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\SingletonDesignPatternApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\SingletonDesignPatternApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\SingletonDesignPatternApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\SingletonDesignPatternApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\SingletonDesignPatternApp.sourcelink.json
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\SingletonDesignPatternApp.dll
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\refint\SingletonDesignPatternApp.dll
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\SingletonDesignPatternApp.pdb
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\SingletonDesignPatternApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day18\SingletonDesignPatternSolution\SingletonDesignPatternApp\obj\Debug\net8.0\ref\SingletonDesignPatternApp.dll

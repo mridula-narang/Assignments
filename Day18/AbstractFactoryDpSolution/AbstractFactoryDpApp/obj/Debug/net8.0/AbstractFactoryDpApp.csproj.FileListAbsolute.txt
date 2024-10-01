@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\bin\Debug\net8.0\AbstractFactoryDpApp.exe
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\bin\Debug\net8.0\AbstractFactoryDpApp.deps.json
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\bin\Debug\net8.0\AbstractFactoryDpApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\bin\Debug\net8.0\AbstractFactoryDpApp.dll
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\bin\Debug\net8.0\AbstractFactoryDpApp.pdb
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\AbstractFactoryDpApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\AbstractFactoryDpApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\AbstractFactoryDpApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\AbstractFactoryDpApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\AbstractFactoryDpApp.sourcelink.json
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\AbstractFactoryDpApp.dll
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\refint\AbstractFactoryDpApp.dll
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\AbstractFactoryDpApp.pdb
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\AbstractFactoryDpApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day18\AbstractFactoryDpSolution\AbstractFactoryDpApp\obj\Debug\net8.0\ref\AbstractFactoryDpApp.dll
