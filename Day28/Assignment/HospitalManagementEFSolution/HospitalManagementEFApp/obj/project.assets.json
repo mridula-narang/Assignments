@@ -2017,11 +2017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\HospitalManagementEFApp.csproj",
+      "projectUniqueName": "D:\\C_sharp and dot net projects\\Day28\\Assignment\\HospitalManagementEFSolution\\HospitalManagementEFApp\\HospitalManagementEFApp.csproj",
       "projectName": "HospitalManagementEFApp",
-      "projectPath": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\HospitalManagementEFApp.csproj",
+      "projectPath": "D:\\C_sharp and dot net projects\\Day28\\Assignment\\HospitalManagementEFSolution\\HospitalManagementEFApp\\HospitalManagementEFApp.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\obj\\",
+      "outputPath": "D:\\C_sharp and dot net projects\\Day28\\Assignment\\HospitalManagementEFSolution\\HospitalManagementEFApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qVQTukNNnFM=",
+  "dgSpecHash": "/nkDQ6O+J1w=",
   "success": true,
-  "projectFilePath": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\HospitalManagementEFApp.csproj",
+  "projectFilePath": "D:\\C_sharp and dot net projects\\Day28\\Assignment\\HospitalManagementEFSolution\\HospitalManagementEFApp\\HospitalManagementEFApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

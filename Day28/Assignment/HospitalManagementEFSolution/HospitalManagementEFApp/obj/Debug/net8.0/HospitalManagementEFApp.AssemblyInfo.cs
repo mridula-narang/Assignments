@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HospitalManagementEFApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+348cbfb5a0ac8722e194e909c493020fed2ae359")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+549c08888d91c129fb71e2e8acbe46c595b2f791")]
 [assembly: System.Reflection.AssemblyProductAttribute("HospitalManagementEFApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HospitalManagementEFApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
