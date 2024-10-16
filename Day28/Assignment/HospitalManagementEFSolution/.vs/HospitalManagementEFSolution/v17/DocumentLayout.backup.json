@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|d:\\c_sharp and dot net projects\\day28\\hospitalmanagementefsolution\\hospitalmanagementefapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|solutionrelative:hospitalmanagementefapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|d:\\c_sharp and dot net projects\\day28\\hospitalmanagementefsolution\\hospitalmanagementefapp\\contexts\\appointmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|solutionrelative:hospitalmanagementefapp\\contexts\\appointmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|d:\\c_sharp and dot net projects\\day28\\hospitalmanagementefsolution\\hospitalmanagementefapp\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|solutionrelative:hospitalmanagementefapp\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|d:\\c_sharp and dot net projects\\day28\\hospitalmanagementefsolution\\hospitalmanagementefapp\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|solutionrelative:hospitalmanagementefapp\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|d:\\c_sharp and dot net projects\\day28\\hospitalmanagementefsolution\\hospitalmanagementefapp\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC14855-1FFE-4B48-8EBD-013E91744B9A}|HospitalManagementEFApp\\HospitalManagementEFApp.csproj|solutionrelative:hospitalmanagementefapp\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Program.cs",
+              "RelativeDocumentMoniker": "HospitalManagementEFApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Program.cs",
+              "RelativeToolTip": "HospitalManagementEFApp\\Program.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAiwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:49:08.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentContext.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Contexts\\AppointmentContext.cs",
+              "RelativeDocumentMoniker": "HospitalManagementEFApp\\Contexts\\AppointmentContext.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Contexts\\AppointmentContext.cs",
+              "RelativeToolTip": "HospitalManagementEFApp\\Contexts\\AppointmentContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:06:40.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "HospitalManagementEFApp\\Models\\Appointment.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Models\\Appointment.cs",
+              "RelativeToolTip": "HospitalManagementEFApp\\Models\\Appointment.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T09:04:47.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "HospitalManagementEFApp\\Models\\Patient.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Models\\Patient.cs",
+              "RelativeToolTip": "HospitalManagementEFApp\\Models\\Patient.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:58:56.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "HospitalManagementEFApp\\Models\\Doctor.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day28\\HospitalManagementEFSolution\\HospitalManagementEFApp\\Models\\Doctor.cs",
+              "RelativeToolTip": "HospitalManagementEFApp\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:50:03.023Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
