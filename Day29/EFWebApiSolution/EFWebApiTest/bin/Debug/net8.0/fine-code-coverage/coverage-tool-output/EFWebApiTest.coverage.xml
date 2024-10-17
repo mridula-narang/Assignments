@@ -1,0 +1,1899 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.4401" branch-rate="0.23070000000000002" version="1.9" timestamp="1729166212" lines-covered="206" lines-valid="468" branches-covered="6" branches-valid="26">
+  <sources>
+    <source>D:\C_sharp and dot net projects\Day29\EFWebApiSolution\</source>
+    <source>C:\</source>
+  </sources>
+  <packages>
+    <package name="EFWebApiApp" line-rate="0.3186" branch-rate="0.20829999999999999" complexity="112">
+      <classes>
+        <class name="EFWebApiApp.Program" filename="EFWebApiApp\Program.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="Main" signature="(System.String[])" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="48" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="267" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="48" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="267" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Services.CalculateService" filename="EFWebApiApp\Services\CalculateService.cs" line-rate="0.5" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Add" signature="(System.Double,System.Double)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="4" branch="False" />
+                <line number="9" hits="4" branch="False" />
+                <line number="10" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="Multiply" signature="(System.Double,System.Double)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="4" branch="False" />
+            <line number="9" hits="4" branch="False" />
+            <line number="10" hits="4" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Services.CustomerBasicService" filename="EFWebApiApp\Services\CustomerBasicService.cs" line-rate="0" branch-rate="0" complexity="3">
+          <methods>
+            <method name="CalculateAgeFromDateTime" signature="(System.DateTime)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="46" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(EFWebApiApp.Interfaces.IRepository`2&lt;System.Int32,EFWebApiApp.Models.Customer&gt;,AutoMapper.IMapper)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="46" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Services.CustomerBasicService/&lt;CreateCustomer&gt;d__3" filename="EFWebApiApp\Services\CustomerBasicService.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Services.ProductService" filename="EFWebApiApp\Services\ProductService.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(EFWebApiApp.Interfaces.IRepository`2&lt;System.Int32,EFWebApiApp.Models.Product&gt;,AutoMapper.IMapper)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Services.ProductService/&lt;AddProduct&gt;d__3" filename="EFWebApiApp\Services\ProductService.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Services.ProductService/&lt;GetProductById&gt;d__4" filename="EFWebApiApp\Services\ProductService.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Services.ProductService/&lt;GetProducts&gt;d__5" filename="EFWebApiApp\Services\ProductService.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Services.ProductService/&lt;UpdateProductPrice&gt;d__6" filename="EFWebApiApp\Services\ProductService.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="175" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="175" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.CustomerRepository" filename="EFWebApiApp\Repositories\CustomerRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(EFWebApiApp.Contexts.ShoppingContext)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.CustomerRepository/&lt;Add&gt;d__2" filename="EFWebApiApp\Repositories\CustomerRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.CustomerRepository/&lt;Delete&gt;d__3" filename="EFWebApiApp\Repositories\CustomerRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="170" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="170" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.CustomerRepository/&lt;Get&gt;d__4" filename="EFWebApiApp\Repositories\CustomerRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.CustomerRepository/&lt;GetAll&gt;d__5" filename="EFWebApiApp\Repositories\CustomerRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="178" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="178" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.CustomerRepository/&lt;Update&gt;d__6" filename="EFWebApiApp\Repositories\CustomerRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="62" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="64" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="170" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="65" hits="0" branch="False" />
+                <line number="66" hits="0" branch="False" />
+                <line number="67" hits="0" branch="False" />
+                <line number="68" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
+                <line number="70" hits="0" branch="False" />
+                <line number="71" hits="0" branch="False" />
+                <line number="72" hits="0" branch="False" />
+                <line number="74" hits="0" branch="False" />
+                <line number="75" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="62" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="64" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="170" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="65" hits="0" branch="False" />
+            <line number="66" hits="0" branch="False" />
+            <line number="67" hits="0" branch="False" />
+            <line number="68" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
+            <line number="70" hits="0" branch="False" />
+            <line number="71" hits="0" branch="False" />
+            <line number="72" hits="0" branch="False" />
+            <line number="74" hits="0" branch="False" />
+            <line number="75" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.ProductRepository" filename="EFWebApiApp\Repositories\ProductRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(EFWebApiApp.Contexts.ShoppingContext,Microsoft.Extensions.Logging.ILogger`1&lt;EFWebApiApp.Repositories.ProductRepository&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="14" branch="False" />
+                <line number="15" hits="14" branch="False" />
+                <line number="16" hits="14" branch="False" />
+                <line number="17" hits="14" branch="False" />
+                <line number="18" hits="14" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="14" branch="False" />
+            <line number="15" hits="14" branch="False" />
+            <line number="16" hits="14" branch="False" />
+            <line number="17" hits="14" branch="False" />
+            <line number="18" hits="14" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.ProductRepository/&lt;Add&gt;d__3" filename="EFWebApiApp\Repositories\ProductRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="14" branch="False" />
+                <line number="22" hits="14" branch="False" />
+                <line number="23" hits="14" branch="False" />
+                <line number="24" hits="14" branch="False" />
+                <line number="25" hits="12" branch="False" />
+                <line number="27" hits="2" branch="False" />
+                <line number="28" hits="2" branch="False" />
+                <line number="29" hits="2" branch="False" />
+                <line number="30" hits="2" branch="False" />
+                <line number="32" hits="12" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="14" branch="False" />
+            <line number="22" hits="14" branch="False" />
+            <line number="23" hits="14" branch="False" />
+            <line number="24" hits="14" branch="False" />
+            <line number="25" hits="12" branch="False" />
+            <line number="27" hits="2" branch="False" />
+            <line number="28" hits="2" branch="False" />
+            <line number="29" hits="2" branch="False" />
+            <line number="30" hits="2" branch="False" />
+            <line number="32" hits="12" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.ProductRepository/&lt;Delete&gt;d__4" filename="EFWebApiApp\Repositories\ProductRepository.cs" line-rate="0.9285" branch-rate="0.5" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.9285" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="35" hits="2" branch="False" />
+                <line number="37" hits="2" branch="False" />
+                <line number="38" hits="2" branch="False" />
+                <line number="39" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="180" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="49" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="35" hits="2" branch="False" />
+            <line number="37" hits="2" branch="False" />
+            <line number="38" hits="2" branch="False" />
+            <line number="39" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="180" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="49" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.ProductRepository/&lt;Get&gt;d__5" filename="EFWebApiApp\Repositories\ProductRepository.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="55" hits="8" branch="False" />
+                <line number="56" hits="8" branch="False" />
+                <line number="57" hits="8" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="303" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="58" hits="7" branch="False" />
+                <line number="59" hits="7" branch="False" />
+                <line number="61" hits="1" branch="False" />
+                <line number="62" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="55" hits="8" branch="False" />
+            <line number="56" hits="8" branch="False" />
+            <line number="57" hits="8" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="303" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="58" hits="7" branch="False" />
+            <line number="59" hits="7" branch="False" />
+            <line number="61" hits="1" branch="False" />
+            <line number="62" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.ProductRepository/&lt;GetAll&gt;d__6" filename="EFWebApiApp\Repositories\ProductRepository.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="65" hits="3" branch="False" />
+                <line number="67" hits="3" branch="False" />
+                <line number="68" hits="3" branch="False" />
+                <line number="69" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="187" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="70" hits="1" branch="False" />
+                <line number="71" hits="1" branch="False" />
+                <line number="73" hits="2" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="77" hits="1" branch="False" />
+                <line number="78" hits="1" branch="False" />
+                <line number="80" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="65" hits="3" branch="False" />
+            <line number="67" hits="3" branch="False" />
+            <line number="68" hits="3" branch="False" />
+            <line number="69" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="187" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="70" hits="1" branch="False" />
+            <line number="71" hits="1" branch="False" />
+            <line number="73" hits="2" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="77" hits="1" branch="False" />
+            <line number="78" hits="1" branch="False" />
+            <line number="80" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Repositories.ProductRepository/&lt;Update&gt;d__7" filename="EFWebApiApp\Repositories\ProductRepository.cs" line-rate="0.38880000000000003" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.38880000000000003" branch-rate="0" complexity="2">
+              <lines>
+                <line number="83" hits="2" branch="False" />
+                <line number="85" hits="2" branch="False" />
+                <line number="86" hits="2" branch="False" />
+                <line number="87" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="180" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="88" hits="0" branch="False" />
+                <line number="89" hits="0" branch="False" />
+                <line number="90" hits="0" branch="False" />
+                <line number="91" hits="0" branch="False" />
+                <line number="92" hits="0" branch="False" />
+                <line number="93" hits="0" branch="False" />
+                <line number="94" hits="0" branch="False" />
+                <line number="95" hits="0" branch="False" />
+                <line number="97" hits="0" branch="False" />
+                <line number="99" hits="2" branch="False" />
+                <line number="100" hits="2" branch="False" />
+                <line number="101" hits="2" branch="False" />
+                <line number="102" hits="2" branch="False" />
+                <line number="104" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="83" hits="2" branch="False" />
+            <line number="85" hits="2" branch="False" />
+            <line number="86" hits="2" branch="False" />
+            <line number="87" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="180" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="88" hits="0" branch="False" />
+            <line number="89" hits="0" branch="False" />
+            <line number="90" hits="0" branch="False" />
+            <line number="91" hits="0" branch="False" />
+            <line number="92" hits="0" branch="False" />
+            <line number="93" hits="0" branch="False" />
+            <line number="94" hits="0" branch="False" />
+            <line number="95" hits="0" branch="False" />
+            <line number="97" hits="0" branch="False" />
+            <line number="99" hits="2" branch="False" />
+            <line number="100" hits="2" branch="False" />
+            <line number="101" hits="2" branch="False" />
+            <line number="102" hits="2" branch="False" />
+            <line number="104" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Models.Cart" filename="EFWebApiApp\Models\Cart.cs" line-rate="0" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CustomerId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Customer" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CreationDate" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CartItems" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="6" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Models.CartItem" filename="EFWebApiApp\Models\CartItem.cs" line-rate="0" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_SNo" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CartId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ProductId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Quantity" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Cart" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Product" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="6" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Models.Customer" filename="EFWebApiApp\Models\Customer.cs" line-rate="0" branch-rate="1" complexity="9">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Email" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Phone" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Age" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DateOfBirth" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Cart" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Orders" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="6" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Models.Order" filename="EFWebApiApp\Models\Order.cs" line-rate="0" branch-rate="1" complexity="8">
+          <methods>
+            <method name="get_OrderNumber" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CustomerId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OrderDate" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TotalValue" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OrderStatus" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Customer" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OrderDetails" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Models.OrderDetail" filename="EFWebApiApp\Models\OrderDetail.cs" line-rate="0" branch-rate="1" complexity="8">
+          <methods>
+            <method name="get_SNo" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OrderNumber" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ProductId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Quantity" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Price" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Order" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Product" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Models.Product" filename="EFWebApiApp\Models\Product.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="42" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Description" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="41" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Quantity" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Price" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="get_BasicImage" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="41" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OrderDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="25" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="25" branch="False" />
+                <line number="13" hits="25" branch="False" />
+                <line number="14" hits="25" branch="False" />
+                <line number="15" hits="25" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="2" branch="False" />
+            <line number="6" hits="42" branch="False" />
+            <line number="7" hits="41" branch="False" />
+            <line number="8" hits="16" branch="False" />
+            <line number="9" hits="16" branch="False" />
+            <line number="10" hits="41" branch="False" />
+            <line number="11" hits="25" branch="False" />
+            <line number="12" hits="25" branch="False" />
+            <line number="13" hits="25" branch="False" />
+            <line number="14" hits="25" branch="False" />
+            <line number="15" hits="25" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Models.DTO.CustomerDTO" filename="EFWebApiApp\Models\DTO\CustomerDTO.cs" line-rate="0" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Email" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Phone" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DateOfBirth" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="6" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Models.DTO.ProductDTO" filename="EFWebApiApp\Models\DTO\ProductDTO.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Price" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Quantity" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="False" />
+            <line number="6" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Mappers.CustomerProfile" filename="EFWebApiApp\Mappers\CustomerProfile.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Mappers.ProductProfile" filename="EFWebApiApp\Mappers\ProductProfile.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Exceptions.CollectionEmptyException" filename="EFWebApiApp\Exceptions\CollectionEmptyException.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="1" branch="False" />
+                <line number="8" hits="1" branch="False" />
+                <line number="9" hits="1" branch="False" />
+                <line number="10" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="1" branch="False" />
+            <line number="7" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="1" branch="False" />
+            <line number="10" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Exceptions.CouldNotAddException" filename="EFWebApiApp\Exceptions\CouldNotAddException.cs" line-rate="0.8" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="2" branch="False" />
+                <line number="8" hits="2" branch="False" />
+                <line number="9" hits="2" branch="False" />
+                <line number="10" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="False" />
+            <line number="7" hits="2" branch="False" />
+            <line number="8" hits="2" branch="False" />
+            <line number="9" hits="2" branch="False" />
+            <line number="10" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Exceptions.NotFoundException" filename="EFWebApiApp\Exceptions\NotFoundException.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="7" branch="False" />
+                <line number="8" hits="7" branch="False" />
+                <line number="9" hits="7" branch="False" />
+                <line number="10" hits="7" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="8" branch="False" />
+            <line number="7" hits="7" branch="False" />
+            <line number="8" hits="7" branch="False" />
+            <line number="9" hits="7" branch="False" />
+            <line number="10" hits="7" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Controllers.CustomerController" filename="EFWebApiApp\Controllers\CustomerController.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(EFWebApiApp.Interfaces.ICustomerBasicService)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Controllers.CustomerController/&lt;CreateCustomer&gt;d__2" filename="EFWebApiApp\Controllers\CustomerController.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Controllers.ProductCommandController" filename="EFWebApiApp\Controllers\ProductCommandController.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(EFWebApiApp.Interfaces.IProductService)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Controllers.ProductCommandController/&lt;AddProduct&gt;d__2" filename="EFWebApiApp\Controllers\ProductCommandController.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Controllers.ProductCommandController/&lt;UpdateProductPrice&gt;d__3" filename="EFWebApiApp\Controllers\ProductCommandController.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="170" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="170" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Controllers.ProductQueryController" filename="EFWebApiApp\Controllers\ProductQueryController.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(EFWebApiApp.Interfaces.IProductService)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Controllers.ProductQueryController/&lt;GetAllProducts&gt;d__2" filename="EFWebApiApp\Controllers\ProductQueryController.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Controllers.ProductQueryController/&lt;GetProductById&gt;d__3" filename="EFWebApiApp\Controllers\ProductQueryController.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="164" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="164" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiApp.Contexts.ShoppingContext" filename="EFWebApiApp\Contexts\ShoppingContext.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name="get_Customers" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="14" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Products" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="40" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Orders" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="14" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OrderDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="14" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Carts" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="14" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CartItems" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="14" branch="False" />
+              </lines>
+            </method>
+            <method name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="49" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="14" branch="False" />
+                <line number="9" hits="14" branch="False" />
+                <line number="11" hits="14" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="14" branch="False" />
+            <line number="13" hits="40" branch="False" />
+            <line number="14" hits="14" branch="False" />
+            <line number="15" hits="14" branch="False" />
+            <line number="16" hits="14" branch="False" />
+            <line number="17" hits="14" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="49" hits="1" branch="False" />
+            <line number="8" hits="14" branch="False" />
+            <line number="9" hits="14" branch="False" />
+            <line number="11" hits="14" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="EFWebApiTest" line-rate="0.8653" branch-rate="0.5" complexity="23">
+      <classes>
+        <class name="AutoGeneratedProgram" filename="Users\hp\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Main" signature="(System.String[])" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.Tests" filename="EFWebApiTest\CalculatorTest.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="4" branch="False" />
+                <line number="10" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="AddTest" signature="(System.Int32,System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="4" branch="False" />
+                <line number="20" hits="8" branch="False" />
+                <line number="21" hits="4" branch="False" />
+                <line number="23" hits="4" branch="False" />
+                <line number="25" hits="4" branch="False" />
+                <line number="26" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="4" branch="False" />
+            <line number="10" hits="4" branch="False" />
+            <line number="18" hits="4" branch="False" />
+            <line number="20" hits="8" branch="False" />
+            <line number="21" hits="4" branch="False" />
+            <line number="23" hits="4" branch="False" />
+            <line number="25" hits="4" branch="False" />
+            <line number="26" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="1" branch-rate="0.5" complexity="6">
+          <methods>
+            <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="14" branch="False" />
+                <line number="26" hits="14" branch="False" />
+                <line number="27" hits="14" branch="False" />
+                <line number="28" hits="14" branch="False" />
+                <line number="29" hits="14" branch="False" />
+                <line number="30" hits="14" branch="False" />
+                <line number="31" hits="14" branch="False" />
+                <line number="32" hits="14" branch="False" />
+              </lines>
+            </method>
+            <method name="TearDown" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="194" hits="14" branch="False" />
+                <line number="195" hits="14" branch="False" />
+                <line number="196" hits="14" branch="False" />
+              </lines>
+            </method>
+            <method name="Dispose" signature="()" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="199" hits="1" branch="False" />
+                <line number="200" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="8" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="201" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;NotFoundException&gt;b__11_0" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="170" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;NotFoundException&gt;b__11_1" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="171" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="14" branch="False" />
+            <line number="26" hits="14" branch="False" />
+            <line number="27" hits="14" branch="False" />
+            <line number="28" hits="14" branch="False" />
+            <line number="29" hits="14" branch="False" />
+            <line number="30" hits="14" branch="False" />
+            <line number="31" hits="14" branch="False" />
+            <line number="32" hits="14" branch="False" />
+            <line number="194" hits="14" branch="False" />
+            <line number="195" hits="14" branch="False" />
+            <line number="196" hits="14" branch="False" />
+            <line number="199" hits="1" branch="False" />
+            <line number="200" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="8" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="201" hits="1" branch="False" />
+            <line number="170" hits="3" branch="False" />
+            <line number="171" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;&lt;CollectionEmptyException&gt;b__12_0&gt;d" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="178" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="178" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;&gt;c" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="&lt;GetAll&gt;b__8_0" signature="(EFWebApiApp.Models.Product)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="104" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;GetAll&gt;b__8_1" signature="(EFWebApiApp.Models.Product)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="105" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="104" hits="0" branch="False" />
+            <line number="105" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;&gt;c__DisplayClass13_0/&lt;&lt;CouldNotAddException&gt;b__0&gt;d" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="188" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="188" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;&gt;c__DisplayClass6_0/&lt;&lt;TestAddException&gt;b__0&gt;d" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="69" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="69" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;CollectionEmptyException&gt;d__12" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="176" hits="1" branch="False" />
+                <line number="179" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="176" hits="1" branch="False" />
+            <line number="179" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;CouldNotAddException&gt;d__13" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="183" hits="1" branch="False" />
+                <line number="185" hits="1" branch="False" />
+                <line number="189" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="183" hits="1" branch="False" />
+            <line number="185" hits="1" branch="False" />
+            <line number="189" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;Delete&gt;d__9" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="0.8332999999999999" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8332999999999999" branch-rate="1" complexity="1">
+              <lines>
+                <line number="113" hits="2" branch="False" />
+                <line number="115" hits="2" branch="False" />
+                <line number="116" hits="2" branch="False" />
+                <line number="119" hits="2" branch="False" />
+                <line number="122" hits="1" branch="False" />
+                <line number="123" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="113" hits="2" branch="False" />
+            <line number="115" hits="2" branch="False" />
+            <line number="116" hits="2" branch="False" />
+            <line number="119" hits="2" branch="False" />
+            <line number="122" hits="1" branch="False" />
+            <line number="123" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;Get&gt;d__7" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="0.6666" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.6666" branch-rate="1" complexity="1">
+              <lines>
+                <line number="77" hits="2" branch="False" />
+                <line number="79" hits="2" branch="False" />
+                <line number="80" hits="2" branch="False" />
+                <line number="83" hits="2" branch="False" />
+                <line number="86" hits="0" branch="False" />
+                <line number="87" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="77" hits="2" branch="False" />
+            <line number="79" hits="2" branch="False" />
+            <line number="80" hits="2" branch="False" />
+            <line number="83" hits="2" branch="False" />
+            <line number="86" hits="0" branch="False" />
+            <line number="87" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;GetAll&gt;d__8" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="0.875" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.875" branch-rate="1" complexity="1">
+              <lines>
+                <line number="92" hits="2" branch="False" />
+                <line number="94" hits="2" branch="False" />
+                <line number="95" hits="2" branch="False" />
+                <line number="96" hits="2" branch="False" />
+                <line number="97" hits="2" branch="False" />
+                <line number="100" hits="2" branch="False" />
+                <line number="103" hits="2" branch="False" />
+                <line number="106" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="92" hits="2" branch="False" />
+            <line number="94" hits="2" branch="False" />
+            <line number="95" hits="2" branch="False" />
+            <line number="96" hits="2" branch="False" />
+            <line number="97" hits="2" branch="False" />
+            <line number="100" hits="2" branch="False" />
+            <line number="103" hits="2" branch="False" />
+            <line number="106" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;NotFoundException&gt;d__11" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="168" hits="1" branch="False" />
+                <line number="172" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="168" hits="1" branch="False" />
+            <line number="172" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;TestAdd&gt;d__5" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="0.9166" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.9166" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="2" branch="False" />
+                <line number="40" hits="2" branch="False" />
+                <line number="41" hits="2" branch="False" />
+                <line number="42" hits="2" branch="False" />
+                <line number="43" hits="2" branch="False" />
+                <line number="44" hits="2" branch="False" />
+                <line number="45" hits="2" branch="False" />
+                <line number="46" hits="2" branch="False" />
+                <line number="47" hits="2" branch="False" />
+                <line number="49" hits="2" branch="False" />
+                <line number="51" hits="2" branch="False" />
+                <line number="52" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="38" hits="2" branch="False" />
+            <line number="40" hits="2" branch="False" />
+            <line number="41" hits="2" branch="False" />
+            <line number="42" hits="2" branch="False" />
+            <line number="43" hits="2" branch="False" />
+            <line number="44" hits="2" branch="False" />
+            <line number="45" hits="2" branch="False" />
+            <line number="46" hits="2" branch="False" />
+            <line number="47" hits="2" branch="False" />
+            <line number="49" hits="2" branch="False" />
+            <line number="51" hits="2" branch="False" />
+            <line number="52" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;TestAddException&gt;d__6" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="57" hits="1" branch="False" />
+                <line number="59" hits="1" branch="False" />
+                <line number="60" hits="1" branch="False" />
+                <line number="61" hits="1" branch="False" />
+                <line number="62" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+                <line number="70" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="57" hits="1" branch="False" />
+            <line number="59" hits="1" branch="False" />
+            <line number="60" hits="1" branch="False" />
+            <line number="61" hits="1" branch="False" />
+            <line number="62" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="70" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="EFWebApiTest.ProductRepositoryTest/&lt;Update&gt;d__10" filename="EFWebApiTest\ProductRepositoryTest.cs" line-rate="0.76" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.76" branch-rate="1" complexity="1">
+              <lines>
+                <line number="130" hits="2" branch="False" />
+                <line number="132" hits="2" branch="False" />
+                <line number="133" hits="2" branch="False" />
+                <line number="134" hits="2" branch="False" />
+                <line number="135" hits="2" branch="False" />
+                <line number="136" hits="2" branch="False" />
+                <line number="137" hits="2" branch="False" />
+                <line number="138" hits="2" branch="False" />
+                <line number="139" hits="2" branch="False" />
+                <line number="142" hits="2" branch="False" />
+                <line number="145" hits="2" branch="False" />
+                <line number="146" hits="2" branch="False" />
+                <line number="147" hits="2" branch="False" />
+                <line number="148" hits="2" branch="False" />
+                <line number="149" hits="2" branch="False" />
+                <line number="150" hits="2" branch="False" />
+                <line number="151" hits="2" branch="False" />
+                <line number="152" hits="2" branch="False" />
+                <line number="155" hits="2" branch="False" />
+                <line number="158" hits="0" branch="False" />
+                <line number="159" hits="0" branch="False" />
+                <line number="160" hits="0" branch="False" />
+                <line number="161" hits="0" branch="False" />
+                <line number="162" hits="0" branch="False" />
+                <line number="163" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="130" hits="2" branch="False" />
+            <line number="132" hits="2" branch="False" />
+            <line number="133" hits="2" branch="False" />
+            <line number="134" hits="2" branch="False" />
+            <line number="135" hits="2" branch="False" />
+            <line number="136" hits="2" branch="False" />
+            <line number="137" hits="2" branch="False" />
+            <line number="138" hits="2" branch="False" />
+            <line number="139" hits="2" branch="False" />
+            <line number="142" hits="2" branch="False" />
+            <line number="145" hits="2" branch="False" />
+            <line number="146" hits="2" branch="False" />
+            <line number="147" hits="2" branch="False" />
+            <line number="148" hits="2" branch="False" />
+            <line number="149" hits="2" branch="False" />
+            <line number="150" hits="2" branch="False" />
+            <line number="151" hits="2" branch="False" />
+            <line number="152" hits="2" branch="False" />
+            <line number="155" hits="2" branch="False" />
+            <line number="158" hits="0" branch="False" />
+            <line number="159" hits="0" branch="False" />
+            <line number="160" hits="0" branch="False" />
+            <line number="161" hits="0" branch="False" />
+            <line number="162" hits="0" branch="False" />
+            <line number="163" hits="0" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

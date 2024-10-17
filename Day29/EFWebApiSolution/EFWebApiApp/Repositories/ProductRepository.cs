@@ -9,10 +9,12 @@ namespace EFWebApiApp.Repositories
     public class ProductRepository : IRepository<int, Product>
     {
         private readonly ShoppingContext _context;
+        private readonly ILogger<ProductRepository> _logger;
 
-        public ProductRepository(ShoppingContext shoppingContext)
+        public ProductRepository(ShoppingContext shoppingContext, ILogger<ProductRepository> logger)
         {
             _context = shoppingContext;
+            _logger = logger;
         }
         public async Task<Product> Add(Product entity)
         {
@@ -24,51 +26,81 @@ namespace EFWebApiApp.Repositories
             }
             catch (Exception e)
             {
+                _logger.LogError(e.Message);
                 throw new CouldNotAddException("Product");
             }
         }
 
         public async Task<Product> Delete(int key)
         {
-            var product = Get(key);
-            if (product != null)
+            try
             {
-                _context.Products.Remove(product.Result);
-                await _context.SaveChangesAsync();
-                return product.Result;
+                var product = await Get(key);
+                if (product != null)
+                {
+                    _context.Products.Remove(product);
+                    await _context.SaveChangesAsync();
+                    return product;
+                }
+                throw new NotFoundException("Product for delete");
             }
-            throw new NotFoundException("Product for delete");
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw;
+            }
         }
 
         public async Task<Product> Get(int key)
         {
-            var product = _context.Products.FirstOrDefault(p => p.Id == key);
+            var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == key);
+            if (product == null)
+            {
+                throw new NotFoundException("Product");
+            }
             return product;
         }
 
         public async Task<IEnumerable<Product>> GetAll()
         {
-            var products = await _context.Products.ToListAsync();
-            if (products.Count == 0)
+            try
             {
-                throw new CollectionEmptyException("Products");
+                var products = await _context.Products.ToListAsync();
+                if (products.Count == 0)
+                {
+                    throw new CollectionEmptyException("Products");
+                }
+                return products;
             }
-            return products;
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw;
+            }
         }
 
         public async Task<Product> Update(int key, Product entity)
         {
-            var product = await Get(key);
-            if (product != null)
+            try
             {
-                product.Name = entity.Name;
-                product.Description = entity.Description;
-                product.Quantity = entity.Quantity;
-                product.Price = entity.Price;
-                await _context.SaveChangesAsync();
-                return product;
+                var product = await Get(key);
+                if (product != null)
+                {
+                    product.Name = entity.Name;
+                    product.Description = entity.Description;
+                    product.Quantity = entity.Quantity;
+                    product.Price = entity.Price;
+                    product.BasicImage = entity.BasicImage;
+                    await _context.SaveChangesAsync();
+                    return product;
+                }
+                throw new NotFoundException("Product for update");
             }
-            throw new NotFoundException("Product for update");
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw;
+            }
         }
     }
 }
