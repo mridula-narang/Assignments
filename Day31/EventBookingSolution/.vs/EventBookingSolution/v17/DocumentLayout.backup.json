@@ -1,0 +1,381 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\models\\dtos\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\models\\dtos\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\mappers\\bookingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\mappers\\bookingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\mappers\\eventprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\mappers\\eventprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\mappers\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\mappers\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\models\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\models\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\models\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\models\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|d:\\c_sharp and dot net projects\\day31\\eventbookingsolution\\eventbookingapp\\contexts\\eventcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4ABDBA7-2551-40B5-86B9-8C867CD4438E}|EventBookingApp\\EventBookingApp.csproj|solutionrelative:eventbookingapp\\contexts\\eventcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EventBookingApp\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwEMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:54:31.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Services\\EmployeeService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "EventBookingApp\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:37:40.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBookingService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Interfaces\\IBookingService.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Interfaces\\IBookingService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Interfaces\\IBookingService.cs",
+              "RelativeToolTip": "EventBookingApp\\Interfaces\\IBookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:37:09.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IEventService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Interfaces\\IEventService.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Interfaces\\IEventService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Interfaces\\IEventService.cs",
+              "RelativeToolTip": "EventBookingApp\\Interfaces\\IEventService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:36:34.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "EventBookingApp\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:33:37.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookingProfile.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Mappers\\BookingProfile.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Mappers\\BookingProfile.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Mappers\\BookingProfile.cs",
+              "RelativeToolTip": "EventBookingApp\\Mappers\\BookingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:31:58.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EventProfile.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Mappers\\EventProfile.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Mappers\\EventProfile.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Mappers\\EventProfile.cs",
+              "RelativeToolTip": "EventBookingApp\\Mappers\\EventProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:30:31.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeeProfile.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Mappers\\EmployeeProfile.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Mappers\\EmployeeProfile.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Mappers\\EmployeeProfile.cs",
+              "RelativeToolTip": "EventBookingApp\\Mappers\\EmployeeProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:28:23.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookingDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\DTOs\\BookingDTO.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Models\\DTOs\\BookingDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\DTOs\\BookingDTO.cs",
+              "RelativeToolTip": "EventBookingApp\\Models\\DTOs\\BookingDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:27:41.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\DTOs\\EventDTO.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Models\\DTOs\\EventDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\DTOs\\EventDTO.cs",
+              "RelativeToolTip": "EventBookingApp\\Models\\DTOs\\EventDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:26:58.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmployeeDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\DTOs\\EmployeeDTO.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Models\\DTOs\\EmployeeDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\DTOs\\EmployeeDTO.cs",
+              "RelativeToolTip": "EventBookingApp\\Models\\DTOs\\EmployeeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:23:04.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Repositories\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Repositories\\BookingRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Repositories\\BookingRepository.cs",
+              "RelativeToolTip": "EventBookingApp\\Repositories\\BookingRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAswFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:44:54.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Repositories\\EventRepository.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Repositories\\EventRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Repositories\\EventRepository.cs",
+              "RelativeToolTip": "EventBookingApp\\Repositories\\EventRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwEcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:29:27.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "EventBookingApp\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwDkAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T08:40:09.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Interfaces\\IRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "EventBookingApp\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T08:33:32.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Program.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Program.cs",
+              "RelativeToolTip": "EventBookingApp\\Program.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T08:10:57.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\appsettings.json",
+              "RelativeDocumentMoniker": "EventBookingApp\\appsettings.json",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\appsettings.json",
+              "RelativeToolTip": "EventBookingApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-21T07:15:06.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EventContext.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Contexts\\EventContext.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Contexts\\EventContext.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Contexts\\EventContext.cs",
+              "RelativeToolTip": "EventBookingApp\\Contexts\\EventContext.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:46:26.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Models\\Booking.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\Booking.cs",
+              "RelativeToolTip": "EventBookingApp\\Models\\Booking.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:34:08.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Event.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Models\\Event.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\Event.cs*",
+              "RelativeToolTip": "EventBookingApp\\Models\\Event.cs*",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:32:44.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "EventBookingApp\\Models\\Employee.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day31\\EventBookingSolution\\EventBookingApp\\Models\\Employee.cs",
+              "RelativeToolTip": "EventBookingApp\\Models\\Employee.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T06:30:58.594Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
