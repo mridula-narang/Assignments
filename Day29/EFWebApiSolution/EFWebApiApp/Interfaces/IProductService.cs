@@ -12,5 +12,6 @@ namespace EFWebApiApp.Interfaces
         Task<ProductDTO> UpdateProductPrice(int productId, double price);
         //method to get product by id
         Task<Product> GetProductById(int productId);
+        //public Task<bool> AddNewProduct(ProductDTO product); //added while learning testing
     }
 }

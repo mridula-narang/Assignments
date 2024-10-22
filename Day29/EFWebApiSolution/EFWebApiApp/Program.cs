@@ -5,11 +5,13 @@ using EFWebApiApp.Models;
 using EFWebApiApp.Repositories;
 using EFWebApiApp.Services;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.CodeAnalysis;
 
 namespace EFWebApiApp
 {
     public class Program
     {
+        [ExcludeFromCodeCoverage]
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +27,7 @@ namespace EFWebApiApp
             #region Repositories
             builder.Services.AddScoped<IRepository<int, Customer>, CustomerRepository>();
             builder.Services.AddScoped<IRepository<int, Product>, ProductRepository>();
+            builder.Services.AddScoped<IRepository<int, ProductImage>, ProductImageRepository>();
             #endregion
 
             #region OtherServices
@@ -35,6 +38,7 @@ namespace EFWebApiApp
             #region Services
             builder.Services.AddScoped<ICustomerBasicService, CustomerBasicService>();
             builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IProductImageService, ProductImageService>();
             #endregion
 
             builder.Services.AddControllers();

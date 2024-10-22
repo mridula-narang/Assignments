@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EFWebApiTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67ff50a479d20dac7ff403938d694e15cee60a61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfefe8b4818813a3d15a5496bc07676ca5e9d167")]
 [assembly: System.Reflection.AssemblyProductAttribute("EFWebApiTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EFWebApiTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

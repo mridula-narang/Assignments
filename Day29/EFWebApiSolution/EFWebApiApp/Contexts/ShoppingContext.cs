@@ -15,6 +15,7 @@ namespace EFWebApiApp.Contexts
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -45,6 +46,12 @@ namespace EFWebApiApp.Contexts
                 .WithOne(c => c.Cart)
                 .HasForeignKey<Cart>(c => c.CustomerId)
                 .HasConstraintName("FK_Carts_Customers");
+
+            modelBuilder.Entity<Product>() //one product has many product images
+                .HasMany(p => (IEnumerable<ProductImage>)p.ProductImages)
+                .WithOne(pi => pi.Product)
+                .HasForeignKey(pi => pi.ProductId)
+                .HasConstraintName("FK_ProductImages_Products");
 
         }
     }

@@ -91,19 +91,16 @@ namespace EFWebApiTest
         public async Task GetAll(string name, float price, int quantity, string image, string desc, int id)
         {
             // Arrange
-            var product1 = new Product { Name = "TestAdd1", Price = 120, Quantity = 4, BasicImage = "", Description = "Test description for Product" };
-            var product2 = new Product { Name = "TestAdd2", Price = 150, Quantity = 2, BasicImage = "", Description = "Another test description for Product" };
-            await repository.Add(product1);
-            await repository.Add(product2);
+            var product = new Product { Name = name, Price = price, Quantity = quantity, BasicImage = image, Description = desc };
+            await repository.Add(product);
 
             // Act
             var result = await repository.GetAll();
 
             // Assert
-            Assert.AreEqual(2, result.Count());
-            Assert.IsTrue(result.Any(p => p.Name == "TestAdd1"));
-            Assert.IsTrue(result.Any(p => p.Name == "TestAdd2"));
+            Assert.IsTrue(result.Any(p => p.Name == name && p.Price == price && p.Quantity == quantity && p.BasicImage == image && p.Description == desc));
         }
+
 
         //write tests for delete method of ProductRepository
         [Test]

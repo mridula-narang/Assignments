@@ -47,7 +47,7 @@ namespace EFWebApiApp.Repositories
             catch (Exception e)
             {
                 _logger.LogError(e.Message);
-                throw;
+                throw new NotFoundException("Product not found");
             }
         }
 

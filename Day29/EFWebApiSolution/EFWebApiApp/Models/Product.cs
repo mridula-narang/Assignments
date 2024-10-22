@@ -9,6 +9,8 @@
         public float Price { get; set; }
         public string BasicImage { get; set; } = string.Empty;
         public IEnumerable<OrderDetail> OrderDetails { get; set; }
+        public ICollection<ProductImage> ProductImages { get; internal set; }
+
         public Product()
         {
             OrderDetails = new List<OrderDetail>();

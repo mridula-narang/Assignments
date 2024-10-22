@@ -1,13 +1,21 @@
-﻿namespace EFWebApiApp.Exceptions
+﻿using System.Runtime.Serialization;
+
+namespace EFWebApiApp.Exceptions
 {
     [Serializable]
-    public class CouldNotAddException : Exception
+    public class CouldNotAddException : Exception, ISerializable
     {
-        string _message;
-        public CouldNotAddException(string entityName)
+        private string _message;
+        public override string Message { get; }
+
+        public CouldNotAddException(string message) : base(message)
         {
-            _message = $"Could not add {entityName}";
+            _message = message;
         }
-        override public string Message => _message;
+
+        public CouldNotAddException(string message, Exception innerException) : base(message, innerException)
+        {
+            _message = message;
+        }
     }
 }

@@ -1,5 +1,7 @@
-﻿using EFWebApiApp.Interfaces;
+﻿using EFWebApiApp.Exceptions;
+using EFWebApiApp.Interfaces;
 using EFWebApiApp.Models.DTO;
+using EFWebApiApp.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,5 +34,6 @@ namespace EFWebApiApp.Controllers
             }
             return Ok(updatedProduct);
         }
+
     }
 }

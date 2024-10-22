@@ -10,10 +10,12 @@ namespace EFWebApiApp.Repositories
     public class CustomerRepository : IRepository<int, Customer>
     {
         private readonly ShoppingContext _context;
+        private readonly ILogger<CustomerRepository> _logger;
 
-        public CustomerRepository(ShoppingContext shoppingContext)
+        public CustomerRepository(ShoppingContext shoppingContext, ILogger<CustomerRepository> logger)
         {
             _context = shoppingContext;
+            _logger = logger;
         }
 
         public async Task<Customer> Add(Customer entity)
@@ -26,6 +28,7 @@ namespace EFWebApiApp.Repositories
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 throw new CouldNotAddException("Customer");
             }
         }

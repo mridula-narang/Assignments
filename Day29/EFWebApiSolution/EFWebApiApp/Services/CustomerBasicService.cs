@@ -9,12 +9,12 @@ namespace EFWebApiApp.Services
     public class CustomerBasicService : ICustomerBasicService
     {
         private readonly IRepository<int, Customer> _customerRepository;
-        private readonly IMapper _mapper; // Change type to IMapper
+        private readonly IMapper _mapper;
 
-        public CustomerBasicService(IRepository<int, Customer> customerRepository, IMapper mapper) // Add IMapper to constructor
+        public CustomerBasicService(IRepository<int, Customer> customerRepository, IMapper mapper) 
         {
             _customerRepository = customerRepository;
-            _mapper = mapper; // Initialize _mapper
+            _mapper = mapper; 
         }
 
         public async Task<int> CreateCustomer(CustomerDTO customer)
