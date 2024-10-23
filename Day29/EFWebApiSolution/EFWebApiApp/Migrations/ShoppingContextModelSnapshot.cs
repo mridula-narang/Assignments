@@ -97,7 +97,14 @@ namespace EFWebApiApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("Username")
+                        .IsUnique();
 
                     b.ToTable("Customers");
                 });
@@ -212,6 +219,27 @@ namespace EFWebApiApp.Migrations
                     b.ToTable("ProductImages");
                 });
 
+            modelBuilder.Entity("EFWebApiApp.Models.User", b =>
+                {
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<byte[]>("HashKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("Password")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
+
+                    b.HasKey("Username");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("EFWebApiApp.Models.Cart", b =>
                 {
                     b.HasOne("EFWebApiApp.Models.Customer", "Customer")
@@ -241,6 +269,18 @@ namespace EFWebApiApp.Migrations
                     b.Navigation("Cart");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("EFWebApiApp.Models.Customer", b =>
+                {
+                    b.HasOne("EFWebApiApp.Models.User", "User")
+                        .WithOne("Customer")
+                        .HasForeignKey("EFWebApiApp.Models.Customer", "Username")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_Customer_User");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("EFWebApiApp.Models.Order", b =>
@@ -311,6 +351,12 @@ namespace EFWebApiApp.Migrations
                     b.Navigation("OrderDetails");
 
                     b.Navigation("ProductImages");
+                });
+
+            modelBuilder.Entity("EFWebApiApp.Models.User", b =>
+                {
+                    b.Navigation("Customer")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

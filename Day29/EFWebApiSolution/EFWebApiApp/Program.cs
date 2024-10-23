@@ -28,6 +28,7 @@ namespace EFWebApiApp
             builder.Services.AddScoped<IRepository<int, Customer>, CustomerRepository>();
             builder.Services.AddScoped<IRepository<int, Product>, ProductRepository>();
             builder.Services.AddScoped<IRepository<int, ProductImage>, ProductImageRepository>();
+            builder.Services.AddScoped<IRepository<string, User>, UserRepository>();
             #endregion
 
             #region OtherServices
@@ -39,6 +40,7 @@ namespace EFWebApiApp
             builder.Services.AddScoped<ICustomerBasicService, CustomerBasicService>();
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IProductImageService, ProductImageService>();
+            builder.Services.AddScoped<IUserService, UserService>();
             #endregion
 
             builder.Services.AddControllers();
