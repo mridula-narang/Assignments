@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\wwwroot\\documents\\2024-template_bullet.docx",
+      "PackagePath": "staticwebassets\\documents\\2024-template_bullet.docx"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\wwwroot\\documents\\Day 33 assignment.txt",
+      "PackagePath": "staticwebassets\\documents\\Day 33 assignment.txt"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\wwwroot\\documents\\Question.docx",
+      "PackagePath": "staticwebassets\\documents\\Question.docx"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\wwwroot\\documents\\Question.pdf",
+      "PackagePath": "staticwebassets\\documents\\Question.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.InsuraceClaimApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.InsuraceClaimApp.props",
+      "PackagePath": "build\\InsuraceClaimApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.InsuraceClaimApp.props",
+      "PackagePath": "buildMultiTargeting\\InsuraceClaimApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.InsuraceClaimApp.props",
+      "PackagePath": "buildTransitive\\InsuraceClaimApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
