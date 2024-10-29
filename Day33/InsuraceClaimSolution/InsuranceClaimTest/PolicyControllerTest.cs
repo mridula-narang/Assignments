@@ -16,19 +16,19 @@ namespace InsuranceClaimTest
     public class PolicyControllerTest
     {
         private Mock<IPolicyService> _policyServiceMock;
-        private Mock<IMapper> _mapperMock;
+        private Mock<IMapper> _mapper;
         private PolicyController _controller;
 
         [SetUp]
         public void Setup()
         {
             _policyServiceMock = new Mock<IPolicyService>();
-            _mapperMock = new Mock<IMapper>();
-            _controller = new PolicyController(_policyServiceMock.Object, _mapperMock.Object);
+            _mapper = new Mock<IMapper>();
+            _controller = new PolicyController(_policyServiceMock.Object, _mapper.Object);
         }
 
         [Test]
-        public async Task GetPoliciesForUser_ValidUser_ReturnsOk()
+        public async Task GetPoliciesForUserTest()
         {
             // Arrange
             var username = "testuser";
@@ -53,7 +53,7 @@ namespace InsuranceClaimTest
         }
 
         [Test]
-        public async Task GetPoliciesForUser_InvalidUser_ReturnsNotFound()
+        public async Task GetPoliciesForUser_InvalidUserTest()
         {
             // Arrange
             var username = "nonexistentuser";
@@ -91,7 +91,7 @@ namespace InsuranceClaimTest
                 PolicyType = "Term",
                 UserName = "testuser"
             };
-            _mapperMock.Setup(m => m.Map<Policy>(newPolicyDto)).Returns(newPolicy);
+            _mapper.Setup(m => m.Map<Policy>(newPolicyDto)).Returns(newPolicy);
             _policyServiceMock.Setup(s => s.AddPolicyAsync(newPolicy)).ReturnsAsync(newPolicy);
 
             // Act
@@ -107,7 +107,7 @@ namespace InsuranceClaimTest
         }
 
         [Test]
-        public async Task AddPolicy_InvalidPolicy_ReturnsBadRequest()
+        public async Task AddPolicy_InvalidPolicyTest()
         {
             // Arrange
             var invalidPolicyDto = new PolicyDTO(); // Missing required fields
@@ -124,7 +124,7 @@ namespace InsuranceClaimTest
         }
 
         [Test]
-        public async Task GetPolicyById_ValidId_ReturnsOk()
+        public async Task GetPolicyByIdTest()
         {
             // Arrange
             var policyId = 1;
@@ -149,7 +149,7 @@ namespace InsuranceClaimTest
         }
 
         [Test]
-        public async Task GetPolicyById_InvalidId_ReturnsNotFound()
+        public async Task GetPolicyById_InvalidIdTest()
         {
             // Arrange
             var policyId = 999; // Nonexistent ID

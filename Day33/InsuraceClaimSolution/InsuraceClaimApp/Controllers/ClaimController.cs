@@ -1,4 +1,5 @@
-﻿using InsuraceClaimApp.Interfaces;
+﻿using AutoMapper;
+using InsuraceClaimApp.Interfaces;
 using InsuraceClaimApp.Models.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +12,7 @@ namespace InsuraceClaimApp.Controllers
     {
         private readonly IClaimService _claimService;
 
-        public ClaimController(IClaimService claimService)
+        public ClaimController(IClaimService claimService,IMapper mapper)
         {
             _claimService = claimService;
         }
@@ -19,15 +20,18 @@ namespace InsuraceClaimApp.Controllers
         [HttpPost("report")]
         public async Task<IActionResult> ReportClaim([FromForm] ClaimRequestDTO claimRequest)
         {
-            try
+            if (ModelState.IsValid)
             {
                 var claim = await _claimService.AddClaimAsync(claimRequest);
-                return CreatedAtAction(nameof(GetClaim), new { id = claim.ClaimId }, claim);
-
+                return Ok(claim);
             }
-            catch (Exception)
+            else
             {
-                return BadRequest();
+                return BadRequest(new ErrorResponseDTO
+                {
+                    ErrorMessage = "one or more validation errors",
+                    ErrorNumber = 400
+                });
             }
         }
 

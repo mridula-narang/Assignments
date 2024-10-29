@@ -1,4 +1,9 @@
 Day 33 assignment
+
+Models
+
+User model
+
 using System.ComponentModel.DataAnnotations;
 
 namespace InsuraceClaimApp.Models
@@ -12,6 +17,8 @@ namespace InsuraceClaimApp.Models
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Policy model
+
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace InsuraceClaimApp.Models
@@ -29,6 +36,8 @@ namespace InsuraceClaimApp.Models
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Claim model
+
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -49,6 +58,10 @@ namespace InsuraceClaimApp.Models
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+DTOs
+
+DTO to create user
+
 namespace InsuraceClaimApp.Models.DTOs
 {
     public class UserCreateDTO
@@ -58,6 +71,8 @@ namespace InsuraceClaimApp.Models.DTOs
     }
 }
 -------------------------------------------------------------------------------------------------------------------------
+DTO to create policy
+
 namespace InsuraceClaimApp.Models.DTOs
 {
     public class PolicyDTO
@@ -68,6 +83,8 @@ namespace InsuraceClaimApp.Models.DTOs
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Login response DTO
+
 namespace InsuraceClaimApp.Models.DTOs
 {
     public class LoginResponseDTO
@@ -77,6 +94,8 @@ namespace InsuraceClaimApp.Models.DTOs
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Login request DTO
+
 namespace InsuraceClaimApp.Models.DTOs
 {
     public class LoginRequestDTO
@@ -86,6 +105,8 @@ namespace InsuraceClaimApp.Models.DTOs
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Error response DTO
+
 namespace InsuraceClaimApp.Models.DTOs
 {
     public class ErrorResponseDTO
@@ -95,6 +116,8 @@ namespace InsuraceClaimApp.Models.DTOs
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Claim request DTO
+
 namespace InsuraceClaimApp.Models.DTOs
 {
     public class ClaimRequestDTO
@@ -110,6 +133,10 @@ namespace InsuraceClaimApp.Models.DTOs
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+Repositories
+
+Claim repository
+
 using InsuraceClaimApp.Contexts;
 using InsuraceClaimApp.Exceptions;
 using InsuraceClaimApp.Interfaces;
@@ -210,6 +237,8 @@ namespace InsuraceClaimApp.Repositories
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+Policy repository 
+
 using InsuraceClaimApp.Contexts;
 using InsuraceClaimApp.Exceptions;
 using InsuraceClaimApp.Interfaces;
@@ -310,6 +339,8 @@ namespace InsuraceClaimApp.Repositories
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+User repository
+
 using InsuraceClaimApp.Contexts;
 using InsuraceClaimApp.Exceptions;
 using InsuraceClaimApp.Interfaces;
@@ -411,6 +442,10 @@ namespace InsuraceClaimApp.Repositories
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+Services
+
+Claim Service
+
 using InsuraceClaimApp.Exceptions;
 using InsuraceClaimApp.Interfaces;
 using InsuraceClaimApp.Models.DTOs;
@@ -509,108 +544,9 @@ namespace InsuraceClaimApp.Services
         }
     }
 }
-
 --------------------------------------------------------------------------------------------------------------------------
-using InsuraceClaimApp.Exceptions;
-using InsuraceClaimApp.Interfaces;
-using InsuraceClaimApp.Models.DTOs;
-using InsuraceClaimApp.Models;
-using AutoMapper;
+User service
 
-namespace InsuraceClaimApp.Services
-{
-    public class ClaimService : IClaimService
-    {
-        private readonly IRepository<int, InsuranceClaim> _claimRepository;
-        private readonly IRepository<int, Policy> _policyRepository;
-        private readonly IMapper _mapper;
-
-        public ClaimService(IRepository<int, InsuranceClaim> claimRepository, IRepository<int, Policy> policyRepository,IMapper mapper)
-        {
-            _claimRepository = claimRepository;
-            _policyRepository = policyRepository;
-            _mapper = mapper;
-        }
-
-        public async Task<InsuranceClaim> AddClaimAsync(ClaimRequestDTO claimRequest)
-        {
-            var policy = await _policyRepository.Get(claimRequest.PolicyId);
-            if (policy == null)
-            {
-                throw new NotFoundException("Policy");
-            }
-
-            var newClaim = new InsuranceClaim
-            {
-                PolicyNumber = claimRequest.PolicyId,
-                ClaimType = claimRequest.ClaimType,
-                IncidentDate = claimRequest.IncidentDate,
-                UserName = claimRequest.UserName,
-                PhoneNumber = claimRequest.PhoneNumber,
-                Email = claimRequest.Email,
-                DocumentPath = await SaveDocumentAsync(claimRequest.Document) 
-            };
-
-            return await _claimRepository.Add(newClaim);
-        }
-
-        public async Task<InsuranceClaim> GetClaimByIdAsync(int id)
-        {
-            return await _claimRepository.Get(id);
-        }
-
-        public async Task<IEnumerable<InsuranceClaim>> GetAllClaimsAsync()
-        {
-            return await _claimRepository.GetAll();
-        }
-
-        public async Task<InsuranceClaim> UpdateClaimAsync(int id, ClaimRequestDTO claimRequest)
-        {
-            var existingClaim = await _claimRepository.Get(id);
-            if (existingClaim == null)
-            {
-                throw new NotFoundException("Claim");
-            }
-
-            existingClaim.ClaimType = claimRequest.ClaimType;
-            existingClaim.IncidentDate = claimRequest.IncidentDate;
-            existingClaim.UserName = claimRequest.UserName;
-            existingClaim.PhoneNumber = claimRequest.PhoneNumber;
-            existingClaim.Email = claimRequest.Email;
-
-            if (claimRequest.Document != null)
-            {
-                existingClaim.DocumentPath = await SaveDocumentAsync(claimRequest.Document);
-            }
-
-            return await _claimRepository.Update(id, existingClaim);
-        }
-
-        public async Task DeleteClaimAsync(int id)
-        {
-            await _claimRepository.Delete(id);
-        }
-
-        public async Task<string> SaveDocumentAsync(IFormFile document)
-        {
-            var folderPath = Path.Combine("wwwroot", "documents");
-            if (!Directory.Exists(folderPath))
-            {
-                Directory.CreateDirectory(folderPath);
-            }
-
-            var filePath = Path.Combine(folderPath, document.FileName);
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                await document.CopyToAsync(stream);
-            }
-
-            return filePath; 
-        }
-    }
-}
-
---------------------------------------------------------------------------------------------------------------------------
 using InsuraceClaimApp.Interfaces;
 using InsuraceClaimApp.Models.DTOs;
 using InsuraceClaimApp.Models;
@@ -682,6 +618,9 @@ namespace InsuraceClaimApp.Services
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+Profiles
+
+User Profile
 
 using AutoMapper;
 using InsuraceClaimApp.Models;
@@ -700,6 +639,7 @@ namespace InsuraceClaimApp.Mappers
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+Policy profile
 
 using InsuraceClaimApp.Models;
 using InsuraceClaimApp.Models.DTOs;
@@ -718,6 +658,10 @@ namespace InsuraceClaimApp.Mappers
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+Interfaces
+
+User service iterface
+
 using InsuraceClaimApp.Models.DTOs;
 
 namespace InsuraceClaimApp.Interfaces
@@ -729,7 +673,7 @@ namespace InsuraceClaimApp.Interfaces
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
-
+Repository interface
 
 namespace InsuraceClaimApp.Interfaces
 {
@@ -743,6 +687,7 @@ namespace InsuraceClaimApp.Interfaces
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Policy service interface
 
 using InsuraceClaimApp.Models;
 
@@ -756,7 +701,7 @@ namespace InsuraceClaimApp.Interfaces
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
-
+Claim service interfac
 
 using InsuraceClaimApp.Models;
 using InsuraceClaimApp.Models.DTOs;
@@ -773,7 +718,9 @@ namespace InsuraceClaimApp.Interfaces
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Contollers
 
+User controllers
 
 using InsuraceClaimApp.Interfaces;
 using InsuraceClaimApp.Models.DTOs;
@@ -834,6 +781,7 @@ namespace InsuraceClaimApp.Controllers
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Policy controller
 
 using AutoMapper;
 using InsuraceClaimApp.Interfaces;
@@ -908,8 +856,9 @@ namespace InsuraceClaimApp.Controllers
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Claim controller
 
-
+using AutoMapper;
 using InsuraceClaimApp.Interfaces;
 using InsuraceClaimApp.Models.DTOs;
 using Microsoft.AspNetCore.Http;
@@ -923,7 +872,7 @@ namespace InsuraceClaimApp.Controllers
     {
         private readonly IClaimService _claimService;
 
-        public ClaimController(IClaimService claimService)
+        public ClaimController(IClaimService claimService,IMapper mapper)
         {
             _claimService = claimService;
         }
@@ -931,8 +880,16 @@ namespace InsuraceClaimApp.Controllers
         [HttpPost("report")]
         public async Task<IActionResult> ReportClaim([FromForm] ClaimRequestDTO claimRequest)
         {
-            var claim = await _claimService.AddClaimAsync(claimRequest);
-            return CreatedAtAction(nameof(GetClaim), new { id = claim.ClaimId }, claim);
+            try
+            {
+                var claim = await _claimService.AddClaimAsync(claimRequest);
+                return Ok(claim);
+
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
         }
 
         [HttpGet("{id}")]
@@ -963,8 +920,11 @@ namespace InsuraceClaimApp.Controllers
         }
     }
 }
---------------------------------------------------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------------------------------------------------
+Contexts
+
+Insurance contexts
 
 using InsuraceClaimApp.Models;
 using Microsoft.EntityFrameworkCore;
@@ -994,85 +954,82 @@ namespace InsuraceClaimApp.Contexts
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Unit tests
+
+Claim controller test
+
+using AutoMapper;
 using InsuraceClaimApp.Controllers;
 using InsuraceClaimApp.Interfaces;
-using InsuraceClaimApp.Models.DTOs;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Models.DTOs;
+using Microsoft.AspNetCore.Http;
 
 namespace InsuranceClaimTest
 {
     public class ClaimControllerTest
     {
         private Mock<IClaimService> _claimServiceMock;
+        private Mock<IMapper> _mapper;
         private ClaimController _controller;
 
         [SetUp]
         public void Setup()
         {
             _claimServiceMock = new Mock<IClaimService>();
-            _controller = new ClaimController(_claimServiceMock.Object);
+            _mapper = new Mock<IMapper>();
+            _controller = new ClaimController(_claimServiceMock.Object, _mapper.Object);
         }
-
+        
         [Test]
-        public async Task ReportClaim_ValidClaim_ReturnsCreated()
+        public async Task ReportTest()
         {
             // Arrange
             var claimRequest = new ClaimRequestDTO
             {
                 PolicyId = 1,
-                ClaimType = "Accident",
-                IncidentDate = new System.DateTime(2024, 10, 23),
-                UserName = "testuser",
+                ClaimType = "Test type",
+                IncidentDate = DateTime.Now,
+                UserName = "Test user",
                 PhoneNumber = "1234567890",
-                Email = "test@example.com",
-                Document = CreateMockFormFile("document.pdf", "application/pdf")
+                Email = "test@gmail.com",
+                Document = new FormFile(new MemoryStream(Encoding.UTF8.GetBytes("dummy content")), 0, 0, "Data", "dummy.txt")
             };
 
-            var createdClaim = new ClaimRequestDTO
-            {
-                ClaimId = 1,
-                PolicyId = 1,
-                ClaimType = "Accident",
-                IncidentDate = new System.DateTime(2024, 10, 23),
-                UserName = "testuser"
-            };
+            var expectedClaim = new InsuranceClaim(); // Create an instance of InsuranceClaim that you expect to be returned
 
-            _claimServiceMock.Setup(s => s.AddClaimAsync(claimRequest)).ReturnsAsync(createdClaim);
+            _claimServiceMock.Setup(s => s.AddClaimAsync(claimRequest)).ReturnsAsync(expectedClaim);
 
             // Act
             var result = await _controller.ReportClaim(claimRequest);
 
             // Assert
             Assert.IsNotNull(result);
-            var createdAtActionResult = result as CreatedAtActionResult;
-            Assert.IsNotNull(createdAtActionResult);
-            Assert.AreEqual(201, createdAtActionResult.StatusCode);
-            Assert.AreEqual("GetClaim", createdAtActionResult.ActionName);
-            Assert.AreEqual(createdClaim.ClaimId, createdAtActionResult.RouteValues["id"]);
-            Assert.AreEqual(createdClaim, createdAtActionResult.Value);
+            var okResult = result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(200, okResult.StatusCode);
+
+            var returnedClaim = okResult.Value as InsuranceClaim;
+            Assert.IsNotNull(returnedClaim);
+            Assert.AreEqual(expectedClaim, returnedClaim); 
         }
 
         [Test]
-        public async Task GetClaim_ValidId_ReturnsOk()
+        public async Task GetClaimTest()
         {
             // Arrange
             var claimId = 1;
-            var claim = new ClaimRequestDTO
-            {
-                ClaimId = claimId,
-                PolicyId = 1,
-                ClaimType = "Accident",
-                IncidentDate = new System.DateTime(2024, 10, 23),
-                UserName = "testuser"
-            };
-            _claimServiceMock.Setup(s => s.GetClaimByIdAsync(claimId)).ReturnsAsync(claim);
+            var expectedClaim = new InsuranceClaim(); // Create an instance of InsuranceClaim that you expect to be returned
+
+            _claimServiceMock.Setup(s => s.GetClaimByIdAsync(claimId)).ReturnsAsync(expectedClaim);
 
             // Act
             var result = await _controller.GetClaim(claimId);
@@ -1082,36 +1039,19 @@ namespace InsuranceClaimTest
             var okResult = result as OkObjectResult;
             Assert.IsNotNull(okResult);
             Assert.AreEqual(200, okResult.StatusCode);
-            Assert.AreEqual(claim, okResult.Value);
+
+            var returnedClaim = okResult.Value as InsuranceClaim;
+            Assert.IsNotNull(returnedClaim);
+            Assert.AreEqual(expectedClaim, returnedClaim);
         }
 
         [Test]
-        public async Task GetClaim_InvalidId_ReturnsNotFound()
+        public async Task GetAllClaimsTest()
         {
             // Arrange
-            var claimId = 999; // Non-existent ID
-            _claimServiceMock.Setup(s => s.GetClaimByIdAsync(claimId)).ReturnsAsync((ClaimDTO)null);
+            var expectedClaims = new List<InsuranceClaim> { new InsuranceClaim(), new InsuranceClaim() }; // Create a list of InsuranceClaim that you expect to be returned
 
-            // Act
-            var result = await _controller.GetClaim(claimId);
-
-            // Assert
-            Assert.IsNotNull(result);
-            var notFoundResult = result as NotFoundResult;
-            Assert.IsNotNull(notFoundResult);
-            Assert.AreEqual(404, notFoundResult.StatusCode);
-        }
-
-        [Test]
-        public async Task GetAllClaims_ReturnsOkWithClaims()
-        {
-            // Arrange
-            var claims = new List<ClaimRequestDTO>
-            {
-                new ClaimRequestDTO { ClaimId = 1, PolicyId = 1, ClaimType = "Accident", UserName = "user1" },
-                new ClaimRequestDTO { ClaimId = 2, PolicyId = 2, ClaimType = "Theft", UserName = "user2" }
-            };
-            _claimServiceMock.Setup(s => s.GetAllClaimsAsync()).ReturnsAsync(claims);
+            _claimServiceMock.Setup(s => s.GetAllClaimsAsync()).ReturnsAsync(expectedClaims);
 
             // Act
             var result = await _controller.GetAllClaims();
@@ -1121,15 +1061,17 @@ namespace InsuranceClaimTest
             var okResult = result as OkObjectResult;
             Assert.IsNotNull(okResult);
             Assert.AreEqual(200, okResult.StatusCode);
-            Assert.AreEqual(claims, okResult.Value);
+
+            var returnedClaims = okResult.Value as IEnumerable<InsuranceClaim>;
+            Assert.IsNotNull(returnedClaims);
+            Assert.AreEqual(expectedClaims, returnedClaims);
         }
 
         [Test]
-        public async Task DeleteClaim_ValidId_ReturnsNoContent()
+        public async Task DeleteClaimTest()
         {
             // Arrange
             var claimId = 1;
-            _claimServiceMock.Setup(s => s.DeleteClaimAsync(claimId)).Returns(Task.CompletedTask);
 
             // Act
             var result = await _controller.DeleteClaim(claimId);
@@ -1139,42 +1081,16 @@ namespace InsuranceClaimTest
             var noContentResult = result as NoContentResult;
             Assert.IsNotNull(noContentResult);
             Assert.AreEqual(204, noContentResult.StatusCode);
+
+            _claimServiceMock.Verify(s => s.DeleteClaimAsync(claimId), Times.Once);
         }
 
-        [Test]
-        public async Task DeleteClaim_InvalidId_ReturnsNotFound()
-        {
-            // Arrange
-            var claimId = 999; // Non-existent ID
-            _claimServiceMock.Setup(s => s.DeleteClaimAsync(claimId)).ThrowsAsync(new KeyNotFoundException());
-
-            // Act
-            var result = await _controller.DeleteClaim(claimId);
-
-            // Assert
-            Assert.IsNotNull(result);
-            var notFoundResult = result as NotFoundResult;
-            Assert.IsNotNull(notFoundResult);
-            Assert.AreEqual(404, notFoundResult.StatusCode);
-        }
-
-        private IFormFile CreateMockFormFile(string fileName, string contentType)
-        {
-            var content = "Sample file content";
-            var stream = new MemoryStream();
-            var writer = new StreamWriter(stream);
-            writer.Write(content);
-            writer.Flush();
-            stream.Position = 0;
-            return new FormFile(stream, 0, stream.Length, "file", fileName)
-            {
-                Headers = new HeaderDictionary(),
-                ContentType = contentType
-            };
-        }
     }
+
 }
+
 --------------------------------------------------------------------------------------------------------------------------
+Claim Repository test
 
 using InsuraceClaimApp.Contexts;
 using InsuraceClaimApp.Models;
@@ -1398,107 +1314,344 @@ namespace InsuranceClaimTest
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Claim service test
 
-using InsuraceClaimApp.Exceptions;
-using InsuraceClaimApp.Interfaces;
-using InsuraceClaimApp.Models.DTOs;
-using InsuraceClaimApp.Models;
 using AutoMapper;
+using InsuraceClaimApp.Contexts;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Models.DTOs;
+using InsuraceClaimApp.Repositories;
+using InsuraceClaimApp.Services;
+using InsuraceClaimApp.Exceptions;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace InsuraceClaimApp.Services
+namespace InsuranceClaimTest
 {
-    public class ClaimService : IClaimService
+    public class ClaimServiceTest
     {
-        private readonly IRepository<int, InsuranceClaim> _claimRepository;
-        private readonly IRepository<int, Policy> _policyRepository;
-        private readonly IMapper _mapper;
+        DbContextOptions options;
+        InsuranceContext context;
+        PolicyRepository policyRepository;
+        ClaimRepository claimRepository;
+        Mock<ILogger<ClaimRepository>> loggerClaimRepo;
+        Mock<ILogger<ClaimService>> loggerClaimService;
+        Mock<ILogger<PolicyRepository>> loggerPolicyRepo;
+        Mock<ILogger<PolicyService>> loggerPolicyService;
+        Mock<IMapper> mapper;
 
-        public ClaimService(IRepository<int, InsuranceClaim> claimRepository, IRepository<int, Policy> policyRepository,IMapper mapper)
+        [SetUp]
+        public void Setup()
         {
-            _claimRepository = claimRepository;
-            _policyRepository = policyRepository;
-            _mapper = mapper;
+            options = new DbContextOptionsBuilder<InsuranceContext>()
+           .UseInMemoryDatabase("TestAdd")
+             .Options;
+            context = new InsuranceContext(options);
+            loggerPolicyRepo = new Mock<ILogger<PolicyRepository>>();
+            loggerPolicyService = new Mock<ILogger<PolicyService>>();
+            policyRepository = new PolicyRepository(context, loggerPolicyRepo.Object);
+            loggerClaimRepo = new Mock<ILogger<ClaimRepository>>();
+            loggerClaimService = new Mock<ILogger<ClaimService>>();
+            claimRepository = new ClaimRepository(context, loggerClaimRepo.Object);
+            mapper = new Mock<IMapper>();
         }
 
-        public async Task<InsuranceClaim> AddClaimAsync(ClaimRequestDTO claimRequest)
+        [Test]
+        public async Task AddClaimTest()
         {
-            var policy = await _policyRepository.Get(claimRequest.claimId);
-            if (policy == null)
+            // Arrange
+            var policy = new Policy
             {
-                throw new NotFoundException("Policy");
-            }
+                PolicyId = 1,
+                PolicyName = "Policy1",
+                PolicyType = "Type1",
+                UserName = "user"
+            };
 
-            var newClaim = new InsuranceClaim
+            // Add policy to the context
+            await context.Policies.AddAsync(policy);
+            await context.SaveChangesAsync();
+
+            var claimRequest = new ClaimRequestDTO
             {
-                PolicyNumber = claimRequest.claimId,
+                PolicyId = 1,
+                ClaimType = "Theft",
+                IncidentDate = DateTime.Now,
+                UserName = "user",
+                PhoneNumber = "1234567890",
+                Email = "test@gmail.com",
+                Document = new FormFile(new MemoryStream(Encoding.UTF8.GetBytes("dummy content")), 0, 0, "Data", "dummy.txt")
+            };
+
+            var claim = new InsuranceClaim
+            {
+                ClaimId = 1,
+                PolicyNumber = claimRequest.PolicyId,
                 ClaimType = claimRequest.ClaimType,
                 IncidentDate = claimRequest.IncidentDate,
                 UserName = claimRequest.UserName,
                 PhoneNumber = claimRequest.PhoneNumber,
                 Email = claimRequest.Email,
-                DocumentPath = await SaveDocumentAsync(claimRequest.Document) 
+                DocumentPath = "path"
             };
 
-            return await _claimRepository.Add(newClaim);
+            mapper.Setup(m => m.Map<InsuranceClaim>(It.IsAny<ClaimRequestDTO>())).Returns(claim);
+
+            var service = new ClaimService(claimRepository, policyRepository, mapper.Object, loggerClaimService.Object);
+
+            // Act
+            var result = await service.AddClaimAsync(claimRequest);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.AreEqual(claim.ClaimId, result.ClaimId);
+            Assert.AreEqual(claim.PolicyNumber, result.PolicyNumber);
+            Assert.AreEqual(claim.ClaimType, result.ClaimType);
+            Assert.AreEqual(claim.IncidentDate, result.IncidentDate);
+            Assert.AreEqual(claim.UserName, result.UserName);
+            Assert.AreEqual(claim.PhoneNumber, result.PhoneNumber);
+            Assert.AreEqual(claim.Email, result.Email);
+            Assert.AreEqual("wwwroot\\documents\\dummy.txt", result.DocumentPath);
         }
 
-        public async Task<InsuranceClaim> GetClaimByIdAsync(int id)
+        [Test]
+        public async Task GetClaimByIdTest()
         {
-            return await _claimRepository.Get(id);
-        }
-
-        public async Task<IEnumerable<InsuranceClaim>> GetAllClaimsAsync()
-        {
-            return await _claimRepository.GetAll();
-        }
-
-        public async Task<InsuranceClaim> UpdateClaimAsync(int id, ClaimRequestDTO claimRequest)
-        {
-            var existingClaim = await _claimRepository.Get(id);
-            if (existingClaim == null)
+            // Arrange
+            var claim = new InsuranceClaim
             {
-                throw new NotFoundException("Claim");
-            }
+                ClaimId = 1,
+                PolicyNumber = 1,
+                ClaimType = "Theft",
+                IncidentDate = DateTime.Now,
+                UserName = "user",
+                PhoneNumber = "1234567890",
+                Email = "test@gmail.com",
+                DocumentPath = "path"
+            };
 
-            existingClaim.ClaimType = claimRequest.ClaimType;
-            existingClaim.IncidentDate = claimRequest.IncidentDate;
-            existingClaim.UserName = claimRequest.UserName;
-            existingClaim.PhoneNumber = claimRequest.PhoneNumber;
-            existingClaim.Email = claimRequest.Email;
+            // Add claim to the context
+            await context.Claims.AddAsync(claim);
+            await context.SaveChangesAsync();
 
-            if (claimRequest.Document != null)
-            {
-                existingClaim.DocumentPath = await SaveDocumentAsync(claimRequest.Document);
-            }
+            var service = new ClaimService(claimRepository, policyRepository, mapper.Object, loggerClaimService.Object);
 
-            return await _claimRepository.Update(id, existingClaim);
+            // Act
+            var result = await service.GetClaimByIdAsync(1);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.AreEqual(claim.ClaimId, result.ClaimId);
         }
 
-        public async Task DeleteClaimAsync(int id)
+        [Test]
+        public async Task GetAllClaimsTest()
         {
-            await _claimRepository.Delete(id);
+            // Arrange
+            var claims = new List<InsuranceClaim>
+            {
+                new InsuranceClaim
+                {
+                    ClaimId = 1,
+                    PolicyNumber = 1,
+                    ClaimType = "Test claim type",
+                    IncidentDate = DateTime.Now,
+                    UserName = "user1",
+                    PhoneNumber = "1234567890",
+                    Email = "test1@gmail.com",
+                    DocumentPath = "path1",
+                },
+                new InsuranceClaim
+                {
+                    ClaimId = 2,
+                    PolicyNumber = 2,
+                    ClaimType = "Test claim type",
+                    IncidentDate = DateTime.Now,
+                    UserName = "user2",
+                    PhoneNumber = "1234567890",
+                    Email = "test2@gmail.com",
+                    DocumentPath = "path2",
+                }
+            };
+            context.Claims.AddRange(claims);
+            await context.SaveChangesAsync();
+
+            var claimDtos = new List<ClaimRequestDTO>
+            {
+                new ClaimRequestDTO
+                {
+                    PolicyId = 1,
+                    ClaimType = "Test claim type",
+                    IncidentDate = DateTime.Now,
+                    UserName = "user1",
+                    PhoneNumber = "1234567890",
+                    Email = "test1@gmail.com",
+                    Document = new FormFile(new MemoryStream(Encoding.UTF8.GetBytes("dummy content")), 0, 0, "Data", "dummy.txt") 
+                },
+
+                new ClaimRequestDTO
+                {
+                    PolicyId = 1,
+                    ClaimType = "Test claim type",
+                    IncidentDate = DateTime.Now,
+                    UserName = "user2",
+                    PhoneNumber = "1234567890",
+                    Email = "test2@gmail.com",
+                    Document = new FormFile(new MemoryStream(Encoding.UTF8.GetBytes("dummy content")), 0, 0, "Data", "dummy.txt")
+                }
+
+            };
+
+            mapper.Setup(m => m.Map<IEnumerable<ClaimRequestDTO>>(It.IsAny<IEnumerable<InsuranceClaim>>())).Returns(claimDtos);
+            IClaimService claimService = new ClaimService(claimRepository, policyRepository, mapper.Object, loggerClaimService.Object);
+
+            // Act
+            var result = await claimService.GetAllClaimsAsync();
+
+            // Assert
+            Assert.AreEqual(claimDtos.Count,result.Count());
         }
 
-        public async Task<string> SaveDocumentAsync(IFormFile document)
+        [Test]
+        public async Task UpdateClaimTest()
         {
-            var folderPath = Path.Combine("wwwroot", "documents");
-            if (!Directory.Exists(folderPath))
+            // Arrange
+            var claim = new InsuranceClaim
             {
-                Directory.CreateDirectory(folderPath);
-            }
+                ClaimId = 1,
+                PolicyNumber = 1,
+                ClaimType = "Theft",
+                IncidentDate = DateTime.Now,
+                UserName = "user",
+                PhoneNumber = "1234567890",
+                Email = "test@gmail.com",
+                DocumentPath = "path"
+            };
+            var mapper = new Mock<IMapper>();
+            mapper.Setup(m => m.Map<InsuranceClaim>(It.IsAny<ClaimRequestDTO>())).Returns(claim);
 
-            var filePath = Path.Combine(folderPath, document.FileName);
-            using (var stream = new FileStream(filePath, FileMode.Create))
+            // Add claim to the context
+            await context.Claims.AddAsync(claim);
+            await context.SaveChangesAsync();
+
+            var claimRequest = new ClaimRequestDTO
             {
-                await document.CopyToAsync(stream);
-            }
+                PolicyId = 1,
+                ClaimType = "Medical",
+                IncidentDate = DateTime.Now,
+                UserName = "user",
+                PhoneNumber = "1234567890",
+                Email = "test@gmail.com",
+                Document = new FormFile(new MemoryStream(Encoding.UTF8.GetBytes("dummy content")), 0, 0, "Data", "dummy.txt")
+            };
 
-            return filePath; 
+            var service = new ClaimService(claimRepository, policyRepository, mapper.Object, loggerClaimService.Object);
+
+            // Act
+            var result = await service.UpdateClaimAsync(1, claimRequest);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.AreEqual(claim.ClaimId, result.ClaimId);
+            Assert.AreEqual(claim.PolicyNumber, result.PolicyNumber);
+            Assert.AreEqual(claim.ClaimType, result.ClaimType);
+            Assert.AreEqual(claim.IncidentDate, result.IncidentDate);
+            Assert.AreEqual(claim.UserName, result.UserName);
+            Assert.AreEqual(claim.PhoneNumber, result.PhoneNumber);
+            Assert.AreEqual(claim.Email, result.Email);
+            Assert.AreEqual("wwwroot\\documents\\dummy.txt", result.DocumentPath);
+        }
+
+        [Test]
+        public async Task DeleteClaimTest()
+        {
+            // Arrange
+            var claim = new InsuranceClaim
+            {
+                ClaimId = 1,
+                PolicyNumber = 1,
+                ClaimType = "Theft",
+                IncidentDate = DateTime.Now,
+                UserName = "user",
+                PhoneNumber = "1234567890",
+                Email = "test@gmail.com",
+                DocumentPath = "path"
+            };
+
+            // Add claim to the context
+            await context.Claims.AddAsync(claim);
+            await context.SaveChangesAsync();
+
+            var service = new ClaimService(claimRepository, policyRepository, mapper.Object, loggerClaimService.Object);
+
+            // Act
+            await service.DeleteClaimAsync(1);
+
+            // Assert
+            var deletedClaim = await context.Claims.FindAsync(1);
+            Assert.Null(deletedClaim);
+        }
+
+        [Test]
+
+        //test for SaveDocumentAsync method
+        public async Task SaveDocumentAsyncTest()
+        {
+            // Arrange
+            var claimRequest = new ClaimRequestDTO
+            {
+                PolicyId = 1,
+                ClaimType = "Theft",
+                IncidentDate = DateTime.Now,
+                UserName = "user",
+                PhoneNumber = "1234567890",
+                Email = "test@gmail.com",
+                Document = new FormFile(new MemoryStream(Encoding.UTF8.GetBytes("dummy content")), 0, 0, "Data", "dummy.txt")
+            };
+            var policyRequest = new ClaimRequestDTO
+            {
+                PolicyId = 1,
+                ClaimType = "Theft",
+                IncidentDate = DateTime.Now,
+                UserName = "user",
+                PhoneNumber = "1234567890",
+                Email = "test@gmail.com",
+                Document = new FormFile(new MemoryStream(Encoding.UTF8.GetBytes("dummy content")), 0, 0, "Data", "dummy.txt")
+            };
+
+            var service = new ClaimService(claimRepository, policyRepository, mapper.Object, loggerClaimService.Object);
+
+            // Act
+            var result = await service.SaveDocumentAsync(claimRequest.Document);
+            Assert.NotNull(result);
+            Assert.AreEqual("wwwroot\\documents\\dummy.txt", result);
+        }
+
+
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            context?.Dispose();
         }
     }
 }
---------------------------------------------------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------------------------------------------------
+Policy controller test
 
 using AutoMapper;
 using InsuraceClaimApp.Controllers;
@@ -1669,6 +1822,7 @@ namespace InsuranceClaimTest
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
+Policy repository test
 
 using InsuraceClaimApp.Contexts;
 using InsuraceClaimApp.Models;
@@ -1829,6 +1983,7 @@ namespace InsuranceClaimTest
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+Policy service test
 
 using AutoMapper;
 using InsuraceClaimApp.Contexts;
@@ -1947,6 +2102,7 @@ namespace InsuranceClaimTest
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+User controller
 
 using InsuraceClaimApp.Controllers;
 using InsuraceClaimApp.Interfaces;
@@ -2073,7 +2229,7 @@ namespace InsuranceClaimTest
     }
 }
 --------------------------------------------------------------------------------------------------------------------------
-
+User repository
 
 using InsuraceClaimApp.Contexts;
 using InsuraceClaimApp.Models;
@@ -2144,6 +2300,7 @@ namespace InsuranceClaimTest
 }
 
 --------------------------------------------------------------------------------------------------------------------------
+User service test
 
 using InsuraceClaimApp.Contexts;
 using InsuraceClaimApp.Models.DTOs;

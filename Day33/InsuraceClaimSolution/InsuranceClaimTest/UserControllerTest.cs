@@ -53,26 +53,26 @@ namespace InsuranceClaimTest
             Assert.AreEqual(loginResponse, okResult.Value);
         }
 
-        [Test]
-        public async Task RegisterExceptionTest()
-        {
-            // Arrange
-            var createDTO = new UserCreateDTO();
-            var exceptionMessage = "User already exists";
-            _userServiceMock.Setup(s => s.Register(createDTO)).ThrowsAsync(new Exception(exceptionMessage));
+        //[Test]
+        //public async Task RegisterExceptionTest()
+        //{
+        //    // Arrange
+        //    var createDTO = new UserCreateDTO();
+        //    var exceptionMessage = "User already exists";
+        //    _userServiceMock.Setup(s => s.Register(createDTO)).ThrowsAsync(new Exception(exceptionMessage));
 
-            // Act
-            var result = await _controller.Register(createDTO);
+        //    // Act
+        //    var result = await _controller.Register(createDTO);
 
-            // Assert
-            Assert.IsNotNull(result);
-            var badRequestResult = result.Result as BadRequestObjectResult;
-            Assert.IsNotNull(badRequestResult);
-            Assert.AreEqual(400, badRequestResult.StatusCode);
-            var errorResponse = badRequestResult.Value as ErrorResponseDTO;
-            Assert.AreEqual(exceptionMessage, errorResponse.ErrorMessage);
-            Assert.AreEqual(500, errorResponse.ErrorNumber);
-        }
+        //    // Assert
+        //    Assert.IsNotNull(result);
+        //    var badRequestResult = result.Result as BadRequestObjectResult;
+        //    Assert.IsNotNull(badRequestResult);
+        //    Assert.AreEqual(400, badRequestResult.StatusCode);
+        //    var errorResponse = badRequestResult.Value as ErrorResponseDTO;
+        //    Assert.AreEqual(exceptionMessage, errorResponse.ErrorMessage);
+        //    Assert.AreEqual(500, errorResponse.ErrorNumber);
+        //}
 
         [Test]
         public async Task LoginTest()

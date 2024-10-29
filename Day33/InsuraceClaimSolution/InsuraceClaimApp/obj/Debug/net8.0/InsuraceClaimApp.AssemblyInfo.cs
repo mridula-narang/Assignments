@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InsuraceClaimApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8715289bed86fb71b73bd43b61df733581bcfb98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b01abb0b3e468dc0adef1795fe661bb306f98403")]
 [assembly: System.Reflection.AssemblyProductAttribute("InsuraceClaimApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InsuraceClaimApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
