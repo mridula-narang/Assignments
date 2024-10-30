@@ -67,3 +67,5 @@ D:\C_sharp and dot net projects\Day33\InsuraceClaimSolution\InsuraceClaimApp\obj
 D:\C_sharp and dot net projects\Day33\InsuraceClaimSolution\InsuraceClaimApp\obj\Debug\net8.0\ref\InsuraceClaimApp.dll
 D:\C_sharp and dot net projects\Day33\InsuraceClaimSolution\InsuraceClaimApp\bin\Debug\net8.0\InsuraceClaimApp.staticwebassets.runtime.json
 D:\C_sharp and dot net projects\Day33\InsuraceClaimSolution\InsuraceClaimApp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\C_sharp and dot net projects\Day33\InsuraceClaimSolution\InsuraceClaimApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\C_sharp and dot net projects\Day33\InsuraceClaimSolution\InsuraceClaimApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll

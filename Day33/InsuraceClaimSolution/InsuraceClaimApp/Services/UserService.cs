@@ -10,12 +10,13 @@ namespace InsuraceClaimApp.Services
     {
         private readonly IRepository<string, User> _userRepository;
         private readonly ILogger<UserService> _logger;
+        private readonly ITokenService _tokenService;
 
-
-        public UserService(IRepository<string, User> userRepository, ILogger<UserService> logger)
+        public UserService(IRepository<string, User> userRepository, ILogger<UserService> logger, ITokenService tokenService)
         {
             _userRepository = userRepository;
             _logger = logger;
+            _tokenService = tokenService;
 
         }
         public async Task<LoginResponseDTO> Autheticate(LoginRequestDTO loginUser)
@@ -36,7 +37,12 @@ namespace InsuraceClaimApp.Services
             }
             return new LoginResponseDTO()
             {
-                Username = user.Username
+                Username = user.Username,
+                Token = await _tokenService.GenerateToken(new UserTokenDTO()
+                {
+                    Username = user.Username,
+                    Roles = user.Role.ToString()
+                })
             };
         }
 
@@ -49,6 +55,7 @@ namespace InsuraceClaimApp.Services
                 Username = registerUser.Username,
                 Password = passwordHash,
                 HashKey = hmac.Key,
+                Role = registerUser.Role
             };
             try
             {

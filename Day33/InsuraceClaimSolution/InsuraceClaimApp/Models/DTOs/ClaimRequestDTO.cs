@@ -10,8 +10,8 @@ namespace InsuraceClaimApp.Models.DTOs
         public DateTime IncidentDate { get; set; }
         public string UserName { get; set; }
         public string PhoneNumber { get; set; }
-        [EmailValidator]
         public string Email { get; set; }
         public IFormFile Document { get; set; }
+        public decimal Amount { get; set; } // Added Amount property
     }
 }

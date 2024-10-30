@@ -37,6 +37,7 @@ namespace InsuraceClaimApp.Services
                 UserName = claimRequest.UserName,
                 PhoneNumber = claimRequest.PhoneNumber,
                 Email = claimRequest.Email,
+                Amount = claimRequest.Amount,
                 DocumentPath = await SaveDocumentAsync(claimRequest.Document) 
             };
 

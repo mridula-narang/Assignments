@@ -19,10 +19,6 @@ namespace InsuraceClaimApp.Misc
             {
                 return new ValidationResult("Username must begin with a capital letter");
             }
-            if (username.IndexOfAny("0123456789!@#$%^&*()".ToCharArray()) != -1)
-            {
-                return new ValidationResult("Username must not contain digits and special characters");
-            }
             return ValidationResult.Success;
         }
     }

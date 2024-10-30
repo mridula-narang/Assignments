@@ -27,6 +27,9 @@ namespace InsuraceClaimApp.Contexts
             //    .HasOne<Policy>()
             //    .WithMany(p => p.Claims)
             //    .HasForeignKey(c => c.PolicyNumber);
+
+            modelBuilder.Entity<InsuranceClaim>()
+                .HasKey(c => c.ClaimId);
         }
     }
 }

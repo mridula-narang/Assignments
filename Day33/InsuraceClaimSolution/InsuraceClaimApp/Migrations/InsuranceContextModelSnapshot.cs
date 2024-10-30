@@ -30,6 +30,9 @@ namespace InsuraceClaimApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClaimId"), 1L, 1);
 
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("ClaimType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -100,6 +103,9 @@ namespace InsuraceClaimApp.Migrations
                     b.Property<byte[]>("Password")
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
 
                     b.HasKey("Username");
 

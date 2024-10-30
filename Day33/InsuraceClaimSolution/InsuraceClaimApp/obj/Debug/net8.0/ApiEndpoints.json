@@ -43,6 +43,22 @@
   },
   {
     "ContainingType": "InsuraceClaimApp.Controllers.ClaimController",
+    "Method": "ApproveClaim",
+    "RelativePath": "api/Claim/approve/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InsuraceClaimApp.Controllers.ClaimController",
     "Method": "ReportClaim",
     "RelativePath": "api/Claim/report",
     "HttpMethod": "POST",
@@ -82,6 +98,11 @@
       {
         "Name": "Document",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Amount",
+        "Type": "System.Decimal",
         "IsRequired": false
       }
     ],
