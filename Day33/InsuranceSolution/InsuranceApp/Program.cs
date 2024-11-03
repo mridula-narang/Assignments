@@ -43,19 +43,19 @@ namespace InsuranceApp
 
             #region OtherServices  
             builder.Services.AddAutoMapper(typeof(User));
-            //builder.Services.AddAutoMapper(typeof(Policy));
+            builder.Services.AddAutoMapper(typeof(Policy));
             #endregion
 
             #region Repositories  
             builder.Services.AddScoped<IRepository<string, User>, UserRepository>();
-            //builder.Services.AddScoped<IRepository<int, Policy>, PolicyRepository>();
+            builder.Services.AddScoped<IRepository<int, Policy>, PolicyRepository>();
             //builder.Services.AddScoped<IRepository<int, InsuranceClaim>, ClaimRepository>();
             #endregion
 
             #region Services  
             builder.Services.AddScoped<IUserService, UserService>();
             //builder.Services.AddScoped<IClaimService, ClaimService>();
-            //builder.Services.AddScoped<IPolicyService, PolicyService>();
+            builder.Services.AddScoped<IPolicyService, PolicyService>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             #endregion
 
