@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "XIu2wPddL9HrjZauP/taXHeMiH3yVaV6UnxnOTXuVJM=",
+  "Hash": "7wlGyxUKmW7RVeIdGO5bhdqcDMGxHIJge/3HdXwuG5g=",
   "Source": "InsuranceApp",
   "BasePath": "_content/InsuranceApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "InsuranceApp\\wwwroot",
+      "Source": "InsuranceApp",
+      "ContentRoot": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\wwwroot\\",
+      "BasePath": "_content/InsuranceApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\wwwroot\\documents\\Into the Mouths of Babes Case Study.pdf",
+      "SourceId": "InsuranceApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\wwwroot\\",
+      "BasePath": "_content/InsuranceApp",
+      "RelativePath": "documents/Into the Mouths of Babes Case Study.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\documents\\Into the Mouths of Babes Case Study.pdf"
+    }
+  ]
 }

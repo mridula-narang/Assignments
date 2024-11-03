@@ -144,3 +144,4 @@ D:\C_sharp and dot net projects\Day33\InsuranceSolution\InsuranceApp\obj\Debug\n
 D:\C_sharp and dot net projects\Day33\InsuranceSolution\InsuranceApp\obj\Debug\net8.0\InsuranceApp.pdb
 D:\C_sharp and dot net projects\Day33\InsuranceSolution\InsuranceApp\obj\Debug\net8.0\InsuranceApp.genruntimeconfig.cache
 D:\C_sharp and dot net projects\Day33\InsuranceSolution\InsuranceApp\obj\Debug\net8.0\ref\InsuranceApp.dll
+D:\C_sharp and dot net projects\Day33\InsuranceSolution\InsuranceApp\bin\Debug\net8.0\InsuranceApp.staticwebassets.runtime.json

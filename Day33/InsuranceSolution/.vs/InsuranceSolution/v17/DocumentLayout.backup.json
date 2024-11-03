@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\repositories\\policyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\repositories\\policyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\services\\claimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\services\\claimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\controllers\\policycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\controllers\\policycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\mappers\\claimprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\mappers\\claimprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\services\\policyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\services\\policyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\interfaces\\iclaimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\interfaces\\iclaimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\interfaces\\ipolicyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\interfaces\\ipolicyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\repositories\\claimrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\repositories\\claimrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\mappers\\policyprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\mappers\\policyprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\models\\dtos\\claimrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\models\\dtos\\claimrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\models\\dtos\\policydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\models\\dtos\\policydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|d:\\c_sharp and dot net projects\\day33\\insurancesolution\\insuranceapp\\models\\insuranceclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B791FD7E-AE27-4504-A735-C8BE3430E100}|InsuranceApp\\InsuranceApp.csproj|solutionrelative:insuranceapp\\models\\insuranceclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,92 +55,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Program.cs",
-              "RelativeDocumentMoniker": "InsuranceApp\\Program.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Program.cs*",
-              "RelativeToolTip": "InsuranceApp\\Program.cs*",
-              "ViewState": "AgIAADMAAAAAAAAAAAAgwDkAAABIAAAAAAAAAA==",
+              "Title": "ClaimController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Controllers\\ClaimController.cs",
+              "RelativeDocumentMoniker": "InsuranceApp\\Controllers\\ClaimController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Controllers\\ClaimController.cs*",
+              "RelativeToolTip": "InsuranceApp\\Controllers\\ClaimController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T06:01:12.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PolicyController.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Controllers\\PolicyController.cs",
-              "RelativeDocumentMoniker": "InsuranceApp\\Controllers\\PolicyController.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Controllers\\PolicyController.cs",
-              "RelativeToolTip": "InsuranceApp\\Controllers\\PolicyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:54:12.786Z",
+              "WhenOpened": "2024-11-03T07:16:50.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PolicyService.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Services\\PolicyService.cs",
-              "RelativeDocumentMoniker": "InsuranceApp\\Services\\PolicyService.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Services\\PolicyService.cs",
-              "RelativeToolTip": "InsuranceApp\\Services\\PolicyService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB8AAAAFAAAAAAAAAA==",
+              "Title": "ClaimProfile.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Mappers\\ClaimProfile.cs",
+              "RelativeDocumentMoniker": "InsuranceApp\\Mappers\\ClaimProfile.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Mappers\\ClaimProfile.cs",
+              "RelativeToolTip": "InsuranceApp\\Mappers\\ClaimProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:52:57.261Z",
+              "WhenOpened": "2024-11-03T07:08:57.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PolicyRepository.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Repositories\\PolicyRepository.cs",
-              "RelativeDocumentMoniker": "InsuranceApp\\Repositories\\PolicyRepository.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Repositories\\PolicyRepository.cs",
-              "RelativeToolTip": "InsuranceApp\\Repositories\\PolicyRepository.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwEoAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ClaimService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Services\\ClaimService.cs",
+              "RelativeDocumentMoniker": "InsuranceApp\\Services\\ClaimService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Services\\ClaimService.cs",
+              "RelativeToolTip": "InsuranceApp\\Services\\ClaimService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:52:19.995Z",
+              "WhenOpened": "2024-11-03T07:07:50.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IPolicyService.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Interfaces\\IPolicyService.cs",
-              "RelativeDocumentMoniker": "InsuranceApp\\Interfaces\\IPolicyService.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Interfaces\\IPolicyService.cs",
-              "RelativeToolTip": "InsuranceApp\\Interfaces\\IPolicyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Title": "IClaimService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Interfaces\\IClaimService.cs",
+              "RelativeDocumentMoniker": "InsuranceApp\\Interfaces\\IClaimService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Interfaces\\IClaimService.cs",
+              "RelativeToolTip": "InsuranceApp\\Interfaces\\IClaimService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:51:43.632Z",
+              "WhenOpened": "2024-11-03T07:07:16.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PolicyProfile.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Mappers\\PolicyProfile.cs",
-              "RelativeDocumentMoniker": "InsuranceApp\\Mappers\\PolicyProfile.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Mappers\\PolicyProfile.cs",
-              "RelativeToolTip": "InsuranceApp\\Mappers\\PolicyProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Title": "ClaimRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Repositories\\ClaimRepository.cs",
+              "RelativeDocumentMoniker": "InsuranceApp\\Repositories\\ClaimRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Repositories\\ClaimRepository.cs",
+              "RelativeToolTip": "InsuranceApp\\Repositories\\ClaimRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:51:02.399Z",
+              "WhenOpened": "2024-11-03T07:06:00.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PolicyDTO.cs",
-              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Models\\DTOs\\PolicyDTO.cs",
-              "RelativeDocumentMoniker": "InsuranceApp\\Models\\DTOs\\PolicyDTO.cs",
-              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Models\\DTOs\\PolicyDTO.cs",
-              "RelativeToolTip": "InsuranceApp\\Models\\DTOs\\PolicyDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Title": "ClaimRequestDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Models\\DTOs\\ClaimRequestDTO.cs",
+              "RelativeDocumentMoniker": "InsuranceApp\\Models\\DTOs\\ClaimRequestDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Models\\DTOs\\ClaimRequestDTO.cs",
+              "RelativeToolTip": "InsuranceApp\\Models\\DTOs\\ClaimRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T05:50:36.039Z",
+              "WhenOpened": "2024-11-03T07:04:10.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InsuranceClaim.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Models\\InsuranceClaim.cs",
+              "RelativeDocumentMoniker": "InsuranceApp\\Models\\InsuranceClaim.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Models\\InsuranceClaim.cs",
+              "RelativeToolTip": "InsuranceApp\\Models\\InsuranceClaim.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T07:03:42.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Program.cs",
+              "RelativeDocumentMoniker": "InsuranceApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\Program.cs",
+              "RelativeToolTip": "InsuranceApp\\Program.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T06:01:12.65Z",
               "EditorCaption": ""
             }
           ]

@@ -21,5 +21,6 @@ namespace InsuranceApp.Models
         public decimal Amount { get; set; }
         public string DocumentPath { get; set; }
         public Status Status { get; set; }
+
     }
 }

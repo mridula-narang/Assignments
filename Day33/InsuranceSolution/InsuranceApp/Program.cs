@@ -49,12 +49,12 @@ namespace InsuranceApp
             #region Repositories  
             builder.Services.AddScoped<IRepository<string, User>, UserRepository>();
             builder.Services.AddScoped<IRepository<int, Policy>, PolicyRepository>();
-            //builder.Services.AddScoped<IRepository<int, InsuranceClaim>, ClaimRepository>();
+            builder.Services.AddScoped<IRepository<int, InsuranceClaim>, ClaimRepository>();
             #endregion
 
             #region Services  
             builder.Services.AddScoped<IUserService, UserService>();
-            //builder.Services.AddScoped<IClaimService, ClaimService>();
+            builder.Services.AddScoped<IClaimService, ClaimService>();
             builder.Services.AddScoped<IPolicyService, PolicyService>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             #endregion
@@ -100,6 +100,7 @@ namespace InsuranceApp
                 app.UseSwaggerUI();
             }
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
