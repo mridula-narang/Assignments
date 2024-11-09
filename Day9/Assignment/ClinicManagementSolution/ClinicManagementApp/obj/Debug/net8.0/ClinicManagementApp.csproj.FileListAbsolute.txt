@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.sourcelink.json
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.exe
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.deps.json
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.dll
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\bin\Debug\net8.0\ClinicManagementApp.pdb
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.dll
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\refint\ClinicManagementApp.dll
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.pdb
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ClinicManagementApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day9\Assignment\ClinicManagementSolution\ClinicManagementApp\obj\Debug\net8.0\ref\ClinicManagementApp.dll

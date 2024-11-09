@@ -1,0 +1,341 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProfilePageApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ProfilePageApp.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\Bootstrap.png",
+      "PackagePath": "staticwebassets\\images\\Bootstrap.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\CSS.png",
+      "PackagePath": "staticwebassets\\images\\CSS.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\CSharp.png",
+      "PackagePath": "staticwebassets\\images\\CSharp.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\Django.png",
+      "PackagePath": "staticwebassets\\images\\Django.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\ExpressJS.png",
+      "PackagePath": "staticwebassets\\images\\ExpressJS.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\Flutter.png",
+      "PackagePath": "staticwebassets\\images\\Flutter.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\Git.png",
+      "PackagePath": "staticwebassets\\images\\Git.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\HTML.png",
+      "PackagePath": "staticwebassets\\images\\HTML.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\Javascript.png",
+      "PackagePath": "staticwebassets\\images\\Javascript.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\MongoDB.png",
+      "PackagePath": "staticwebassets\\images\\MongoDB.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\NodeJS.png",
+      "PackagePath": "staticwebassets\\images\\NodeJS.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\Python.png",
+      "PackagePath": "staticwebassets\\images\\Python.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\SQL.png",
+      "PackagePath": "staticwebassets\\images\\SQL.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\Tensorflow.png",
+      "PackagePath": "staticwebassets\\images\\Tensorflow.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\brain.png",
+      "PackagePath": "staticwebassets\\images\\brain.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\chest.png",
+      "PackagePath": "staticwebassets\\images\\chest.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\music.png",
+      "PackagePath": "staticwebassets\\images\\music.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\images\\yoga.png",
+      "PackagePath": "staticwebassets\\images\\yoga.png"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day12\\Assignment\\ProfilePageSolution\\ProfilePageApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProfilePageApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProfilePageApp.props",
+      "PackagePath": "build\\ProfilePageApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProfilePageApp.props",
+      "PackagePath": "buildMultiTargeting\\ProfilePageApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProfilePageApp.props",
+      "PackagePath": "buildTransitive\\ProfilePageApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

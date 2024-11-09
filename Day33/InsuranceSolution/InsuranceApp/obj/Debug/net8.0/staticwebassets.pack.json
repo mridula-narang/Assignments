@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\C_sharp and dot net projects\\Day33\\InsuranceSolution\\InsuranceApp\\wwwroot\\documents\\Into the Mouths of Babes Case Study.pdf",
+      "PackagePath": "staticwebassets\\documents\\Into the Mouths of Babes Case Study.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.InsuranceApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.InsuranceApp.props",
+      "PackagePath": "build\\InsuranceApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.InsuranceApp.props",
+      "PackagePath": "buildMultiTargeting\\InsuranceApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.InsuranceApp.props",
+      "PackagePath": "buildTransitive\\InsuranceApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

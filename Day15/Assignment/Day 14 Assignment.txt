@@ -1,0 +1,717 @@
+Day 14 Assignment
+
+Patient model:
+namespace AppointmentManagementApp.Models
+{
+    public class Patient : IEquatable<Patient>
+    {
+        public int PatientId { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Disease { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+
+        public bool Equals(Patient? other)
+        {
+            return this.Username == (other ?? new Patient()).Username;
+        }
+
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Doctor model:
+namespace AppointmentManagementApp.Models
+{
+    public class Doctor : IEquatable<Doctor>
+    {
+        public int DoctorId { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Department { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+
+        public bool Equals(Doctor? other)
+        {
+            return this.Username == (other ?? new Doctor()).Username;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Appointment model:
+namespace AppointmentManagementApp.Models
+{
+    public class Doctor : IEquatable<Doctor>
+    {
+        public int DoctorId { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Department { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+
+        public bool Equals(Doctor? other)
+        {
+            return this.Username == (other ?? new Doctor()).Username;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+IRepository interface:
+namespace AppointmentManagementApp.Interfaces
+{
+    public interface IRepository<K,T> where T : class
+    {
+        T Add(T item);
+        T Get(K key);
+        List<T> GetAll();
+        T Update(T Item);
+        T Delete(K key);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+ILoginService interface:
+using AppointmentManagementApp.Models;
+
+namespace AppointmentManagementApp.Interfaces
+{
+    public interface ILoginService
+    {
+        bool Login(string username, string password);
+
+        bool ChangePassword(string username, string oldPassword, string newPassword);
+
+        Patient GetPatientByUsername(string username);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+IAppointmentService interface:
+using AppointmentManagementApp.Models;
+
+namespace AppointmentManagementApp.Interfaces
+{
+    public interface IAppointmentService
+    {
+        public Appointment BookAppointment(int patientId, int doctorId, DateTime appointmentDate);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+PatientRepository.cs file:
+
+using AppointmentManagementApp.Interfaces;
+using AppointmentManagementApp.Models;
+using AppointmentManagementApp.Exceptions;
+namespace AppointmentManagementApp.Repositories
+{
+    public class PatientRepository : IRepository<string, Patient>
+    {
+        Dictionary<string, Patient> _patients = new Dictionary<string, Patient>
+        {
+            {"harry", new Patient {PatientId = 1, Name = "Harry", Username = "harry", Password = "1234", Disease = "Diabetes" } },
+            {"ron", new Patient {PatientId = 2, Name = "Ron", Username = "ron", Password = "1234", Disease = "Glaucoma"} },
+        };
+        public Patient Add(Patient item)
+        {
+            if(!_patients.ContainsKey(item.Username))
+            {
+                _patients.Add(item.Username, item);
+            }
+            throw new DuplicatePatientException();
+        }
+
+        public Patient Delete(string key)
+        {
+            var patient = Get(key);
+            if (patient != null)
+            {
+                _patients.Remove(key);
+                return patient;
+            }
+            throw new KeyNotFoundException("Patient not found.");
+        }
+
+        public Patient Get(string key)
+        {
+            var patient = _patients[key];
+            if (patient == null)
+            {
+                throw new PatientNotFoundException();
+            }
+            return patient;
+        }
+
+        public List<Patient> GetAll()
+        {
+            if (_patients.Count == 0)
+            {
+                throw new NoPatientsException();
+            }
+            return _patients.Values.ToList();
+        }
+
+        public Patient Update(Patient Item)
+        {
+            var patient = Get(Item.Username);
+            if (patient != null)
+            {
+                _patients[Item.Username] = Item;
+            }
+            return patient;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+DoctorRepository.cs file
+
+using AppointmentManagementApp.Exceptions;
+using AppointmentManagementApp.Interfaces;
+using AppointmentManagementApp.Models;
+
+namespace AppointmentManagementApp.Repositories
+{
+    public class DoctorRepository : IRepository<string, Doctor>
+    {
+        Dictionary<string, Doctor> _doctors = new Dictionary<string, Doctor>
+        {
+            {"hermione", new Doctor {DoctorId = 1, Name = "Hermione Granger",Department = "General OPD",Username = "hermione", Password = "1234"} },
+            {"luna", new Doctor {DoctorId = 2, Name = "Luna Lovegood",Department = "Opthalmology", Username = "luna", Password = "1234"} },
+        };
+        public Doctor Add(Doctor item)
+        {
+            if (!_doctors.ContainsKey(item.Username))
+            {
+                _doctors.Add(item.Username, item);
+            }
+            throw new DuplicateDoctorException();
+        }
+
+        public Doctor Delete(string key)
+        {
+            var doctor = Get(key);
+            if (doctor != null)
+            {
+                _doctors.Remove(key);
+                return doctor;
+            }
+            throw new KeyNotFoundException("Doctor not found.");
+        }
+
+        public Doctor Get(string key)
+        {
+            var doctor = _doctors[key];
+            if (doctor == null)
+            {
+                throw new DoctorNotFoundException();
+            }
+            return doctor;
+        }
+
+        public List<Doctor> GetAll()
+        {
+            if (_doctors.Count == 0)
+            {
+                throw new NoDoctorsException();
+            }
+            return _doctors.Values.ToList();
+        }
+
+        public Doctor Update(Doctor Item)
+        {
+            var doctor = Get(Item.Username);
+            if (doctor != null)
+            {
+                _doctors[Item.Username] = Item;
+            }
+            return doctor;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+AppointmentRepository.cs file:
+
+using AppointmentManagementApp.Exceptions;
+using AppointmentManagementApp.Interfaces;
+using AppointmentManagementApp.Models;
+
+namespace AppointmentManagementApp.Repositories
+{
+    public class AppointmentRepository : IRepository<int, Appointment>
+    {
+        private List<Appointment> _appointments = new List<Appointment>();
+        public Appointment Add(Appointment item)
+        {
+            if (!IsOverlapping(item))
+            {
+                _appointments.Add(item);
+                return item;
+            }
+            throw new AppointmentOverlapException();
+        }
+
+        private bool IsOverlapping(Appointment newAppointment)
+        {
+            return _appointments.Any(a =>
+               a.DoctorId == newAppointment.DoctorId &&
+               a.AppointmentDate == newAppointment.AppointmentDate);
+        }
+
+        public Appointment Delete(int key)
+        {
+            var appointment = Get(key);
+            _appointments.Remove(appointment);
+            return appointment;
+
+        }
+
+        public Appointment Get(int key)
+        {
+            var appointment = _appointments.FirstOrDefault(a => a.AppointmentId == key);
+            if (appointment == null)
+            {
+                throw new AppointmentNotFoundException();
+            }
+            return appointment;
+        }
+
+        public List<Appointment> GetAll()
+        {
+            if (_appointments.Count == 0)
+            {
+                throw new NoAppointmentsException();
+            }
+            return _appointments;
+        }
+
+        public Appointment Update(Appointment item)
+        {
+            var existingAppointment = Get(item.AppointmentId);
+            existingAppointment.DoctorId = item.DoctorId;
+            existingAppointment.AppointmentDate = item.AppointmentDate;
+            return existingAppointment;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+PatientController controller:
+
+using Microsoft.AspNetCore.Mvc;
+
+namespace AppointmentManagementApp.Controllers
+{
+    public class PatientController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------
+LoginController controller:
+
+using Microsoft.AspNetCore.Mvc;
+using AppointmentManagementApp.Interfaces;
+
+namespace AppointmentManagementApp.Controllers
+{
+    public class LoginController : Controller
+    {
+        private ILoginService _loginService;
+
+        public LoginController(ILoginService loginService)
+        {
+            _loginService = loginService;
+        }
+
+        public IActionResult PatientLogin()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult PatientLogin(string username, string password)
+        {
+            if (_loginService.Login(username, password))
+            {
+                // Get the logged-in patient details
+                var patient = _loginService.GetPatientByUsername(username);
+
+                if (patient != null)
+                {
+                    // Store the PatientId in session
+                    HttpContext.Session.SetInt32("PatientId", patient.PatientId);
+                }
+
+                return RedirectToAction("BookAppointment", "Appointment");
+            }
+
+            ViewBag.ErrorMessage = "Invalid username or password";
+            return View();
+        }
+
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Appointment controller:
+
+using AppointmentManagementApp.Interfaces;
+using AppointmentManagementApp.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace AppointmentManagementApp.Controllers
+{
+    public class AppointmentController : Controller
+    {
+        private IAppointmentService _appointmentService;
+        private ILoginService _loginService;
+        private IRepository<string, Doctor> _doctorRepository;
+
+        public AppointmentController(IAppointmentService appointmentService, ILoginService loginService, IRepository<string, Doctor> doctorRepository)
+        {
+            _appointmentService = appointmentService;
+            _loginService = loginService;
+            _doctorRepository = doctorRepository;
+        }
+
+        public IActionResult BookAppointment()
+        {
+            var doctors = _doctorRepository.GetAll();
+            return View(doctors); 
+        }
+
+        [HttpPost]
+        public IActionResult BookAppointment(int doctorId, DateTime appointmentDateTime)
+        {
+            int patientId = GetLoggedInPatientId(); 
+            try
+            {
+                _appointmentService.BookAppointment(patientId, doctorId, appointmentDateTime);
+                ViewBag.SuccessMessage = "Appointment booked successfully!";
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = ex.Message;
+            }
+
+            var doctors = _doctorRepository.GetAll();
+            return View(doctors);
+        }
+
+        private int GetLoggedInPatientId()
+        {
+
+            var patientId = HttpContext.Session.GetInt32("PatientId");
+
+            if (patientId.HasValue)
+            {
+                return patientId.Value;
+            }
+
+            throw new Exception("Patient is not logged in.");
+        }
+
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Patient Login Service
+
+using AppointmentManagementApp.Interfaces;
+using AppointmentManagementApp.Models;
+
+namespace AppointmentManagementApp.Services
+{
+    public class PatientLoginService : ILoginService
+    {
+        private IRepository<string, Patient> _patientRepository;
+
+        public PatientLoginService(IRepository<string, Patient> patientRepository)
+        {
+            _patientRepository = patientRepository;
+        }
+
+        public bool ChangePassword(string username, string oldPassword, string newPassword)
+        {
+            var myPatient = _patientRepository.Get(username);
+            if (myPatient == null || !ComparePassword(myPatient.Password, oldPassword)) throw new Exception("Unable to validate user");
+            if (!ComparePassword(newPassword, oldPassword))
+            {
+                myPatient.Password = newPassword;
+                return true;
+            }
+            throw new Exception("Old and new password cannot be the same"); ;
+        }
+        public bool Login(string username, string password)
+        {
+            var myPatient = _patientRepository.Get(username);
+            return ComparePassword(myPatient.Password, password);
+        }
+        private bool ComparePassword(string oldPassword, string newPassword)
+        {
+            return oldPassword == newPassword;        
+        }
+
+        public Patient GetPatientByUsername(string username)
+        {
+            return _patientRepository.GetAll().FirstOrDefault(p => p.Username == username);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Appointment Service
+
+using AppointmentManagementApp.Interfaces;
+using AppointmentManagementApp.Models;
+
+namespace AppointmentManagementApp.Services
+{
+    public class AppointmentService : IAppointmentService
+    {
+        private IRepository<int, Appointment> _appointmentRepository;
+
+        public AppointmentService(IRepository<int, Appointment> appointmentRepository)
+        {
+            _appointmentRepository = appointmentRepository;
+        }
+
+        public Appointment BookAppointment(int patientId, int doctorId, DateTime appointmentDate)
+        {
+            Appointment appointment = new Appointment
+            {
+                PatientId = patientId,
+                DoctorId = doctorId,
+                AppointmentDate = appointmentDate
+            };
+
+            return _appointmentRepository.Add(appointment);
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------
+Patient Login View
+
+@model AppointmentManagementApp.Models.Patient
+
+@{
+    ViewData["Title"] = "PatientLogin";
+}
+
+<h1>PatientLogin</h1>
+
+<h4>Patient</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="PatientLogin">
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type = "password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+-------------------------------------------------------------------------------------------------------------------------
+Book Appointment view
+
+@model IEnumerable<AppointmentManagementApp.Models.Doctor>
+
+@{
+    ViewData["Title"] = "BookAppointment";
+}
+
+<h1>BookAppointment</h1>
+
+@if (ViewBag.SuccessMessage != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.SuccessMessage
+    </div>
+}
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+
+<form asp-action="BookAppointment" method="post">
+    <div>
+        <label for="doctorId">Select Doctor:</label>
+        <select name="doctorId" id="doctorId">
+            @foreach (var doctor in Model)
+            {
+                <option value="@doctor.DoctorId">@doctor.Name - @doctor.Department</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="appointmentDateTime">Select Date and Time:</label>
+        <input type="datetime-local" name="appointmentDateTime" required />
+    </div>
+    <button type="submit">Book Appointment</button>
+</form>
+
+-------------------------------------------------------------------------------------------------------------------------
+Patient Not Found Exception class
+
+namespace AppointmentManagementApp.Exceptions
+{
+    [Serializable]
+    internal class PatientNotFoundException : Exception
+    {
+        string msg;
+        public PatientNotFoundException()
+        {
+            msg = "Patient not found.";
+        }
+        public override string Message => msg;
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+No Patients Exception
+
+namespace AppointmentManagementApp.Exceptions
+{
+    [Serializable]
+    internal class NoPatientsException : Exception
+    {
+        string msg;
+        public NoPatientsException()
+        {
+            msg = "No patients found.";
+        }
+        public override string Message => msg;
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------
+No Doctors Exception
+
+namespace AppointmentManagementApp.Exceptions
+{
+    [Serializable]
+    internal class NoDoctorsException : Exception
+    {
+        string msg;
+        public NoDoctorsException()
+        {
+            msg = "No doctors found.";
+        }
+        public override string Message => msg;
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+No Appointments Exception
+
+namespace AppointmentManagementApp.Exceptions
+{
+    [Serializable]
+    internal class NoAppointmentsException : Exception
+    {
+        string msg;
+        public NoAppointmentsException()
+        {
+            msg = "No appointments found";
+        }
+        public override string Message => msg;
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+Duplicate Patients Exception
+
+namespace AppointmentManagementApp.Exceptions
+{
+    public class DuplicatePatientException : Exception
+    {
+        string msg;
+        public DuplicatePatientException()
+        {
+            msg = "Patient with this username already exists. Please try again with a different username.";
+        }
+        public override string Message => msg;
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Duplicate Doctor Exception
+
+namespace AppointmentManagementApp.Exceptions
+{
+    internal class DuplicateDoctorException : Exception
+    {
+        string msg;
+        public DuplicateDoctorException()
+        {
+            msg = "Doctor already exists.";
+        }
+        public override string Message => msg;
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+Doctor Not Found Exception
+
+namespace AppointmentManagementApp.Exceptions
+{
+    [Serializable]
+    internal class DoctorNotFoundException : Exception
+    {
+        string msg;
+        public DoctorNotFoundException()
+        {
+            msg = "Doctor not found.";
+        }
+        public override string Message => msg;
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+Appointment Overlap Exception
+
+namespace AppointmentManagementApp.Exceptions
+{
+    [Serializable]
+    internal class AppointmentOverlapException : Exception
+    {
+        string msg;
+        public AppointmentOverlapException()
+        {
+            msg = "Appointment overlaps with another appointment. Please book an appointment for another date/time";
+        }
+        public override string Message => msg;
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------
+Appointment Not Found Exception
+
+namespace AppointmentManagementApp.Exceptions
+{
+    [Serializable]
+    internal class AppointmentNotFoundException : Exception
+    {
+        string msg;
+        public AppointmentNotFoundException()
+        {
+            msg = "Appointment not found";
+        }
+        public override string Message => msg;
+    }
+}

@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\WordProcessorApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\WordProcessorApp1.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\WordProcessorApp1.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\WordProcessorApp1.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\WordProcessorApp1.sourcelink.json
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\bin\Debug\net8.0\WordProcessorApp1.exe
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\bin\Debug\net8.0\WordProcessorApp1.deps.json
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\bin\Debug\net8.0\WordProcessorApp1.runtimeconfig.json
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\bin\Debug\net8.0\WordProcessorApp1.dll
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\bin\Debug\net8.0\WordProcessorApp1.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\WordProcessorApp1.dll
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\refint\WordProcessorApp1.dll
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\WordProcessorApp1.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\WordProcessorApp1.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day7\Assignment\WordProcessorSolution1\WordProcessorApp1\obj\Debug\net8.0\ref\WordProcessorApp1.dll

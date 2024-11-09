@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|d:\\c_sharp and dot net projects\\day29\\efwebapisolution\\efwebapiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|solutionrelative:efwebapiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|d:\\c_sharp and dot net projects\\day29\\efwebapisolution\\efwebapiapp\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|solutionrelative:efwebapiapp\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|d:\\c_sharp and dot net projects\\day29\\efwebapisolution\\efwebapiapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|solutionrelative:efwebapiapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B0547D-2F19-4D07-B7E2-32F987FFED84}|EFWebApiTest\\EFWebApiTest.csproj|d:\\c_sharp and dot net projects\\day29\\efwebapisolution\\efwebapitest\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B0547D-2F19-4D07-B7E2-32F987FFED84}|EFWebApiTest\\EFWebApiTest.csproj|solutionrelative:efwebapitest\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|d:\\c_sharp and dot net projects\\day29\\efwebapisolution\\efwebapiapp\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|solutionrelative:efwebapiapp\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|d:\\c_sharp and dot net projects\\day29\\efwebapisolution\\efwebapiapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|solutionrelative:efwebapiapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B0547D-2F19-4D07-B7E2-32F987FFED84}|EFWebApiTest\\EFWebApiTest.csproj|d:\\c_sharp and dot net projects\\day29\\efwebapisolution\\efwebapitest\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B0547D-2F19-4D07-B7E2-32F987FFED84}|EFWebApiTest\\EFWebApiTest.csproj|solutionrelative:efwebapitest\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|d:\\c_sharp and dot net projects\\day29\\efwebapisolution\\efwebapiapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|solutionrelative:efwebapiapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|d:\\c_sharp and dot net projects\\day29\\efwebapisolution\\efwebapiapp\\contexts\\shoppingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{368CD83C-7FAC-4AEB-84F1-2B141AE93825}|EFWebApiApp\\EFWebApiApp.csproj|solutionrelative:efwebapiapp\\contexts\\shoppingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Program.cs",
+              "RelativeDocumentMoniker": "EFWebApiApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Program.cs*",
+              "RelativeToolTip": "EFWebApiApp\\Program.cs*",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwCkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:39:55.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EFWebApiApp\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EFWebApiApp\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAuwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:29:24.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserServiceTest.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiTest\\UserServiceTest.cs",
+              "RelativeDocumentMoniker": "EFWebApiTest\\UserServiceTest.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiTest\\UserServiceTest.cs",
+              "RelativeToolTip": "EFWebApiTest\\UserServiceTest.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:14:10.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "EFWebApiApp\\Services\\UserService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Services\\UserService.cs",
+              "RelativeToolTip": "EFWebApiApp\\Services\\UserService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:12:09.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "EFWebApiApp\\Interfaces\\IUserService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "EFWebApiApp\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:42:04.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepositoryTest.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiTest\\UserRepositoryTest.cs",
+              "RelativeDocumentMoniker": "EFWebApiTest\\UserRepositoryTest.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiTest\\UserRepositoryTest.cs",
+              "RelativeToolTip": "EFWebApiTest\\UserRepositoryTest.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:37:43.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShoppingContext.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Contexts\\ShoppingContext.cs",
+              "RelativeDocumentMoniker": "EFWebApiApp\\Contexts\\ShoppingContext.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Contexts\\ShoppingContext.cs",
+              "RelativeToolTip": "EFWebApiApp\\Contexts\\ShoppingContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:36:46.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "EFWebApiApp\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "EFWebApiApp\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T07:16:41.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Models\\DTO\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "EFWebApiApp\\Models\\DTO\\LoginRequestDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day29\\EFWebApiSolution\\EFWebApiApp\\Models\\DTO\\LoginRequestDTO.cs",
+              "RelativeToolTip": "EFWebApiApp\\Models\\DTO\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T07:15:30.454Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

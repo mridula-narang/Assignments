@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\bin\Debug\net8.0\DoctorApp.exe
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\bin\Debug\net8.0\DoctorApp.deps.json
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\bin\Debug\net8.0\DoctorApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\bin\Debug\net8.0\DoctorApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\bin\Debug\net8.0\DoctorApp.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\DoctorApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\DoctorApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\DoctorApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\DoctorApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\DoctorApp.sourcelink.json
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\DoctorApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\refint\DoctorApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\DoctorApp.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\DoctorApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day7\Assignment\DoctorSolution\DoctorApp\obj\Debug\net8.0\ref\DoctorApp.dll

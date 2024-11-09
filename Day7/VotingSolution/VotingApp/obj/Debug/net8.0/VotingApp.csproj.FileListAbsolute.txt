@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\VotingApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\VotingApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\VotingApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\VotingApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\VotingApp.sourcelink.json
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\bin\Debug\net8.0\VotingApp.exe
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\bin\Debug\net8.0\VotingApp.deps.json
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\bin\Debug\net8.0\VotingApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\bin\Debug\net8.0\VotingApp.dll
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\bin\Debug\net8.0\VotingApp.pdb
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\VotingApp.dll
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\refint\VotingApp.dll
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\VotingApp.pdb
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\VotingApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day7\VotingSolution\VotingApp\obj\Debug\net8.0\ref\VotingApp.dll

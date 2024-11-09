@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\bin\Debug\net8.0\BankTansactionsApp.exe
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\bin\Debug\net8.0\BankTansactionsApp.deps.json
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\bin\Debug\net8.0\BankTansactionsApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\bin\Debug\net8.0\BankTansactionsApp.dll
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\bin\Debug\net8.0\BankTansactionsApp.pdb
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\BankTansactionsApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\BankTansactionsApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\BankTansactionsApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\BankTansactionsApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\BankTansactionsApp.sourcelink.json
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\BankTansactionsApp.dll
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\refint\BankTansactionsApp.dll
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\BankTansactionsApp.pdb
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\BankTansactionsApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day6\BankTansactionsSolution\BankTansactionsApp\obj\Debug\net8.0\ref\BankTansactionsApp.dll

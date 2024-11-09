@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\lenovofactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\lenovofactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\lenovomobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\lenovomobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\lenovolaptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\lenovolaptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\lenovodesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\lenovodesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\idevicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\idevicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\idevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\idevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\ibmfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\ibmfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\ibmmobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\ibmmobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\ibmlaptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\ibmlaptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\ibmdesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\ibmdesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\hpfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\hpfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\hpmobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\hpmobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\hplaptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\hplaptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\hpdesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\hpdesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\applemobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\applemobile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\applelaptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\applelaptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\applefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\applefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\appledesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\appledesktop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|d:\\c_sharp and dot net projects\\day18\\abstractfactorydpsolution\\abstractfactorydpapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEFD1DC-995F-4644-B91D-FF935F550773}|AbstractFactoryDpApp\\AbstractFactoryDpApp.csproj|solutionrelative:abstractfactorydpapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppleFactory.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\AppleFactory.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\AppleFactory.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\AppleFactory.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\AppleFactory.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:26:39.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBMFactory.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IBMFactory.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\IBMFactory.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IBMFactory.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\IBMFactory.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:26:16.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HPFactory.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\HPFactory.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\HPFactory.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\HPFactory.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\HPFactory.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:25:46.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LenovoFactory.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\LenovoFactory.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\LenovoFactory.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\LenovoFactory.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\LenovoFactory.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:23:36.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IDeviceFactory.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IDeviceFactory.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\IDeviceFactory.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IDeviceFactory.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\IDeviceFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:22:53.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppleDesktop.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\AppleDesktop.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\AppleDesktop.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\AppleDesktop.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\AppleDesktop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:12:41.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppleLaptop.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\AppleLaptop.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\AppleLaptop.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\AppleLaptop.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\AppleLaptop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:12:08.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppleMobile.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\AppleMobile.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\AppleMobile.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\AppleMobile.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\AppleMobile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:11:42.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IBMDesktop.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IBMDesktop.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\IBMDesktop.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IBMDesktop.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\IBMDesktop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:10:43.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IBMLaptop.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IBMLaptop.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\IBMLaptop.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IBMLaptop.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\IBMLaptop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:10:14.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBMMobile.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IBMMobile.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\IBMMobile.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IBMMobile.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\IBMMobile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:09:36.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HPDesktop.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\HPDesktop.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\HPDesktop.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\HPDesktop.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\HPDesktop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:05:01.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HPLaptop.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\HPLaptop.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\HPLaptop.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\HPLaptop.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\HPLaptop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:04:32.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HPMobile.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\HPMobile.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\HPMobile.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\HPMobile.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\HPMobile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:04:00.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LenovoDesktop.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\LenovoDesktop.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\LenovoDesktop.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\LenovoDesktop.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\LenovoDesktop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:03:27.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LenovoLaptop.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\LenovoLaptop.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\LenovoLaptop.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\LenovoLaptop.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\LenovoLaptop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:02:55.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LenovoMobile.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\LenovoMobile.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\LenovoMobile.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\LenovoMobile.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\LenovoMobile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T05:56:32.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDevice.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IDevice.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\IDevice.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\IDevice.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\IDevice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T05:54:38.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\Program.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryDpApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day18\\AbstractFactoryDpSolution\\AbstractFactoryDpApp\\Program.cs",
+              "RelativeToolTip": "AbstractFactoryDpApp\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T05:15:01.438Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
