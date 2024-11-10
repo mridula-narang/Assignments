@@ -27,6 +27,7 @@
   },
   {
     "ContainingType": "HotelBookingApp.Controllers.BookingController",
+<<<<<<< HEAD
     "Method": "GetBookingsByUserId",
     "RelativePath": "api/Booking/{userId}",
     "HttpMethod": "GET",
@@ -45,6 +46,10 @@
     "ContainingType": "HotelBookingApp.Controllers.BookingController",
     "Method": "UpdateBookingStatus",
     "RelativePath": "api/Booking/{userId}",
+=======
+    "Method": "UpdateBookingStatus",
+    "RelativePath": "api/Booking",
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -58,10 +63,28 @@
         "Name": "status",
         "Type": "System.String",
         "IsRequired": false
+<<<<<<< HEAD
       },
       {
         "Name": "userId",
         "Type": "",
+=======
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelBookingApp.Controllers.BookingController",
+    "Method": "GetBookingsByUserId",
+    "RelativePath": "api/Booking/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
         "IsRequired": true
       }
     ],

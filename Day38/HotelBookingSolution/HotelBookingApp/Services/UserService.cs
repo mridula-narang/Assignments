@@ -43,7 +43,10 @@ namespace HotelBookingApp.Services
                 Token = await _tokenService.GenerateToken(new UserTokenDTO()
                 {
                     Username = user.Username,
+<<<<<<< HEAD
                     Email = user.Email ?? string.Empty,
+=======
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
                     Role = user.Role.ToString()
                 })
             };
@@ -58,7 +61,10 @@ namespace HotelBookingApp.Services
                 Username = registerUser.Username,
                 Password = passwordHash,
                 HashKey = hmac.Key,
+<<<<<<< HEAD
                 Email = registerUser.Email,
+=======
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
                 Role = registerUser.Role
             };
             try
@@ -66,8 +72,12 @@ namespace HotelBookingApp.Services
                 var addesUser = await _userRepository.Add(user);
                 LoginResponseDTO response = new LoginResponseDTO()
                 {
+<<<<<<< HEAD
                     Username = user.Username,
                     Email = user.Email
+=======
+                    Username = user.Username
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
                 };
                 return response;
             }

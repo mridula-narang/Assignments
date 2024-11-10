@@ -46,13 +46,37 @@ namespace HotelBookingApp.Controllers
             return Ok(bookings);
         }
 
+<<<<<<< HEAD
         [HttpPost("{userId}")]
+=======
+        [HttpPost]
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
         [Authorize]
         public async Task<IActionResult> UpdateBookingStatus(int bookingId, BookingStatus status)
         {
             var booking = await _bookingService.UpdateBookingStatus(bookingId, status);
             return Ok(booking);
         }
+<<<<<<< HEAD
+=======
+
+
+        //[HttpPost]
+        //[Authorize]
+        //public async Task<IActionResult> UpdateBookingStatus(int bookingId, BookingStatus status)
+        //{
+        //    var booking = await _bookingService.UpdateBookingStatus(bookingId, status);
+        //    return Ok(booking);
+        //}
+
+        //[HttpPost]
+        //[Authorize(Roles = "Admin")]
+        //public async Task<IActionResult> UpdateBooking(BookingDTO bookingDTO)
+        //{
+        //    var booking = await _bookingService.UpdateBooking(bookingDTO);
+        //    return Ok(booking);
+        //}
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
     }
 }
 

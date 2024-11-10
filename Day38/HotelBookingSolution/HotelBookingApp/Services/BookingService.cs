@@ -12,6 +12,7 @@ namespace HotelBookingApp.Services
         private readonly IRepository<int, Booking> _bookingRepository;
         private readonly IRepository<int, Room> _roomRepository; // Add this line
         private readonly IMapper _mapper;
+<<<<<<< HEAD
         private readonly IEmailService _emailService;
         private readonly IRepository<int, User> _userRepository;
 
@@ -22,6 +23,14 @@ namespace HotelBookingApp.Services
             _mapper = mapper;
             _emailService = emailService;
             _userRepository = userRepository;
+=======
+
+        public BookingService(IRepository<int, Booking> bookingRepository, IRepository<int, Room> roomRepository, IMapper mapper) // Modify constructor
+        {
+            _bookingRepository = bookingRepository;
+            _roomRepository = roomRepository; // Add this line
+            _mapper = mapper;
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
         }
 
         public async Task<Booking> AddBooking(BookingDTO bookingDTO)
@@ -87,6 +96,7 @@ namespace HotelBookingApp.Services
             }
             booking.Status = status;
             var updatedBooking = await _bookingRepository.Update(bookingId, booking);
+<<<<<<< HEAD
             if (status == Booking.BookingStatus.Confirmed || status == Booking.BookingStatus.Cancelled)
             {
                 string subject = $"Booking Status Updated to {status}";
@@ -99,6 +109,8 @@ namespace HotelBookingApp.Services
                 await _emailService.SendStatusChangeEmail(booking.Users.Email, subject, message);
             }
 
+=======
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
             return updatedBooking;
         }
     }

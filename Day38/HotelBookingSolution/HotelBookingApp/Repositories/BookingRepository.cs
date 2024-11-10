@@ -81,11 +81,14 @@ namespace HotelBookingApp.Repositories
             return bookings;
         }
 
+<<<<<<< HEAD
         public Task<Booking> GetUserById(int userId)
         {
             throw new NotImplementedException();
         }
 
+=======
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
         public async Task<Booking> Update(int key, Booking entity)
         {
             var booking = await Get(key);
@@ -95,6 +98,7 @@ namespace HotelBookingApp.Repositories
             }
             try
             {
+<<<<<<< HEAD
                 //booking.HotelId = entity.HotelId;
                 //booking.RoomId = entity.RoomId;
                 //booking.UserId = entity.UserId;
@@ -102,6 +106,15 @@ namespace HotelBookingApp.Repositories
                 //booking.CheckOutDate = entity.CheckOutDate; 
                 //booking.NumberOfGuests = entity.NumberOfGuests;
                 //booking.TotalPrice = entity.TotalPrice;
+=======
+                booking.HotelId = entity.HotelId;
+                booking.RoomId = entity.RoomId;
+                booking.UserId = entity.UserId;
+                booking.CheckInDate = entity.CheckInDate; 
+                booking.CheckOutDate = entity.CheckOutDate; 
+                booking.NumberOfGuests = entity.NumberOfGuests;
+                booking.TotalPrice = entity.TotalPrice;
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
                 booking.Status = entity.Status;
 
                 await _context.SaveChangesAsync();

@@ -146,7 +146,10 @@ D:\C_sharp and dot net projects\Day38\HotelBookingSolution\HotelBookingApp\obj\D
 D:\C_sharp and dot net projects\Day38\HotelBookingSolution\HotelBookingApp\obj\Debug\net8.0\HotelBookingApp.pdb
 D:\C_sharp and dot net projects\Day38\HotelBookingSolution\HotelBookingApp\obj\Debug\net8.0\HotelBookingApp.genruntimeconfig.cache
 D:\C_sharp and dot net projects\Day38\HotelBookingSolution\HotelBookingApp\obj\Debug\net8.0\ref\HotelBookingApp.dll
+<<<<<<< HEAD
 D:\C_sharp and dot net projects\Day38\HotelBookingSolution\HotelBookingApp\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\C_sharp and dot net projects\Day38\HotelBookingSolution\HotelBookingApp\bin\Debug\net8.0\SendGrid.dll
 D:\C_sharp and dot net projects\Day38\HotelBookingSolution\HotelBookingApp\bin\Debug\net8.0\StarkbankEcdsa.dll
 D:\C_sharp and dot net projects\Day38\HotelBookingSolution\HotelBookingApp\bin\Debug\net8.0\SendGrid.Extensions.DependencyInjection.dll
+=======
+>>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
