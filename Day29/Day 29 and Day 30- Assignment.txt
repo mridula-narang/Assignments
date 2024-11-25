@@ -1,0 +1,2121 @@
+Day 29 - Assignment
+
+Models
+
+Cart model
+
+namespace EFWebApiApp.Models
+{
+    public class Cart
+    {
+        public int Id { get; set; }
+        public int CustomerId { get; set; }
+        public Customer Customer { get; set; }
+        public DateTime CreationDate { get; set; }
+        public IEnumerable<CartItem> CartItems { get; set; }
+        public Cart()
+        {
+            CartItems = new List<CartItem>();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Cart item model
+
+namespace EFWebApiApp.Models
+{
+    public class CartItem
+    {
+        public int SNo { get; set; }
+        public int CartId { get; set; }
+        public int ProductId { get; set; }
+        public int Quantity { get; set; }
+
+
+        public Cart Cart { get; set; }
+        public Product Product { get; set; }
+        public CartItem()
+        {
+            Cart = new Cart();
+            Product = new Product();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Customer model
+
+namespace EFWebApiApp.Models
+{
+    public class Customer
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Phone { get; set; } = string.Empty;
+        public int Age { get; set; }
+        public DateTime DateOfBirth { get; set; }
+
+        public Cart Cart { get; set; }
+
+        public IEnumerable<Order> Orders { get; set; }
+        public Customer()
+        {
+            Orders = new List<Order>();
+            Cart = new Cart();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Order model
+
+using System.ComponentModel.DataAnnotations;
+
+namespace EFWebApiApp.Models
+{
+    public class Order
+    {
+        [Key]
+        public int OrderNumber { get; set; }
+        public int CustomerId { get; set; }
+        public DateTime OrderDate { get; set; }
+        public float TotalValue { get; set; }
+        public string OrderStatus { get; set; } = string.Empty;
+
+        public Customer Customer { get; set; }
+        public IEnumerable<OrderDetail> OrderDetails { get; set; }
+        public Order()
+        {
+            Customer = new Customer();
+            OrderDetails = new List<OrderDetail>();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Order details model
+
+using System.ComponentModel.DataAnnotations;
+
+namespace EFWebApiApp.Models
+{
+    public class OrderDetail
+    {
+        [Key]
+        public int SNo { get; set; }
+        public int OrderNumber { get; set; }
+        public int ProductId { get; set; }
+        public int Quantity { get; set; }
+        public float Price { get; set; }
+        public Order Order { get; set; }
+        public Product Product { get; set; }
+        public OrderDetail()
+        {
+            Order = new Order();
+            Product = new Product();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product model
+
+namespace EFWebApiApp.Models
+{
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public int Quantity { get; set; }
+        public float Price { get; set; }
+        public string BasicImage { get; set; } = string.Empty;
+        public IEnumerable<OrderDetail> OrderDetails { get; set; }
+        public ICollection<ProductImage> ProductImages { get; internal set; }
+
+        public Product()
+        {
+            OrderDetails = new List<OrderDetail>();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product dto
+
+namespace EFWebApiApp.Models.DTO
+{
+    public class ProductDTO
+    {
+        public string Name { get; set; } = string.Empty;
+        public float Price { get; set; }
+        public int Quantity { get; set; }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Customer dto
+
+namespace EFWebApiApp.Models.DTO
+{
+    public class CustomerDTO
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Phone { get; set; } = string.Empty;
+        public DateTime DateOfBirth { get; set; }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Repositories
+
+Customer repository
+
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Exceptions;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
+namespace EFWebApiApp.Repositories
+{
+    public class CustomerRepository : IRepository<int, Customer>
+    {
+        private readonly ShoppingContext _context;
+        private readonly ILogger<CustomerRepository> _logger;
+
+        public CustomerRepository(ShoppingContext shoppingContext, ILogger<CustomerRepository> logger)
+        {
+            _context = shoppingContext;
+            _logger = logger;
+        }
+
+        public async Task<Customer> Add(Customer entity)
+        {
+            try
+            {
+                _context.Customers.Add(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw new CouldNotAddException("Customer");
+            }
+        }
+
+        public async Task<Customer> Delete(int key)
+        {
+            var customer = await Get(key);
+            if (customer != null)
+            {
+                _context.Customers.Remove(customer);
+                await _context.SaveChangesAsync();
+                return customer;
+            }
+            throw new NotFoundException("Customer for delete");
+        }
+
+        public async Task<Customer> Get(int key)
+        {
+            var customer = _context.Customers.FirstOrDefault(c => c.Id == key);
+            return customer;
+        }
+
+        public async Task<IEnumerable<Customer>> GetAll()
+        {
+            var customers = await _context.Customers.ToListAsync();
+            if (customers.Count == 0)
+            {
+                throw new CollectionEmptyException("Customers");
+            }
+            return customers;
+        }
+
+        public async Task<Customer> Update(int key,Customer entity)
+        {
+            var customer = await Get(key);
+            if (customer != null)
+            {
+                customer.Name = entity.Name;
+                customer.Email = entity.Email;
+                customer.Phone = entity.Phone;
+                customer.Age = entity.Age;
+                customer.DateOfBirth = entity.DateOfBirth;
+                await _context.SaveChangesAsync();
+                return customer;
+            }
+            throw new NotFoundException("Customer for update");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product image repository
+
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Exceptions;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using Microsoft.EntityFrameworkCore;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace EFWebApiApp.Repositories
+{
+    public class ProductImageRepository : IRepository<int, ProductImage>
+    {
+        private readonly ShoppingContext _context;
+        private readonly ILogger<ProductImageRepository> _logger; 
+
+        public ProductImageRepository(ShoppingContext context, ILogger<ProductImageRepository> logger)
+        {
+            _context = context;
+            _logger = logger;
+        }
+        public async Task<ProductImage> Add(ProductImage entity)
+        {
+            try
+            {
+                _context.ProductImages.Add(entity);
+                _context.SaveChanges();
+                return entity;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new CouldNotAddException("Product Image");
+            }
+        }
+
+        public async Task<ProductImage> Delete(int key)
+        {
+            try
+            {
+                var productImage = await Get(key);
+                if (productImage != null)
+                {
+                    _context.ProductImages.Remove(productImage);
+                    await _context.SaveChangesAsync();
+                    return productImage;
+                }
+                throw new NotFoundException("Product for delete");
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new NotFoundException("Product not found");
+            }
+        }
+
+        public async Task<ProductImage> Get(int key)
+        {
+            try
+            {
+                var productImage = await _context.ProductImages.FirstOrDefaultAsync(p => p.ImageId == key);
+                if (productImage == null)
+                {
+                    throw new NotFoundException("Product Image");
+                }
+                return productImage;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw;
+            }
+        }
+
+        public async Task<IEnumerable<ProductImage>> GetAll()
+        {
+            try
+            {
+                var productImages = await _context.ProductImages.ToListAsync();
+                if (productImages.Count == 0)
+                {
+                    throw new CollectionEmptyException("Product Images");
+                }
+                return productImages;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw;
+            }
+        }
+
+        public async Task<ProductImage> Update(int key, ProductImage entity)
+        {
+            try
+            {
+                var productImage = await Get(key);
+                if (productImage != null)
+                {
+                    productImage.ImageUrl = entity.ImageUrl;
+                    await _context.SaveChangesAsync();
+                    return productImage;
+                }
+                throw new NotFoundException("Product for update");
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw;
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product repository
+
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Exceptions;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace EFWebApiApp.Repositories
+{
+    public class ProductRepository : IRepository<int, Product>
+    {
+        private readonly ShoppingContext _context;
+        private readonly ILogger<ProductRepository> _logger;
+
+        public ProductRepository(ShoppingContext shoppingContext, ILogger<ProductRepository> logger)
+        {
+            _context = shoppingContext;
+            _logger = logger;
+        }
+        public async Task<Product> Add(Product entity)
+        {
+            try
+            {
+                _context.ProductImage.Add(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new CouldNotAddException("Product");
+            }
+        }
+
+        public async Task<Product> Delete(int key)
+        {
+            try
+            {
+                var product = await Get(key);
+                if (product != null)
+                {
+                    _context.ProductImage.Remove(product);
+                    await _context.SaveChangesAsync();
+                    return product;
+                }
+                throw new NotFoundException("Product for delete");
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw new NotFoundException("Product not found");
+            }
+        }
+
+        public async Task<Product> Get(int key)
+        {
+            var product = await _context.ProductImage.FirstOrDefaultAsync(p => p.Id == key);
+            if (product == null)
+            {
+                throw new NotFoundException("Product");
+            }
+            return product;
+        }
+
+        public async Task<IEnumerable<Product>> GetAll()
+        {
+            try
+            {
+                var products = await _context.ProductImage.ToListAsync();
+                if (products.Count == 0)
+                {
+                    throw new CollectionEmptyException("Products");
+                }
+                return products;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw;
+            }
+        }
+
+        public async Task<Product> Update(int key, Product entity)
+        {
+            try
+            {
+                var product = await Get(key);
+                if (product != null)
+                {
+                    product.Name = entity.Name;
+                    product.Description = entity.Description;
+                    product.Quantity = entity.Quantity;
+                    product.Price = entity.Price;
+                    product.BasicImage = entity.BasicImage;
+                    await _context.SaveChangesAsync();
+                    return product;
+                }
+                throw new NotFoundException("Product for update");
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                throw;
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Services
+
+Customer service
+
+using AutoMapper;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using EFWebApiApp.Models.DTO;
+using EFWebApiApp.Repositories;
+
+namespace EFWebApiApp.Services
+{
+    public class CustomerBasicService : ICustomerBasicService
+    {
+        private readonly IRepository<int, Customer> _customerRepository;
+        private readonly IMapper _mapper; // Change type to IMapper
+
+        public CustomerBasicService(IRepository<int, Customer> customerRepository, IMapper mapper) // Add IMapper to constructor
+        {
+            _customerRepository = customerRepository;
+            _mapper = mapper; // Initialize _mapper
+        }
+
+        public async Task<int> CreateCustomer(CustomerDTO customer)
+        {
+            Customer newCustomer = _mapper.Map<Customer>(customer);
+            newCustomer.Age = CalculateAgeFromDateTime(customer.DateOfBirth);
+            var addedCustomer = await _customerRepository.Add(newCustomer);
+            return addedCustomer.Id;
+        }
+
+        int CalculateAgeFromDateTime(DateTime dateOfBirth)
+        {
+            var today = DateTime.Today;
+            var age = today.Year - dateOfBirth.Year;
+            if (dateOfBirth.Date > today.AddYears(-age)) age--;
+            return age;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product image service
+
+using EFWebApiApp.Exceptions;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using EFWebApiApp.Models.DTO;
+using EFWebApiApp.Repositories;
+
+namespace EFWebApiApp.Services
+{
+    public class ProductImageService : IProductImageService
+    {
+        private readonly IRepository<int, ProductImage> _imageRepository;
+        private readonly IRepository<int, Product> _productRepository;
+
+
+        public ProductImageService(IRepository<int, ProductImage> imageRepository, IRepository<int, Product> productRepository)
+        {
+            _imageRepository = imageRepository;
+            _productRepository = productRepository;
+        }
+        public async Task AddImagesToProduct(int productId, List<string> imageUrls)
+        {
+            var product = await _productRepository.Get(productId);
+            if (product == null)
+            {
+                throw new NotFoundException("Product");
+            }
+            foreach (var imageUrl in imageUrls)
+            {
+                var productImage = new ProductImage
+                {
+                    ProductId = productId,
+                    ImageUrl = imageUrl
+                };
+                await _imageRepository.Add(productImage);
+            }
+        }
+
+        public async Task<IEnumerable<Models.ProductImage>> GetImagesByProductId(int productId)
+        {
+            try
+            {
+                var images = await _imageRepository.GetAll();
+                return images.Where(img => img.ProductId == productId);
+            }
+            catch (Exception e)
+            {
+
+                throw new CollectionEmptyException("Product Image");
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product Service
+
+using AutoMapper;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using EFWebApiApp.Models.DTO;
+
+namespace EFWebApiApp.Services
+{
+    public class ProductService : IProductImage
+    {
+        private readonly IRepository<int, Product> _productRepository;
+        private readonly IMapper _mapper;
+
+        public ProductService(IRepository<int, Product> productRepository, IMapper mapper)
+        {
+            _productRepository = productRepository;
+            _mapper = mapper;
+        }
+
+        public async Task<Product> AddProduct(ProductDTO productDto)
+        {
+            var product = _mapper.Map<Product>(productDto);
+            var addedProduct = await _productRepository.Add(product);
+            return addedProduct;
+        }
+
+        public async Task<Product> GetProductById(int productId)
+        {
+            var product = await _productRepository.Get(productId);
+            return _mapper.Map<Product>(product);
+
+        }
+
+        public async Task<IEnumerable<ProductDTO>> GetProducts()
+        {
+            var products = await _productRepository.GetAll();
+            return _mapper.Map<IEnumerable<ProductDTO>>(products);
+        }
+
+        public async Task<ProductDTO> UpdateProductPrice(int productId, double price)
+        {
+            var product = await _productRepository.Get(productId);
+            if (product == null)
+            {
+                return null;
+            }
+            product.Price = (float)price;
+            var updatedProduct = await _productRepository.Update(productId,product);
+            return _mapper.Map<ProductDTO>(updatedProduct);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Mappers
+
+Product profile
+
+using EFWebApiApp.Models;
+using EFWebApiApp.Models.DTO;
+using AutoMapper;
+
+namespace EFWebApiApp.Mappers
+{
+    public class ProductProfile : Profile
+    {
+        public ProductProfile()
+        {
+            CreateMap<Product, ProductDTO>();
+            CreateMap<ProductDTO, Product>();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Customer profile
+
+using AutoMapper;
+using EFWebApiApp.Models;
+using EFWebApiApp.Models.DTO;
+
+namespace EFWebApiApp.Mappers
+{
+    public class CustomerProfile : Profile
+    {
+        public CustomerProfile()
+        {
+            CreateMap<Customer, CustomerDTO>();
+            CreateMap<CustomerDTO, Customer>();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Interfaces
+
+IRepository
+
+namespace EFWebApiApp.Interfaces
+{
+    public interface IRepository<K, T> where T : class
+    {
+        Task<IEnumerable<T>> GetAll();
+        Task<T> Get(K key);
+        Task<T> Add(T entity);
+        Task<T> Update(K key,T entity);
+        Task<T> Delete(K key);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+IProductService
+
+using EFWebApiApp.Models;
+using EFWebApiApp.Models.DTO;
+
+namespace EFWebApiApp.Interfaces
+{
+    public interface IProductImage
+    {
+        //method to get all products
+        Task<IEnumerable<ProductDTO>> GetProducts();
+        Task<Product> AddProduct(ProductDTO productDto);
+        //method to update only price of product
+        Task<ProductDTO> UpdateProductPrice(int productId, double price);
+        //method to get product by id
+        Task<Product> GetProductById(int productId);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+IProductImageService
+
+using EFWebApiApp.Models;
+
+namespace EFWebApiApp.Interfaces
+{
+    public interface IProductImageService 
+    {
+        Task AddImagesToProduct(int productId, List<string> imageUrls);
+        Task<IEnumerable<ProductImage>> GetImagesByProductId(int productId);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+ICustomerBasicService
+
+using EFWebApiApp.Models.DTO;
+
+namespace EFWebApiApp.Interfaces
+{
+    public interface ICustomerBasicService
+    {
+        Task<int> CreateCustomer(CustomerDTO customer);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Controllers 
+
+Customer controller
+
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models.DTO;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace EFWebApiApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CustomerController : ControllerBase
+    {
+        private readonly ICustomerBasicService _customerService;
+
+        public CustomerController(ICustomerBasicService customerService)
+        {
+            _customerService = customerService;
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateCustomer(CustomerDTO customer)
+        {
+            try
+            {
+                var customerId = await _customerService.CreateCustomer(customer);
+                return Ok(customerId);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product command controller
+
+using EFWebApiApp.Exceptions;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models.DTO;
+using EFWebApiApp.Services;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace EFWebApiApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ProductCommandController : ControllerBase
+    {
+        private readonly IProductImage _productService;
+
+        public ProductCommandController(IProductImage productService)
+        {
+            _productService = productService;
+        }
+        [HttpPost]
+        public async Task<ActionResult<ProductDTO>> AddProduct(ProductDTO productDto)
+        {
+            var product = await _productService.AddProduct(productDto);
+            return CreatedAtAction(nameof(AddProduct), new { id = product.Id }, product);
+        }
+
+        [HttpPut("{id}/price")]
+        public async Task<ActionResult<ProductDTO>> UpdateProductPrice(int id, [FromBody] double price)
+        {
+            var updatedProduct = await _productService.UpdateProductPrice(id, price);
+            if (updatedProduct == null)
+            {
+                return NotFound();
+            }
+            return Ok(updatedProduct);
+        }
+
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product image controller
+
+using EFWebApiApp.Interfaces;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace EFWebApiApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ProductImageController : ControllerBase
+    {
+        private readonly IProductImageService _productImageService;
+
+        public ProductImageController(IProductImageService productImageService)
+        {
+            _productImageService = productImageService;
+        }
+
+        // POST: api/ProductCommand/{productId}/images
+        [HttpPost("{productId}/images")]
+        public async Task<IActionResult> AddProductImages(int productId, [FromBody] List<string> imageUrls)
+        {
+            try
+            {
+                if (imageUrls == null || imageUrls.Count == 0)
+                {
+                    return BadRequest("No images provided.");
+                }
+
+                await _productImageService.AddImagesToProduct(productId, imageUrls);
+                return Ok("Images added successfully.");
+            }
+            catch (Exception ex)
+            {
+                // Log the error and return a meaningful response to the client
+                Console.WriteLine($"An error occurred while adding images: {ex.Message}");
+                return StatusCode(500, "Internal server error occurred while adding images.");
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product query controller
+
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models.DTO;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace EFWebApiApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ProductQueryController : ControllerBase
+    {
+        private readonly IProductImage _productService;
+
+        public ProductQueryController(IProductImage productService)
+        {
+            _productService = productService;
+        }
+        [HttpGet("getAllProducts")]
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetAllProducts()
+        {
+            var products = await _productService.GetProducts();
+            return Ok(products);
+        }
+        [HttpGet]
+        public async Task<ActionResult<ProductDTO>> GetProductById(int id)
+        {
+            var product = await _productService.GetProductById(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Unit test files
+
+Customer repository test
+
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Exceptions;
+using EFWebApiApp.Models;
+using EFWebApiApp.Repositories;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFWebApiTest
+{
+    public class CustomerRepositoryTest
+    {
+        DbContextOptions<ShoppingContext> options;
+        ShoppingContext context;
+        CustomerRepository repository;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<ShoppingContext>()
+                .UseInMemoryDatabase("TestCustomerDB")
+                .Options;
+            context = new ShoppingContext(options);
+            repository = new CustomerRepository(context);
+        }
+
+        [Test]
+        [TestCase("Harry", "harry@example.com", "1234567890", 30, "1994-06-15")]
+        [TestCase("Hermione", "hermione@example.com", "0987654321", 25, "1999-05-10")]
+        public async Task TestAddCustomer(string name, string email, string phone, int age, string dob)
+        {
+            // Arrange
+            var customer = new Customer
+            {
+                Name = name,
+                Email = email,
+                Phone = phone,
+                Age = age,
+                DateOfBirth = DateTime.Parse(dob)
+            };
+
+            // Act
+            var result = await repository.Add(customer);
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(name, result.Name);
+        }
+
+        [Test]
+        public async Task TestAddCustomer_Exception()
+        {
+            // Arrange
+            var customer = new Customer
+            {
+                Name = null,  // Invalid data
+                Email = "harry@example.com",
+                Phone = "1234567890",
+                Age = 30,
+                DateOfBirth = DateTime.Parse("1994-06-15")
+            };
+
+            // Assert
+            Assert.ThrowsAsync<CouldNotAddException>(async () => await repository.Add(customer));
+        }
+
+        [Test]
+        [TestCase(1, "Harry", "harry@example.com", "1234567890", 30, "1994-06-15")]
+        public async Task TestGetCustomer(int id, string name, string email, string phone, int age, string dob)
+        {
+            // Arrange
+            var customer = new Customer
+            {
+                Name = name,
+                Email = email,
+                Phone = phone,
+                Age = age,
+                DateOfBirth = DateTime.Parse(dob)
+            };
+            await repository.Add(customer);
+
+            // Act
+            var result = await repository.Get(id);
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(name, result.Name);
+        }
+
+        public async Task NotFoundException()
+        {
+            // Assert
+            await Task.Run(() => Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(999)));
+            await Task.Run(() => Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(2)));
+        }
+
+        [Test]
+        public async Task TestGetAllCustomers()
+        {
+            // Arrange
+            var customer1 = new Customer
+            {
+                Name = "Harry",
+                Email = "harry@example.com",
+                Phone = "1234567890",
+                Age = 30,
+                DateOfBirth = DateTime.Parse("1994-06-15")
+            };
+            var customer2 = new Customer
+            {
+                Name = "Hermione",
+                Email = "hermione@example.com",
+                Phone = "0987654321",
+                Age = 25,
+                DateOfBirth = DateTime.Parse("1999-05-10")
+            };
+            await repository.Add(customer1);
+            await repository.Add(customer2);
+
+            // Act
+            var result = await repository.GetAll();
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(2, result.Count());
+        }
+
+        [Test]
+        public async Task TestGetAllCustomers_CollectionEmpty()
+        {
+            // Assert
+            Assert.ThrowsAsync<CollectionEmptyException>(async () => await repository.GetAll());
+        }
+
+        [Test]
+        [TestCase(1, "John Doe", "john@example.com", "1234567890", 30, "1994-06-15")]
+        public async Task TestDeleteCustomer(int id, string name, string email, string phone, int age, string dob)
+        {
+            // Arrange
+            var customer = new Customer
+            {
+                Name = name,
+                Email = email,
+                Phone = phone,
+                Age = age,
+                DateOfBirth = DateTime.Parse(dob)
+            };
+            await repository.Add(customer);
+
+            // Act
+            var result = await repository.Delete(id);
+
+            // Assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(name, result.Name);
+        }
+
+        [Test]
+        public async Task TestDeleteCustomer_NotFound()
+        {
+            // Assert
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Delete(999));
+        }
+
+        [Test]
+        [TestCase(1, "John Doe", "john@example.com", "1234567890", 30, "1994-06-15", "Updated Name", "updated@example.com", "9876543210", 40)]
+        public async Task TestUpdateCustomer(int id, string name, string email, string phone, int age, string dob, string updatedName, string updatedEmail, string updatedPhone, int updatedAge)
+        {
+            // Arrange
+            var customer = new Customer
+            {
+                Name = name,
+                Email = email,
+                Phone = phone,
+                Age = age,
+                DateOfBirth = DateTime.Parse(dob)
+            };
+            await repository.Add(customer);
+
+            var updatedCustomer = new Customer
+            {
+                Name = updatedName,
+                Email = updatedEmail,
+                Phone = updatedPhone,
+                Age = updatedAge,
+                DateOfBirth = DateTime.Parse(dob) // Keep DOB same
+            };
+
+            // Act
+            var result = await repository.Update(id, updatedCustomer);
+
+            // Assert
+            Assert.AreEqual(updatedName, result.Name);
+            Assert.AreEqual(updatedEmail, result.Email);
+        }
+
+        [Test]
+        public async Task TestUpdateCustomer_NotFound()
+        {
+            var customer = new Customer
+            {
+                Name = "Updated Name",
+                Email = "updated@example.com",
+                Phone = "9876543210",
+                Age = 40,
+                DateOfBirth = DateTime.Parse("1980-01-01")
+            };
+
+            // Assert
+            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Update(999, customer));
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product image repo test
+
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Exceptions;
+using EFWebApiApp.Models;
+using EFWebApiApp.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFWebApiTest
+{
+    public class ProductImageRepositoryTest : IDisposable
+    {
+        private DbContextOptions<ShoppingContext> _options;
+        private ShoppingContext _context;
+        private ProductImageRepository _repository;
+        private Mock<ILogger<ProductImageRepository>> _logger;
+
+        [SetUp]
+        public void Setup()
+        {
+            _options = new DbContextOptionsBuilder<ShoppingContext>()
+              .UseInMemoryDatabase("TestProductImageRepo")
+              .Options;
+            _context = new ShoppingContext(_options);
+            _logger = new Mock<ILogger<ProductImageRepository>>();
+            _repository = new ProductImageRepository(_context, _logger.Object);
+        }
+
+        [Test]
+        [TestCase("https://example.com/image1.jpg", 1)]
+        [TestCase("https://example.com/image2.jpg", 2)]
+        public async Task TestAdd(string imageUrl, int productId)
+        {
+            // Arrange
+            ProductImage productImage = new ProductImage
+            {
+                ImageUrl = imageUrl,
+                ProductId = productId
+            };
+
+            // Act
+            var result = await _repository.Add(productImage);
+
+            // Assert
+            Assert.AreEqual(imageUrl, result.ImageUrl);
+            Assert.AreEqual(productId, result.ProductId);
+        }
+
+        [Test]
+        public async Task TestAddException()
+        {
+            // Arrange
+            ProductImage productImage = new ProductImage
+            {
+                ImageUrl = null, // Invalid URL
+                ProductId = 1
+            };
+
+            // Assert
+            Assert.ThrowsAsync<CouldNotAddException>(async () => await _repository.Add(productImage));
+        }
+
+        [Test]
+        [TestCase(1)]
+        public async Task TestGet(int imageId)
+        {
+            // Arrange
+            var productImage = new ProductImage
+            {
+                ImageId = imageId,
+                ImageUrl = "https://example.com/image1.jpg",
+                ProductId = 1
+            };
+            await _repository.Add(productImage);
+
+            // Act
+            var result = await _repository.Get(imageId);
+
+            // Assert
+            Assert.AreEqual(imageId, result.ImageId);
+        }
+
+        [Test]
+        public async Task TestGetException()
+        {
+            // Assert
+            Assert.ThrowsAsync<NotFoundException>(async () => await _repository.Get(999));
+        }
+
+        [Test]
+        public async Task TestGetAll()
+        {
+            // Arrange
+            var productImage1 = new ProductImage
+            {
+                ImageUrl = "https://example.com/image1.jpg",
+                ProductId = 1
+            };
+            var productImage2 = new ProductImage
+            {
+                ImageUrl = "https://example.com/image2.jpg",
+                ProductId = 2
+            };
+            await _repository.Add(productImage1);
+            await _repository.Add(productImage2);
+
+            // Act
+            var result = await _repository.GetAll();
+
+            // Assert
+            Assert.AreEqual(2, result.Count());
+        }
+
+        [Test]
+        public async Task TestGetAllException()
+        {
+            // Assert
+            Assert.ThrowsAsync<CollectionEmptyException>(async () => await _repository.GetAll());
+        }
+
+        [Test]
+        [TestCase(1)]
+        public async Task TestDelete(int imageId)
+        {
+            // Arrange
+            var productImage = new ProductImage
+            {
+                ImageId = imageId,
+                ImageUrl = "https://example.com/image1.jpg",
+                ProductId = 1
+            };
+            await _repository.Add(productImage);
+
+            // Act
+            var result = await _repository.Delete(imageId);
+
+            // Assert
+            Assert.AreEqual(imageId, result.ImageId);
+        }
+
+        [Test]
+        public async Task TestDeleteException()
+        {
+            // Assert
+            Assert.ThrowsAsync<NotFoundException>(async () => await _repository.Delete(999));
+        }
+
+        [Test]
+        [TestCase(1)]
+        public async Task TestUpdate(int imageId)
+        {
+            // Arrange
+            var productImage = new ProductImage
+            {
+                ImageId = imageId,
+                ImageUrl = "https://example.com/image1.jpg",
+                ProductId = 1
+            };
+            await _repository.Add(productImage);
+
+            var updatedProductImage = new ProductImage
+            {
+                ImageUrl = "https://example.com/updated-image.jpg",
+                ProductId = 1
+            };
+
+            // Act
+            var result = await _repository.Update(imageId, updatedProductImage);
+
+            // Assert
+            Assert.AreEqual("https://example.com/updated-image.jpg", result.ImageUrl);
+        }
+
+        [Test]
+        public async Task TestUpdateException()
+        {
+            // Arrange
+            var updatedProductImage = new ProductImage
+            {
+                ImageUrl = "https://example.com/updated-image.jpg",
+                ProductId = 1
+            };
+
+            // Assert
+            Assert.ThrowsAsync<NotFoundException>(async () => await _repository.Update(999, updatedProductImage));
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            _context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            _context?.Dispose();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product repo test
+
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Exceptions;
+using EFWebApiApp.Models;
+using EFWebApiApp.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFWebApiTest
+{
+    public class ProductRepositoryTest : IDisposable
+    {
+        DbContextOptions options;
+        ShoppingContext context;
+        ProductRepository repository;
+        Mock<ILogger<ProductRepository>> logger;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<ShoppingContext>()
+              .UseInMemoryDatabase("TestAdd")
+              .Options;
+            context = new ShoppingContext(options);
+            logger = new Mock<ILogger<ProductRepository>>();
+            repository = new ProductRepository(context,logger.Object);
+        }
+
+        [Test]
+        [TestCase("TestAdd1", 120, 4, "", "Test description for Product", 1)]
+        [TestCase("TestAdd2", 120, 4, "", "Test description for Product", 2)]
+        public async Task TestAdd(string name, float price, int quantity, string image, string desc, int id)
+        {
+            //Arrange
+            Product product = new Product
+            {
+                Name = name,
+                Price = price,
+                Quantity = quantity,
+                BasicImage = image,
+                Description = desc
+            };
+            //Act
+            var result = await repository.Add(product);
+            //Assert
+            Assert.AreEqual(id, result.Id);
+        }
+
+        [Test]
+        [TestCase("TestAdd1", 120, 4, "", "Test description for Product", 1)]
+        public async Task TestAddException(string name, float price, int quantity, string image, string desc, int id)
+        {
+            //Arrange
+            Product product = new Product
+            {
+                Name = null,
+                Price = price,
+                Quantity = quantity,
+                BasicImage = image,
+                Description = desc
+            };
+
+            //Assert
+            Assert.ThrowsAsync<CouldNotAddException>(async () => await repository.Add(product));
+        }
+
+        //write tests for Get() and GetAll() methods of ProductRepository
+        [Test]
+        [TestCase("TestAdd1", 120, 4, "", "Test description for Product", 1)]
+        [TestCase("TestAdd2", 150, 2, "", "Another test description for Product", 2)]
+        public async Task Get(string name, float price, int quantity, string image, string desc, int id)
+        {
+            // Arrange
+            var product = new Product { Name = name, Price = price, Quantity = quantity, BasicImage = image, Description = desc };
+            await repository.Add(product);
+
+            // Act
+            var result = await repository.Get(id);
+
+            // Assert
+            Assert.AreEqual(name, result.Name);
+        }
+        [Test]
+        [TestCase("TestAdd1", 120, 4, "", "Test description for Product", 1)]
+        [TestCase("TestAdd2", 150, 2, "", "Another test description for Product", 2)]
+        public async Task GetAll(string name, float price, int quantity, string image, string desc, int id)
+        {
+            // Arrange
+            var product1 = new Product { Name = "TestAdd1", Price = 120, Quantity = 4, BasicImage = "", Description = "Test description for Product" };
+            var product2 = new Product { Name = "TestAdd2", Price = 150, Quantity = 2, BasicImage = "", Description = "Another test description for Product" };
+            await repository.Add(product1);
+            await repository.Add(product2);
+
+            // Act
+            var result = await repository.GetAll();
+
+            // Assert
+            Assert.AreEqual(2, result.Count());
+            Assert.IsTrue(result.Any(p => p.Name == "TestAdd1"));
+            Assert.IsTrue(result.Any(p => p.Name == "TestAdd2"));
+        }
+
+        //write tests for delete method of ProductRepository
+        [Test]
+        [TestCase("TestAdd1", 120, 4, "", "Test description for Product", 1)]
+        [TestCase("TestAdd2", 150, 2, "", "Another test description for Product", 2)]
+        public async Task Delete(string name, float price, int quantity, string image, string desc, int id)
+        {
+            // Arrange
+            var product = new Product { Name = name, Price = price, Quantity = quantity, BasicImage = image, Description = desc };
+            await repository.Add(product);
+
+            // Act
+            var result = await repository.Delete(id);
+
+            // Assert
+            Assert.AreEqual(name, result.Name);
+        }
+
+        //write tests for update method of ProductRepository
+        [Test]
+        [TestCase("Original Name", 100, 5, "original.jpg", "Original Description", 1)]
+        [TestCase("Second Product", 200, 10, "second.jpg", "Second Description", 2)]
+        public async Task Update(string name, float price, int quantity, string image, string desc, int id)
+        {
+            // Arrange
+            var originalProduct = new Product
+            {
+                Name = name,
+                Price = price,
+                Quantity = quantity,
+                BasicImage = image,
+                Description = desc
+            };
+
+            // Add the original product to the repository
+            await repository.Add(originalProduct);
+
+            // New product details for updating
+            var updatedProduct = new Product
+            {
+                Name = "Updated Name",
+                Price = 150,
+                Quantity = 15,
+                BasicImage = "updated.jpg",
+                Description = "Updated Description"
+            };
+
+            // Act
+            var result = await repository.Update(id, updatedProduct);
+
+            // Assert
+            Assert.AreEqual("Updated Name", result.Name);
+            Assert.AreEqual(150, result.Price);
+            Assert.AreEqual(15, result.Quantity);
+            Assert.AreEqual("updated.jpg", result.BasicImage);
+            Assert.AreEqual("Updated Description", result.Description);
+        }
+
+        //write tests for exceptions in ProductRepository the not found exception, collection empty exception, and could not add exception. test passes if exception is thrown
+        [Test]
+        public async Task NotFoundException()
+        {
+            // Assert
+            await Task.Run(() => Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(999)));
+            await Task.Run(() => Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(2)));
+        }
+        [Test]
+        [TestCase("TestAdd1", 120, 4, "", "Test description for Product", 1)]
+        public async Task CollectionEmptyException(string name, float price, int quantity, string image, string desc, int id)
+        {
+            // Assert
+            Assert.ThrowsAsync<CollectionEmptyException>(async () => await repository.GetAll());
+        }
+        [Test]
+        [TestCase("TestAdd1", 120, 4, "", "Test description for Product", 1)]
+        public async Task CouldNotAddException(string name, float price, int quantity, string image, string desc, int id)
+        {
+            // Arrange
+            var product = new Product { Name = null, Price = price, Quantity = quantity, BasicImage = image, Description = desc };
+
+            // Assert
+            Assert.ThrowsAsync<CouldNotAddException>(async () => await repository.Add(product));
+        }
+
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Day 30
+
+Product service Test
+
+using AutoMapper;
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using EFWebApiApp.Models.DTO;
+using EFWebApiApp.Repositories;
+using EFWebApiApp.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFWebApiTest
+{
+    public class ProductServiceTest
+    {
+        DbContextOptions options;
+        ShoppingContext context;
+        ProductRepository repository;
+        Mock<ILogger<ProductRepository>> logger;
+        Mock<IMapper> mapper;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<ShoppingContext>()
+                .UseInMemoryDatabase(databaseName: "ShoppingList")
+                .Options;
+            context = new ShoppingContext(options);
+            logger = new Mock<ILogger<ProductRepository>>();
+            repository = new ProductRepository(context, logger.Object);
+            mapper = new Mock<IMapper>();
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        [Test]
+        public async Task AddProductTest()
+        {
+            //arrange
+            var product = new ProductDTO
+            {
+                Name = "Test Product",
+                PricePerUnit = 100,
+                Quantity = 10,
+            };
+            var productEntity = new Product
+            {
+                Name = "Test Product",
+                Price = 100,
+                Quantity = 10,
+            };
+            mapper.Setup(m => m.Map<Product>(product)).Returns(productEntity);
+            IProductService productService = new ProductService(repository, mapper.Object);
+            //act
+            var result = await productService.AddProduct(product);
+            //assert
+            Assert.IsNotNull(result);
+        }
+
+        [Test]
+        public async Task GetProductByIdTest()
+        {
+            //arrange
+            var product = new Product
+            {
+                Name = "Test Product",
+                Price = 100,
+                Quantity = 10,
+            };
+            var productEntity = new Product
+            {
+                Name = "Test Product",
+                Price = 100,
+                Quantity = 10,
+            };
+            context.Products.Add(product);
+            context.SaveChanges();
+            mapper.Setup(m => m.Map<Product>(product)).Returns(productEntity);
+            IProductService productService = new ProductService(repository, mapper.Object);
+            //act
+            var result = await productService.GetProductById(1);
+            //assert
+            Assert.AreEqual(product.Name, result.Name);
+        }
+
+        [Test]
+        public async Task GetProductsTest()
+        {
+            //arrange
+            var products = new List<Product>
+            {
+                    new Product
+                    {
+                        Name = "Test Product 1",
+                        Price = 100,
+                        Quantity = 10,
+                    },
+                    new Product
+                    {
+                        Name = "Test Product 2",
+                        Price = 200,
+                        Quantity = 20,
+                    }
+            };
+            context.Products.AddRange(products);  
+            context.SaveChanges();
+
+            var productDtos = new List<ProductDTO>
+            {
+                new ProductDTO { Name = "Test Product 1", PricePerUnit = 100, Quantity = 10 },
+                new ProductDTO { Name = "Test Product 2", PricePerUnit = 200, Quantity = 20 }
+            };
+
+            mapper.Setup(m => m.Map<IEnumerable<ProductDTO>>(It.IsAny<IEnumerable<Product>>()))
+                  .Returns(productDtos);
+
+            IProductService productService = new ProductService(repository, mapper.Object);
+
+            //act
+            var result = await productService.GetProducts();
+
+            //assert
+            Assert.AreEqual(productDtos.Count, result.Count());
+        }
+
+        [Test]
+        public async Task UpdateProductPriceTest()
+        {
+            //arrange
+            var product = new Product
+            {
+                Id = 1,  
+                Name = "Test Product",
+                Price = 100,
+                Quantity = 10,
+            };
+            context.Products.Add(product);  
+            context.SaveChanges();
+
+            var productDto = new ProductDTO
+            {
+                Name = "Test Product",
+                PricePerUnit = 200,
+                Quantity = 10
+            };
+
+            mapper.Setup(m => m.Map<ProductDTO>(It.IsAny<Product>()))
+                  .Returns(productDto);
+
+            IProductService productService = new ProductService(repository, mapper.Object);
+
+            //act
+            var result = await productService.UpdateProductPrice(1, 200);
+
+            //assert
+            Assert.IsNotNull(result);
+            Assert.AreEqual(200, result.PricePerUnit); 
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product image service test
+
+using AutoMapper;
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Models;
+using EFWebApiApp.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFWebApiTest
+{
+    public class ProductImageServiceTest : IDisposable
+    {
+        DbContextOptions options;
+        ShoppingContext context;
+        ProductImageRepository repository;
+        Mock<ILogger<ProductImageRepository>> logger;
+        Mock<IMapper> mapper;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<ShoppingContext>()
+                .UseInMemoryDatabase(databaseName: "ShoppingList")
+                .Options;
+            context = new ShoppingContext(options);
+            logger = new Mock<ILogger<ProductImageRepository>>();
+            repository = new ProductImageRepository(context, logger.Object);
+            mapper = new Mock<IMapper>();
+        }
+
+        [Test]
+        public async Task AddProductImageTest()
+        {
+            //arrange
+            var productImage = new ProductImage
+            {
+                ImageUrl = "Test Image.jpg",
+                ProductId = 1,
+            };
+
+            //act
+            await repository.Add(productImage);
+
+            //assert
+            var result = await context.ProductImages.FirstOrDefaultAsync();
+            Assert.AreEqual(productImage.ImageUrl, result.ImageUrl);
+            Assert.AreEqual(productImage.ProductId, result.ProductId);
+        }
+
+        [Test]
+        public async Task GetImagesByProductId()
+        {
+            var productImage = new ProductImage
+            {
+                ImageUrl = "Test Image.jpg",
+                ProductId = 1,
+            };
+            var prodImage = new ProductImage
+            {
+                ImageUrl = "Test Image.jpg",
+                ProductId = 2,
+            };
+            await repository.Add(productImage);
+            context.SaveChanges();
+            await context.Products.FirstOrDefaultAsync();
+            var result = await repository.Get(productImage.ImageId);
+            Assert.AreEqual(productImage.ImageUrl, result.ImageUrl);
+        }
+
+            [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product image controller test
+
+using AutoMapper;
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Controllers;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using EFWebApiApp.Repositories;
+using EFWebApiApp.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFWebApiTest
+{
+    public class ProductImageControllerTest
+    {
+        DbContextOptions<ShoppingContext> options;
+        ShoppingContext context;
+        ProductImageRepository repository;
+        Mock<ILogger<ProductImageRepository>> logger;
+        private Mock<ILogger<ProductImageController>> loggerController;
+        Mock<IMapper> mapper;
+        IProductImageService productImageService;
+        ProductImage productImage;
+        Mock<IRepository<int, Product>> productRepository; // Added mock for product repository
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<ShoppingContext>()
+              .UseInMemoryDatabase("TestAdd")
+              .Options;
+            context = new ShoppingContext(options);
+            logger = new Mock<ILogger<ProductImageRepository>>();
+            loggerController = new Mock<ILogger<ProductImageController>>();
+            repository = new ProductImageRepository(context, logger.Object);
+            mapper = new Mock<IMapper>();
+            productRepository = new Mock<IRepository<int, Product>>(); // Initialize the mock
+            productImageService = new ProductImageService(repository, productRepository.Object); // Pass the mock to the service
+        }
+
+        [Test]
+        public async Task AddProductImagesTest()
+        {
+            // Arrange
+            var productImage = new ProductImage
+            {
+                ProductId = 1,
+                ImageUrl = "http://test.com/image1.jpg"
+            };
+            var product = new Product
+            {
+                Id = 1,
+                Name = "Test Product",
+                Price = 10.0f,
+                Quantity = 100
+            };
+            productRepository.Setup(p => p.Get(1)).ReturnsAsync(product); // Setup the mock to return the product
+
+            // Act
+            await productImageService.AddImagesToProduct(1, new List<string> { productImage.ImageUrl });
+
+            // Assert
+            var result = await repository.Get(1);
+            Assert.AreEqual(productImage.ProductId, result.ProductId);
+            Assert.AreEqual(productImage.ImageUrl, result.ImageUrl);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+    }
+
+}
+--------------------------------------------------------------------------------------------------------------------------
+Product controller test
+
+using AutoMapper;
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Controllers;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models.DTO;
+using EFWebApiApp.Models;
+using EFWebApiApp.Repositories;
+using EFWebApiApp.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFWebApiTest
+{
+    public class ProductControllerTest
+    {
+        DbContextOptions options;
+        ShoppingContext context;
+        ProductRepository repository;
+        Mock<ILogger<ProductRepository>> logger;
+        private Mock<ILogger<ProductController>> loggerController;
+        Mock<IMapper> mapper;
+        IProductService productService;
+        ProductDTO product;
+        Product productEntity;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<ShoppingContext>()
+              .UseInMemoryDatabase("TestAdd")
+              .Options;
+            context = new ShoppingContext(options);
+            logger = new Mock<ILogger<ProductRepository>>();
+            loggerController = new Mock<ILogger<ProductController>>();
+            repository = new ProductRepository(context, logger.Object);
+            mapper = new Mock<IMapper>();
+            productService = new ProductService(repository, mapper.Object);
+        }
+
+
+        [Test]
+        public async Task AddProductTest()
+        {
+            // Arrange
+            var product = new ProductDTO
+            {
+                Name = "Test Product",
+                PricePerUnit = 10.0f,
+                Quantity = 100
+            };
+            var productEntity = new Product
+            {
+                Name = "Test Product",
+                Price = 10.0f,
+                Quantity = 100
+            };
+            mapper.Setup(m => m.Map<Product>(product)).Returns(productEntity);//dummying the method to return the result for testing
+            var controller = new ProductController(productService, loggerController.Object);
+            // Act
+            var result = await controller.AddProduct(product);
+            Assert.IsNotNull(result);
+            var resultObject = result as OkObjectResult;
+            // Assert
+            Assert.IsNotNull(resultObject);
+            Assert.AreEqual(200, resultObject.StatusCode);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Customer controller test
+
+using AutoMapper;
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Controllers;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using EFWebApiApp.Models.DTO;
+using EFWebApiApp.Repositories;
+using EFWebApiApp.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFWebApiTest
+{
+    public class CustomerControllerTest : IDisposable
+    {
+        DbContextOptions options;
+        ShoppingContext context;
+        CustomerRepository repository;
+        Mock<ILogger<CustomerRepository>> logger;
+        private Mock<ILogger<CustomerController>> loggerController;
+        Mock<IMapper> mapper;
+        ICustomerBasicService customerBasicService;
+        CustomerDTO customer;
+        Customer customerEntity;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<ShoppingContext>()
+              .UseInMemoryDatabase("TestAdd")
+              .Options;
+            context = new ShoppingContext(options);
+            logger = new Mock<ILogger<CustomerRepository>>();
+            loggerController = new Mock<ILogger<CustomerController>>();
+            repository = new CustomerRepository(context, logger.Object);
+            mapper = new Mock<IMapper>();
+            customerBasicService = new CustomerBasicService(repository, mapper.Object);
+        }
+
+        [Test]
+        public async Task CreateCustomerTest()
+        {
+            //arrange
+            var customer = new CustomerDTO
+            {
+                Name = "Test Customer1",
+                Email = "test1@gmail.com",
+                Phone = "1234567890",
+                DateOfBirth = new DateTime(1990, 1, 1)
+            };
+            var customerEntity = new Customer
+            {
+                Name = "Test Customer2",
+                Email = "test2@gmail.com",
+                Phone = "865999955",
+                DateOfBirth = new DateTime(1995, 10, 13)
+            };
+            mapper.Setup(m => m.Map<Customer>(customer)).Returns(customerEntity);
+            var controller = new CustomerController(customerBasicService, loggerController.Object);
+
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Customer basic service test
+
+using AutoMapper;
+using EFWebApiApp.Contexts;
+using EFWebApiApp.Exceptions;
+using EFWebApiApp.Interfaces;
+using EFWebApiApp.Models;
+using EFWebApiApp.Models.DTO;
+using EFWebApiApp.Repositories;
+using EFWebApiApp.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using Moq;
+using NUnit.Framework.Internal;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EFWebApiTest
+{
+    public class CustomerBasicServiceTest : IDisposable
+    {
+        DbContextOptions options;
+        ShoppingContext context;
+        Mock<CustomerRepository> repository;
+        Mock<ILogger<CustomerRepository>> logger;
+        Mock<IMapper> mapper;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<ShoppingContext>()
+                .UseInMemoryDatabase(databaseName: "ShoppingList")
+                .Options;
+            context = new ShoppingContext(options);
+            logger = new Mock<ILogger<CustomerRepository>>();
+            repository = new Mock<CustomerRepository>(context, logger.Object);
+            mapper = new Mock<IMapper>();
+        }
+
+        [Test]
+        public async Task CreateCustomerTest()
+        {
+            //arrange
+            var customer = new CustomerDTO
+            {
+                Name = "Test name 1",
+                Email = "test1@gmail.com",
+                Phone = "1234567890",
+                DateOfBirth = new DateTime(1990, 1, 1)
+            };
+            var customerEntity = new Customer
+            {
+                Name = "Test name 2",
+                Email = "test2@gmail.com",
+                Phone = "7458459494",
+                DateOfBirth = new DateTime(2000, 1, 1)
+            };
+            mapper.Setup(m => m.Map<Customer>(customer)).Returns(customerEntity);
+            ICustomerBasicService customerBasic = new CustomerBasicService(repository.Object, mapper.Object);
+            //act
+            var result = await customerBasic.CreateCustomer(customer);
+            //assert
+            Assert.IsNotNull(result);
+
+        }
+
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}

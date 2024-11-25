@@ -1,0 +1,25 @@
+Assignment - 2 
+Attributes of product class:
+1. Product id - int
+2. product name - string
+3. Product price - int
+4. product quantity - int
+
+Attributes of customer class:
+1. Customer id - int
+2. Customer name - string
+3. Customer phone - string
+
+Attributes of supplier class
+1. Supplier id - int
+2. Supplier name - string
+
+Interface 1: Customer service
+Methods:
+1. Buy product -- reduces quantity of selected product
+2. View all products
+
+Interface 2: Supplier service
+Methods:
+1. Add product -- increases quantity of selected product
+2. View all products

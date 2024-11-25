@@ -1,0 +1,392 @@
+Day 13 - Assignment
+
+Model - Doctor
+
+using System.ComponentModel.DataAnnotations;
+
+namespace ClinicManagementApp.Models
+{
+    public class Doctor
+    {
+        [Key]
+        public int DoctorId { get; set; }
+
+        [Required(ErrorMessage = "Name is required")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "Specialty is required")]
+        public string Specialty { get; set; }
+
+        [Required(ErrorMessage = "Department is required")]
+        public string Department { get; set; }
+
+        [Required(ErrorMessage = "Phone is required")]
+        [Phone(ErrorMessage = "Please enter a valid phone number")]
+        public string Phone { get; set; }
+
+        [Required(ErrorMessage = "Years of experience is required")]
+        [Range(0, 100, ErrorMessage = "Years of experience must be between 0 and 100")]
+        public int YearsOfExperience { get; set; }
+
+        // ImagePath can be optional, as not all doctors may have an image
+        public string ImagePath { get; set; } = "doctor1.jpg";
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------
+Error view model
+namespace ClinicManagementApp.Models
+{
+    public class ErrorViewModel
+    {
+        public string? RequestId { get; set; }
+
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
+Controller - Doctor Controller
+using ClinicManagementApp.Models;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IWebHostEnvironment;
+
+namespace ClinicManagementApp.Controllers
+{
+    public class DoctorController : Controller
+    {
+        private IHostingEnvironment Environment;
+        public DoctorController(IHostingEnvironment _environment)
+        {
+            Environment = _environment;
+        }
+
+
+        private static List<Doctor> _doctors = new List<Doctor>
+        {
+            new Doctor { DoctorId = 1, Name = "Dr. John Smith",Specialty = "Cardiology", Department = "Cardiology",Phone = "123-456-7890", YearsOfExperience = 10, ImagePath = "doctor1.jpg" },
+            new Doctor { DoctorId = 2, Name = "Dr. Emily White", Specialty = "Neurology", Department = "Neurology",Phone = "987-654-3210", YearsOfExperience = 7, ImagePath = "doctor2.jpg" },
+            new Doctor { DoctorId = 3, Name = "Dr. Mark Brown", Specialty = "Pediatrics", Department = "Pediatrics",Phone = "555-555-5555", YearsOfExperience = 15, ImagePath = "doctor3.jpg" }
+        };
+
+
+        // Display all doctors
+        public IActionResult Index()
+        {
+            return View(_doctors);
+        }
+
+        // Create doctor (GET)
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // Create doctor (POST)
+        [HttpPost]
+        public IActionResult Create(Doctor doctor, IFormFile imageFile)
+        {
+            if (!ModelState.IsValid)
+            {
+                // Debugging: Print out ModelState errors
+                foreach (var state in ModelState)
+                {
+                    foreach (var error in state.Value.Errors)
+                    {
+                        Console.WriteLine($"Key: {state.Key}, Error: {error.ErrorMessage}");
+                    }
+                }
+                return View(doctor); // Redisplay the form with validation errors
+            }
+            if (ModelState.IsValid)
+            {
+                // Save the uploaded image to wwwroot/images
+                if (imageFile != null && imageFile.Length > 0)
+                {
+
+                    string uploadsFolder = Path.Combine(Environment.WebRootPath, "images");
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + imageFile.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        imageFile.CopyTo(fileStream);
+                    }
+
+                    // Save the image file name (not the full path) in the doctor model
+                    doctor.ImagePath = uniqueFileName;
+                }
+                // Simulate auto-incrementing ID
+                doctor.DoctorId = _doctors.Max(d => d.DoctorId) + 1;
+                _doctors.Add(doctor);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(doctor);
+        }
+
+        // Edit doctor (GET)
+        public IActionResult Edit(int id)
+        {
+            var doctor = _doctors.FirstOrDefault(d => d.DoctorId == id);
+            if (doctor == null)
+            {
+                return NotFound();
+            }
+            return View(doctor);
+        }
+
+        // Edit doctor (POST)
+        [HttpPost]
+        public IActionResult Edit(int id, Doctor updatedDoctor, IFormFile imageFile)
+        {
+            var doctor = _doctors.FirstOrDefault(d => d.DoctorId == id);
+            if (doctor == null)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                // Save the uploaded image to wwwroot/images if a new one is uploaded
+                if (imageFile != null && imageFile.Length > 0)
+                {
+                    string uploadsFolder = Path.Combine(Environment.WebRootPath, "images");
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + imageFile.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        imageFile.CopyTo(fileStream);
+                    }
+
+                    // Update the image file name in the doctor model
+                    doctor.ImagePath = uniqueFileName;
+                }
+                // Update doctor details
+                doctor.Name = updatedDoctor.Name;
+                doctor.Specialty = updatedDoctor.Specialty;
+                doctor.Phone = updatedDoctor.Phone;
+                doctor.YearsOfExperience = updatedDoctor.YearsOfExperience;
+                doctor.Department = updatedDoctor.Department;
+
+                return RedirectToAction(nameof(Index));
+            }
+            return View(updatedDoctor);
+        }
+
+        // Delete doctor (GET)
+        public IActionResult Delete(int id)
+        {
+            var doctor = _doctors.FirstOrDefault(d => d.DoctorId == id);
+            if (doctor == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                _doctors.Remove(doctor);
+            }
+            return RedirectToAction("Index");
+
+        }
+
+        // Delete doctor (POST)
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var doctor = _doctors.FirstOrDefault(d => d.DoctorId == id);
+            if (doctor != null)
+            {
+                _doctors.Remove(doctor);
+            }
+            return RedirectToAction(nameof(Index));
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------
+Views 
+1. Index.cshtml
+@model IEnumerable<ClinicManagementApp.Models.Doctor>
+<h2>Welcome to Lumina Medical Center</h2>
+
+<h3>About us</h3>
+<p class="paragraph">
+    At Lumina Medical Center, we believe in illuminating the path to health and well-being for every individual. Our hospital combines cutting-edge medical technology with compassionate care to deliver personalized treatment that empowers our patients to thrive. We are committed to a brighter, healthier future, where every person receives the highest standard of care.
+</p>
+
+<h2>Meet our team of doctors</h2>
+<div class="row">
+    @foreach (var doctor in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <!-- Adjust the column size as needed -->
+            <div class="card">
+                <img src="~/images/@doctor.ImagePath" alt="@doctor.Name" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">@doctor.Name</h5>
+                    <p class="card-text">Working at the department of @doctor.Department, Dr. @doctor.Name has @doctor.YearsOfExperience+ years of experience in @doctor.Specialty.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<h2>Doctors List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Specialty</th>
+            <th>Department</th>
+            <th>Phone</th>
+            <th>Years of Experience</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doctor in Model)
+        {
+            <tr>
+                <td>
+                    @* <img src="@Url.Content( doctor.ImagePath)" alt="@doctor.Name" width="100" /> *@
+                    <img src="~/images/@doctor.ImagePath" alt="@doctor.Name" width="100" />
+
+                </td>
+                <td>@doctor.Name</td>
+                <td>@doctor.Specialty</td>
+                <td>@doctor.Department</td>
+                <td>@doctor.Phone</td>
+                <td>@doctor.YearsOfExperience</td>
+                <td>
+                    <a class="btn btn-primary" href="@Url.Action("Edit", new { id = doctor.DoctorId })">Edit</a>
+                    <a class="btn btn-danger" href="@Url.Action("Delete", new { id = doctor.DoctorId })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-success" href="@Url.Action("Create")">Add New Doctor</a>
+--------------------------------------------------------------------------------------------------------------------------
+2. Edit.cshtml
+@model ClinicManagementApp.Models.Doctor
+
+<form asp-action="@(ViewContext.RouteData.Values["action"].ToString())" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Specialty">Specialty</label>
+        <input asp-for="Specialty" class="form-control" />
+        <span asp-validation-for="Specialty" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Specialty">Department</label>
+        <input asp-for="Department" class="form-control" />
+        <span asp-validation-for="Department" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Phone">Phone</label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="YearsOfExperience">Years of Experience</label>
+        <input asp-for="YearsOfExperience" class="form-control" />
+        <span asp-validation-for="YearsOfExperience" class="text-danger"></span>
+    </div>
+
+    @* <div class="form-group">
+    <label for="ImagePath">Image URL</label>
+    <input asp-for="ImagePath" class="form-control" />
+    <span asp-validation-for="ImagePath" class="text-danger"></span>
+    </div> *@
+
+    <div class="form-group">
+        <!-- Change Image Path input to File Upload -->
+        <label for="imageFile">Upload Image</label>
+        <input type="file" name="imageFile" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+--------------------------------------------------------------------------------------------------------------------------
+3. Delete.cshtml
+@model ClinicManagementApp.Models.Doctor
+
+<h3>Are you sure you want to delete this doctor?</h3>
+<div>
+    <p>Name: @Model.Name</p>
+    <p>Specialty: @Model.Specialty</p>
+    <p>Phone: @Model.Phone</p>
+    <p>Years of Experience: @Model.YearsOfExperience</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="DoctorId" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a class="btn btn-secondary" href="@Url.Action("Index")">Cancel</a>
+</form>
+--------------------------------------------------------------------------------------------------------------------------
+4. Create.cshtml
+@model ClinicManagementApp.Models.Doctor
+
+<form asp-action="@(ViewContext.RouteData.Values["action"].ToString())" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Specialty">Specialty</label>
+        <input asp-for="Specialty" class="form-control" />
+        <span asp-validation-for="Specialty" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Specialty">Department</label>
+        <input asp-for="Department" class="form-control" />
+        <span asp-validation-for="Department" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Phone">Phone</label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="YearsOfExperience">Years of Experience</label>
+        <input asp-for="YearsOfExperience" class="form-control" />
+        <span asp-validation-for="YearsOfExperience" class="text-danger"></span>
+    </div>
+
+    @* <div class="form-group">
+    <label for="ImagePath">Image URL</label>
+    <input asp-for="ImagePath" class="form-control" />
+    <span asp-validation-for="ImagePath" class="text-danger"></span>
+    </div> *@
+
+    <div class="form-group">
+        <!-- Change Image Path input to File Upload -->
+        <label for="imageFile">Upload Image</label>
+        <input type="file" name="imageFile" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+

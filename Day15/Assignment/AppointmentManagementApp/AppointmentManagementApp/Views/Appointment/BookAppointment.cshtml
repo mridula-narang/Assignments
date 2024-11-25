@@ -1,0 +1,38 @@
+﻿@model IEnumerable<AppointmentManagementApp.Models.Doctor>
+
+@{
+    ViewData["Title"] = "BookAppointment";
+}
+
+<h1>BookAppointment</h1>
+
+@if (ViewBag.SuccessMessage != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.SuccessMessage
+    </div>
+}
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+
+<form asp-action="BookAppointment" method="post">
+    <div>
+        <label for="doctorId">Select Doctor:</label>
+        <select name="doctorId" id="doctorId">
+            @foreach (var doctor in Model)
+            {
+                <option value="@doctor.DoctorId">@doctor.Name - @doctor.Department</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="appointmentDateTime">Select Date and Time:</label>
+        <input type="datetime-local" name="appointmentDateTime" required />
+    </div>
+    <button type="submit">Book Appointment</button>
+</form>

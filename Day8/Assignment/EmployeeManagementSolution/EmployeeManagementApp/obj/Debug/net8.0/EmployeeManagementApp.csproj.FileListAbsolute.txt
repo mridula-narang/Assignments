@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\bin\Debug\net8.0\EmployeeManagementApp.exe
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\bin\Debug\net8.0\EmployeeManagementApp.deps.json
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\bin\Debug\net8.0\EmployeeManagementApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\bin\Debug\net8.0\EmployeeManagementApp.dll
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\bin\Debug\net8.0\EmployeeManagementApp.pdb
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\EmployeeManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\EmployeeManagementApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\EmployeeManagementApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\EmployeeManagementApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\EmployeeManagementApp.sourcelink.json
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\EmployeeManagementApp.dll
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\refint\EmployeeManagementApp.dll
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\EmployeeManagementApp.pdb
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\EmployeeManagementApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day8\Assignment\EmployeeManagementSolution\EmployeeManagementApp\obj\Debug\net8.0\ref\EmployeeManagementApp.dll

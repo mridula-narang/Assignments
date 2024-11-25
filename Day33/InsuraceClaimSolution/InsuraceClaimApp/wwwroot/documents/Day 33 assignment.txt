@@ -1,0 +1,2227 @@
+Day 33 assignment
+using System.ComponentModel.DataAnnotations;
+
+namespace InsuraceClaimApp.Models
+{
+    public class User
+    {
+        public string Username { get; set; }
+        public byte[] Password { get; set; }
+        public byte[] HashKey { get; set; }
+        public ICollection<Policy> Policies { get; set; } 
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace InsuraceClaimApp.Models
+{
+    public class Policy
+    {
+        public int PolicyId { get; set; }
+        public string PolicyName { get; set; }
+        public string PolicyType { get; set; }
+
+        [ForeignKey("Username")]
+        public string UserName { get; set; }
+        public User User { get; set; }
+        //public ICollection<InsuranceClaim> Claims { get; set; } // Add this line
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace InsuraceClaimApp.Models
+{
+    public class InsuranceClaim
+    {
+        [Key]
+        public int ClaimId { get; set; }
+        public int PolicyNumber { get; set; } 
+        public string ClaimType { get; set; } = string.Empty;
+        public DateTime IncidentDate { get; set; }
+        [ForeignKey("Username")]
+        public string UserName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+        public string DocumentPath { get; set; }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+namespace InsuraceClaimApp.Models.DTOs
+{
+    public class UserCreateDTO
+    {
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------
+namespace InsuraceClaimApp.Models.DTOs
+{
+    public class PolicyDTO
+    {
+        public string PolicyName { get; set; }
+        public string PolicyType { get; set; }
+        public string UserName { get; set; }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+namespace InsuraceClaimApp.Models.DTOs
+{
+    public class LoginResponseDTO
+    {
+        public string Username { get; set; } = string.Empty;
+        public string Token { get; set; } = string.Empty;
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+namespace InsuraceClaimApp.Models.DTOs
+{
+    public class LoginRequestDTO
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+namespace InsuraceClaimApp.Models.DTOs
+{
+    public class ErrorResponseDTO
+    {
+        public int ErrorNumber { get; set; }
+        public string ErrorMessage { get; set; } = string.Empty;
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+namespace InsuraceClaimApp.Models.DTOs
+{
+    public class ClaimRequestDTO
+    {
+        public int PolicyId { get; set; }
+        public string ClaimType { get; set; }
+        public DateTime IncidentDate { get; set; }
+        public string UserName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+        public IFormFile Document { get; set; }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+using InsuraceClaimApp.Contexts;
+using InsuraceClaimApp.Exceptions;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace InsuraceClaimApp.Repositories
+{
+    public class ClaimRepository : IRepository<int, InsuranceClaim>
+    {
+        private readonly InsuranceContext _context;
+        private readonly ILogger<ClaimRepository> _logger;
+
+        public ClaimRepository(InsuranceContext context, ILogger<ClaimRepository> logger)
+        {
+            _context = context;
+            _logger = logger;
+        }
+        public async Task<InsuranceClaim> Add(InsuranceClaim entity)
+        {
+            try
+            {
+                _context.Claims.Add(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not add claim");
+                throw new CouldNotAddException("Claim");
+            }
+        }
+
+        public async Task<InsuranceClaim> Delete(int key)
+        {
+            var claim = await Get(key);
+            if (claim == null)
+            {
+                throw new NotFoundException("Claim");
+            }
+            try
+            {
+                _context.Claims.Remove(claim);
+                await _context.SaveChangesAsync();
+                return claim;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not delete claim");
+                throw new Exception("Unable to delete");
+            }
+        }
+
+        public async Task<InsuranceClaim> Get(int key)
+        {
+            try
+            {
+                var claim = await _context.Claims.FindAsync(key);
+                return claim;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not get claim");
+                throw new NotFoundException("Claim");
+            }
+        }
+
+        public async Task<IEnumerable<InsuranceClaim>> GetAll()
+        {
+            var claims = await _context.Claims.ToListAsync();
+            if (claims.Count == 0)
+            {
+                throw new CollectionEmptyException("Claims");
+            }
+            return claims;
+        }
+
+        public async Task<InsuranceClaim> Update(int key, InsuranceClaim entity)
+        {
+            var claim = await Get(key);
+            if (claim == null)
+            {
+                throw new NotFoundException("Claim");
+            }
+            try
+            {
+                _context.Claims.Update(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not update claim details");
+                throw new Exception("Unable to modify claim object");
+            }
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+using InsuraceClaimApp.Contexts;
+using InsuraceClaimApp.Exceptions;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace InsuraceClaimApp.Repositories
+{
+    public class PolicyRepository : IRepository<int, Policy>
+    {
+        private readonly InsuranceContext _context;
+        private readonly ILogger<PolicyRepository> _logger;
+
+        public PolicyRepository(InsuranceContext context, ILogger<PolicyRepository> logger)
+        {
+            _context = context;
+            _logger = logger;
+        }
+        public async Task<Policy> Add(Policy entity)
+        {
+            try
+            {
+                _context.Policies.Add(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not add policy");
+                throw new CouldNotAddException("Policy");
+            }
+        }
+
+        public async Task<Policy> Delete(int key)
+        {
+            var policy = await Get(key);
+            if (policy == null)
+            {
+                throw new NotFoundException("Policy");
+            }
+            try
+            {
+                _context.Policies.Remove(policy);
+                await _context.SaveChangesAsync();
+                return policy;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not delete policy");
+                throw new Exception("Unable to delete");
+            }
+        }
+
+        public async Task<Policy> Get(int key)
+        {
+            try
+            {
+                var policy = await _context.Policies.FindAsync(key);
+                return policy;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not get policy");
+                throw new NotFoundException("Policy");
+            }
+        }
+
+        public async Task<IEnumerable<Policy>> GetAll()
+        {
+            var policies = await _context.Policies.ToListAsync();
+            if (policies.Count == 0)
+            {
+                throw new CollectionEmptyException("Policies");
+            }
+            return policies;
+        }
+
+        public async Task<Policy> Update(int key, Policy entity)
+        {
+            var policy = await Get(key);
+            if (policy == null)
+            {
+                throw new NotFoundException("Policy");
+            }
+            try
+            {
+                _context.Policies.Update(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not update policy details");
+                throw new Exception("Unable to modify policy object");
+            }
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+using InsuraceClaimApp.Contexts;
+using InsuraceClaimApp.Exceptions;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace InsuraceClaimApp.Repositories
+{
+    public class UserRepository : IRepository<string, User>
+    {
+        private readonly InsuranceContext _context;
+        private readonly ILogger<UserRepository> _logger;
+
+        public UserRepository(InsuranceContext context, ILogger<UserRepository> logger)
+        {
+            _context = context;
+            _logger = logger;
+        }
+        public async Task<User> Add(User entity)
+        {
+            try
+            {
+                _context.Users.Add(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not add user");
+                throw new CouldNotAddException("User");
+            }
+        }
+
+        public async Task<User> Delete(string key)
+        {
+            var user = await Get(key);
+            if (user == null)
+            {
+                throw new NotFoundException("User");
+            }
+            try
+            {
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
+                return user;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not delete user");
+                throw new Exception("Unable to delete");
+            }
+        }
+
+        public async Task<User> Get(string key)
+        {
+            try
+            {
+                var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == key);
+                return user;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not get user");
+                throw new NotFoundException("User");
+            }
+        }
+
+        public async Task<IEnumerable<User>> GetAll()
+        {
+            var users = await _context.Users.ToListAsync();
+            if (users.Count == 0)
+            {
+                throw new CollectionEmptyException("Users");
+            }
+            return users;
+        }
+
+        public async Task<User> Update(string key, User entity)
+        {
+            var user = await Get(key);
+            if (user == null)
+            {
+                throw new NotFoundException("User");
+            }
+            try
+            {
+                _context.Users.Update(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not update user details");
+                throw new Exception("Unable to modify user object");
+            }
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+using InsuraceClaimApp.Exceptions;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models.DTOs;
+using InsuraceClaimApp.Models;
+using AutoMapper;
+
+namespace InsuraceClaimApp.Services
+{
+    public class ClaimService : IClaimService
+    {
+        private readonly IRepository<int, InsuranceClaim> _claimRepository;
+        private readonly IRepository<int, Policy> _policyRepository;
+        private readonly IMapper _mapper;
+
+        public ClaimService(IRepository<int, InsuranceClaim> claimRepository, IRepository<int, Policy> policyRepository,IMapper mapper)
+        {
+            _claimRepository = claimRepository;
+            _policyRepository = policyRepository;
+            _mapper = mapper;
+        }
+
+        public async Task<InsuranceClaim> AddClaimAsync(ClaimRequestDTO claimRequest)
+        {
+            var policy = await _policyRepository.Get(claimRequest.PolicyId);
+            if (policy == null)
+            {
+                throw new NotFoundException("Policy");
+            }
+
+            var newClaim = new InsuranceClaim
+            {
+                PolicyNumber = claimRequest.PolicyId,
+                ClaimType = claimRequest.ClaimType,
+                IncidentDate = claimRequest.IncidentDate,
+                UserName = claimRequest.UserName,
+                PhoneNumber = claimRequest.PhoneNumber,
+                Email = claimRequest.Email,
+                DocumentPath = await SaveDocumentAsync(claimRequest.Document) 
+            };
+
+            return await _claimRepository.Add(newClaim);
+        }
+
+        public async Task<InsuranceClaim> GetClaimByIdAsync(int id)
+        {
+            return await _claimRepository.Get(id);
+        }
+
+        public async Task<IEnumerable<InsuranceClaim>> GetAllClaimsAsync()
+        {
+            return await _claimRepository.GetAll();
+        }
+
+        public async Task<InsuranceClaim> UpdateClaimAsync(int id, ClaimRequestDTO claimRequest)
+        {
+            var existingClaim = await _claimRepository.Get(id);
+            if (existingClaim == null)
+            {
+                throw new NotFoundException("Claim");
+            }
+
+            existingClaim.ClaimType = claimRequest.ClaimType;
+            existingClaim.IncidentDate = claimRequest.IncidentDate;
+            existingClaim.UserName = claimRequest.UserName;
+            existingClaim.PhoneNumber = claimRequest.PhoneNumber;
+            existingClaim.Email = claimRequest.Email;
+
+            if (claimRequest.Document != null)
+            {
+                existingClaim.DocumentPath = await SaveDocumentAsync(claimRequest.Document);
+            }
+
+            return await _claimRepository.Update(id, existingClaim);
+        }
+
+        public async Task DeleteClaimAsync(int id)
+        {
+            await _claimRepository.Delete(id);
+        }
+
+        public async Task<string> SaveDocumentAsync(IFormFile document)
+        {
+            var folderPath = Path.Combine("wwwroot", "documents");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            var filePath = Path.Combine(folderPath, document.FileName);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await document.CopyToAsync(stream);
+            }
+
+            return filePath; 
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+using InsuraceClaimApp.Exceptions;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models.DTOs;
+using InsuraceClaimApp.Models;
+using AutoMapper;
+
+namespace InsuraceClaimApp.Services
+{
+    public class ClaimService : IClaimService
+    {
+        private readonly IRepository<int, InsuranceClaim> _claimRepository;
+        private readonly IRepository<int, Policy> _policyRepository;
+        private readonly IMapper _mapper;
+
+        public ClaimService(IRepository<int, InsuranceClaim> claimRepository, IRepository<int, Policy> policyRepository,IMapper mapper)
+        {
+            _claimRepository = claimRepository;
+            _policyRepository = policyRepository;
+            _mapper = mapper;
+        }
+
+        public async Task<InsuranceClaim> AddClaimAsync(ClaimRequestDTO claimRequest)
+        {
+            var policy = await _policyRepository.Get(claimRequest.PolicyId);
+            if (policy == null)
+            {
+                throw new NotFoundException("Policy");
+            }
+
+            var newClaim = new InsuranceClaim
+            {
+                PolicyNumber = claimRequest.PolicyId,
+                ClaimType = claimRequest.ClaimType,
+                IncidentDate = claimRequest.IncidentDate,
+                UserName = claimRequest.UserName,
+                PhoneNumber = claimRequest.PhoneNumber,
+                Email = claimRequest.Email,
+                DocumentPath = await SaveDocumentAsync(claimRequest.Document) 
+            };
+
+            return await _claimRepository.Add(newClaim);
+        }
+
+        public async Task<InsuranceClaim> GetClaimByIdAsync(int id)
+        {
+            return await _claimRepository.Get(id);
+        }
+
+        public async Task<IEnumerable<InsuranceClaim>> GetAllClaimsAsync()
+        {
+            return await _claimRepository.GetAll();
+        }
+
+        public async Task<InsuranceClaim> UpdateClaimAsync(int id, ClaimRequestDTO claimRequest)
+        {
+            var existingClaim = await _claimRepository.Get(id);
+            if (existingClaim == null)
+            {
+                throw new NotFoundException("Claim");
+            }
+
+            existingClaim.ClaimType = claimRequest.ClaimType;
+            existingClaim.IncidentDate = claimRequest.IncidentDate;
+            existingClaim.UserName = claimRequest.UserName;
+            existingClaim.PhoneNumber = claimRequest.PhoneNumber;
+            existingClaim.Email = claimRequest.Email;
+
+            if (claimRequest.Document != null)
+            {
+                existingClaim.DocumentPath = await SaveDocumentAsync(claimRequest.Document);
+            }
+
+            return await _claimRepository.Update(id, existingClaim);
+        }
+
+        public async Task DeleteClaimAsync(int id)
+        {
+            await _claimRepository.Delete(id);
+        }
+
+        public async Task<string> SaveDocumentAsync(IFormFile document)
+        {
+            var folderPath = Path.Combine("wwwroot", "documents");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            var filePath = Path.Combine(folderPath, document.FileName);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await document.CopyToAsync(stream);
+            }
+
+            return filePath; 
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models.DTOs;
+using InsuraceClaimApp.Models;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace InsuraceClaimApp.Services
+{
+    public class UserService : IUserService
+    {
+        private readonly IRepository<string, User> _userRepository;
+        private readonly ILogger<UserService> _logger;
+
+
+        public UserService(IRepository<string, User> userRepository, ILogger<UserService> logger)
+        {
+            _userRepository = userRepository;
+            _logger = logger;
+
+        }
+        public async Task<LoginResponseDTO> Autheticate(LoginRequestDTO loginUser)
+        {
+            var user = await _userRepository.Get(loginUser.Username);
+            if (user == null)
+            {
+                throw new Exception("User not found");
+            }
+            HMACSHA256 hmac = new HMACSHA256(user.HashKey);
+            byte[] passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginUser.Password));
+            for (int i = 0; i < passwordHash.Length; i++)
+            {
+                if (passwordHash[i] != user.Password[i])
+                {
+                    throw new Exception("Invalid username or password");
+                }
+            }
+            return new LoginResponseDTO()
+            {
+                Username = user.Username
+            };
+        }
+
+        public async Task<LoginResponseDTO> Register(UserCreateDTO registerUser)
+        {
+            HMACSHA256 hmac = new HMACSHA256();
+            byte[] passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerUser.Password));
+            User user = new User()
+            {
+                Username = registerUser.Username,
+                Password = passwordHash,
+                HashKey = hmac.Key,
+            };
+            try
+            {
+                var addesUser = await _userRepository.Add(user);
+                LoginResponseDTO response = new LoginResponseDTO()
+                {
+                    Username = user.Username
+                };
+                return response;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not register user");
+                throw new Exception("Could not register user");
+            }
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+using AutoMapper;
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Models.DTOs;
+
+namespace InsuraceClaimApp.Mappers
+{
+    public class UserProfile : Profile
+    {
+        public UserProfile()
+        {
+            CreateMap<User, UserCreateDTO>();
+            CreateMap<UserCreateDTO, User>();
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Models.DTOs;
+using AutoMapper;
+
+namespace InsuraceClaimApp.Mappers
+{
+    public class PolicyProfile : Profile
+    {
+        public PolicyProfile()
+        {
+            CreateMap<PolicyDTO, Policy>();
+            CreateMap<Policy, PolicyDTO>();
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+using InsuraceClaimApp.Models.DTOs;
+
+namespace InsuraceClaimApp.Interfaces
+{
+    public interface IUserService
+    {
+        Task<LoginResponseDTO> Autheticate(LoginRequestDTO loginUser);
+        Task<LoginResponseDTO> Register(UserCreateDTO registerUser);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+
+namespace InsuraceClaimApp.Interfaces
+{
+    public interface IRepository<K, T> where T : class
+    {
+        Task<IEnumerable<T>> GetAll();
+        Task<T> Get(K key);
+        Task<T> Add(T entity);
+        Task<T> Update(K key, T entity);
+        Task<T> Delete(K key);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+using InsuraceClaimApp.Models;
+
+namespace InsuraceClaimApp.Interfaces
+{
+    public interface IPolicyService
+    {
+        Task<Policy> AddPolicyAsync(Policy policy);  
+        Task<IEnumerable<Policy>> GetAllPoliciesAsync();
+        Task<Policy> GetPolicyByIdAsync(int id);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Models.DTOs;
+
+namespace InsuraceClaimApp.Interfaces
+{
+    public interface IClaimService
+    {
+        Task<InsuranceClaim> AddClaimAsync(ClaimRequestDTO claimRequest);
+        Task<InsuranceClaim> GetClaimByIdAsync(int id);
+        Task<IEnumerable<InsuranceClaim>> GetAllClaimsAsync();
+        Task<InsuranceClaim> UpdateClaimAsync(int id, ClaimRequestDTO claimRequest);
+        Task DeleteClaimAsync(int id);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models.DTOs;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace InsuraceClaimApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserController : ControllerBase
+    {
+        private readonly IUserService _userService;
+        private readonly ILogger<UserController> _logger;
+
+        public UserController(ILogger<UserController> logger, IUserService userService)
+        {
+            _userService = userService;
+            _logger = logger;
+        }
+        [HttpPost("Register")]
+        public async Task<ActionResult<LoginResponseDTO>> Register(UserCreateDTO createDTO)
+        {
+            try
+            {
+                var user = await _userService.Register(createDTO);
+                return Ok(user);
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Could not register user");
+                return BadRequest(new ErrorResponseDTO
+                {
+                    ErrorMessage = e.Message,
+                    ErrorNumber = 500
+                });
+            }
+        }
+
+        [HttpPost("Login")]
+        public async Task<ActionResult<LoginResponseDTO>> Login(LoginRequestDTO requestDTO)
+        {
+            try
+            {
+                var user = await _userService.Autheticate(requestDTO);
+                return Ok(user);
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Invalid username or password");
+                return Unauthorized(new ErrorResponseDTO
+                {
+                    ErrorMessage = e.Message,
+                    ErrorNumber = 401
+                });
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+using AutoMapper;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Models.DTOs;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace InsuraceClaimApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PolicyController : ControllerBase
+    {
+        private readonly IPolicyService _policyService;
+        private readonly IMapper _mapper;
+
+        public PolicyController(IPolicyService policyService, IMapper mapper)
+        {
+            _policyService = policyService;
+            _mapper = mapper;
+        }
+
+        // Get all policies for a specific user
+        [HttpGet("GetPoliciesForUser/{username}")]
+        public async Task<IActionResult> GetPoliciesForUser(string username)
+        {
+            var policies = await _policyService.GetAllPoliciesAsync();
+            var userPolicies = policies.Where(p => p.UserName == username).ToList();
+
+            if (userPolicies == null || !userPolicies.Any())
+            {
+                return NotFound("No policies found for this user.");
+            }
+
+            return Ok(userPolicies);
+        }
+
+        // Add a new policy
+        [HttpPost("AddPolicy")]
+        public async Task<IActionResult> AddPolicy([FromBody] PolicyDTO newPolicyDto)
+        {
+            if (newPolicyDto == null || string.IsNullOrEmpty(newPolicyDto.PolicyName) || string.IsNullOrEmpty(newPolicyDto.PolicyType) || string.IsNullOrEmpty(newPolicyDto.UserName))
+            {
+                return BadRequest("Invalid policy details.");
+            }
+
+            try
+            {
+                // Map DTO to Policy entity
+                var newPolicy = _mapper.Map<Policy>(newPolicyDto);
+                var addedPolicy = await _policyService.AddPolicyAsync(newPolicy);
+                return CreatedAtAction(nameof(GetPolicyById), new { id = addedPolicy.PolicyId }, addedPolicy);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        // Get a single policy by ID
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPolicyById(int id)
+        {
+            var policy = await _policyService.GetPolicyByIdAsync(id);
+            if (policy == null)
+            {
+                return NotFound();
+            }
+            return Ok(policy);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models.DTOs;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace InsuraceClaimApp.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ClaimController : ControllerBase
+    {
+        private readonly IClaimService _claimService;
+
+        public ClaimController(IClaimService claimService)
+        {
+            _claimService = claimService;
+        }
+
+        [HttpPost("report")]
+        public async Task<IActionResult> ReportClaim([FromForm] ClaimRequestDTO claimRequest)
+        {
+            var claim = await _claimService.AddClaimAsync(claimRequest);
+            return CreatedAtAction(nameof(GetClaim), new { id = claim.ClaimId }, claim);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetClaim(int id)
+        {
+            var claim = await _claimService.GetClaimByIdAsync(id);
+            if (claim == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(claim);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllClaims()
+        {
+            var claims = await _claimService.GetAllClaimsAsync();
+            return Ok(claims);
+        }
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteClaim(int id)
+        {
+            await _claimService.DeleteClaimAsync(id);
+            return NoContent();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+
+using InsuraceClaimApp.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+
+namespace InsuraceClaimApp.Contexts
+{
+    public class InsuranceContext : DbContext
+    {
+        public InsuranceContext(DbContextOptions contextOptions) : base(contextOptions)
+        {
+        }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Policy> Policies { get; set; }
+        public DbSet<InsuranceClaim> Claims { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                .HasKey(u => u.Username);
+
+            modelBuilder.Entity<Policy>()
+                .HasOne(p => p.User)
+                .WithMany(u => u.Policies)
+                .HasForeignKey(p => p.UserName);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using InsuraceClaimApp.Controllers;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models.DTOs;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InsuranceClaimTest
+{
+    public class ClaimControllerTest
+    {
+        private Mock<IClaimService> _claimServiceMock;
+        private ClaimController _controller;
+
+        [SetUp]
+        public void Setup()
+        {
+            _claimServiceMock = new Mock<IClaimService>();
+            _controller = new ClaimController(_claimServiceMock.Object);
+        }
+
+        [Test]
+        public async Task ReportClaim_ValidClaim_ReturnsCreated()
+        {
+            // Arrange
+            var claimRequest = new ClaimRequestDTO
+            {
+                PolicyId = 1,
+                ClaimType = "Accident",
+                IncidentDate = new System.DateTime(2024, 10, 23),
+                UserName = "testuser",
+                PhoneNumber = "1234567890",
+                Email = "test@example.com",
+                Document = CreateMockFormFile("document.pdf", "application/pdf")
+            };
+
+            var createdClaim = new ClaimRequestDTO
+            {
+                ClaimId = 1,
+                PolicyId = 1,
+                ClaimType = "Accident",
+                IncidentDate = new System.DateTime(2024, 10, 23),
+                UserName = "testuser"
+            };
+
+            _claimServiceMock.Setup(s => s.AddClaimAsync(claimRequest)).ReturnsAsync(createdClaim);
+
+            // Act
+            var result = await _controller.ReportClaim(claimRequest);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var createdAtActionResult = result as CreatedAtActionResult;
+            Assert.IsNotNull(createdAtActionResult);
+            Assert.AreEqual(201, createdAtActionResult.StatusCode);
+            Assert.AreEqual("GetClaim", createdAtActionResult.ActionName);
+            Assert.AreEqual(createdClaim.ClaimId, createdAtActionResult.RouteValues["id"]);
+            Assert.AreEqual(createdClaim, createdAtActionResult.Value);
+        }
+
+        [Test]
+        public async Task GetClaim_ValidId_ReturnsOk()
+        {
+            // Arrange
+            var claimId = 1;
+            var claim = new ClaimRequestDTO
+            {
+                ClaimId = claimId,
+                PolicyId = 1,
+                ClaimType = "Accident",
+                IncidentDate = new System.DateTime(2024, 10, 23),
+                UserName = "testuser"
+            };
+            _claimServiceMock.Setup(s => s.GetClaimByIdAsync(claimId)).ReturnsAsync(claim);
+
+            // Act
+            var result = await _controller.GetClaim(claimId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var okResult = result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(200, okResult.StatusCode);
+            Assert.AreEqual(claim, okResult.Value);
+        }
+
+        [Test]
+        public async Task GetClaim_InvalidId_ReturnsNotFound()
+        {
+            // Arrange
+            var claimId = 999; // Non-existent ID
+            _claimServiceMock.Setup(s => s.GetClaimByIdAsync(claimId)).ReturnsAsync((ClaimDTO)null);
+
+            // Act
+            var result = await _controller.GetClaim(claimId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var notFoundResult = result as NotFoundResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(404, notFoundResult.StatusCode);
+        }
+
+        [Test]
+        public async Task GetAllClaims_ReturnsOkWithClaims()
+        {
+            // Arrange
+            var claims = new List<ClaimRequestDTO>
+            {
+                new ClaimRequestDTO { ClaimId = 1, PolicyId = 1, ClaimType = "Accident", UserName = "user1" },
+                new ClaimRequestDTO { ClaimId = 2, PolicyId = 2, ClaimType = "Theft", UserName = "user2" }
+            };
+            _claimServiceMock.Setup(s => s.GetAllClaimsAsync()).ReturnsAsync(claims);
+
+            // Act
+            var result = await _controller.GetAllClaims();
+
+            // Assert
+            Assert.IsNotNull(result);
+            var okResult = result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(200, okResult.StatusCode);
+            Assert.AreEqual(claims, okResult.Value);
+        }
+
+        [Test]
+        public async Task DeleteClaim_ValidId_ReturnsNoContent()
+        {
+            // Arrange
+            var claimId = 1;
+            _claimServiceMock.Setup(s => s.DeleteClaimAsync(claimId)).Returns(Task.CompletedTask);
+
+            // Act
+            var result = await _controller.DeleteClaim(claimId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var noContentResult = result as NoContentResult;
+            Assert.IsNotNull(noContentResult);
+            Assert.AreEqual(204, noContentResult.StatusCode);
+        }
+
+        [Test]
+        public async Task DeleteClaim_InvalidId_ReturnsNotFound()
+        {
+            // Arrange
+            var claimId = 999; // Non-existent ID
+            _claimServiceMock.Setup(s => s.DeleteClaimAsync(claimId)).ThrowsAsync(new KeyNotFoundException());
+
+            // Act
+            var result = await _controller.DeleteClaim(claimId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var notFoundResult = result as NotFoundResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(404, notFoundResult.StatusCode);
+        }
+
+        private IFormFile CreateMockFormFile(string fileName, string contentType)
+        {
+            var content = "Sample file content";
+            var stream = new MemoryStream();
+            var writer = new StreamWriter(stream);
+            writer.Write(content);
+            writer.Flush();
+            stream.Position = 0;
+            return new FormFile(stream, 0, stream.Length, "file", fileName)
+            {
+                Headers = new HeaderDictionary(),
+                ContentType = contentType
+            };
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+using InsuraceClaimApp.Contexts;
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InsuranceClaimTest
+{
+    public class ClaimRepositoryTest : IDisposable
+    {
+        DbContextOptions<InsuranceContext> options;
+        InsuranceContext context;
+        ClaimRepository repository;
+        Mock<ILogger<ClaimRepository>> logger;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<InsuranceContext>()
+                .UseInMemoryDatabase("TestAdd")
+                .Options;
+            context = new InsuranceContext(options);
+            logger = new Mock<ILogger<ClaimRepository>>();
+            repository = new ClaimRepository(context, logger.Object);
+        }
+
+        [Test]
+        [TestCase(1, 1, "Test Claim Type", "2024-10-20", "Test user", "76894875894", "test@gmail.com", "test path")]
+        [TestCase(2, 2, "Test Claim Type", "2024-10-12", "Test user", "885747583", "test@gmail.com", "test path")]
+
+        public async Task TestAdd(int claimId, int policyNumber,string claimType, DateTime incidentDate, string userName, string phoneNumber, string email, string path)
+        {
+            //Arrange
+            InsuranceClaim claim = new InsuranceClaim
+            {
+                ClaimId = claimId,
+                PolicyNumber = policyNumber,
+                ClaimType = claimType,
+                IncidentDate = incidentDate,
+                UserName = userName,
+                PhoneNumber = phoneNumber,
+                Email = email,
+                DocumentPath = path
+            };
+
+            //Act
+            var result = await repository.Add(claim);
+
+            //Assert
+            Assert.NotNull(result);
+            Assert.AreEqual(claimId, result.ClaimId);
+            Assert.AreEqual(policyNumber, result.PolicyNumber);
+            Assert.AreEqual(claimType, result.ClaimType);
+            Assert.AreEqual(incidentDate, result.IncidentDate);
+            Assert.AreEqual(userName, result.UserName);
+            Assert.AreEqual(phoneNumber, result.PhoneNumber);
+            Assert.AreEqual(email, result.Email);
+            Assert.AreEqual(path, result.DocumentPath);
+        }
+
+        [Test]
+        [TestCase(1, 1, "Test Claim Type", "2024-10-20", "Test user", "76894875894", "test@gmail.com", "test path")]
+        [TestCase(2, 2, "Test Claim Type", "2024-10-12", "Test user", "885747583", "test@gmail.com", "test path")]
+        public async Task TestGet(int claimId, int policyNumber, string claimType, DateTime incidentDate, string userName, string phoneNumber, string email, string path)
+        {
+            //arrange
+            var claim = new InsuranceClaim
+            {
+                ClaimId = claimId,
+                PolicyNumber = policyNumber,
+                ClaimType = claimType,
+                IncidentDate = incidentDate,
+                UserName = userName,
+                PhoneNumber = phoneNumber,
+                Email = email,
+                DocumentPath = path
+            };
+            await repository.Add(claim);
+
+            //act
+            var result = await repository.Get(claimId);
+
+            //assert
+            Assert.NotNull(result);
+            Assert.AreEqual(claimId, result.ClaimId);
+            Assert.AreEqual(policyNumber, result.PolicyNumber);
+            Assert.AreEqual(claimType, result.ClaimType);
+            Assert.AreEqual(incidentDate, result.IncidentDate);
+            Assert.AreEqual(userName, result.UserName);
+            Assert.AreEqual(phoneNumber, result.PhoneNumber);
+            Assert.AreEqual(email, result.Email);
+            Assert.AreEqual(path, result.DocumentPath);
+        }
+
+        [Test]
+        [TestCase(1, 1, "Test Claim Type", "2024-10-20", "Test user", "76894875894", "test@gmail.com", "test path")]
+        [TestCase(2, 2, "Test Claim Type", "2024-10-12", "Test user", "885747583", "test@gmail.com", "test path")]
+        public async Task TestDelete(int claimId, int policyNumber, string claimType, DateTime incidentDate, string userName, string phoneNumber, string email, string path)
+        {
+            //arrange
+            var claim = new InsuranceClaim
+            {
+                ClaimId = claimId,
+                PolicyNumber = policyNumber,
+                ClaimType = claimType,
+                IncidentDate = incidentDate,
+                UserName = userName,
+                PhoneNumber = phoneNumber,
+                Email = email,
+                DocumentPath = path
+            };
+            await repository.Add(claim);
+
+            //act
+            var result = await repository.Delete(claimId);
+
+            //assert
+            Assert.NotNull(result);
+            Assert.AreEqual(claimId, result.ClaimId);
+            Assert.AreEqual(policyNumber, result.PolicyNumber);
+            Assert.AreEqual(claimType, result.ClaimType);
+            Assert.AreEqual(incidentDate, result.IncidentDate);
+            Assert.AreEqual(userName, result.UserName);
+            Assert.AreEqual(phoneNumber, result.PhoneNumber);
+            Assert.AreEqual(email, result.Email);
+            Assert.AreEqual(path, result.DocumentPath);
+        }
+
+        [Test]
+        [TestCase(1, 1, "Test Claim Type", "2024-10-20", "Test user", "76894875894", "test@gmail.com", "test path")]
+        [TestCase(2, 2, "Test Claim Type", "2024-10-12", "Test user", "885747583", "test@gmail.com", "test path")]
+        //test for get all method
+        public async Task TestGetAll(int claimId, int policyNumber, string claimType, DateTime incidentDate, string userName, string phoneNumber, string email, string path)
+        {
+            //arrange
+            var claim = new InsuranceClaim
+            {
+                ClaimId = claimId,
+                PolicyNumber = policyNumber,
+                ClaimType = claimType,
+                IncidentDate = incidentDate,
+                UserName = userName,
+                PhoneNumber = phoneNumber,
+                Email = email,
+                DocumentPath = path
+            };
+            await repository.Add(claim);
+            //act
+            var result = await repository.GetAll();
+            //assert
+            Assert.IsTrue(result.Any(c=>c.ClaimId == claimId && c.PolicyNumber == policyNumber && c.ClaimType == claimType && c.IncidentDate == incidentDate && c.UserName == userName && c.PhoneNumber == phoneNumber && c.Email == email && c.DocumentPath == path));
+        }
+
+        [Test]
+        [TestCase(1, 1, "Test Claim Type", "2024-10-20", "Test user", "76894875894", "test@gmail.com", "test path")]
+        [TestCase(2, 2, "Test Claim Type", "2024-10-12", "Test user", "885747583", "test@gmail.com", "test path")]
+        //test for delete method
+        public async Task TestDeleteException(int claimId, int policyNumber, string claimType, DateTime incidentDate, string userName, string phoneNumber, string email, string path)
+        {
+            //arrange
+            var claim = new InsuranceClaim
+            {
+                ClaimId = claimId,
+                PolicyNumber = policyNumber,
+                ClaimType = claimType,
+                IncidentDate = incidentDate,
+                UserName = userName,
+                PhoneNumber = phoneNumber,
+                Email = email,
+                DocumentPath = path
+            };
+            await repository.Add(claim);
+            //act
+            var result = await repository.Delete(claimId);
+            //assert
+            Assert.AreEqual(claimId, result.ClaimId);
+        }
+        [Test]
+        [TestCase(1, 1, "Test Claim Type", "2024-10-20", "Test user", "76894875894", "test@gmail.com", "test path")]
+        [TestCase(2, 2, "Test Claim Type", "2024-10-12", "Test user", "885747583", "test@gmail.com", "test path")]
+        //test for update method
+        public async Task TestUpdate(int claimId, int policyNumber, string claimType, DateTime incidentDate, string userName, string phoneNumber, string email, string path)
+        {
+            //arrange
+            var claim = new InsuranceClaim
+            {
+                ClaimId = claimId,
+                PolicyNumber = policyNumber,
+                ClaimType = claimType,
+                IncidentDate = incidentDate,
+                UserName = userName,
+                PhoneNumber = phoneNumber,
+                Email = email,
+                DocumentPath = path
+            };
+            await repository.Add(claim);
+            //act
+            claim.ClaimType = "Updated Claim Type";
+            var result = await repository.Update(claimId, claim);
+            //assert
+            Assert.AreEqual("Updated Claim Type", result.ClaimType);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+using InsuraceClaimApp.Exceptions;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models.DTOs;
+using InsuraceClaimApp.Models;
+using AutoMapper;
+
+namespace InsuraceClaimApp.Services
+{
+    public class ClaimService : IClaimService
+    {
+        private readonly IRepository<int, InsuranceClaim> _claimRepository;
+        private readonly IRepository<int, Policy> _policyRepository;
+        private readonly IMapper _mapper;
+
+        public ClaimService(IRepository<int, InsuranceClaim> claimRepository, IRepository<int, Policy> policyRepository,IMapper mapper)
+        {
+            _claimRepository = claimRepository;
+            _policyRepository = policyRepository;
+            _mapper = mapper;
+        }
+
+        public async Task<InsuranceClaim> AddClaimAsync(ClaimRequestDTO claimRequest)
+        {
+            var policy = await _policyRepository.Get(claimRequest.claimId);
+            if (policy == null)
+            {
+                throw new NotFoundException("Policy");
+            }
+
+            var newClaim = new InsuranceClaim
+            {
+                PolicyNumber = claimRequest.claimId,
+                ClaimType = claimRequest.ClaimType,
+                IncidentDate = claimRequest.IncidentDate,
+                UserName = claimRequest.UserName,
+                PhoneNumber = claimRequest.PhoneNumber,
+                Email = claimRequest.Email,
+                DocumentPath = await SaveDocumentAsync(claimRequest.Document) 
+            };
+
+            return await _claimRepository.Add(newClaim);
+        }
+
+        public async Task<InsuranceClaim> GetClaimByIdAsync(int id)
+        {
+            return await _claimRepository.Get(id);
+        }
+
+        public async Task<IEnumerable<InsuranceClaim>> GetAllClaimsAsync()
+        {
+            return await _claimRepository.GetAll();
+        }
+
+        public async Task<InsuranceClaim> UpdateClaimAsync(int id, ClaimRequestDTO claimRequest)
+        {
+            var existingClaim = await _claimRepository.Get(id);
+            if (existingClaim == null)
+            {
+                throw new NotFoundException("Claim");
+            }
+
+            existingClaim.ClaimType = claimRequest.ClaimType;
+            existingClaim.IncidentDate = claimRequest.IncidentDate;
+            existingClaim.UserName = claimRequest.UserName;
+            existingClaim.PhoneNumber = claimRequest.PhoneNumber;
+            existingClaim.Email = claimRequest.Email;
+
+            if (claimRequest.Document != null)
+            {
+                existingClaim.DocumentPath = await SaveDocumentAsync(claimRequest.Document);
+            }
+
+            return await _claimRepository.Update(id, existingClaim);
+        }
+
+        public async Task DeleteClaimAsync(int id)
+        {
+            await _claimRepository.Delete(id);
+        }
+
+        public async Task<string> SaveDocumentAsync(IFormFile document)
+        {
+            var folderPath = Path.Combine("wwwroot", "documents");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            var filePath = Path.Combine(folderPath, document.FileName);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await document.CopyToAsync(stream);
+            }
+
+            return filePath; 
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+
+using AutoMapper;
+using InsuraceClaimApp.Controllers;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models.DTOs;
+using InsuraceClaimApp.Models;
+using Microsoft.AspNetCore.Mvc;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InsuranceClaimTest
+{
+    public class PolicyControllerTest
+    {
+        private Mock<IPolicyService> _policyServiceMock;
+        private Mock<IMapper> _mapperMock;
+        private PolicyController _controller;
+
+        [SetUp]
+        public void Setup()
+        {
+            _policyServiceMock = new Mock<IPolicyService>();
+            _mapperMock = new Mock<IMapper>();
+            _controller = new PolicyController(_policyServiceMock.Object, _mapperMock.Object);
+        }
+
+        [Test]
+        public async Task GetPoliciesForUser_ValidUser_ReturnsOk()
+        {
+            // Arrange
+            var username = "testuser";
+            var policies = new List<Policy>
+            {
+                new Policy { PolicyId = 1, PolicyName = "Health Insurance", UserName = username },
+                new Policy { PolicyId = 2, PolicyName = "Car Insurance", UserName = username }
+            };
+            _policyServiceMock.Setup(s => s.GetAllPoliciesAsync()).ReturnsAsync(policies);
+
+            // Act
+            var result = await _controller.GetPoliciesForUser(username);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var okResult = result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(200, okResult.StatusCode);
+            var returnedPolicies = okResult.Value as List<Policy>;
+            Assert.IsNotNull(returnedPolicies);
+            Assert.AreEqual(2, returnedPolicies.Count);
+        }
+
+        [Test]
+        public async Task GetPoliciesForUser_InvalidUser_ReturnsNotFound()
+        {
+            // Arrange
+            var username = "nonexistentuser";
+            var policies = new List<Policy>
+            {
+                new Policy { PolicyId = 1, PolicyName = "Health Insurance", UserName = "testuser" }
+            };
+            _policyServiceMock.Setup(s => s.GetAllPoliciesAsync()).ReturnsAsync(policies);
+
+            // Act
+            var result = await _controller.GetPoliciesForUser(username);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var notFoundResult = result as NotFoundObjectResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(404, notFoundResult.StatusCode);
+            Assert.AreEqual("No policies found for this user.", notFoundResult.Value);
+        }
+
+        [Test]
+        public async Task AddPolicyTest()
+        {
+            // Arrange
+            var newPolicyDto = new PolicyDTO
+            {
+                PolicyName = "Life Insurance",
+                PolicyType = "Term",
+                UserName = "testuser"
+            };
+            var newPolicy = new Policy
+            {
+                PolicyId = 1,
+                PolicyName = "Life Insurance",
+                PolicyType = "Term",
+                UserName = "testuser"
+            };
+            _mapperMock.Setup(m => m.Map<Policy>(newPolicyDto)).Returns(newPolicy);
+            _policyServiceMock.Setup(s => s.AddPolicyAsync(newPolicy)).ReturnsAsync(newPolicy);
+
+            // Act
+            var result = await _controller.AddPolicy(newPolicyDto);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var createdResult = result as CreatedAtActionResult;
+            Assert.IsNotNull(createdResult);
+            Assert.AreEqual(201, createdResult.StatusCode);
+            Assert.AreEqual("GetPolicyById", createdResult.ActionName);
+            Assert.AreEqual(newPolicy.PolicyId, createdResult.RouteValues["id"]);
+        }
+
+        [Test]
+        public async Task AddPolicy_InvalidPolicy_ReturnsBadRequest()
+        {
+            // Arrange
+            var invalidPolicyDto = new PolicyDTO(); // Missing required fields
+
+            // Act
+            var result = await _controller.AddPolicy(invalidPolicyDto);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var badRequestResult = result as BadRequestObjectResult;
+            Assert.IsNotNull(badRequestResult);
+            Assert.AreEqual(400, badRequestResult.StatusCode);
+            Assert.AreEqual("Invalid policy details.", badRequestResult.Value);
+        }
+
+        [Test]
+        public async Task GetPolicyById_ValidId_ReturnsOk()
+        {
+            // Arrange
+            var policyId = 1;
+            var policy = new Policy
+            {
+                PolicyId = policyId,
+                PolicyName = "Life Insurance",
+                PolicyType = "Term",
+                UserName = "testuser"
+            };
+            _policyServiceMock.Setup(s => s.GetPolicyByIdAsync(policyId)).ReturnsAsync(policy);
+
+            // Act
+            var result = await _controller.GetPolicyById(policyId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var okResult = result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(200, okResult.StatusCode);
+            Assert.AreEqual(policy, okResult.Value);
+        }
+
+        [Test]
+        public async Task GetPolicyById_InvalidId_ReturnsNotFound()
+        {
+            // Arrange
+            var policyId = 999; // Nonexistent ID
+            _policyServiceMock.Setup(s => s.GetPolicyByIdAsync(policyId)).ReturnsAsync((Policy)null);
+
+            // Act
+            var result = await _controller.GetPolicyById(policyId);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var notFoundResult = result as NotFoundResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(404, notFoundResult.StatusCode);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+using InsuraceClaimApp.Contexts;
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+namespace InsuranceClaimTest
+{
+    public class PolicyRepositoryTest : IDisposable
+    {
+        DbContextOptions options;
+        InsuranceContext context;
+        PolicyRepository repository;
+        Mock<ILogger<PolicyRepository>> logger;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<InsuranceContext>()
+              .UseInMemoryDatabase("TestAdd")
+              .Options;
+            context = new InsuranceContext(options);
+            logger = new Mock<ILogger<PolicyRepository>>();
+            repository = new PolicyRepository(context, logger.Object);
+        }
+
+        [Test]
+        [TestCase(1, "Test Policy1", "Test Policy Type", "Test User1")]
+        [TestCase(2, "Test Policy2", "Test Policy Type", "Test User2")]
+        public async Task TestAdd(int policyId, string policyName, string policyType, string userName)
+        {
+            //Arrange
+            Policy policy = new Policy
+            {
+                PolicyId = policyId,
+                PolicyName = policyName,
+                PolicyType = policyType,
+                UserName = userName
+            };
+
+            //Act
+            var result = await repository.Add(policy);
+
+            //Assert
+            Assert.AreEqual(policyId, result.PolicyId);
+        }
+
+        [Test]
+        [TestCase(1, "Test Policy1", "Test Policy Type", "Test User1")]
+        [TestCase(2, "Test Policy2", "Test Policy Type", "Test User2")]
+        public async Task Get(int policyId, string policyName, string policyType, string userName)
+        {
+            //Arrange
+            var policy = new Policy
+            {
+                PolicyId = policyId,
+                PolicyName = policyName,
+                PolicyType = policyType,
+                UserName = userName
+            };
+            await repository.Add(policy);
+
+            // Act
+            var result = await repository.Get(policyId);
+
+            // Assert
+            Assert.AreEqual(policyName, result.PolicyName);
+        }
+
+        [Test]
+        [TestCase(1, "Test Policy1", "Test Policy Type", "Test User1")]
+        [TestCase(2, "Test Policy2", "Test Policy Type", "Test User2")]
+        public async Task GetAll(int policyId, string policyName, string policyType, string userName)
+        {
+            //Arrange
+            var policy = new Policy
+            {
+                PolicyId = policyId,
+                PolicyName = policyName,
+                PolicyType = policyType,
+                UserName = userName
+            };
+            await repository.Add(policy);
+
+            // Act
+            var result = await repository.GetAll();
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.IsTrue(result.Any(c => c.PolicyId == policyId && c.PolicyName == policyName && c.PolicyType == policyType && c.UserName == userName));
+        }
+
+        [Test]
+        [TestCase(1, "Test Policy1", "Test Policy Type", "Test User1")]
+        [TestCase(2, "Test Policy2", "Test Policy Type", "Test User2")]
+        public async Task Delete(int policyId, string policyName, string policyType, string userName)
+        {
+            //Arrange
+            var policy = new Policy
+            {
+                PolicyId = policyId,
+                PolicyName = policyName,
+                PolicyType = policyType,
+                UserName = userName
+            };
+            await repository.Add(policy);
+
+            // Act
+            var result = await repository.Delete(policyId);
+
+            // Assert
+            Assert.AreEqual(policyId, result.PolicyId);
+        }
+
+        [Test]
+        [TestCase(1, "Test Policy1", "Test Policy Type", "Test User1")]
+        [TestCase(2, "Test Policy2", "Test Policy Type", "Test User2")]
+        public async Task Update(int policyId, string policyName, string policyType, string userName)
+        {
+            //Arrange
+            var policy = new Policy
+            {
+                PolicyId = policyId,
+                PolicyName = policyName,
+                PolicyType = policyType,
+                UserName = userName
+            };
+            await repository.Add(policy);
+
+            // Act
+            policy.PolicyName = "Updated Policy Name";
+            var result = await repository.Update(policyId, policy);
+
+            // Assert
+            Assert.AreEqual("Updated Policy Name", result.PolicyName);
+        }
+
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+using AutoMapper;
+using InsuraceClaimApp.Contexts;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Models.DTOs;
+using InsuraceClaimApp.Repositories;
+using InsuraceClaimApp.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InsuranceClaimTest
+{
+    public class PolicyServiceTest
+    {
+        DbContextOptions options;
+        InsuranceContext context;
+        PolicyRepository repository;
+        Mock<ILogger<PolicyRepository>> loggerUserRepo;
+        Mock<ILogger<PolicyRepository>> loggerUserService;
+        Mock<IMapper> mapper;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<InsuranceContext>()
+            .UseInMemoryDatabase("TestAdd")
+              .Options;
+            context = new InsuranceContext(options);
+            loggerUserRepo = new Mock<ILogger<PolicyRepository>>();
+            loggerUserService = new Mock<ILogger<PolicyRepository>>();
+            repository = new PolicyRepository(context, loggerUserRepo.Object);
+            mapper = new Mock<IMapper>();
+        }
+
+        [Test]
+        public async Task TestAdd()
+        {
+            var policy = new PolicyDTO
+            {
+                UserName = "Test user",
+                PolicyName = "Test policy",
+                PolicyType = "Test type"
+            };
+            var policyEntity = new Policy
+            {
+                UserName = "Test user",
+                PolicyName = "Test policy",
+                PolicyType = "Test type"
+            };
+            mapper.Setup(mbox => mbox.Map<Policy>(policy)).Returns(policyEntity);
+            IPolicyService policyService = new PolicyService(repository, mapper.Object);
+        }
+
+        [Test]
+        public async Task TestGetAllPoliciesAsync()
+        {
+            var policy = new PolicyDTO
+            {
+                UserName = "Test user",
+                PolicyName = "Test policy",
+                PolicyType = "Test type"
+            };
+            var policyEntity = new Policy
+            {
+                UserName = "Test user",
+                PolicyName = "Test policy",
+                PolicyType = "Test type"
+            };
+            mapper.Setup(mbox => mbox.Map<Policy>(policy)).Returns(policyEntity);
+            IPolicyService policyService = new PolicyService(repository, mapper.Object);
+            var addedPolicy = await policyService.AddPolicyAsync(policyEntity);
+            var policies = await policyService.GetAllPoliciesAsync();
+            Assert.IsTrue(policies.Count() == 1);
+        }
+
+        [Test]
+        public async Task TestGetPolicyByIdAsync()
+        {
+            var policy = new PolicyDTO
+            {
+                UserName = "Test user",
+                PolicyName = "Test policy",
+                PolicyType = "Test type"
+            };
+            var policyEntity = new Policy
+            {
+                UserName = "Test user",
+                PolicyName = "Test policy",
+                PolicyType = "Test type"
+            };
+            mapper.Setup(mbox => mbox.Map<Policy>(policy)).Returns(policyEntity);
+            IPolicyService policyService = new PolicyService(repository, mapper.Object);
+            var addedPolicy = await policyService.AddPolicyAsync(policyEntity);
+            var policies = await policyService.GetPolicyByIdAsync(1);
+            Assert.IsTrue(policies.PolicyName == "Test policy");
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+using InsuraceClaimApp.Controllers;
+using InsuraceClaimApp.Interfaces;
+using InsuraceClaimApp.Models.DTOs;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InsuranceClaimTest
+{
+    public class UserControllerTest
+    {
+        private Mock<IUserService> _userServiceMock;
+        private Mock<ILogger<UserController>> _loggerMock;
+        private UserController _controller;
+
+        [SetUp]
+        public void Setup()
+        {
+            _userServiceMock = new Mock<IUserService>();
+            _loggerMock = new Mock<ILogger<UserController>>();
+            _controller = new UserController(_loggerMock.Object, _userServiceMock.Object);
+        }
+
+        [Test]
+        public async Task RegisterTest()
+        {
+            // Arrange
+            var createDTO = new UserCreateDTO
+            {
+                Username = "testuser",
+                Password = "Password123",
+            };
+            var loginResponse = new LoginResponseDTO
+            {
+                Username = createDTO.Username,
+                Token = "dummyToken"
+            };
+            _userServiceMock.Setup(s => s.Register(createDTO)).ReturnsAsync(loginResponse);
+
+            // Act
+            var result = await _controller.Register(createDTO);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var okResult = result.Result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(200, okResult.StatusCode);
+            Assert.AreEqual(loginResponse, okResult.Value);
+        }
+
+        [Test]
+        public async Task RegisterExceptionTest()
+        {
+            // Arrange
+            var createDTO = new UserCreateDTO();
+            var exceptionMessage = "User already exists";
+            _userServiceMock.Setup(s => s.Register(createDTO)).ThrowsAsync(new Exception(exceptionMessage));
+
+            // Act
+            var result = await _controller.Register(createDTO);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var badRequestResult = result.Result as BadRequestObjectResult;
+            Assert.IsNotNull(badRequestResult);
+            Assert.AreEqual(400, badRequestResult.StatusCode);
+            var errorResponse = badRequestResult.Value as ErrorResponseDTO;
+            Assert.AreEqual(exceptionMessage, errorResponse.ErrorMessage);
+            Assert.AreEqual(500, errorResponse.ErrorNumber);
+        }
+
+        [Test]
+        public async Task LoginTest()
+        {
+            // Arrange
+            var loginDTO = new LoginRequestDTO
+            {
+                Username = "testuser",
+                Password = "Password123"
+            };
+            var loginResponse = new LoginResponseDTO
+            {
+                Username = loginDTO.Username,
+                Token = "dummyToken"
+            };
+            _userServiceMock.Setup(s => s.Autheticate(loginDTO)).ReturnsAsync(loginResponse);
+
+            // Act
+            var result = await _controller.Login(loginDTO);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var okResult = result.Result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(200, okResult.StatusCode);
+            Assert.AreEqual(loginResponse, okResult.Value);
+        }
+
+        [Test]
+        public async Task LoginInvalidCredentialsTest()
+        {
+            // Arrange
+            var loginDTO = new LoginRequestDTO();
+            var exceptionMessage = "Invalid credentials";
+            _userServiceMock.Setup(s => s.Autheticate(loginDTO)).ThrowsAsync(new Exception(exceptionMessage));
+
+            // Act
+            var result = await _controller.Login(loginDTO);
+
+            // Assert
+            Assert.IsNotNull(result);
+            var unauthorizedResult = result.Result as UnauthorizedObjectResult;
+            Assert.IsNotNull(unauthorizedResult);
+            Assert.AreEqual(401, unauthorizedResult.StatusCode);
+            var errorResponse = unauthorizedResult.Value as ErrorResponseDTO;
+            Assert.AreEqual(401, errorResponse.ErrorNumber);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+
+
+using InsuraceClaimApp.Contexts;
+using InsuraceClaimApp.Models;
+using InsuraceClaimApp.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System.Text;
+
+namespace InsuranceClaimTest
+{
+    public class UserRepositoryTest : IDisposable
+    {
+        DbContextOptions options;
+        InsuranceContext context;
+        UserRepository repository;
+        Mock<ILogger<UserRepository>> logger;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<InsuranceContext>()
+              .UseInMemoryDatabase("TestAdd")
+              .Options;
+            context = new InsuranceContext(options);
+            logger = new Mock<ILogger<UserRepository>>();
+            repository = new UserRepository(context, logger.Object);
+        }
+
+        [Test]
+        public async Task TestAdd()
+        {
+            User user = new User
+            {
+                Username = "Test User1",
+                Password = Encoding.UTF8.GetBytes("Test Password1"),
+                HashKey = Encoding.UTF8.GetBytes("Test Hash"),
+            };
+            var addedUser = await repository.Add(user);
+            Assert.IsTrue(addedUser.Username == user.Username);
+        }
+
+        [Test]
+        public async Task TestGet()
+        {
+            User user = new User
+            {
+                Username = "TestUser",
+                Password = Encoding.UTF8.GetBytes("TestPassword"),
+                HashKey = Encoding.UTF8.GetBytes("TestHashKey"),
+            };
+            var addedUser = await repository.Add(user);
+
+            var getUser = await repository.Get(user.Username);
+            Assert.IsNotNull(getUser);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+using InsuraceClaimApp.Contexts;
+using InsuraceClaimApp.Models.DTOs;
+using InsuraceClaimApp.Repositories;
+using InsuraceClaimApp.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InsuranceClaimTest
+{
+    public class UserServiceTest : IDisposable
+    {
+        DbContextOptions options;
+        InsuranceContext context;
+        UserRepository repository;
+        Mock<ILogger<UserRepository>> loggerUserRepo;
+        Mock<ILogger<UserService>> loggerUserService;
+
+        [SetUp]
+        public void Setup()
+        {
+            options = new DbContextOptionsBuilder<InsuranceContext>()
+            .UseInMemoryDatabase("TestAdd")
+              .Options;
+            context = new InsuranceContext(options);
+            loggerUserRepo = new Mock<ILogger<UserRepository>>();
+            loggerUserService = new Mock<ILogger<UserService>>();
+            repository = new UserRepository(context, loggerUserRepo.Object);
+        }
+
+        [Test]
+        [TestCase("TestUser", "TestPassword", "TestHashKey")]
+        public async Task TestAdd(string username, string password, string hashKey)
+        {
+            var user = new UserCreateDTO
+            {
+                Username = username,
+                Password = password,
+            };
+            var userService = new UserService(repository, loggerUserService.Object);
+            var addedUser = await userService.Register(user);
+            Assert.IsTrue(addedUser.Username == user.Username);
+        }
+
+        [TestCase("TestUser", "TestPassword", "TestHashKey")]
+        public async Task TestAuthenticate(string username, string password, string hashKey)
+        {
+            var user = new UserCreateDTO
+            {
+                Username = "TestUser",
+                Password = "TestPassword",
+            };
+            var userService = new UserService(repository, loggerUserService.Object);
+            var addedUser = await userService.Register(user);
+            var loggedInUser = await userService.Autheticate(new LoginRequestDTO
+            {
+                Username = user.Username,
+                Password = user.Password
+            });
+            Assert.IsTrue(addedUser.Username == loggedInUser.Username);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            context.Dispose();
+        }
+
+        public void Dispose()
+        {
+            context?.Dispose();
+        }
+    }
+}
+

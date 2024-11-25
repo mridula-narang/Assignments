@@ -1,0 +1,1020 @@
+Day 18 Assignment
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UnderstandingOOPSApp
+{
+    //Product class to understand abstraction and its needs
+    //Product class is an abstract class. We will use this class to create concrete classes.
+    public abstract class Product
+    {
+        public string Name { get; set; } = string.Empty;
+        public double Price { get; set; }
+
+        public abstract string DeliveryMethod(); //abstract method. describes the delivery method of the product
+
+        public void DisplayProductInfo() //concrete method. displays the product information
+        {
+            Console.WriteLine($"Product: {Name}, Price: ${Price}");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UnderstandingOOPSApp
+{
+    internal class PhysicalProduct : Product
+    {
+        public string ShippingAddress { get; set; } = string.Empty;
+        public PhysicalProduct(string name, double price, string shippingAddress)
+        {
+            Name = name;
+            Price = price;
+            ShippingAddress = shippingAddress;
+        }
+        public override string DeliveryMethod() //implementation of the abstract method
+        {
+            return "Delivered to the shipping address";
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UnderstandingOOPSApp
+{
+    internal class DigitalProduct : Product
+    {
+        public string FileFormat { get; set; }
+
+        public DigitalProduct(string name, double price, string fileFormat)
+        {
+            Name = name;
+            Price = price;
+            FileFormat = fileFormat;
+        }
+
+        public override string DeliveryMethod() // implementation of the abstract method
+        {
+            return "Downloadable via email or online link.";
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Interfaces are used to define a contract that any class implementing the interface must follow. This contract specifies the methods (and sometimes properties or events) that the implementing class must provide. Interfaces do not contain the implementation of these methods; they only declare them. The purpose is to enforce a certain behavior in classes, which allows for consistent interaction with objects that follow the same interface, regardless of their underlying implementation.
+
+Why Interfaces Have Methods
+Abstraction: Interfaces provide a way to abstract what a class should do, without worrying about how it will be done.
+Decoupling: Interfaces help to decouple the code, making it easier to maintain and extend. Classes can change their internal implementation without affecting other parts of the system, as long as they still adhere to the interface contract.
+Polymorphism: Interfaces enable polymorphic behavior, where you can treat different objects (that implement the same interface) in a similar way.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UnderstandingOOPSApp
+{
+    internal interface ICustomer
+    {
+        void PlaceOrder();
+        void CancelOrder();
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UnderstandingOOPSApp
+{
+    public class Customer: ICustomer
+    {
+        public void PlaceOrder()
+        {
+            Console.WriteLine("Order placed successfully!");
+        }
+
+        public void CancelOrder()
+        {
+            Console.WriteLine("Order cancelled successfully!");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+namespace UnderstandingOOPSApp
+{
+    internal class Program
+    {
+        //create instances of the DigitalProduct and PhysicalProduct classes within a method
+        void CreateProductInstances()
+        {
+            var digitalProduct = new DigitalProduct("Learning C#: E-Book", 10.0, "PDF");
+            digitalProduct.DisplayProductInfo();
+            Console.WriteLine($"Delivery Method: {digitalProduct.DeliveryMethod()}");
+            Console.WriteLine($"File Format: {digitalProduct.FileFormat}");
+
+            var physicalProduct = new PhysicalProduct("Laptop", 1000.0, "1234, 5th Avenue, New York");
+            physicalProduct.DisplayProductInfo();
+            Console.WriteLine($"Delivery Method: {physicalProduct.DeliveryMethod()}");
+            Console.WriteLine($"Shipping Address: {physicalProduct.ShippingAddress}");
+        }
+
+        static void Main(string[] args)
+        {
+            Program program = new Program();
+            program.CreateProductInstances();
+            ICustomer customer = new Customer();
+            customer.PlaceOrder();   
+            customer.CancelOrder();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Abstract Factory Design Pattern (DP)
+
+namespace AbstractFactoryDpApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create a Lenovo factory
+            IDeviceFactory lenovoFactory = new LenovoFactory();
+            IDevice lenovoMobile = lenovoFactory.CreateMobile();
+            IDevice lenovoLaptop = lenovoFactory.CreateLaptop();
+            IDevice lenovoDesktop = lenovoFactory.CreateDesktop();
+
+            lenovoMobile.GetDetails();
+            lenovoLaptop.GetDetails();
+            lenovoDesktop.GetDetails();
+
+            // Create an HP factory
+            IDeviceFactory hpFactory = new HPFactory();
+            IDevice hpMobile = hpFactory.CreateMobile();
+            IDevice hpLaptop = hpFactory.CreateLaptop();
+            IDevice hpDesktop = hpFactory.CreateDesktop();
+
+            hpMobile.GetDetails();
+            hpLaptop.GetDetails();
+            hpDesktop.GetDetails();
+
+            // Create an IBM factory
+            IDeviceFactory ibmFactory = new IBMFactory();
+            IDevice ibmMobile = ibmFactory.CreateMobile();
+            IDevice ibmLaptop = ibmFactory.CreateLaptop();
+            IDevice ibmDesktop = ibmFactory.CreateDesktop();
+
+            ibmMobile.GetDetails();
+            ibmLaptop.GetDetails();
+            ibmDesktop.GetDetails();
+
+            // Create an Apple factory
+            IDeviceFactory appleFactory = new AppleFactory();
+            IDevice appleMobile = appleFactory.CreateMobile();
+            IDevice appleLaptop = appleFactory.CreateLaptop();
+            IDevice appleDesktop = appleFactory.CreateDesktop();
+
+            appleMobile.GetDetails();
+            appleLaptop.GetDetails();
+            appleDesktop.GetDetails();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class AppleDesktop : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("Apple Desktop");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class AppleLaptop : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("Apple Laptop");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class AppleMobile : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("Apple Mobile");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class AppleFactory : IDeviceFactory
+    {
+        public IDevice CreateMobile()
+        {
+            return new AppleMobile();
+        }
+
+        public IDevice CreateLaptop()
+        {
+            return new AppleLaptop();
+        }
+
+        public IDevice CreateDesktop()
+        {
+            return new AppleDesktop();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class HPDesktop : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("HP Desktop");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class HPLaptop : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("HP Laptop");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class HPMobile : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("HP Mobile");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class HPFactory : IDeviceFactory
+    {
+        public IDevice CreateMobile()
+        {
+            return new HPMobile();
+        }
+
+        public IDevice CreateLaptop()
+        {
+            return new HPLaptop();
+        }
+
+        public IDevice CreateDesktop()
+        {
+            return new HPDesktop();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class IBMDesktop : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("IBM Desktop");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class IBMLaptop : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("IBM Laptop");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class IBMMobile : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("IBM Mobile");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class IBMFactory : IDeviceFactory
+    {
+        public IDevice CreateMobile()
+        {
+            return new IBMMobile();
+        }
+
+        public IDevice CreateLaptop()
+        {
+            return new IBMLaptop();
+        }
+
+        public IDevice CreateDesktop()
+        {
+            return new IBMDesktop();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal interface IDevice
+    {
+        void GetDetails();
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal interface IDeviceFactory
+    {
+        IDevice CreateMobile();
+        IDevice CreateLaptop();
+        IDevice CreateDesktop();
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class LenovoDesktop : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("Lenovo Desktop");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class LenovoLaptop : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("Lenovo Laptop");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class LenovoMobile : IDevice
+    {
+        public void GetDetails()
+        {
+            Console.WriteLine("Lenovo Mobile");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AbstractFactoryDpApp
+{
+    internal class LenovoFactory : IDeviceFactory
+    {
+        public IDevice CreateMobile()
+        {
+            return new LenovoMobile();
+        }
+
+        public IDevice CreateLaptop()
+        {
+            return new LenovoLaptop();
+        }
+
+        public IDevice CreateDesktop()
+        {
+            return new LenovoDesktop();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Builder DP
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BuilderDesignPatternApp
+{
+    public  class Beverage
+    {
+        public int Water { get; set; }
+        public int Milk { get; set; }
+        public int Sugar { get; set; }
+        public int PowderQuantity { get; set; }
+        public string BeverageName { get; set; }
+        public string ShowBeverage()
+        {
+            return ("Hot " + BeverageName + " [" + Water + " ml of water, " + Milk + " ml of milk, " + Sugar + " gm of sugar, " + PowderQuantity + " gm of " + BeverageName + "]\n");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BuilderDesignPatternApp
+{
+    public abstract class BeverageBuilder
+    {
+        protected Beverage beverage;
+        public void CreateBeverage()
+        {
+            beverage = new Beverage();
+        }
+        public Beverage GetBeverage()
+        {
+            return beverage;
+        }
+        public abstract void SetBeverageType();
+        public abstract void SetWater();
+        public abstract void SetMilk();
+        public abstract void SetSugar();
+        public abstract void SetPowderQuantity();
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BuilderDesignPatternApp
+{
+    public class BeverageDirector
+    {
+        public Beverage MakeBeverage(BeverageBuilder beverageBuilder)
+        {
+            beverageBuilder.CreateBeverage();
+            beverageBuilder.SetBeverageType();
+            beverageBuilder.SetWater();
+            beverageBuilder.SetMilk();
+            beverageBuilder.SetSugar();
+            beverageBuilder.SetPowderQuantity();
+
+            return beverageBuilder.GetBeverage();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BuilderDesignPatternApp
+{
+    public class CoffeeBuilder : BeverageBuilder
+    {
+        public override void SetBeverageType()
+        {
+            Console.WriteLine("Coffee");
+            GetBeverage().BeverageName = "Coffee";
+        }
+
+        public override void SetMilk()
+        {
+            Console.WriteLine("Step 2: Adding milk");
+            GetBeverage().Milk = 50;
+        }
+
+        public override void SetPowderQuantity()
+        {
+            Console.WriteLine("Step 4: Adding 15gm coffee powder");
+            GetBeverage().PowderQuantity = 15;
+        }
+        public override void SetSugar()
+        {
+            Console.WriteLine("Step 3: Adding sugar");
+        }
+
+        public override void SetWater()
+        {
+            Console.WriteLine("Step 1: Boiling water");
+            GetBeverage().Water = 40;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BuilderDesignPatternApp
+{
+    public class TeaBuilder : BeverageBuilder
+    {
+        public override void SetBeverageType()
+        {
+            Console.WriteLine("Tea");
+            GetBeverage().BeverageName = "Tea";
+        }
+
+        public override void SetMilk()
+        {
+            Console.WriteLine("Step 2: Adding milk");
+            GetBeverage().Milk = 80;
+        }
+
+        public override void SetPowderQuantity()
+        {
+            Console.WriteLine("Step 4: Adding 20g of tea leaves");
+            GetBeverage().PowderQuantity = 20;
+        }
+
+        public override void SetSugar()
+        {
+            Console.WriteLine("Step 3: Adding sugar");
+            GetBeverage().Sugar = 15;
+        }
+
+        public override void SetWater()
+        {
+            Console.WriteLine("Step 1: Boiling water");
+            GetBeverage().Water = 60;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+namespace BuilderDesignPatternApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Beverage beverage;
+            BeverageDirector beverageDirector = new BeverageDirector();
+            TeaBuilder tea = new TeaBuilder();
+            beverage = beverageDirector.MakeBeverage(tea);
+            Console.WriteLine(beverage.ShowBeverage());
+
+            CoffeeBuilder coffee = new CoffeeBuilder();
+            beverage = beverageDirector.MakeBeverage(coffee);
+            Console.WriteLine(beverage.ShowBeverage());
+
+            Console.ReadKey();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Factory DP
+
+namespace FactoryDesignPatternApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            NotificationCreator emailCreator = new EmailNotificationCreator();
+            emailCreator.Notify("Email message content.");
+
+            NotificationCreator smsCreator = new SmsNotificationCreator();
+            smsCreator.Notify("SMS message content.");
+
+            NotificationCreator pushCreator = new PushNotificationCreator();
+            pushCreator.Notify("Push message content.");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FactoryDesignPatternApp
+{
+    public class EmailNotification : INotification
+    {
+        public void Send(string message)
+        {
+            Console.WriteLine("Sending Email Notification: " + message);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FactoryDesignPatternApp
+{
+    public class EmailNotificationCreator : NotificationCreator
+    {
+        public override INotification CreateNotification()
+        {
+            return new EmailNotification();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FactoryDesignPatternApp
+{
+    public interface INotification
+    {
+        void Send(string message);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FactoryDesignPatternApp
+{
+    public abstract class NotificationCreator
+    {
+        public abstract INotification CreateNotification();
+        public void Notify(string message)
+        {
+            INotification notification = CreateNotification();
+            notification.Send(message);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FactoryDesignPatternApp
+{
+    public class PushNotification : INotification
+    {
+        public void Send(string message)
+        {
+            Console.WriteLine("Sending Push Notification: " + message);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FactoryDesignPatternApp
+{
+    public class PushNotificationCreator : NotificationCreator
+    {
+        public override INotification CreateNotification()
+        {
+            return new PushNotification();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FactoryDesignPatternApp
+{
+    public class SmsNotification : INotification
+    {
+        public void Send(string message)
+        {
+            Console.WriteLine("Sending SMS Notification: " + message);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FactoryDesignPatternApp
+{
+    public class SmsNotificationCreator : NotificationCreator
+    {
+        public override INotification CreateNotification()
+        {
+            return new SmsNotification();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Prototype DP
+
+namespace PrototypeDpApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Person p1 = new Person();
+            p1.Age = 42;
+            p1.BirthDate = Convert.ToDateTime("1977-01-01");
+            p1.Name = "Harry Potter";
+            p1.IdInfo = new IdInfo(666);
+
+            // Perform a shallow copy of p1 and assign it to p2.
+            Person p2 = p1.ShallowCopy();
+            // Make a deep copy of p1 and assign it to p3.
+            Person p3 = p1.DeepCopy();
+
+            // Display values of p1, p2 and p3.
+            Console.WriteLine("Original values of p1, p2, p3:");
+            Console.WriteLine("   p1 instance values: ");
+            DisplayValues(p1);
+            Console.WriteLine("   p2 instance values:");
+            DisplayValues(p2);
+            Console.WriteLine("   p3 instance values:");
+            DisplayValues(p3);
+
+            // Change the value of p1 properties and display the values of p1,
+            // p2 and p3.
+            p1.Age = 32;
+            p1.BirthDate = Convert.ToDateTime("1900-01-01");
+            p1.Name = "Hermione Granger";
+            p1.IdInfo.IdNumber = 7878;
+            Console.WriteLine("\nValues of p1, p2 and p3 after changes to p1:");
+            Console.WriteLine("   p1 instance values: ");
+            DisplayValues(p1);
+            Console.WriteLine("   p2 instance values (reference values have changed):");
+            DisplayValues(p2);
+            Console.WriteLine("   p3 instance values (everything was kept the same):");
+            DisplayValues(p3);
+        }
+
+        public static void DisplayValues(Person p)
+        {
+            Console.WriteLine("      Name: {0:s}, Age: {1:d}, BirthDate: {2:MM/dd/yy}",
+                p.Name, p.Age, p.BirthDate);
+            Console.WriteLine("      ID#: {0:d}", p.IdInfo.IdNumber);
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PrototypeDpApp
+{
+    public class Person
+    {
+        public int Age;
+        public DateTime BirthDate;
+        public string Name;
+        public IdInfo IdInfo;
+
+        public Person ShallowCopy()
+        {
+            return (Person)this.MemberwiseClone();
+        }
+
+        public Person DeepCopy()
+        {
+            Person clone = (Person)this.MemberwiseClone();
+            clone.IdInfo = new IdInfo(IdInfo.IdNumber);
+            clone.Name = String.Copy(Name);
+            return clone;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PrototypeDpApp
+{
+    public class IdInfo
+    {
+        public int IdNumber;
+
+        public IdInfo(int idNumber)
+        {
+            this.IdNumber = idNumber;
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+Singleton DP
+
+namespace SingletonDesignPatternApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Singleton fromTeachaer = Singleton.GetInstance();
+            fromTeachaer.PrintDetails("From Teacher");
+            Singleton fromStudent = Singleton.GetInstance();
+            fromStudent.PrintDetails("From Student");
+            Console.ReadLine();
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SingletonDesignPatternApp
+{
+    public sealed class Singleton
+    {
+        private static int Counter = 0;
+        private static Singleton Instance = null;
+        public static Singleton GetInstance()
+        {
+            if (Instance == null)
+            {
+                Instance = new Singleton();
+            }
+            return Instance;
+        }
+        private Singleton()
+        {
+            Counter++;
+            Console.WriteLine("Counter Value " + Counter.ToString());
+        }
+        public void PrintDetails(string message)
+        {
+            Console.WriteLine(message);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\bin\Debug\net8.0\AuthenticationApp.exe
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\bin\Debug\net8.0\AuthenticationApp.deps.json
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\bin\Debug\net8.0\AuthenticationApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\bin\Debug\net8.0\AuthenticationApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\bin\Debug\net8.0\AuthenticationApp.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\AuthenticationApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\AuthenticationApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\AuthenticationApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\AuthenticationApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\AuthenticationApp.sourcelink.json
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\AuthenticationApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\refint\AuthenticationApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\AuthenticationApp.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\AuthenticationApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day7\Assignment\AuthenticationSolution\AuthenticationApp\obj\Debug\net8.0\ref\AuthenticationApp.dll

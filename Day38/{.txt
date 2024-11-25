@@ -1,0 +1,11 @@
+{
+  "username": "malar",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJnaXZlbl9uYW1lIjoibWFsYXIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJDdXN0b21lciIsImV4cCI6MTczMTc0Njc0MX0.RwDedcuU6nAo26n2sDRBLFxQJTfM_6qOv2sMSX3KzNk",
+  "email": null
+}
+
+{
+  "username": "luna",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJnaXZlbl9uYW1lIjoibHVuYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkN1c3RvbWVyIiwiZXhwIjoxNzMxNzU1NTkxfQ.eeC3gvkeSmHZpAcFWdyQRx5--T1PyNItkmPSM2u8sc0",
+  "email": null
+}

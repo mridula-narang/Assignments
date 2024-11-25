@@ -1,0 +1,73 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #000;
+}
+
+/* In your CSS file */
+section {
+    padding-top: 0.5rem; /* Adjust as needed */
+    padding-bottom: 0.5rem; /* Adjust as needed */
+}
+
+/*.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}*/
+
+h1, h2,h3,h5, p {
+    color: #E0B0FF;
+}
+.project-card{
+    height = 200px;
+    width = 200px;
+}
+.project-card img {
+    object-fit:contain; /* Ensures image covers the entire card without distortion */
+    height: 200px; /* Fixed height for images */
+}
+
+    .project-card .card-body {
+        flex: 1; /* Allows the card body to take up the remaining space */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        background-color: black;
+    }
+
+
+.profile-pic {
+    max-width: 150px; /* Adjust this value as needed */
+    height: 150px;
+}
+
+
+.badge {
+    font-size: 14px;
+}
+
+
+.container {
+    margin-top: 50px;
+}
+
+

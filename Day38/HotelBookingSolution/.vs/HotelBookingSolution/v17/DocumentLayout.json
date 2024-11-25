@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HotelBookingApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F49AC067-C6DC-4AD5-B6EB-541EA758B8B6}|HotelBookingTest\\HotelBookingTest.csproj|d:\\c_sharp and dot net projects\\day38\\hotelbookingsolution\\hotelbookingtest\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F49AC067-C6DC-4AD5-B6EB-541EA758B8B6}|HotelBookingTest\\HotelBookingTest.csproj|solutionrelative:hotelbookingtest\\userservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Controllers\\BookingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HotelBookingApp\\Controllers\\BookingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HotelBookingApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F49AC067-C6DC-4AD5-B6EB-541EA758B8B6}|HotelBookingTest\\HotelBookingTest.csproj|d:\\c_sharp and dot net projects\\day38\\hotelbookingsolution\\hotelbookingtest\\roomrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HotelBookingApp\\Models\\Room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Controllers\\BookingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HotelBookingApp\\Controllers\\BookingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HotelBookingApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -110,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 707,
-          "SelectedChildIndex": 22,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -122,19 +122,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserServiceTest.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\UserServiceTest.cs",
               "RelativeDocumentMoniker": "HotelBookingTest\\UserServiceTest.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\UserServiceTest.cs",
               "RelativeToolTip": "HotelBookingTest\\UserServiceTest.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T11:41:59.865Z"
+              "WhenOpened": "2024-11-10T11:41:59.865Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserRepositoryTest.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\UserRepositoryTest.cs",
               "RelativeDocumentMoniker": "HotelBookingTest\\UserRepositoryTest.cs",
@@ -142,11 +143,12 @@
               "RelativeToolTip": "HotelBookingTest\\UserRepositoryTest.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T11:41:48.906Z"
+              "WhenOpened": "2024-11-10T11:41:48.906Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "HotelRepositoryTest.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\HotelRepositoryTest.cs",
               "RelativeDocumentMoniker": "HotelBookingTest\\HotelRepositoryTest.cs",
@@ -154,11 +156,12 @@
               "RelativeToolTip": "HotelBookingTest\\HotelRepositoryTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T11:41:45.448Z"
+              "WhenOpened": "2024-11-10T11:41:45.448Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RoomRepositoryTest.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\RoomRepositoryTest.cs",
               "RelativeDocumentMoniker": "HotelBookingTest\\RoomRepositoryTest.cs",
@@ -166,11 +169,12 @@
               "RelativeToolTip": "HotelBookingTest\\RoomRepositoryTest.cs",
               "ViewState": "AgIAAMcAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T11:41:43.048Z"
+              "WhenOpened": "2024-11-10T11:41:43.048Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "HotelRepository.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Repositories\\HotelRepository.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Repositories\\HotelRepository.cs",
@@ -178,11 +182,12 @@
               "RelativeToolTip": "HotelBookingApp\\Repositories\\HotelRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.381Z"
+              "WhenOpened": "2024-11-10T13:57:44.381Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RoomRepository.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Repositories\\RoomRepository.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Repositories\\RoomRepository.cs",
@@ -190,47 +195,51 @@
               "RelativeToolTip": "HotelBookingApp\\Repositories\\RoomRepository.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAADwv0gAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.387Z"
+              "WhenOpened": "2024-11-10T13:57:44.387Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Interfaces\\IRepository.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Interfaces\\IRepository.cs",
               "RelativeToolTip": "HotelBookingApp\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAgAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.389Z"
+              "WhenOpened": "2024-11-10T13:57:44.389Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Repositories\\UserRepository.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "HotelBookingApp\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAgwEUAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwEUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.391Z"
+              "WhenOpened": "2024-11-10T13:57:44.391Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BookingRepository.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Repositories\\BookingRepository.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Repositories\\BookingRepository.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Repositories\\BookingRepository.cs",
               "RelativeToolTip": "HotelBookingApp\\Repositories\\BookingRepository.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAAAHIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAIBJwHIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.393Z"
+              "WhenOpened": "2024-11-10T13:57:44.393Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "LoginResponseDTO.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\DTOs\\LoginResponseDTO.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Models\\DTOs\\LoginResponseDTO.cs",
@@ -238,23 +247,25 @@
               "RelativeToolTip": "HotelBookingApp\\Models\\DTOs\\LoginResponseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.394Z"
+              "WhenOpened": "2024-11-10T13:57:44.394Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UserTokenDTO.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\DTOs\\UserTokenDTO.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Models\\DTOs\\UserTokenDTO.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\DTOs\\UserTokenDTO.cs",
               "RelativeToolTip": "HotelBookingApp\\Models\\DTOs\\UserTokenDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.397Z"
+              "WhenOpened": "2024-11-10T13:57:44.397Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Services\\UserService.cs",
@@ -262,11 +273,12 @@
               "RelativeToolTip": "HotelBookingApp\\Services\\UserService.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAYwD0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.401Z"
+              "WhenOpened": "2024-11-10T13:57:44.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Models\\User.cs",
@@ -274,23 +286,25 @@
               "RelativeToolTip": "HotelBookingApp\\Models\\User.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.403Z"
+              "WhenOpened": "2024-11-10T13:57:44.403Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "UserProfile.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Mappers\\UserProfile.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Mappers\\UserProfile.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Mappers\\UserProfile.cs",
               "RelativeToolTip": "HotelBookingApp\\Mappers\\UserProfile.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.406Z"
+              "WhenOpened": "2024-11-10T13:57:44.406Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\DTOs\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Models\\DTOs\\LoginRequestDTO.cs",
@@ -298,11 +312,12 @@
               "RelativeToolTip": "HotelBookingApp\\Models\\DTOs\\LoginRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.408Z"
+              "WhenOpened": "2024-11-10T13:57:44.408Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "UserCreateDTO.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\DTOs\\UserCreateDTO.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Models\\DTOs\\UserCreateDTO.cs",
@@ -310,11 +325,12 @@
               "RelativeToolTip": "HotelBookingApp\\Models\\DTOs\\UserCreateDTO.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.41Z"
+              "WhenOpened": "2024-11-10T13:57:44.41Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "RoomProfile.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Mappers\\RoomProfile.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Mappers\\RoomProfile.cs",
@@ -322,35 +338,38 @@
               "RelativeToolTip": "HotelBookingApp\\Mappers\\RoomProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.412Z"
+              "WhenOpened": "2024-11-10T13:57:44.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "RoomDTO.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\DTOs\\RoomDTO.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Models\\DTOs\\RoomDTO.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\DTOs\\RoomDTO.cs",
               "RelativeToolTip": "HotelBookingApp\\Models\\DTOs\\RoomDTO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwAoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwAoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.414Z"
+              "WhenOpened": "2024-11-10T13:57:44.414Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Room.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\Room.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Models\\Room.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Models\\Room.cs",
               "RelativeToolTip": "HotelBookingApp\\Models\\Room.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.417Z"
+              "WhenOpened": "2024-11-10T13:57:44.417Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 1,
               "Title": "BookingController.cs",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "HotelBookingApp\\Controllers\\BookingController.cs",
@@ -358,17 +377,18 @@
               "RelativeToolTip": "HotelBookingApp\\Controllers\\BookingController.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAgwDYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.418Z"
+              "WhenOpened": "2024-11-10T13:57:44.418Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\appsettings.json",
               "RelativeDocumentMoniker": "HotelBookingApp\\appsettings.json",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\appsettings.json",
               "RelativeToolTip": "HotelBookingApp\\appsettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-10T13:57:44.421Z",
               "EditorCaption": ""
@@ -383,7 +403,8 @@
               "RelativeToolTip": "HotelBookingApp\\Program.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAADwv2oAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.424Z"
+              "WhenOpened": "2024-11-10T13:57:44.424Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -393,9 +414,10 @@
               "RelativeDocumentMoniker": "HotelBookingApp\\Services\\BookingService.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Services\\BookingService.cs",
               "RelativeToolTip": "HotelBookingApp\\Services\\BookingService.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAIBJwGYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.427Z"
+              "WhenOpened": "2024-11-10T13:57:44.427Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -405,9 +427,10 @@
               "RelativeDocumentMoniker": "HotelBookingApp\\Services\\EmailService.cs",
               "ToolTip": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\Services\\EmailService.cs",
               "RelativeToolTip": "HotelBookingApp\\Services\\EmailService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAIBJwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.429Z"
+              "WhenOpened": "2024-11-10T13:57:44.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -419,7 +442,8 @@
               "RelativeToolTip": "HotelBookingApp\\Interfaces\\IEmailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T13:57:44.431Z"
+              "WhenOpened": "2024-11-10T13:57:44.431Z",
+              "EditorCaption": ""
             }
           ]
         }

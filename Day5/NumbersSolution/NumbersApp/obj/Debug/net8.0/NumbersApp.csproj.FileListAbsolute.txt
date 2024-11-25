@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\bin\Debug\net8.0\NumbersApp.exe
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\bin\Debug\net8.0\NumbersApp.deps.json
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\bin\Debug\net8.0\NumbersApp.runtimeconfig.json
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\bin\Debug\net8.0\NumbersApp.dll
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\bin\Debug\net8.0\NumbersApp.pdb
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\obj\Debug\net8.0\NumbersApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\obj\Debug\net8.0\NumbersApp.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\obj\Debug\net8.0\NumbersApp.AssemblyInfo.cs
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\obj\Debug\net8.0\NumbersApp.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\obj\Debug\net8.0\NumbersApp.dll
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\obj\Debug\net8.0\refint\NumbersApp.dll
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\obj\Debug\net8.0\NumbersApp.pdb
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\obj\Debug\net8.0\NumbersApp.genruntimeconfig.cache
+C:\Users\hp\source\repos\NumbersSolution\NumbersApp\obj\Debug\net8.0\ref\NumbersApp.dll

@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.exe
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.deps.json
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.dll
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\bin\Debug\net8.0\UnderstandingOOPSApp.pdb
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.sourcelink.json
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.dll
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\refint\UnderstandingOOPSApp.dll
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.pdb
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\UnderstandingOOPSApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day18\UnderstandingOOPSSolution\UnderstandingOOPSApp\obj\Debug\net8.0\ref\UnderstandingOOPSApp.dll

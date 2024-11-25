@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\bin\Debug\net8.0\BreakingDownApp.exe
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\bin\Debug\net8.0\BreakingDownApp.deps.json
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\bin\Debug\net8.0\BreakingDownApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\bin\Debug\net8.0\BreakingDownApp.dll
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\bin\Debug\net8.0\BreakingDownApp.pdb
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\BreakingDownApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\BreakingDownApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\BreakingDownApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\BreakingDownApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\BreakingDownApp.sourcelink.json
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\BreakingDownApp.dll
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\refint\BreakingDownApp.dll
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\BreakingDownApp.pdb
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\BreakingDownApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day7\BreakingDownSolution\BreakingDownApp\obj\Debug\net8.0\ref\BreakingDownApp.dll

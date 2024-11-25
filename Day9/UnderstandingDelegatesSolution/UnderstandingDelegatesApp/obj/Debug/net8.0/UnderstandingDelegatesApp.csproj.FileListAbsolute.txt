@@ -1,0 +1,29 @@
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.exe
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.deps.json
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.runtimeconfig.json
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.dll
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.pdb
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.AssemblyInfo.cs
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.dll
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\refint\UnderstandingDelegatesApp.dll
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.pdb
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.genruntimeconfig.cache
+C:\Users\hp\source\repos\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\ref\UnderstandingDelegatesApp.dll
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.exe
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.deps.json
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.dll
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\bin\Debug\net8.0\UnderstandingDelegatesApp.pdb
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.sourcelink.json
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.dll
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\refint\UnderstandingDelegatesApp.dll
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.pdb
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\UnderstandingDelegatesApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day9\UnderstandingDelegatesSolution\UnderstandingDelegatesApp\obj\Debug\net8.0\ref\UnderstandingDelegatesApp.dll
