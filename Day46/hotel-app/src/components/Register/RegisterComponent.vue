@@ -1,64 +1,66 @@
-<script>
-import { RegisterUser } from '@/scripts/RegisterService';
+<script setup>
+import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { RegisterUser } from '@/scripts/RegisterService';
 
-export default{
-    name: 'RegisterComponent',
-    data(){
-        return{
-            user:{
-                username:'',
-                password:'',
-                email:'',
-                phone:'',
-                role:1,
-            }
-        }
-    },
-    setup(){
-        const router = useRouter();
-        return { router };
-    },
-    methods:{
-        async register(){
-            try {
-                const response = await RegisterUser(this.user);
-                console.log(response.data.username + ' registered successfully.');
-                this.router.push('/login');
-            } catch (error) {
-                console.log('Registration failed.'+ error);
-            }
-        }
-    }
-}
+const user = ref({
+  username: '',
+  password: ''
+});
+const errorMessage = ref('');
+const router = useRouter();
+
+const register = async () => {
+  errorMessage.value = '';
+
+  // Frontend validation
+  if (user.value.username.length < 4) {
+    errorMessage.value = 'Username must be at least 4 characters long.';
+    return;
+  }
+  if (user.value.password.length < 6) {
+    errorMessage.value = 'Password must be at least 6 characters long.';
+    return;
+  }
+
+  try {
+    const response = await RegisterUser(user.value);
+    console.log(response.data.username + ' registered successfully.');
+    router.push('/login');
+  } catch (error) {
+    console.error('Registration failed:', error);
+    errorMessage.value = 'Registration failed. Please try again.';
+  }
+};
 </script>
 
 <template>
-    <div>Register</div>
-    <div>
-        <form>
-            <div>
-                <label for="username">Username</label>
-                <input type="text" id="username" v-model="user.username">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" v-model="user.password">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" v-model="user.email">
-            </div>
-            <div>
-                <label for="phone">Phone</label>
-                <input type="text" id="phone" v-model="user.phone">
-            </div>
-            <div>
-                <button @click.prevent="register">Register</button>
-            </div>
-        </form>
+  <div>
+    <h1>Register</h1>
+    <div class="formdiv">
+      <form @submit.prevent="register">
+        <div>
+          <label class="form-control" for="username">Username</label>
+          <input class="form-control" type="text" id="username" v-model="user.username">
+        </div>
+        <div>
+          <label class="form-control" for="password">Password</label>
+          <input class="form-control" type="password" id="password" v-model="user.password">
+        </div>
+        <button class="btn btn-success" type="submit">Register</button>
+      </form>
+      <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
     </div>
+  </div>
 </template>
 
-<style>
+<style scoped>
+.formdiv {
+  width: 30%;
+  position: relative;
+  left: 35%;
+}
+.error {
+  color: red;
+}
 </style>

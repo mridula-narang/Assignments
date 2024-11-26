@@ -1,5 +1,6 @@
 <template>
-<div>hello</div>
+<div>Tiare</div>
+<div></div>
 </template>
 
 <script>
