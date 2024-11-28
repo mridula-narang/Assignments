@@ -28,6 +28,7 @@ namespace HotelBookingApp.Controllers
         }
 
         [HttpGet("{id}/GetHotelById")]
+        [Authorize]
         public async Task<IActionResult> GetHotelById(int id)
         {
             var hotels = await _hotelService.GetHotel(id);
@@ -43,6 +44,25 @@ namespace HotelBookingApp.Controllers
                 var result = await _hotelService.AddHotel(hotelDTO);
                 return Ok("Hotel Added Successfully");
 
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpGet("{hotelId}/rooms")]
+        public async Task<IActionResult> GetRoomsByHotel(int hotelId)
+        {
+            try
+            {
+                var rooms = await _hotelService.GetRoomsByHotelId(hotelId);
+                if (rooms == null || !rooms.Any())
+                {
+                    return NotFound("No rooms found for the specified hotel.");
+                }
+                return Ok(rooms);
             }
             catch (Exception e)
             {

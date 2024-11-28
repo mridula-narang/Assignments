@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\HotelBookingTest.csproj": {}
+    "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingTest\\HotelBookingTest.csproj": {}
   },
   "projects": {
-    "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj": {
+    "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj",
+        "projectUniqueName": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj",
         "projectName": "HotelBookingApp",
-        "projectPath": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj",
+        "projectPath": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\obj\\",
+        "outputPath": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,7 +72,6 @@
               "target": "Package",
               "version": "[4.20.72, )"
             },
-<<<<<<< HEAD
             "SendGrid": {
               "target": "Package",
               "version": "[9.29.3, )"
@@ -81,8 +80,6 @@
               "target": "Package",
               "version": "[1.0.1, )"
             },
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -107,18 +104,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\HotelBookingTest.csproj": {
+    "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingTest\\HotelBookingTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\HotelBookingTest.csproj",
+        "projectUniqueName": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingTest\\HotelBookingTest.csproj",
         "projectName": "HotelBookingTest",
-        "projectPath": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\HotelBookingTest.csproj",
+        "projectPath": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingTest\\HotelBookingTest.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingTest\\obj\\",
+        "outputPath": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -136,8 +133,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj": {
-                "projectPath": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj"
+              "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj": {
+                "projectPath": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj"
               }
             }
           }
@@ -194,7 +191,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

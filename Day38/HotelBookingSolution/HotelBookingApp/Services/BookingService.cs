@@ -1,9 +1,8 @@
 ﻿using AutoMapper;
 using HotelBookingApp.Exceptions;
 using HotelBookingApp.Interfaces;
-using HotelBookingApp.Models;
 using HotelBookingApp.Models.DTOs;
-using HotelBookingApp.Repositories;
+using HotelBookingApp.Models;
 
 namespace HotelBookingApp.Services
 {
@@ -12,36 +11,32 @@ namespace HotelBookingApp.Services
         private readonly IRepository<int, Booking> _bookingRepository;
         private readonly IRepository<int, Room> _roomRepository; // Add this line
         private readonly IMapper _mapper;
-<<<<<<< HEAD
         private readonly IEmailService _emailService;
         private readonly IRepository<int, User> _userRepository;
+        private readonly IRoomService _roomService;
 
-        public BookingService(IRepository<int, Booking> bookingRepository, IRepository<int, Room> roomRepository, IMapper mapper, IEmailService emailService, IRepository<int,User> userRepository) 
+        public BookingService(IRepository<int, Booking> bookingRepository, IRepository<int, Room> roomRepository, IMapper mapper, IEmailService emailService, IRepository<int, User> userRepository, IRoomService roomService)
         {
             _bookingRepository = bookingRepository;
-            _roomRepository = roomRepository; 
+            _roomRepository = roomRepository;
             _mapper = mapper;
             _emailService = emailService;
             _userRepository = userRepository;
-=======
-
+            _roomService = roomService;
+        }
         public BookingService(IRepository<int, Booking> bookingRepository, IRepository<int, Room> roomRepository, IMapper mapper) // Modify constructor
         {
             _bookingRepository = bookingRepository;
             _roomRepository = roomRepository; // Add this line
             _mapper = mapper;
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
         }
 
         public async Task<Booking> AddBooking(BookingDTO bookingDTO)
         {
             var booking = _mapper.Map<Booking>(bookingDTO);
 
-            // Calculate TotalPrice based on the room price and duration
+            // Calculate TotalPrice
             booking.TotalPrice = await CalculateTotalPrice(bookingDTO);
-
-            // Set a default status if none is provided in DTO
-            booking.Status = bookingDTO.Status;
 
             // Save booking
             var addedBooking = await _bookingRepository.Add(booking);
@@ -50,11 +45,31 @@ namespace HotelBookingApp.Services
 
         public async Task<decimal> CalculateTotalPrice(BookingDTO bookingDTO)
         {
-            var booking = _mapper.Map<Booking>(bookingDTO);
-            var room = await _roomRepository.Get(booking.RoomId); // Retrieve room to get the price
-            var duration = (booking.CheckOutDate - booking.CheckInDate).Days;
+            
+                if (bookingDTO.RoomId <= 0 || bookingDTO.Quantity <= 0)
+                {
+                    throw new InvalidOperationException("Invalid room selection or quantity.");
+                }
 
-            return room.Price * duration;
+                if (bookingDTO.CheckInDate >= bookingDTO.CheckOutDate)
+                {
+                    throw new ArgumentException("Invalid booking dates.");
+                }
+
+                var room = await _roomRepository.Get(bookingDTO.RoomId);
+                if (room == null)
+                {
+                    throw new CollectionEmptyException($"Room with ID {bookingDTO.RoomId}");
+                }
+
+                // Calculate duration of stay
+                var duration = (bookingDTO.CheckOutDate - bookingDTO.CheckInDate).Days;
+
+                // Total price = Room price * Quantity * Duration
+                var totalPrice = room.Price * bookingDTO.Quantity * duration;
+
+                return totalPrice;
+
         }
 
         public async Task<Booking> DeleteBooking(int id)
@@ -95,8 +110,27 @@ namespace HotelBookingApp.Services
                 throw new CollectionEmptyException("Booking");
             }
             booking.Status = status;
+
+            if (status == Booking.BookingStatus.Confirmed)
+            {
+                var room = await _roomRepository.Get(booking.RoomId);
+                if (room != null && room.IsBooked != Room.RoomStatus.Booked)
+                {
+                    room.IsBooked = Room.RoomStatus.Booked;
+                    await _roomRepository.Update(room.RoomId, room); // Update room status in the repository
+                }
+            }
+            else if (status == Booking.BookingStatus.Cancelled)
+            {
+                var room = await _roomRepository.Get(booking.RoomId);
+                if (room != null && room.IsBooked == Room.RoomStatus.Booked)
+                {
+                    room.IsBooked = Room.RoomStatus.Available;
+                    await _roomRepository.Update(room.RoomId, room);
+                }
+            }
+
             var updatedBooking = await _bookingRepository.Update(bookingId, booking);
-<<<<<<< HEAD
             if (status == Booking.BookingStatus.Confirmed || status == Booking.BookingStatus.Cancelled)
             {
                 string subject = $"Booking Status Updated to {status}";
@@ -108,10 +142,13 @@ namespace HotelBookingApp.Services
                 }
                 await _emailService.SendStatusChangeEmail(booking.Users.Email, subject, message);
             }
-
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
             return updatedBooking;
         }
+
+        public async Task<IEnumerable<RoomDTO>> GetAvailableRoomsForBooking()
+        {
+            return await _roomService.GetAvailableRooms();
+        }
+
     }
 }

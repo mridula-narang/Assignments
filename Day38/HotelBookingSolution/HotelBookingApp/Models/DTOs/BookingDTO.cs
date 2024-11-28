@@ -10,6 +10,7 @@ namespace HotelBookingApp.Models.DTOs
         public DateTime CheckInDate { get; set; }
         public DateTime CheckOutDate { get; set; }
         public int NumberOfGuests { get; set; }
+        public int Quantity { get; set; }
         public BookingStatus Status { get; set; }
     }
 }

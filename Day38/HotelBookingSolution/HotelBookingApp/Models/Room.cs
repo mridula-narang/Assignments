@@ -1,4 +1,6 @@
-﻿namespace HotelBookingApp.Models
+﻿using System.Text.Json.Serialization;
+
+namespace HotelBookingApp.Models
 {
     public class Room
     {
@@ -22,6 +24,7 @@
         public string Features { get; set; } 
         public int Capacity { get; set; }
         public int HotelId { get; set; }
+        [JsonIgnore]
         public Hotel Hotel { get; set; }
         public ICollection<Booking> Bookings { get; set; }
     }

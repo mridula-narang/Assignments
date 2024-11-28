@@ -53,9 +53,6 @@ namespace HotelBookingApp.Contexts
                 .HasMany(a => a.Amenities)
                 .WithOne(h => h.Hotel);
 
-
-
-
         }
     }
 }

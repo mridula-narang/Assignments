@@ -57,5 +57,12 @@ namespace HotelBookingApp.Services
             var rooms = await _roomRepository.GetAll();
             return rooms;
         }
+
+        public async Task<IEnumerable<RoomDTO>> GetAvailableRooms()
+        {
+            var rooms = await _roomRepository.GetAll();
+            var availableRooms = rooms.Where(r => r.IsBooked == Room.RoomStatus.Available);
+            return _mapper.Map<IEnumerable<RoomDTO>>(availableRooms);
+        }
     }
 }

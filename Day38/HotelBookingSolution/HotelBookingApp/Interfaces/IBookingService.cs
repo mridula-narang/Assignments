@@ -13,6 +13,7 @@ namespace HotelBookingApp.Interfaces
         Task<Booking> UpdateBooking(BookingDTO bookingDTO);
         //update booking status
         Task<Booking> UpdateBookingStatus(int bookingId, BookingStatus status);
+        Task<IEnumerable<RoomDTO>> GetAvailableRoomsForBooking();
 
 
     }

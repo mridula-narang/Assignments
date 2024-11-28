@@ -39,9 +39,15 @@ namespace HotelBookingApp.Repositories
             return hotel;
         }
 
-        public Task<Hotel> Get(int key)
+        public async Task<Hotel> Get(int key)
         {
-            var hotel = _context.Hotels.FirstOrDefaultAsync(r => r.HotelId == key);
+            var hotel = await _context.Hotels
+                .Include(h=>h.Rooms)
+                .FirstOrDefaultAsync(r => r.HotelId == key);
+            if (hotel == null)
+            {
+                throw new NotFoundException("hotel");
+            }
             return hotel;
         }
 
@@ -50,7 +56,7 @@ namespace HotelBookingApp.Repositories
             var hotels = await _context.Hotels.ToListAsync();
             if (hotels.Count == 0)
             {
-                throw new NotFoundException("hotel");
+                throw new CollectionEmptyException("hotel");
             }
             return hotels;
         }
@@ -64,11 +70,11 @@ namespace HotelBookingApp.Repositories
             }
             try
             {
-                hotel.Amenities = entity.Amenities;
-                hotel.Location = entity.Location;
-                hotel.Rooms = entity.Rooms;
+                //hotel.Amenities = entity.Amenities;
+                //hotel.Location = entity.Location;
+                //hotel.Rooms = entity.Rooms;
                 hotel.StandardCheckIn = entity.StandardCheckIn;
-                hotel.StandardCheckOut = entity.StandardCheckOut;
+                //hotel.StandardCheckOut = entity.StandardCheckOut;
                 return hotel;
             }
             catch (Exception e)
