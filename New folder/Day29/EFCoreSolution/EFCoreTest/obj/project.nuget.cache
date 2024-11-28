@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "RpicVd9JnD4=",
+  "success": false,
+  "projectFilePath": "D:\\C_sharp and dot net projects\\New folder\\Day29\\EFCoreSolution\\EFCoreTest\\EFCoreTest.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project EFCoreFirstAPI is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project EFCoreFirstAPI supports: net8.0 (.NETCoreApp,Version=v8.0)",
+      "libraryId": "EFCoreFirstAPI",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

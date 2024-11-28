@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\bin\Debug\net8.0\EmployeeExpenseTrackingApp.exe
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\bin\Debug\net8.0\EmployeeExpenseTrackingApp.deps.json
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\bin\Debug\net8.0\EmployeeExpenseTrackingApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\bin\Debug\net8.0\EmployeeExpenseTrackingApp.dll
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\bin\Debug\net8.0\EmployeeExpenseTrackingApp.pdb
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\EmployeeExpenseTrackingApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\EmployeeExpenseTrackingApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\EmployeeExpenseTrackingApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\EmployeeExpenseTrackingApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\EmployeeExpenseTrackingApp.sourcelink.json
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\EmployeeExpenseTrackingApp.dll
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\refint\EmployeeExpenseTrackingApp.dll
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\EmployeeExpenseTrackingApp.pdb
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\EmployeeExpenseTrackingApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day5\EmployeeExpenseTrackingSolution\EmployeeExpenseTrackingApp\obj\Debug\net8.0\ref\EmployeeExpenseTrackingApp.dll

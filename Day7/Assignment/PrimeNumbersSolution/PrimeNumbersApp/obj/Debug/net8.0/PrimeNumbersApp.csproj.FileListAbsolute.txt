@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\bin\Debug\net8.0\PrimeNumbersApp.exe
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\bin\Debug\net8.0\PrimeNumbersApp.deps.json
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\bin\Debug\net8.0\PrimeNumbersApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\bin\Debug\net8.0\PrimeNumbersApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\bin\Debug\net8.0\PrimeNumbersApp.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\PrimeNumbersApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\PrimeNumbersApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\PrimeNumbersApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\PrimeNumbersApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\PrimeNumbersApp.sourcelink.json
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\PrimeNumbersApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\refint\PrimeNumbersApp.dll
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\PrimeNumbersApp.pdb
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\PrimeNumbersApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day7\Assignment\PrimeNumbersSolution\PrimeNumbersApp\obj\Debug\net8.0\ref\PrimeNumbersApp.dll

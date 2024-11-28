@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6842C602-8B99-4252-BB5B-4FF175EF9C2E}|EmployeeManagementApp\\EmployeeManagementApp.csproj|d:\\c_sharp and dot net projects\\day8\\assignment\\employeemanagementsolution\\employeemanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6842C602-8B99-4252-BB5B-4FF175EF9C2E}|EmployeeManagementApp\\EmployeeManagementApp.csproj|solutionrelative:employeemanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6842C602-8B99-4252-BB5B-4FF175EF9C2E}|EmployeeManagementApp\\EmployeeManagementApp.csproj|d:\\c_sharp and dot net projects\\day8\\assignment\\employeemanagementsolution\\employeemanagementapp\\employeemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6842C602-8B99-4252-BB5B-4FF175EF9C2E}|EmployeeManagementApp\\EmployeeManagementApp.csproj|solutionrelative:employeemanagementapp\\employeemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6842C602-8B99-4252-BB5B-4FF175EF9C2E}|EmployeeManagementApp\\EmployeeManagementApp.csproj|d:\\c_sharp and dot net projects\\day8\\assignment\\employeemanagementsolution\\employeemanagementapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6842C602-8B99-4252-BB5B-4FF175EF9C2E}|EmployeeManagementApp\\EmployeeManagementApp.csproj|solutionrelative:employeemanagementapp\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeManager.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\EmployeeManager.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementApp\\EmployeeManager.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\EmployeeManager.cs*",
+              "RelativeToolTip": "EmployeeManagementApp\\EmployeeManager.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T15:25:36.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementApp\\Employee.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Employee.cs",
+              "RelativeToolTip": "EmployeeManagementApp\\Employee.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAswC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T15:24:52.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day8\\Assignment\\EmployeeManagementSolution\\EmployeeManagementApp\\Program.cs",
+              "RelativeToolTip": "EmployeeManagementApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T15:19:45.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

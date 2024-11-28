@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\bin\Debug\net8.0\FactoryDesignPatternApp.exe
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\bin\Debug\net8.0\FactoryDesignPatternApp.deps.json
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\bin\Debug\net8.0\FactoryDesignPatternApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\bin\Debug\net8.0\FactoryDesignPatternApp.dll
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\bin\Debug\net8.0\FactoryDesignPatternApp.pdb
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\FactoryDesignPatternApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\FactoryDesignPatternApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\FactoryDesignPatternApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\FactoryDesignPatternApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\FactoryDesignPatternApp.sourcelink.json
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\FactoryDesignPatternApp.dll
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\refint\FactoryDesignPatternApp.dll
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\FactoryDesignPatternApp.pdb
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\FactoryDesignPatternApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day18\FactoryDesignPatternSolution\FactoryDesignPatternApp\obj\Debug\net8.0\ref\FactoryDesignPatternApp.dll

@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|d:\\c_sharp and dot net projects\\day12\\firstwebsolution\\firstwebapp\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|solutionrelative:firstwebapp\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|d:\\c_sharp and dot net projects\\day12\\firstwebsolution\\firstwebapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|solutionrelative:firstwebapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|d:\\c_sharp and dot net projects\\day12\\firstwebsolution\\firstwebapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|solutionrelative:firstwebapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|d:\\c_sharp and dot net projects\\day12\\firstwebsolution\\firstwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|solutionrelative:firstwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|d:\\c_sharp and dot net projects\\day12\\firstwebsolution\\firstwebapp\\controllers\\firstcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|solutionrelative:firstwebapp\\controllers\\firstcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|d:\\c_sharp and dot net projects\\day12\\firstwebsolution\\firstwebapp\\views\\first\\viewcustomerdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|solutionrelative:firstwebapp\\views\\first\\viewcustomerdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|d:\\c_sharp and dot net projects\\day12\\firstwebsolution\\firstwebapp\\views\\first\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|solutionrelative:firstwebapp\\views\\first\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|d:\\c_sharp and dot net projects\\day12\\firstwebsolution\\firstwebapp\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B757D9CE-B047-4E51-AFA6-A0C5D3EBDA8C}|FirstWebApp\\FirstWebApp.csproj|solutionrelative:firstwebapp\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "FirstWebApp\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "FirstWebApp\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T07:12:06.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "FirstWebApp\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "FirstWebApp\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T07:11:53.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "FirstWebApp\\Models\\Product.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Models\\Product.cs",
+              "RelativeToolTip": "FirstWebApp\\Models\\Product.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T07:10:23.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ViewCustomerData.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Views\\First\\ViewCustomerData.cshtml",
+              "RelativeDocumentMoniker": "FirstWebApp\\Views\\First\\ViewCustomerData.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Views\\First\\ViewCustomerData.cshtml",
+              "RelativeToolTip": "FirstWebApp\\Views\\First\\ViewCustomerData.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T06:52:47.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "FirstWebApp\\Models\\Customer.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Models\\Customer.cs",
+              "RelativeToolTip": "FirstWebApp\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T06:37:08.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Views\\First\\Index.cshtml",
+              "RelativeDocumentMoniker": "FirstWebApp\\Views\\First\\Index.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Views\\First\\Index.cshtml",
+              "RelativeToolTip": "FirstWebApp\\Views\\First\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T06:05:00.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FirstController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Controllers\\FirstController.cs",
+              "RelativeDocumentMoniker": "FirstWebApp\\Controllers\\FirstController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Controllers\\FirstController.cs",
+              "RelativeToolTip": "FirstWebApp\\Controllers\\FirstController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T06:04:50.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "FirstWebApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day12\\FirstWebSolution\\FirstWebApp\\Program.cs",
+              "RelativeToolTip": "FirstWebApp\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T04:53:05.771Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

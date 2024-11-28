@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|c:\\users\\hp\\source\\repos\\numberssolution\\numbersapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|solutionrelative:numbersapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|c:\\users\\hp\\source\\repos\\numberssolution\\numbersapp\\numtowords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|solutionrelative:numbersapp\\numtowords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|c:\\users\\hp\\source\\repos\\numberssolution\\numbersapp\\printnums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|solutionrelative:numbersapp\\printnums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|c:\\users\\hp\\source\\repos\\numberssolution\\numbersapp\\minmax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|solutionrelative:numbersapp\\minmax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|c:\\users\\hp\\source\\repos\\numberssolution\\numbersapp\\average.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAD54BD1-67F0-41B3-8A77-0783C1B780F6}|NumbersApp\\NumbersApp.csproj|solutionrelative:numbersapp\\average.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrintNums.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\PrintNums.cs",
+              "RelativeDocumentMoniker": "NumbersApp\\PrintNums.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\PrintNums.cs",
+              "RelativeToolTip": "NumbersApp\\PrintNums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T09:22:24.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NumToWords.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\NumToWords.cs",
+              "RelativeDocumentMoniker": "NumbersApp\\NumToWords.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\NumToWords.cs",
+              "RelativeToolTip": "NumbersApp\\NumToWords.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T09:33:47.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\Program.cs",
+              "RelativeDocumentMoniker": "NumbersApp\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\Program.cs",
+              "RelativeToolTip": "NumbersApp\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T08:47:16.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MinMax.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\MinMax.cs",
+              "RelativeDocumentMoniker": "NumbersApp\\MinMax.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\MinMax.cs",
+              "RelativeToolTip": "NumbersApp\\MinMax.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T09:10:58.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Average.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\Average.cs",
+              "RelativeDocumentMoniker": "NumbersApp\\Average.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\NumbersSolution\\NumbersApp\\Average.cs",
+              "RelativeToolTip": "NumbersApp\\Average.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T09:00:03.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

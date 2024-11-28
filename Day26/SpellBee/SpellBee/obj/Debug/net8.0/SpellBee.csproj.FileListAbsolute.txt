@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\bin\Debug\net8.0\SpellBee.exe
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\bin\Debug\net8.0\SpellBee.deps.json
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\bin\Debug\net8.0\SpellBee.runtimeconfig.json
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\bin\Debug\net8.0\SpellBee.dll
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\bin\Debug\net8.0\SpellBee.pdb
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\SpellBee.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\SpellBee.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\SpellBee.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\SpellBee.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\SpellBee.sourcelink.json
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\SpellBee.dll
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\refint\SpellBee.dll
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\SpellBee.pdb
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\SpellBee.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day26\SpellBee\SpellBee\obj\Debug\net8.0\ref\SpellBee.dll

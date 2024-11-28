@@ -1,0 +1,38 @@
+Product
+  Id
+  Name
+  Price
+  Quantity
+
+ 
+Supplier
+  Id
+  Company Name
+  Contact Name
+  Phone
+ 
+ProductSupply
+  PO Number
+  Product Id
+  Supplier ID
+  DateOfSupply
+  Quantity
+  Price
+ 
+Customer
+  Id
+  Name
+  Phone
+  Age
+ 
+Billing
+  Bill Number
+  Customer Id
+  Date of Purchase
+  Total Bill Amount
+BillDetails
+  Bill Number
+  Product Id
+  Quantity
+  Price
+  Discount

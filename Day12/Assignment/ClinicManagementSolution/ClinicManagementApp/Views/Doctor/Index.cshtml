@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ClinicManagementApp.Models.Doctor>
+<h2>Welcome to Lumina Medical Center</h2>
+
+<h3>About us</h3>
+<p class="paragraph">
+    At Lumina Medical Center, we believe in illuminating the path to health and well-being for every individual. Our hospital combines cutting-edge medical technology with compassionate care to deliver personalized treatment that empowers our patients to thrive. We are committed to a brighter, healthier future, where every person receives the highest standard of care.
+</p>
+
+<h2>Meet our team of doctors</h2>
+<div class="row">
+    @foreach (var doctor in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <!-- Adjust the column size as needed -->
+            <div class="card">
+                <img src="@doctor.Image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@doctor.Name</h5>
+                    <p class="card-text">Working at the department of @doctor.Department, Dr. @doctor.Name has 5+ years of experience in @doctor.Specialization.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|d:\\c_sharp and dot net projects\\day6\\productmanagementsolution\\productmanagementapp\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|solutionrelative:productmanagementapp\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|d:\\c_sharp and dot net projects\\day6\\productmanagementsolution\\productmanagementapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|solutionrelative:productmanagementapp\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|d:\\c_sharp and dot net projects\\day6\\productmanagementsolution\\productmanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|solutionrelative:productmanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|d:\\c_sharp and dot net projects\\day6\\productmanagementsolution\\productmanagementapp\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|solutionrelative:productmanagementapp\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|d:\\c_sharp and dot net projects\\day6\\productmanagementsolution\\productmanagementapp\\isupplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|solutionrelative:productmanagementapp\\isupplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|d:\\c_sharp and dot net projects\\day6\\productmanagementsolution\\productmanagementapp\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|solutionrelative:productmanagementapp\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|d:\\c_sharp and dot net projects\\day6\\productmanagementsolution\\productmanagementapp\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96EC19CC-DE43-494F-BD37-64BC013B5040}|ProductManagementApp\\ProductManagementApp.csproj|solutionrelative:productmanagementapp\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductServices.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\ProductServices.cs",
+              "RelativeDocumentMoniker": "ProductManagementApp\\ProductServices.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\ProductServices.cs*",
+              "RelativeToolTip": "ProductManagementApp\\ProductServices.cs*",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAIwKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T08:53:11.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\Product.cs",
+              "RelativeDocumentMoniker": "ProductManagementApp\\Product.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\Product.cs",
+              "RelativeToolTip": "ProductManagementApp\\Product.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAIA9wBAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T08:46:50.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ISupplierService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\ISupplierService.cs",
+              "RelativeDocumentMoniker": "ProductManagementApp\\ISupplierService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\ISupplierService.cs",
+              "RelativeToolTip": "ProductManagementApp\\ISupplierService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T08:46:06.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "ProductManagementApp\\ICustomerService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\ICustomerService.cs",
+              "RelativeToolTip": "ProductManagementApp\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T08:44:36.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\Supplier.cs",
+              "RelativeDocumentMoniker": "ProductManagementApp\\Supplier.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\Supplier.cs",
+              "RelativeToolTip": "ProductManagementApp\\Supplier.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T08:39:03.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\Customer.cs",
+              "RelativeDocumentMoniker": "ProductManagementApp\\Customer.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\Customer.cs",
+              "RelativeToolTip": "ProductManagementApp\\Customer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAewBAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T08:38:48.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\Program.cs",
+              "RelativeDocumentMoniker": "ProductManagementApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day6\\ProductManagementSolution\\ProductManagementApp\\Program.cs",
+              "RelativeToolTip": "ProductManagementApp\\Program.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwFoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T08:33:20.975Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

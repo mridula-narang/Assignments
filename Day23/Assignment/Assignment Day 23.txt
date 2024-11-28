@@ -1,0 +1,51 @@
+Assignment Day 23
+
+--Question 1
+select * from Products
+
+--Question 2
+select ProductId,ProductName from Products where UnitPrice > 10
+
+--Question 3
+select ProductId,ProductName,UnitPrice from Products order by UnitPrice 
+
+--Question 4
+select ProductId,ProductName,UnitPrice from Products where UnitPrice between 10 and 25
+
+--Question 5
+select ProductName,QuantityPerUnit from Products where QuantityPerUnit like '%box%'
+
+--Question 6
+select * from Products where UnitsInStock > 10 and ReorderLevel > 0
+
+--Question 7
+select ProductName,UnitPrice from Products where ReorderLevel != 0 or UnitsOnOrder != 0 order by UnitPrice
+
+select * from Customers
+
+--Question 8
+select ContactName from Customers where Region is not null
+
+--Question 9
+select ContactName from Customers
+
+--Question 10
+select Country,count(*) as Number_of_customer from Customers group by Country
+
+--Question 11
+select Country,count(distinct city) as Number_of_cities from Customers group by Country
+
+select * from Orders
+
+--Question 12
+select employeeid, count(*) Number_of_sales from Orders group by EmployeeID
+
+--Question 13
+select CustomerId,Sum(Freight) Total_freight_charge from Orders group by CustomerId order by Sum(Freight)
+
+--Question 14
+select ProductId,count(ProductId) Number_of_products from "Order Details" group by ProductID
+
+--Question 15
+select CategoryId,avg(UnitPrice) Average_price,count(CategoryId) Number_of_product from Products
+group by CategoryID having count(ProductId)>2 order by avg(UnitPrice)

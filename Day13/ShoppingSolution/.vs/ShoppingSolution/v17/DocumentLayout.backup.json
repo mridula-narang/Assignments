@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|d:\\c_sharp and dot net projects\\day13\\shoppingsolution\\shoppingapplication\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|solutionrelative:shoppingapplication\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|d:\\c_sharp and dot net projects\\day13\\shoppingsolution\\shoppingapplication\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|solutionrelative:shoppingapplication\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|d:\\c_sharp and dot net projects\\day13\\shoppingsolution\\shoppingapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|solutionrelative:shoppingapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|d:\\c_sharp and dot net projects\\day13\\shoppingsolution\\shoppingapplication\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|solutionrelative:shoppingapplication\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|d:\\c_sharp and dot net projects\\day13\\shoppingsolution\\shoppingapplication\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|solutionrelative:shoppingapplication\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|d:\\c_sharp and dot net projects\\day13\\shoppingsolution\\shoppingapplication\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{506A19CC-4866-4643-ACA1-49AD31E33B0C}|ShoppingApplication\\ShoppingApplication.csproj|solutionrelative:shoppingapplication\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ShoppingApplication\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Views\\Product\\Edit.cshtml*",
+              "RelativeToolTip": "ShoppingApplication\\Views\\Product\\Edit.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T06:52:04.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "ShoppingApplication\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "ShoppingApplication\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T06:28:45.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Program.cs",
+              "RelativeDocumentMoniker": "ShoppingApplication\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Program.cs",
+              "RelativeToolTip": "ShoppingApplication\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T05:02:08.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShoppingApplication\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "ShoppingApplication\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T04:41:07.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ShoppingApplication\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ShoppingApplication\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAcwDgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T04:38:03.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ShoppingApplication\\Models\\Product.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day13\\ShoppingSolution\\ShoppingApplication\\Models\\Product.cs",
+              "RelativeToolTip": "ShoppingApplication\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T04:31:35.162Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

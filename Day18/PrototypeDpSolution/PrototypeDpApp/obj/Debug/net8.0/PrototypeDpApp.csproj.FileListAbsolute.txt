@@ -1,0 +1,15 @@
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\bin\Debug\net8.0\PrototypeDpApp.exe
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\bin\Debug\net8.0\PrototypeDpApp.deps.json
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\bin\Debug\net8.0\PrototypeDpApp.runtimeconfig.json
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\bin\Debug\net8.0\PrototypeDpApp.dll
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\bin\Debug\net8.0\PrototypeDpApp.pdb
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\PrototypeDpApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\PrototypeDpApp.AssemblyInfoInputs.cache
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\PrototypeDpApp.AssemblyInfo.cs
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\PrototypeDpApp.csproj.CoreCompileInputs.cache
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\PrototypeDpApp.sourcelink.json
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\PrototypeDpApp.dll
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\refint\PrototypeDpApp.dll
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\PrototypeDpApp.pdb
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\PrototypeDpApp.genruntimeconfig.cache
+D:\C_sharp and dot net projects\Day18\PrototypeDpSolution\PrototypeDpApp\obj\Debug\net8.0\ref\PrototypeDpApp.dll

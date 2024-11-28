@@ -1,0 +1,321 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\contexts\\insurancecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\contexts\\insurancecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\insuranceclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\insuranceclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\misc\\usernamevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\misc\\usernamevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\dtos\\usertokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\dtos\\usertokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\dtos\\claimrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\dtos\\claimrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\dtos\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\dtos\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\dtos\\policydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\dtos\\policydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|d:\\c_sharp and dot net projects\\day33\\insuraceclaimsolution\\insuraceclaimapp\\models\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{410B4A33-6ABB-4821-958A-16EAE9A0F082}|InsuraceClaimApp\\InsuraceClaimApp.csproj|solutionrelative:insuraceclaimapp\\models\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\appsettings.json",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\appsettings.json",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\appsettings.json",
+              "RelativeToolTip": "InsuraceClaimApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-29T17:37:52.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InsuranceContext.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Contexts\\InsuranceContext.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Contexts\\InsuranceContext.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Contexts\\InsuranceContext.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Contexts\\InsuranceContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwCAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:14:11.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsernameValidator.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Misc\\UsernameValidator.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Misc\\UsernameValidator.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Misc\\UsernameValidator.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Misc\\UsernameValidator.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:50:08.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClaimController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Controllers\\ClaimController.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Controllers\\ClaimController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Controllers\\ClaimController.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Controllers\\ClaimController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAiwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:15:04.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswBgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:13:26.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Services\\UserService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Services\\UserService.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Services\\UserService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAEwD0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:13:02.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Interfaces\\ITokenService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Interfaces\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:12:02.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Services\\TokenService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Services\\TokenService.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:11:56.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClaimRequestDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\ClaimRequestDTO.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\DTOs\\ClaimRequestDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\ClaimRequestDTO.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\DTOs\\ClaimRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:10:01.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrorResponseDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\ErrorResponseDTO.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\DTOs\\ErrorResponseDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\ErrorResponseDTO.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\DTOs\\ErrorResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:10:00.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\DTOs\\LoginRequestDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\LoginRequestDTO.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\DTOs\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:09:59.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginResponseDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\LoginResponseDTO.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\DTOs\\LoginResponseDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\LoginResponseDTO.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\DTOs\\LoginResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:09:58.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PolicyDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\PolicyDTO.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\DTOs\\PolicyDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\PolicyDTO.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\DTOs\\PolicyDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:09:58.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserCreateDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\UserCreateDTO.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\DTOs\\UserCreateDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\UserCreateDTO.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\DTOs\\UserCreateDTO.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:09:57.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserTokenDTO.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\UserTokenDTO.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\DTOs\\UserTokenDTO.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\DTOs\\UserTokenDTO.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\DTOs\\UserTokenDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:09:56.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InsuranceClaim.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\InsuranceClaim.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\InsuranceClaim.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\InsuranceClaim.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\InsuranceClaim.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:09:55.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Policy.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\Policy.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\Policy.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\Policy.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\Policy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:09:55.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "InsuraceClaimApp\\Models\\User.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day33\\InsuraceClaimSolution\\InsuraceClaimApp\\Models\\User.cs",
+              "RelativeToolTip": "InsuraceClaimApp\\Models\\User.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:09:54.229Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

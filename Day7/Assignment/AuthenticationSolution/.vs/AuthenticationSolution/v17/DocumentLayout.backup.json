@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\AuthenticationSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B1C5978-793C-4B53-9A0E-F1FF19FA2508}|AuthenticationApp\\AuthenticationApp.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\authenticationsolution\\authenticationapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1C5978-793C-4B53-9A0E-F1FF19FA2508}|AuthenticationApp\\AuthenticationApp.csproj|solutionrelative:authenticationapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B1C5978-793C-4B53-9A0E-F1FF19FA2508}|AuthenticationApp\\AuthenticationApp.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\authenticationsolution\\authenticationapp\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1C5978-793C-4B53-9A0E-F1FF19FA2508}|AuthenticationApp\\AuthenticationApp.csproj|solutionrelative:authenticationapp\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B1C5978-793C-4B53-9A0E-F1FF19FA2508}|AuthenticationApp\\AuthenticationApp.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\authenticationsolution\\authenticationapp\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1C5978-793C-4B53-9A0E-F1FF19FA2508}|AuthenticationApp\\AuthenticationApp.csproj|solutionrelative:authenticationapp\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B1C5978-793C-4B53-9A0E-F1FF19FA2508}|AuthenticationApp\\AuthenticationApp.csproj|d:\\c_sharp and dot net projects\\day7\\assignment\\authenticationsolution\\authenticationapp\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B1C5978-793C-4B53-9A0E-F1FF19FA2508}|AuthenticationApp\\AuthenticationApp.csproj|solutionrelative:authenticationapp\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthManager.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\AuthenticationSolution\\AuthenticationApp\\AuthManager.cs",
+              "RelativeDocumentMoniker": "AuthenticationApp\\AuthManager.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\AuthenticationSolution\\AuthenticationApp\\AuthManager.cs",
+              "RelativeToolTip": "AuthenticationApp\\AuthManager.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:08:40.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\AuthenticationSolution\\AuthenticationApp\\AuthService.cs",
+              "RelativeDocumentMoniker": "AuthenticationApp\\AuthService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\AuthenticationSolution\\AuthenticationApp\\AuthService.cs",
+              "RelativeToolTip": "AuthenticationApp\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:07:58.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\AuthenticationSolution\\AuthenticationApp\\IAuthService.cs",
+              "RelativeDocumentMoniker": "AuthenticationApp\\IAuthService.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\AuthenticationSolution\\AuthenticationApp\\IAuthService.cs",
+              "RelativeToolTip": "AuthenticationApp\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:07:00.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\AuthenticationSolution\\AuthenticationApp\\Program.cs",
+              "RelativeDocumentMoniker": "AuthenticationApp\\Program.cs",
+              "ToolTip": "D:\\C_sharp and dot net projects\\Day7\\Assignment\\AuthenticationSolution\\AuthenticationApp\\Program.cs",
+              "RelativeToolTip": "AuthenticationApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:06:27.597Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
