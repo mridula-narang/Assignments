@@ -42,8 +42,3 @@
 </style>
 has context menu
 
-
-{
-  "username": "luna@gmail.com",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJnaXZlbl9uYW1lIjoibHVuYUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTczMTU2Nzk0MX0.C87r7Hn8yO8RbnFI4ZK-yGXWRmsG5wmlK9Yw2eDduys"
-}
