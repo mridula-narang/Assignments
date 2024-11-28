@@ -101,7 +101,7 @@ const register = async () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../../assets/bg-img.jpeg') center/cover no-repeat;
+  background: url('../../assets/bg-register.jpeg') center/cover no-repeat;
   position: relative;
 }
 
