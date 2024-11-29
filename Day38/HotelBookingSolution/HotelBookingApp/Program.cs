@@ -1,6 +1,7 @@
 
 using HotelBookingApp.Contexts;
 using HotelBookingApp.Interfaces;
+using HotelBookingApp.Mappers;
 using HotelBookingApp.Models;
 using HotelBookingApp.Repositories;
 using HotelBookingApp.Services;
@@ -28,13 +29,10 @@ namespace HotelBookingApp
 
             #region Repositories
             builder.Services.AddScoped<IRepository<int, User>, UserRepository>();
-<<<<<<< HEAD
-=======
-            builder.Services.AddScoped<ITokenService, TokenService>();
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
             builder.Services.AddScoped<IRepository<int, Room>, RoomRepository>();
             builder.Services.AddScoped<IRepository<int, Hotel>, HotelRepository>();
             builder.Services.AddScoped<IRepository<int, Booking>, BookingRepository>();
+            builder.Services.AddScoped<IRepository<int, Payment>, PaymentRepository>();
             #endregion  
 
             #region Authentication
@@ -52,26 +50,37 @@ namespace HotelBookingApp
                 });
             #endregion
 
+            #region CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+            });
+            #endregion
+
             #region OtherServices
             builder.Services.AddAutoMapper(typeof(User));
             builder.Services.AddAutoMapper(typeof(Hotel));
             builder.Services.AddAutoMapper(typeof(Booking));
             builder.Services.AddAutoMapper(typeof(Room));
+            builder.Services.AddAutoMapper(typeof(Payment));
             #endregion
 
             #region Services
             builder.Services.AddScoped<IUserService, UserService>();
-<<<<<<< HEAD
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IRoomService, RoomService>();
             builder.Services.AddScoped<IHotelService, HotelService>();
             builder.Services.AddScoped<IBookingService, BookingService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
-=======
             builder.Services.AddScoped<IRoomService, RoomService>();
             builder.Services.AddScoped<IHotelService, HotelService>();
             builder.Services.AddScoped<IBookingService, BookingService>();
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
+            builder.Services.AddScoped<IPaymentService, PaymentService>();
             #endregion
 
 
@@ -116,6 +125,7 @@ namespace HotelBookingApp
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("AllowAll");
             app.UseAuthentication();
             app.UseAuthorization();
 

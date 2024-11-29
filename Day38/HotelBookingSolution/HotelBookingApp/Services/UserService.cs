@@ -28,6 +28,7 @@ namespace HotelBookingApp.Services
             {
                 throw new Exception("User not found");
             }
+            //_logger.LogInformation($"Fetched User: {System.Text.Json.JsonSerializer.Serialize(user)}");
             HMACSHA256 hmac = new HMACSHA256(user.HashKey);
             byte[] passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginUser.Password));
             for (int i = 0; i < passwordHash.Length; i++)
@@ -40,13 +41,10 @@ namespace HotelBookingApp.Services
             return new LoginResponseDTO()
             {
                 Username = user.Username,
+                UserId = user.UserId,
                 Token = await _tokenService.GenerateToken(new UserTokenDTO()
                 {
                     Username = user.Username,
-<<<<<<< HEAD
-                    Email = user.Email ?? string.Empty,
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
                     Role = user.Role.ToString()
                 })
             };
@@ -61,10 +59,7 @@ namespace HotelBookingApp.Services
                 Username = registerUser.Username,
                 Password = passwordHash,
                 HashKey = hmac.Key,
-<<<<<<< HEAD
                 Email = registerUser.Email,
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
                 Role = registerUser.Role
             };
             try
@@ -72,12 +67,7 @@ namespace HotelBookingApp.Services
                 var addesUser = await _userRepository.Add(user);
                 LoginResponseDTO response = new LoginResponseDTO()
                 {
-<<<<<<< HEAD
-                    Username = user.Username,
-                    Email = user.Email
-=======
                     Username = user.Username
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
                 };
                 return response;
             }

@@ -26,6 +26,7 @@ namespace HotelBookingApp.Models
         public Room? Rooms { get; set; } 
         public DateTime CheckInDate { get; set; }
         public DateTime CheckOutDate { get; set; }
+        public int Quantity { get; set; } //quantity of each room booked
         public int NumberOfGuests { get; set; }
         public decimal TotalPrice { get; set; }
         [JsonIgnore]

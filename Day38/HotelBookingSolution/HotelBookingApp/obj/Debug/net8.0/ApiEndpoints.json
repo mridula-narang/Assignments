@@ -27,7 +27,6 @@
   },
   {
     "ContainingType": "HotelBookingApp.Controllers.BookingController",
-<<<<<<< HEAD
     "Method": "GetBookingsByUserId",
     "RelativePath": "api/Booking/{userId}",
     "HttpMethod": "GET",
@@ -46,11 +45,7 @@
     "ContainingType": "HotelBookingApp.Controllers.BookingController",
     "Method": "UpdateBookingStatus",
     "RelativePath": "api/Booking/{userId}",
-=======
-    "Method": "UpdateBookingStatus",
-    "RelativePath": "api/Booking",
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
-    "HttpMethod": "POST",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -63,31 +58,23 @@
         "Name": "status",
         "Type": "System.String",
         "IsRequired": false
-<<<<<<< HEAD
       },
       {
         "Name": "userId",
         "Type": "",
-=======
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "HotelBookingApp.Controllers.BookingController",
-    "Method": "GetBookingsByUserId",
-    "RelativePath": "api/Booking/{userId}",
+    "Method": "GetAvailableRooms",
+    "RelativePath": "api/Booking/available-rooms",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -118,6 +105,22 @@
   },
   {
     "ContainingType": "HotelBookingApp.Controllers.HotelController",
+    "Method": "GetRoomsByHotel",
+    "RelativePath": "api/Hotel/{hotelId}/rooms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hotelId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelBookingApp.Controllers.HotelController",
     "Method": "GetHotelById",
     "RelativePath": "api/Hotel/{id}/GetHotelById",
     "HttpMethod": "GET",
@@ -130,6 +133,32 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelBookingApp.Controllers.PaymentController",
+    "Method": "MakePayment",
+    "RelativePath": "api/Payment/MakePayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paymentDTO",
+        "Type": "HotelBookingApp.Models.DTOs.PaymentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelBookingApp.Controllers.PaymentController",
+    "Method": "ViewAllTransactions",
+    "RelativePath": "api/Payment/ViewAllTransactions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

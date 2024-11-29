@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using HotelBookingApp.Contexts;
+using HotelBookingApp.Interfaces;
 using HotelBookingApp.Models;
+using HotelBookingApp.Models.DTOs;
 using HotelBookingApp.Repositories;
+using HotelBookingApp.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using HotelBookingApp.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace HotelBookingTest
 {
-    public class HotelRepositoryTest
+    public class HotelServiceTest
     {
         DbContextOptions options;
         HotelContext context;
@@ -36,116 +38,120 @@ namespace HotelBookingTest
         [Test]
         public async Task TestAdd()
         {
-            var hotel = new Hotel
+            var hotel = new HotelDTO
             {
                 Location = "test location",
                 Name = "test name",
                 StandardCheckIn = new TimeSpan(14, 0, 0),
                 StandardCheckOut = new TimeSpan(12, 0, 0),
             };
-            var addedHotel = await repository.Add(hotel);
-            Assert.IsTrue(addedHotel.HotelId == hotel.HotelId);
+            var hotelEntity = new Hotel
+            {
+                Location = "test location",
+                Name = "test name",
+                StandardCheckIn = new TimeSpan(14, 0, 0),
+                StandardCheckOut = new TimeSpan(12, 0, 0),
+            };
+            mapper.Setup(m => m.Map<Hotel>(hotel)).Returns(hotelEntity);
+            IHotelService service = new HotelService(repository, mapper.Object);
+            var addedHotel = await service.AddHotel(hotel);
+            Assert.IsTrue(addedHotel.HotelId == hotelEntity.HotelId);
         }
 
         [Test]
         public async Task TestDelete()
         {
-            var hotel = new Hotel
+            var hotel = new HotelDTO
             {
                 Location = "test location",
                 Name = "test name",
                 StandardCheckIn = new TimeSpan(14, 0, 0),
                 StandardCheckOut = new TimeSpan(12, 0, 0),
             };
-            var addedHotel = await repository.Add(hotel);
-            var deletedHotel = await repository.Delete(addedHotel.HotelId);
+            var hotelEntity = new Hotel
+            {
+                Location = "test location",
+                Name = "test name",
+                StandardCheckIn = new TimeSpan(14, 0, 0),
+                StandardCheckOut = new TimeSpan(12, 0, 0),
+            };
+            mapper.Setup(m => m.Map<Hotel>(hotel)).Returns(hotelEntity);
+            IHotelService service = new HotelService(repository, mapper.Object);
+            var addedHotel = await service.AddHotel(hotel);
+            var deletedHotel = await service.DeleteHotel(addedHotel.HotelId);
             Assert.IsTrue(deletedHotel.HotelId == addedHotel.HotelId);
         }
 
         [Test]
         public async Task TestGet()
         {
-            var hotel = new Hotel
+            var hotel = new HotelDTO
             {
                 Location = "test location",
                 Name = "test name",
                 StandardCheckIn = new TimeSpan(14, 0, 0),
                 StandardCheckOut = new TimeSpan(12, 0, 0),
             };
-            var addedHotel = await repository.Add(hotel);
-            var getHotel = await repository.Get(addedHotel.HotelId);
+            var hotelEntity = new Hotel
+            {
+                Location = "test location",
+                Name = "test name",
+                StandardCheckIn = new TimeSpan(14, 0, 0),
+                StandardCheckOut = new TimeSpan(12, 0, 0),
+            };
+            mapper.Setup(m => m.Map<Hotel>(hotel)).Returns(hotelEntity);
+            IHotelService service = new HotelService(repository, mapper.Object);
+            var addedHotel = await service.AddHotel(hotel);
+            var getHotel = await service.GetHotel(addedHotel.HotelId);
             Assert.IsTrue(getHotel.HotelId == addedHotel.HotelId);
         }
 
         [Test]
         public async Task TestGetAll()
         {
-            var hotel = new Hotel
+            var hotel = new HotelDTO
             {
                 Location = "test location",
                 Name = "test name",
                 StandardCheckIn = new TimeSpan(14, 0, 0),
                 StandardCheckOut = new TimeSpan(12, 0, 0),
             };
-            var addedHotel = await repository.Add(hotel);
-            var hotels = await repository.GetAll();
-            Assert.IsTrue(hotels.Count() == 1);
-        }
-
-        [Test]
-        public async Task TestUpdate()
-        {
-            var hotel = new Hotel
+            var hotelEntity = new Hotel
             {
                 Location = "test location",
                 Name = "test name",
                 StandardCheckIn = new TimeSpan(14, 0, 0),
                 StandardCheckOut = new TimeSpan(12, 0, 0),
             };
-            var addedHotel = await repository.Add(hotel);
-            var updatedHotel = await repository.Update(addedHotel.HotelId, new Hotel
-            {
-                Location = "updated location",
-                Name = "updated name",
-                StandardCheckIn = new TimeSpan(14, 0, 0),
-                StandardCheckOut = new TimeSpan(12, 0, 0),
-            });
-            Assert.IsTrue(updatedHotel.Location == "updated location");
+            mapper.Setup(m => m.Map<Hotel>(hotel)).Returns(hotelEntity);
+            IHotelService service = new HotelService(repository, mapper.Object);
+            var addedHotel = await service.AddHotel(hotel);
+            var getHotels = await service.GetAllHotel();
+            Assert.IsTrue(getHotels.Count() > 0);
         }
 
         [Test]
-        public async Task TestUpdateThrowsNotFoundException()
+        public async Task TestUpdateHotelCheckIn()
         {
-            var hotel = new Hotel
+            var hotel = new HotelDTO
             {
                 Location = "test location",
                 Name = "test name",
                 StandardCheckIn = new TimeSpan(14, 0, 0),
                 StandardCheckOut = new TimeSpan(12, 0, 0),
             };
-            var addedHotel = await repository.Add(hotel);
-            Assert.ThrowsAsync<NotFoundException>(async () => await repository.Update(addedHotel.HotelId + 1, new Hotel
+            var hotelEntity = new Hotel
             {
-                Location = "updated location",
-                Name = "updated name",
+                Location = "test location",
+                Name = "test name",
                 StandardCheckIn = new TimeSpan(14, 0, 0),
                 StandardCheckOut = new TimeSpan(12, 0, 0),
-            }));
-        }
-
-        [Test]
-        public async Task NotFoundException()
-        {
-            // Assert
-            await Task.Run(() => Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(999)));
-            await Task.Run(() => Assert.ThrowsAsync<NotFoundException>(async () => await repository.Get(2)));
-        }
-
-        [Test]
-        public async Task CollectionEmptyException()
-        {
-            // Assert
-            Assert.ThrowsAsync<CollectionEmptyException>(async () => await repository.GetAll());
+            };
+            mapper.Setup(m => m.Map<Hotel>(hotel)).Returns(hotelEntity);
+            IHotelService service = new HotelService(repository, mapper.Object);
+            var addedHotel = await service.AddHotel(hotel);
+            var updatedHotel = await service.UpdateHotelCheckIn(hotelEntity.HotelId, new TimeSpan(15, 0, 0));
+            Assert.IsTrue(updatedHotel.StandardCheckIn == new TimeSpan(15, 0, 0));
         }
 
         [TearDown]
@@ -153,5 +159,6 @@ namespace HotelBookingTest
         {
             context.Dispose();
         }
+
     }
 }

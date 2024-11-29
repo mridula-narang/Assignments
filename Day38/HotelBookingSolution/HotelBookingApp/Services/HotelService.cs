@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using HotelBookingApp.Exceptions;
 using HotelBookingApp.Interfaces;
 using HotelBookingApp.Models;
 using HotelBookingApp.Models.DTOs;
@@ -47,16 +48,26 @@ namespace HotelBookingApp.Services
             return hotel;
         }
 
-        public async Task<Hotel> UpdateHotel(int id, HotelDTO hotelDTO)
+        public async Task<Hotel> UpdateHotelCheckIn(int id, TimeSpan time)
         {
             var hotel = await _hotelRepository.Get(id);
             if (hotel == null)
             {
                 return null;
             }
-            var updatedHotel = _mapper.Map(hotelDTO, hotel);
-            await _hotelRepository.Update(id, updatedHotel);
+            hotel.StandardCheckIn = time;
+            var updatedHotel = await _hotelRepository.Update(id, hotel);
             return updatedHotel;
+        }
+
+        public async Task<IEnumerable<Room>> GetRoomsByHotelId(int hotelId)
+        {
+            var hotel = await _hotelRepository.Get(hotelId);
+            if(hotel == null)
+            {
+                throw new NotFoundException("hotel");
+            }
+            return hotel.Rooms;
         }
     }
 }

@@ -680,7 +680,6 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-<<<<<<< HEAD
       "Microsoft.Extensions.Http/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -699,8 +698,6 @@
           }
         }
       },
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
       "Microsoft.Extensions.Logging/8.0.1": {
         "type": "package",
         "dependencies": {
@@ -978,7 +975,6 @@
           "lib/net6.0/Moq.dll": {}
         }
       },
-<<<<<<< HEAD
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -1035,8 +1031,6 @@
           "lib/netstandard2.1/StarkbankEcdsa.dll": {}
         }
       },
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
       "Swashbuckle.AspNetCore/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -2905,7 +2899,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< HEAD
     "Microsoft.Extensions.Http/2.1.0": {
       "sha512": "vkSkGa1UIZVlAd18oDhrtoawN/q7fDemJcVpT9+28mP7bP0I8zKLSLRwqF++GmPs/7e0Aqlo6jpZm3P7YYS0ag==",
       "type": "package",
@@ -2919,8 +2912,6 @@
         "microsoft.extensions.http.nuspec"
       ]
     },
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
     "Microsoft.Extensions.Logging/8.0.1": {
       "sha512": "4x+pzsQEbqxhNf1QYRr5TDkLP9UsLT3A6MdRKDDEgrW7h1ljiEPgTNhKYUhNCCAaVpQECVQ+onA91PTPnIp6Lw==",
       "type": "package",
@@ -3384,7 +3375,6 @@
         "readme.md"
       ]
     },
-<<<<<<< HEAD
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -3464,8 +3454,6 @@
         "starkbank-ecdsa.nuspec"
       ]
     },
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
     "Swashbuckle.AspNetCore/6.4.0": {
       "sha512": "eUBr4TW0up6oKDA5Xwkul289uqSMgY0xGN4pnbOIBqCcN9VKGGaPvHX3vWaG/hvocfGDP+MGzMA0bBBKz2fkmQ==",
       "type": "package",
@@ -4541,11 +4529,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.10",
       "Moq >= 4.20.72",
-<<<<<<< HEAD
       "SendGrid >= 9.29.3",
       "SendGrid.Extensions.DependencyInjection >= 1.0.1",
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -4555,11 +4540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj",
+      "projectUniqueName": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj",
       "projectName": "HotelBookingApp",
-      "projectPath": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj",
+      "projectPath": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingApp\\HotelBookingApp.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "D:\\C_sharp and dot net projects\\Day38\\HotelBookingSolution\\HotelBookingApp\\obj\\",
+      "outputPath": "D:\\New folder\\Assignments\\Day38\\HotelBookingSolution\\HotelBookingApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4620,7 +4605,6 @@
             "target": "Package",
             "version": "[4.20.72, )"
           },
-<<<<<<< HEAD
           "SendGrid": {
             "target": "Package",
             "version": "[9.29.3, )"
@@ -4629,8 +4613,6 @@
             "target": "Package",
             "version": "[1.0.1, )"
           },
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.4.0, )"
@@ -4655,7 +4637,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

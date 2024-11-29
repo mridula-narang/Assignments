@@ -7,43 +7,40 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HotelBookingApp.Repositories
 {
-    public class HotelRepository : IRepository<int, Hotel>
+    public class PaymentRepository : IRepository<int, Payment>
     {
         private readonly HotelContext _context;
         private readonly IMapper _mapper;
         private readonly ILogger<HotelRepository> _logger;
 
-        public HotelRepository(HotelContext context, IMapper mapper,ILogger<HotelRepository> logger)
+        public PaymentRepository(HotelContext context, IMapper mapper, ILogger<HotelRepository> logger)
         {
             _context = context;
             _mapper = mapper;
             _logger = logger;
 
         }
-
-        public async Task<Hotel> Add(Hotel entity)
+        public async Task<Payment> Add(Payment entity)
         {
-            _context.Hotels.Add(entity);
+            _context.Payments.Add(entity);
             await _context.SaveChangesAsync();
             return entity;
         }
 
-        public async Task<Hotel> Delete(int key)
+        public async Task<Payment> Delete(int key)
         {
             var hotel = await Get(key);
             if (hotel != null)
             {
-                _context.Hotels.Remove(hotel);
+                _context.Payments.Remove(hotel);
                 await _context.SaveChangesAsync();
             }
             return hotel;
         }
 
-        public async Task<Hotel> Get(int key)
+        public async Task<Payment> Get(int key)
         {
-            var hotel = await _context.Hotels
-                .Include(h=>h.Rooms)
-                .FirstOrDefaultAsync(r => r.HotelId == key);
+            var hotel = await _context.Payments.FirstOrDefaultAsync(r => r.PaymentId == key);
             if (hotel == null)
             {
                 throw new NotFoundException("hotel");
@@ -51,9 +48,9 @@ namespace HotelBookingApp.Repositories
             return hotel;
         }
 
-        public async Task<IEnumerable<Hotel>> GetAll()
+        public async Task<IEnumerable<Payment>> GetAll()
         {
-            var hotels = await _context.Hotels.ToListAsync();
+            var hotels = await _context.Payments.ToListAsync();
             if (hotels.Count == 0)
             {
                 throw new CollectionEmptyException("hotel");
@@ -61,21 +58,18 @@ namespace HotelBookingApp.Repositories
             return hotels;
         }
 
-        public async Task<Hotel> Update(int key, Hotel entity)
+        public async Task<Payment> Update(int key, Payment entity)
         {
-            var hotel = await Get(key);
-            if (hotel == null)
+            var payment = await Get(key);
+            if (payment == null)
             {
                 throw new NotFoundException("hotel");
             }
             try
             {
-                //hotel.Amenities = entity.Amenities;
-                //hotel.Location = entity.Location;
-                //hotel.Rooms = entity.Rooms;
-                hotel.StandardCheckIn = entity.StandardCheckIn;
-                //hotel.StandardCheckOut = entity.StandardCheckOut;
-                return hotel;
+                _context.Payments.Update(entity);
+                await _context.SaveChangesAsync();
+                return entity;
             }
             catch (Exception e)
             {

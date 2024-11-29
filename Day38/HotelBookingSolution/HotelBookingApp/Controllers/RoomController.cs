@@ -21,6 +21,7 @@ namespace HotelBookingApp.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetRooms()
         {
             var rooms = await _roomService.GetAllRooms();
@@ -28,6 +29,7 @@ namespace HotelBookingApp.Controllers
         }
 
         [HttpGet("{id}/GetRoomById")]
+        [Authorize]
         public async Task<IActionResult> GetRoomById(int id)
         {
             var rooms = await _roomService.GetRoom(id);

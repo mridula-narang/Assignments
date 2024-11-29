@@ -1,11 +1,13 @@
 ﻿using HotelBookingApp.Interfaces;
 using HotelBookingApp.Models.DTOs;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelBookingApp.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors("AllowAll")]
     [ApiController]
     public class UserController : ControllerBase
     {

@@ -51,24 +51,15 @@ namespace HotelBookingApp.Repositories
             }
         }
 
-<<<<<<< HEAD
         //modify this method to return a user object
 
-        public async Task<User> Get(int key)
-        {
 
-=======
         public async Task<User> Get(int key)
         {
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
             try
             {
                 var user = await _context.Users.FirstOrDefaultAsync(u => u.UserId == key);
                 return user;
-<<<<<<< HEAD
-
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
             }
             catch (Exception e)
             {
@@ -76,11 +67,6 @@ namespace HotelBookingApp.Repositories
                 throw new NotFoundException("User");
             }
         }
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 76a83b798404e0228ee30b6390690c0b63af6e2e
         public async Task<IEnumerable<User>> GetAll()
         {
             var users = await _context.Users.ToListAsync();

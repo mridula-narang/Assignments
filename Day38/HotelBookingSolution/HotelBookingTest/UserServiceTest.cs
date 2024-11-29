@@ -41,13 +41,14 @@ namespace HotelBookingTest
         }
 
         [Test]
-        [TestCase("TestUser", "TestPassword", "TestHashKey", Roles.Admin)]
-        public async Task TestAdd(string username, string password, string hashKey, Roles role)
+        [TestCase("TestUser", "TestPassword", "TestHashKey", Roles.Admin,"test@gmail.com")]
+        public async Task TestAdd(string username, string password, string hashKey, Roles role,string test)
         {
             var user = new UserCreateDTO
             {
                 Username = username,
                 Password = password,
+                Email = "test@gmail.com",
                 Role = role
             };
             var userService = new UserService(repository, mockTokenService.Object, loggerUserService.Object);
@@ -55,13 +56,14 @@ namespace HotelBookingTest
             Assert.IsTrue(addedUser.Username == user.Username);
         }
 
-        [TestCase("TestUser", "TestPassword", "TestHashKey")]
-        public async Task TestAuthenticate(string username, string password, string hashKey)
+        [TestCase("TestUser", "TestPassword", "TestHashKey","test@gmail.com")]
+        public async Task TestAuthenticate(string username, string password, string hashKey,string email)
         {
             var user = new UserCreateDTO
             {
                 Username = "TestUser1",
                 Password = "TestPassword1",
+                Email = "test@gmail.com",
                 Role = Roles.Admin
             };
             var userService = new UserService(repository, mockTokenService.Object, loggerUserService.Object);
