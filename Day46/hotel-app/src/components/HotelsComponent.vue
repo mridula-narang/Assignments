@@ -9,16 +9,16 @@ export default {
   data() {
     return {
       hotels: [],
-      selectedHotel: null, // Track the selected hotel
-      rooms: [], // Rooms for the selected hotel
-      bookings: [], // Bookings made by the user
+      selectedHotel: null,
+      rooms: [],
+      bookings: [],
       bookingDetails: {
         hotelId: null,
         roomId: null,
         checkInDate: '',
         checkOutDate: '',
         numberOfGuests: 1,
-        quantity: 1, // Add quantity property
+        quantity: 1,
         status: 0
       }
     };
@@ -30,7 +30,6 @@ export default {
     GetHotels()
       .then(response => {
         this.hotels = response.data;
-        console.log(this.hotels);
       })
       .catch(err => {
         console.error('Error fetching hotels:', err);
@@ -39,7 +38,6 @@ export default {
   methods: {
     viewRooms(hotel) {
       this.selectedHotel = hotel;
-      // Fetch rooms for the selected hotel
       axios
         .get(`http://localhost:5263/api/Hotel/${hotel.hotelId}/rooms`)
         .then(response => {
@@ -50,8 +48,8 @@ export default {
         });
     },
     backToHotels() {
-      this.selectedHotel = null; // Reset to show all hotels
-      this.rooms = []; // Clear room data
+      this.selectedHotel = null;
+      this.rooms = [];
     },
     bookRoom(room) {
       this.bookingDetails.hotelId = this.selectedHotel.hotelId;
@@ -69,11 +67,11 @@ export default {
       }
     },
     viewUserBookings() {
-      this.$router.push('/bookings'); // Navigate to UserBookingsComponent
+      this.$router.push('/bookings');
     },
     logout() {
-      sessionStorage.clear(); // Clear session storage
-      this.$router.push('/'); // Redirect to HelloWorld component
+      sessionStorage.clear();
+      this.$router.push('/');
     }
   }
 };
@@ -84,21 +82,17 @@ export default {
     <h1 class="page-title">Explore Our Hotels</h1>
     <p class="page-subtitle">Find the perfect place to stay from our curated selection of luxurious hotels.</p>
 
-    <!-- Show all hotels if no hotel is selected -->
     <div v-if="!selectedHotel" class="hotels-list">
       <div class="hotel-card" v-for="hotel in hotels" :key="hotel.hotelId">
         <div class="hotel-image-container">
           <img :src="require('@/assets/' + hotel.hotelId + '.jpeg')" alt="Hotel Image" class="hotel-image" />
-          alt="Hotel Image" class="hotel-image" />
         </div>
         <h2 class="hotel-name">{{ hotel.name }}</h2>
         <p class="hotel-location">{{ hotel.location }}</p>
-        <!-- <p class="hotel-price">Starting at ${{ hotel.pricePerNight }} per night</p> -->
         <button class="btn-view-rooms" @click="viewRooms(hotel)">View Rooms</button>
       </div>
     </div>
 
-    <!-- Show selected hotel details and rooms -->
     <div v-else class="selected-hotel">
       <HotelComponent :hotel="selectedHotel" />
       <h2 class="rooms-title">Available Rooms</h2>
@@ -108,60 +102,70 @@ export default {
           <p class="room-type">{{ room.type === 0 ? 'Single' : room.type === 1 ? 'Double' : 'Suite' }}</p>
           <p class="room-price">${{ room.price }} per night</p>
           <p class="room-status">{{ room.isBooked === 0 ? 'Available' : 'Not Available' }}</p>
-          <button class="btn-book-room" @click="bookRoom(room)">Book Room</button>
+          <form @submit.prevent="bookRoom(room)">
+            <label for="checkInDate">Check-in Date:</label>
+            <input type="date" id="checkInDate" v-model="bookingDetails.checkInDate" required />
+            <label for="checkOutDate">Check-out Date:</label>
+            <input type="date" id="checkOutDate" v-model="bookingDetails.checkOutDate" required />
+            <label for="numberOfGuests">Number of Guests:</label>
+            <input type="number" id="numberOfGuests" v-model.number="bookingDetails.numberOfGuests" min="1" required />
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" v-model.number="bookingDetails.quantity" min="1" required />
+            <button class="btn-book-room" type="submit">Book Room</button>
+          </form>
         </div>
       </div>
       <button class="btn-back-to-hotels" @click="backToHotels">Back to Hotels</button>
     </div>
 
-    <!-- Logout Button -->
+    <button class="btn-view-bookings" @click="viewUserBookings">View Bookings</button>
     <button class="btn-logout" @click="logout">Logout</button>
   </div>
 </template>
 
 <style scoped>
-/* General Page Styles */
+/* General Page Styling */
 .hotels-page {
   font-family: 'Arial', sans-serif;
   text-align: center;
-  background: linear-gradient(to bottom, #f5f5f5, #e3e3e3);
   padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Page Titles */
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #2c3e50;
   margin-bottom: 10px;
+  color: #2c3e50;
 }
 
 .page-subtitle {
   font-size: 1.2rem;
+  margin-bottom: 20px;
   color: #7f8c8d;
-  margin-bottom: 30px;
-}
-
-/* Hotels List */
-.hotels-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
 }
 
 /* Hotel Cards */
+.hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 .hotel-card {
-  background: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .hotel-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .hotel-image-container {
@@ -172,126 +176,152 @@ export default {
 .hotel-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .hotel-name {
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 10px 0;
   color: #34495e;
-  margin: 15px;
 }
 
 .hotel-location {
   font-size: 1rem;
   color: #7f8c8d;
-  margin: 0 15px;
-}
-
-.hotel-price {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #27ae60;
-  margin: 10px 15px 15px;
 }
 
 .btn-view-rooms {
   background-color: #3498db;
-  color: white;
-  padding: 10px 15px;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
   cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 15px;
-  transition: background-color 0.3s;
+  margin: 10px 0 20px;
+  transition: background-color 0.2s ease;
 }
 
 .btn-view-rooms:hover {
   background-color: #2980b9;
 }
 
-/* Selected Hotel and Rooms */
+/* Selected Hotel Details */
 .selected-hotel {
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 .rooms-title {
   font-size: 1.8rem;
+  font-weight: bold;
   color: #2c3e50;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
+/* Room Cards */
 .rooms-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .room-card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: left;
+  width: 250px;
+  background: #fff;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .room-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .room-name {
   font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.room-type, .room-price, .room-status {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+form {
+  margin-top: 10px;
+}
+
+form label {
+  display: block;
+  font-size: 0.9rem;
   color: #34495e;
   margin-bottom: 5px;
 }
 
-.room-type,
-.room-price,
-.room-status {
-  font-size: 1rem;
-  color: #7f8c8d;
-  margin: 5px 0;
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 .btn-book-room {
   background-color: #27ae60;
-  color: white;
-  padding: 8px 12px;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1rem;
   cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s ease;
+  width: 100%;
 }
 
 .btn-book-room:hover {
-  background-color: #1e8449;
+  background-color: #219150;
 }
 
-/* Navigation Buttons */
+/* Back and View Bookings Buttons */
 .btn-back-to-hotels,
+.btn-view-bookings,
 .btn-logout {
-  background-color: #c0392b;
-  color: white;
-  padding: 10px 15px;
+  background-color: #e74c3c;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
   cursor: pointer;
-  font-weight: bold;
-  margin: 20px 0;
-  transition: background-color 0.3s;
+  margin: 10px;
+  transition: background-color 0.2s ease;
 }
 
 .btn-back-to-hotels:hover,
+.btn-view-bookings:hover,
 .btn-logout:hover {
-  background-color: #a93226;
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hotels-list, .rooms-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel-card, .room-card {
+    width: 90%;
+  }
 }
 </style>
+

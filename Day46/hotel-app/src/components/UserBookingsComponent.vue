@@ -1,31 +1,3 @@
-<template>
-  <div>
-    <h1>My Bookings</h1>
-    <button @click="goBack" class="back-button">Back to Hotels</button>
-    <div v-if="bookings.length">
-      <div v-for="booking in bookings" :key="booking.bookingId">
-        <p>Booking ID: {{ booking.bookingId }}</p>
-        <p>Hotel Name: {{ booking.hotelName }}</p>
-        <p>Room Name: {{ booking.roomName }}</p>
-        <p>Check-In Date: {{ formatDate(booking.checkInDate) }}</p>
-        <p>Check-Out Date: {{ formatDate(booking.checkOutDate) }}</p>
-        <p>Number of Guests: {{ booking.numberOfGuests }}</p>
-        <p>Status: {{ getStatusLabel(booking.status) }}</p>
-        <div v-if="booking.status === 0"> <!-- Pending -->
-          <button @click="updateBookingStatus(booking.bookingId, 1)">Confirm Booking</button>
-          <button @click="updateBookingStatus(booking.bookingId, 2)">Cancel Booking</button>
-        </div>
-        <div v-else-if="booking.status === 1"> <!-- Booked -->
-          <button @click="updateBookingStatus(booking.bookingId, 2)">Cancel Booking</button>
-        </div>
-      </div>
-    </div>
-    <div v-else>
-      <p>No bookings found.</p>
-    </div>
-  </div>
-</template>
-
 <script>
 import { GetBookingById } from "@/scripts/BookingService";
 import { GetHotelById } from "@/scripts/HotelService";
@@ -119,3 +91,190 @@ export default {
   },
 };
 </script>
+
+
+<template>
+  <div class="bookings-page">
+    <header class="header">
+      <img src="../assets/logo.jpg" alt="Tiare Logo" class="logo" />
+      <h1>My Bookings</h1>
+    </header>
+    <button @click="goBack" class="back-button">Back to Hotels</button>
+    <div v-if="bookings.length" class="bookings-container">
+      <div v-for="booking in bookings" :key="booking.bookingId" class="booking-card">
+        <div class="booking-details">
+          <p><strong>Booking ID:</strong> {{ booking.bookingId }}</p>
+          <p><strong>Hotel Name:</strong> {{ booking.hotelName }}</p>
+          <p><strong>Room Name:</strong> {{ booking.roomName }}</p>
+          <p><strong>Check-In Date:</strong> {{ formatDate(booking.checkInDate) }}</p>
+          <p><strong>Check-Out Date:</strong> {{ formatDate(booking.checkOutDate) }}</p>
+          <p><strong>Number of Guests:</strong> {{ booking.numberOfGuests }}</p>
+          <p><strong>Status:</strong> <span :class="`status status-${booking.status}`">{{ getStatusLabel(booking.status) }}</span></p>
+        </div>
+        <div class="booking-actions">
+          <button v-if="booking.status === 0" @click="updateBookingStatus(booking.bookingId, 1)" class="action-button confirm-button">Confirm Booking</button>
+          <button v-if="booking.status === 0 || booking.status === 1" @click="updateBookingStatus(booking.bookingId, 2)" class="action-button cancel-button">Cancel Booking</button>
+        </div>
+      </div>
+    </div>
+    <div v-else class="no-bookings">
+      <p>No bookings found.</p>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.bookings-page {
+  padding: 20px;
+  background-image: url('../assets/booking-bg.jpeg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Parallax effect */
+  color: #333;
+  min-height: 100vh; /* Ensures the background image covers full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+/* Button Styling */
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+/* Booking Cards */
+.bookings-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.booking-card {
+  background: rgba(255, 255, 255, 0.85); /* Semi-transparent background for readability */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.booking-details p {
+  margin: 8px 0;
+}
+
+.booking-details p strong {
+  color: #34495e;
+}
+
+.booking-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.action-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.confirm-button {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.confirm-button:hover {
+  background-color: #27ae60;
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b;
+}
+
+/* Status Styling */
+.status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.status-0 {
+  color: #f39c12;
+  background: #fdf2e9;
+}
+
+.status-1 {
+  color: #27ae60;
+  background: #eafaf1;
+}
+
+.status-2 {
+  color: #e74c3c;
+  background: #fdecea;
+}
+
+/* No Bookings Styling */
+.no-bookings {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+</style>
