@@ -51,6 +51,15 @@ export default {
         return;
       }
 
+      if (newStatus === 1) { // Redirect to payment page for confirmation
+        this.$router.push({
+          path: "/payment/:bookingid", // Ensure this matches the route to your payment page
+          query: { bookingId }, // Pass the bookingId as a query parameter
+        });
+        return;
+      }
+
+      // Proceed with status update for cancellation or other statuses
       try {
         await axios.put(`http://localhost:5263/api/Booking/${userId}`, null, {
           params: {
@@ -61,7 +70,7 @@ export default {
         alert("Booking status updated successfully!");
 
         // Refresh bookings after the update
-        await this.fetchBookings(); // Call the refactored fetch method here
+        await this.fetchBookings();
       } catch (err) {
         console.error("Error updating booking status:", err);
         alert("Failed to update booking status.");
@@ -109,11 +118,16 @@ export default {
           <p><strong>Check-In Date:</strong> {{ formatDate(booking.checkInDate) }}</p>
           <p><strong>Check-Out Date:</strong> {{ formatDate(booking.checkOutDate) }}</p>
           <p><strong>Number of Guests:</strong> {{ booking.numberOfGuests }}</p>
-          <p><strong>Status:</strong> <span :class="`status status-${booking.status}`">{{ getStatusLabel(booking.status) }}</span></p>
+          <p><strong>Status:</strong> <span :class="`status status-${booking.status}`">{{ getStatusLabel(booking.status)
+              }}</span></p>
+          <p><strong>Quantity</strong> {{ booking.quantity }}</p>
+          <p><strong>Total Price</strong> {{ booking.totalPrice }}</p>
         </div>
         <div class="booking-actions">
-          <button v-if="booking.status === 0" @click="updateBookingStatus(booking.bookingId, 1)" class="action-button confirm-button">Confirm Booking</button>
-          <button v-if="booking.status === 0 || booking.status === 1" @click="updateBookingStatus(booking.bookingId, 2)" class="action-button cancel-button">Cancel Booking</button>
+          <button v-if="booking.status === 0" @click="updateBookingStatus(booking.bookingId, 1)"
+            class="action-button confirm-button">Confirm Booking</button>
+          <button v-if="booking.status === 0 || booking.status === 1" @click="updateBookingStatus(booking.bookingId, 2)"
+            class="action-button cancel-button">Cancel Booking</button>
         </div>
       </div>
     </div>
@@ -135,12 +149,17 @@ body {
 
 .bookings-page {
   padding: 20px;
-  background-image: url('../assets/booking-bg.jpeg'); /* Replace with your image path */
-  background-size: cover; /* Ensures the image covers the entire page */
-  background-position: center; /* Centers the image */
-  background-attachment: fixed; /* Parallax effect */
+  background-image: url('../assets/booking-bg.jpeg');
+  /* Replace with your image path */
+  background-size: cover;
+  /* Ensures the image covers the entire page */
+  background-position: center;
+  /* Centers the image */
+  background-attachment: fixed;
+  /* Parallax effect */
   color: #333;
-  min-height: 100vh; /* Ensures the background image covers full height */
+  min-height: 100vh;
+  /* Ensures the background image covers full height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,7 +212,8 @@ body {
 }
 
 .booking-card {
-  background: rgba(255, 255, 255, 0.85); /* Semi-transparent background for readability */
+  background: rgba(255, 255, 255, 0.85);
+  /* Semi-transparent background for readability */
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 15px;
@@ -276,5 +296,4 @@ body {
   font-size: 1.2rem;
   color: #7f8c8d;
 }
-
 </style>

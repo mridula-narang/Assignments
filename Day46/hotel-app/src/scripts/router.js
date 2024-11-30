@@ -5,7 +5,7 @@ import HotelsComponent from "@/components/HotelsComponent.vue";
 import RegisterComponent from "@/components/Register/RegisterComponent.vue";
 import UserBookingsComponent from "@/components/UserBookingsComponent.vue";
 import { createRouter, createWebHistory } from 'vue-router';
-import Paymentcomponent from "@/components/Paymentcomponent.vue";
+import PaymentPageComponent from "@/components/Paymentcomponent.vue";
 
 const routes=[
     {path: '/', component: HelloWorld},
@@ -15,7 +15,7 @@ const routes=[
     {path: '/register', component: RegisterComponent},
     {path: '/room/:id', component: RoomsComponent, props: true},
     {path: '/bookings', component: UserBookingsComponent},
-    {path: '/payment/:bookingid', component: Paymentcomponent}
+    {path: '/payment/:bookingid', component: PaymentPageComponent}
 ];
 
 const router = createRouter({
