@@ -10,11 +10,15 @@
       <div class="filter-sidebar">
         <h2>Filter Rooms</h2>
         <form @submit.prevent="filterRooms">
-          <label for="minPrice">Min Price:</label>
-          <input type="number" id="minPrice" v-model.number="filters.minPrice" />
+          <label for="priceRange">Price Range: ₹{{ filters.minPrice }} - ₹{{ filters.maxPrice }}</label>
+          <input type="range" id="minPrice" v-model="filters.minPrice" :min="4000" :max="filters.maxPrice - 1000"
+            step="1000" />
+          <input type="range" id="maxPrice" v-model="filters.maxPrice" :min="filters.minPrice + 1000" :max="10000"
+            step="1000" />
 
-          <label for="maxPrice">Max Price:</label>
-          <input type="number" id="maxPrice" v-model.number="filters.maxPrice" />
+
+          <p>Selected Range: ₹{{ filters.minPrice }} - ₹{{ filters.maxPrice }}</p>
+
 
           <label for="type">Room Type:</label>
           <select id="type" v-model="filters.type">
@@ -39,6 +43,7 @@
 
           <button type="submit">Filter</button>
         </form>
+        <a href="#" class="clear-filters">Clear All Filters</a>
       </div>
 
       <!-- Hotels and Rooms List -->
@@ -146,6 +151,25 @@ export default {
         console.error("Error fetching hotels:", err);
       });
   },
+  watch: {
+    'filters.minPrice'(newValue) {
+      // Allow adjustment while ensuring constraints
+      this.$nextTick(() => {
+        if (newValue > this.filters.maxPrice - 1000) {
+          this.filters.minPrice = this.filters.maxPrice - 1000;
+        }
+      });
+    },
+    'filters.maxPrice'(newValue) {
+      // Allow adjustment while ensuring constraints
+      this.$nextTick(() => {
+        if (newValue < this.filters.minPrice + 1000) {
+          this.filters.maxPrice = this.filters.minPrice + 1000;
+        }
+      });
+    },
+  },
+
   methods: {
     viewRooms(hotel) {
       this.selectedHotel = hotel;
@@ -163,9 +187,9 @@ export default {
       axios
         .get(url, { params })
         .then((response) => {
-          this.rooms = response.data;
+          this.rooms = response.data.sort((a, b) => a.price - b.price); // Sort rooms by price
           this.filtersApplied = true;
-          console.log("Rooms fetched:", this.rooms);
+          console.log("Rooms fetched and sorted:", this.rooms);
         })
         .catch((err) => {
           console.error("Error fetching rooms:", err);
@@ -265,15 +289,21 @@ export default {
   font-family: 'Arial', sans-serif;
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9;
-  color: #333;
+  background-image: url('../assets/hotels-bg.jpg'); /* Replace with the actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #b48c34;
 }
 
+/* Use gradient colors from the logo */
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #2c3e50;
+  background: linear-gradient(90deg, #f6a77a, #55c9b8); /* Peach and teal gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .page-subtitle {
@@ -286,10 +316,11 @@ export default {
   display: flex;
 }
 
+/* Sidebar Styling */
 .filter-sidebar {
   width: 250px;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-right: 20px;
@@ -299,13 +330,13 @@ export default {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: #000000;
 }
 
 .filter-sidebar form label {
   display: block;
   font-size: 0.9rem;
-  color: #34495e;
+  color: #0c0d0e;
   margin-bottom: 5px;
 }
 
@@ -320,7 +351,7 @@ export default {
 }
 
 .filter-sidebar form button {
-  background-color: #3498db;
+  background-color: #55c9b8;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -332,24 +363,24 @@ export default {
 }
 
 .filter-sidebar form button:hover {
-  background-color: #2980b9;
+  background-color: #3ba69c;
 }
 
+/* Main Content Styling */
 .main-content {
   flex: 1;
 }
 
-/* Hotel Cards */
 .hotels-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   gap: 20px;
 }
 
 .hotel-card {
   width: 300px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -385,7 +416,7 @@ export default {
 }
 
 .btn-view-rooms {
-  background-color: #3498db;
+  background-color: #f6a77a;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -397,19 +428,7 @@ export default {
 }
 
 .btn-view-rooms:hover {
-  background-color: #2980b9;
-}
-
-/* Selected Hotel Details */
-.selected-hotel {
-  margin-top: 20px;
-}
-
-.rooms-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 20px;
+  background-color: #e8965b;
 }
 
 /* Room Cards */
@@ -422,7 +441,7 @@ export default {
 
 .room-card {
   width: 250px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -442,38 +461,8 @@ export default {
   color: #34495e;
 }
 
-.room-type,
-.room-price,
-.room-status,
-.room-features {
-  font-size: 0.9rem;
-  color: #7f8c8d;
-  margin-bottom: 5px;
-}
-
-form {
-  margin-top: 10px;
-}
-
-form label {
-  display: block;
-  font-size: 0.9rem;
-  color: #34495e;
-  margin-bottom: 5px;
-}
-
-form input,
-form select {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
 .btn-book-room {
-  background-color: #27ae60;
+  background-color: #55c9b8;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -485,31 +474,13 @@ form select {
 }
 
 .btn-book-room:hover {
-  background-color: #219150;
+  background-color: #3ba69c;
 }
 
-.btn-cancel-booking {
-  background-color: #e74c3c;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 15px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.btn-cancel-booking:hover {
-  background-color: #c0392b;
-}
-
-/* Back and View Bookings Buttons */
 .btn-back-to-hotels,
 .btn-view-bookings,
 .btn-logout {
-  background-color: #e74c3c;
+  background-color: #f6a77a;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -523,30 +494,318 @@ form select {
 .btn-back-to-hotels:hover,
 .btn-view-bookings:hover,
 .btn-logout:hover {
-  background-color: #c0392b;
+  background-color: #e8965b;
+}
+
+/* Global Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  background: #f9f9f9; /* Light background for contrast */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #f6a77a, #55c9b8); /* Peach to teal gradient */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar .logo img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 50%; /* Circular logo */
+  border: 2px solid #fff; /* White border around the logo */
+}
+
+.navbar .logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ffe0b5; /* Soft peach hover effect */
+}
+
+/* Filter Sidebar Styling */
+.filter-sidebar {
+  width: 300px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  border: 2px solid transparent; /* Border for gradient effect */
+  background-clip: padding-box;
+  position: sticky; /* Stays in view on scroll */
+  top: 20px; /* Margin from the top */
+  margin-right: 20px;
+}
+
+/* Gradient Border */
+.filter-sidebar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: -2px; /* Matches border width */
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f6a77a, #55c9b8); /* Peach to teal gradient */
+}
+
+/* Sidebar Title */
+.filter-sidebar h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #34495e;
+  background: linear-gradient(90deg, #f6a77a, #55c9b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form Labels */
+.filter-sidebar form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+/* Form Inputs */
+.filter-sidebar form input,
+.filter-sidebar form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1rem;
+  background: rgba(245, 245, 245, 0.9); /* Light grey background */
+  color: #34495e;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-sidebar form input:focus,
+.filter-sidebar form select:focus {
+  border-color: #55c9b8; /* Teal focus */
+  box-shadow: 0 0 5px rgba(85, 201, 184, 0.6); /* Glow effect */
+  outline: none;
+}
+
+/* Submit Button */
+.filter-sidebar form button {
+  background: linear-gradient(90deg, #f6a77a, #55c9b8); /* Peach to teal gradient */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.filter-sidebar form button:hover {
+  background: linear-gradient(90deg, #e8965b, #3ba69c); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Extra shadow on hover */
+}
+
+/* Clear Filter Link */
+.filter-sidebar .clear-filters {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #55c9b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.filter-sidebar .clear-filters:hover {
+  color: #3ba69c; /* Darker teal on hover */
+  text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .content {
+  .navbar ul {
     flex-direction: column;
     align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
   }
 
   .filter-sidebar {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .hotels-list,
-  .rooms-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hotel-card,
-  .room-card {
-    width: 90%;
+    width: 100%; /* Full width on small screens */
+    margin-right: 0;
+    margin-bottom: 20px; /* Spacing between sidebar and content */
   }
 }
+
+.room-card {
+  width: 300px; /* Slightly wider for a more spacious look */
+  background: linear-gradient(135deg, #f6a77a, #55c9b8); /* Peach to teal gradient */
+  border-radius: 12px; /* Rounded corners for a modern feel */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  padding: 20px;
+  color: white; /* White text for contrast */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+}
+
+.room-card h3 {
+  font-size: 1.5rem; /* Larger title for emphasis */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff; /* Keep it white for readability */
+}
+
+.room-card p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.room-card p.room-type {
+  font-weight: bold;
+}
+
+.room-card p.room-status {
+  font-style: italic;
+}
+
+.room-card button {
+  background-color: white; /* White button for contrast */
+  color: #55c9b8; /* Teal text for consistency */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.room-card button:hover {
+  background-color: #ffe0b5; /* Light peach hover effect */
+  transform: scale(1.05); /* Slight scale-up on hover */
+  color: #f6a77a; /* Peach text on hover */
+}
+
+/* Book Room Form Styling */
+.room-card form {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: rgba(245, 245, 245, 0.95); /* Soft white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.room-card form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.room-card form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.room-card form input:focus {
+  border-color: #55c9b8; /* Teal border on focus */
+  outline: none;
+  box-shadow: 0 0 6px rgba(85, 201, 184, 0.5); /* Glow effect */
+}
+
+.room-card form .btn-book-room {
+  background: linear-gradient(90deg, #f6a77a, #55c9b8); /* Gradient button */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.room-card form .btn-book-room:hover {
+  background: linear-gradient(90deg, #e8965b, #3ba69c); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.room-card form .btn-book-room:active {
+  transform: translateY(0); /* Remove lift on click */
+}
+
+.room-card form .form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.room-card form .form-section div {
+  flex: 1;
+  min-width: 120px;
+}
+
 </style>
