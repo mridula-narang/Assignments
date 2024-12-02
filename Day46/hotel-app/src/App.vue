@@ -2,8 +2,10 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld /> -->
    <nav>
-    <router-link to="/">Home</router-link> 
-    <!-- <router-link to="/login">Login</router-link> | -->
+    <router-link to="/">Home</router-link> | 
+    <router-link to="/gallery">Gallery</router-link> |
+
+    <router-link to="/login">Login</router-link> 
     <!-- <router-link to="/rooms">Rooms</router-link> | -->
     <!-- <router-link to="/hotels">Hotels</router-link> -->
     <!-- <router-link to="/register">Register</router-link> -->
