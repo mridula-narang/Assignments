@@ -13,7 +13,7 @@ const logon = (event) => {
   event.preventDefault();
   login(username.value, password.value)
     .then(response => {
-      sessionStorage.setItem('token', response.data.token);
+      sessionStorage.setItem('Token', response.data.token);
       sessionStorage.setItem('userId', response.data.userId);
       loginStore.login(response.data.username);
       router.push('/hotels');

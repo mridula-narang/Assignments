@@ -9,3 +9,7 @@ export function GetHotels() {
 export function GetHotelById(hotelId) {
     return axios.get(`http://localhost:5263/api/Hotel/${hotelId}/GetHotelById`);
 }
+
+export function AddHotel(hotelData) {
+    return axios.post('http://localhost:5263/api/Hotel', hotelData);
+}

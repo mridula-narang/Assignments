@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 function requestInterceptor(config){
-    const token = sessionStorage.getItem('token');
+    const token = sessionStorage.getItem('Token');
     if(token){
         config.headers['Authorization'] = 'Bearer ' + token;
     }
