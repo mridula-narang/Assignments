@@ -17,10 +17,10 @@
   
   <style scoped>
   .not-found {
-    background-color: #d9c0a7; /* Matching beige background */
-    color: #37444f; /* Dark teal for text */
+    background-color: #d9c0a7; 
+    color: #37444f; 
     text-align: center;
-    font-family: 'Merriweather', serif; /* Elegant serif font */
+    font-family: 'Merriweather', serif; 
     padding: 40px;
     height: 100vh;
     display: flex;
@@ -34,7 +34,7 @@
   }
   
   .logo {
-    width: 120px; /* Adjust size as needed */
+    width: 120px; 
     height: auto;
     border-radius: 50%;
     border: 2px solid #37444f;

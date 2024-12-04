@@ -13,6 +13,8 @@
         <router-link to="/" class="navbar-item">Home</router-link>
         <router-link to="/gallery" class="navbar-item">Gallery</router-link>
         <router-link to="/login" class="navbar-item">Login</router-link>
+        <router-link v-if="isAdmin" to="/admin/add-hotel" class="navbar-item">Add Hotel</router-link>
+        <router-link v-if="isAdmin" to="/admin/add-room" class="navbar-item">Add Room</router-link>
       </div>
     </div>
   </nav>
@@ -20,22 +22,40 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+import { jwtDecode } from 'jwt-decode';
+
 export default {
   name: 'App',
+  setup() {
+    const isAdmin = ref(false);
+
+    const token = sessionStorage.getItem('Token');
+    if (token) {
+      try {
+        const decodedToken = jwtDecode(token);
+        isAdmin.value = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] === 'Admin';
+      } catch (error) {
+        console.error("Error decoding token:", error);
+      }
+    }
+
+    return { isAdmin };
+  }
 };
 </script>
 
 <style scoped>
 /* General Navbar Styles */
 .navbar {
-  background-color: #8B4513; /* Brown background */
-  padding: 10px 20px; /* Thinner padding for a sleeker look */
+  background-color: #8B4513; 
+  padding: 10px 20px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-between; /* Space between logo and links */
+  justify-content: space-between; 
   align-items: center;
 }
 
@@ -52,17 +72,17 @@ export default {
 }
 
 .logo {
-  width: 40px; /* Smaller logo size for a thinner design */
+  width: 40px; 
   height: auto;
   border-radius: 50%;
 }
 
 .website-name {
   font-size: 1.2rem;
-  color: #FFFFFF; /* White text for the website name */
+  color: #FFFFFF; 
   margin-left: 10px;
   font-weight: bold;
-  font-family: 'Merriweather', serif; /* Matching logo aesthetic */
+  font-family: 'Merriweather', serif; 
 }
 
 /* Navigation Links */
@@ -74,22 +94,22 @@ export default {
 
 .navbar-item {
   text-decoration: none;
-  color: #FFFFFF; /* White text */
-  font-size: 1rem; /* Slightly smaller font size */
-  margin: 0 15px; /* Reduced margin for a compact look */
+  color: #FFFFFF; 
+  font-size: 1rem; 
+  margin: 0 15px; 
   font-weight: bold;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /* Hover Effects */
 .navbar-item:hover {
-  color: #FF8C00; /* Orange on hover */
-  transform: translateY(-2px); /* Slight lift effect */
+  color: #FF8C00; 
+  transform: translateY(-2px); 
 }
 
 /* Active Link */
 .router-link-exact-active {
-  color: #40E0D0; /* Blue color for active link */
+  color: #40E0D0; 
   text-decoration: underline;
 }
 

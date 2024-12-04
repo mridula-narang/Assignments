@@ -11,6 +11,7 @@ import NotFoundComponent from "@/components/NotFoundComponent.vue";
 import { jwtDecode } from "jwt-decode";
 import AddHotelComponent from "@/components/AddHotelComponent.vue";
 import AddRoomComponent from "@/components/AddRoomComponent.vue";
+import ViewAllBookings from "@/components/ViewAllBookings.vue";
 
 const routes = [
     { path: '/', component: HelloWorld },
@@ -24,7 +25,8 @@ const routes = [
     { path: '/gallery', component: GalleryComponent },
     { path: '/:pathMatch(.*)*', component: NotFoundComponent },
     { path: '/admin/add-hotel', component: AddHotelComponent },
-    {path:'/admin/add-room', component: AddRoomComponent}
+    {path:'/admin/add-room', component: AddRoomComponent},
+    {path: '/admin/bookings', component: ViewAllBookings}
 ];
 
 const router = createRouter({
@@ -41,15 +43,13 @@ router.beforeEach((to, from, next) => {
     if (token) {
         try {
             const decodedToken = jwtDecode(token);
-            console.log("Decoded Token:", decodedToken);  // Log the decoded token
             // Access the custom role claim
             isAdmin = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] === 'Admin';
         } catch (error) {
             console.error("Error decoding token:", error);
         }
     }
-
-    console.log("Token:", token);
+    
     console.log("Is Admin:", isAdmin);
 
     // If the route does not require authentication (e.g., login, register), allow access

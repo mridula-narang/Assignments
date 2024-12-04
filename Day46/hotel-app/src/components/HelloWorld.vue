@@ -71,7 +71,7 @@ export default {
 
     // Function to navigate to the hotels page
     const navigateToHotels = () => {
-      router.push('/login'); // Update with the correct route
+      router.push('/login'); 
     };
 
     return { navigateToHotels };
@@ -158,7 +158,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.5); 
   text-align: center;
   color: white;
 }
@@ -267,13 +267,13 @@ p {
 .testimonials h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: white; /* White text for better readability */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds contrast with a shadow */
+  color: white; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
 }
 
 .section-description {
   font-size: 1rem;
-  color: #ddd; /* Light gray text for readability */
+  color: #ddd; 
   margin-bottom: 30px;
 }
 
@@ -287,7 +287,7 @@ p {
 .testimonial-card {
   width: 300px;
   padding: 15px;
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background: rgba(255, 255, 255, 0.8); 
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

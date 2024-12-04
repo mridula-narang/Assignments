@@ -16,9 +16,7 @@
           <input type="range" id="maxPrice" v-model="filters.maxPrice" :min="filters.minPrice + 1000" :max="10000"
             step="1000" />
 
-
           <p>Selected Range: ₹{{ filters.minPrice }} - ₹{{ filters.maxPrice }}</p>
-
 
           <label for="type">Room Type:</label>
           <select id="type" v-model="filters.type">
@@ -43,12 +41,7 @@
       <div class="main-content">
         <div v-if="!filtersApplied" class="hotels-list">
           <div class="hotel-card" v-for="hotel in hotels" :key="hotel.hotelId">
-            <img
-              :src="getImageSrc(hotel.hotelId)"
-              alt="Hotel Image"
-              class="hotel-image"
-              @error="setDefaultImage"
-            />
+            <img :src="getImageSrc(hotel.hotelId)" alt="Hotel Image" class="hotel-image" @error="setDefaultImage" />
             <h2 class="hotel-name">{{ hotel.name }}</h2>
             <p class="hotel-location">{{ hotel.location }}</p>
             <button class="btn-view-rooms" @click="viewRooms(hotel)">View Rooms</button>
@@ -69,31 +62,30 @@
               <p class="room-features">
                 Features: {{ room.features }}
               </p>
-              <p class="room-price">Price: {{ room.price }}</p>
+              <p class="room-price">Price: ₹{{ room.price }}</p>
               <p class="room-status">
                 Status: {{ room.isBooked === 0 ? 'Available' : 'Not Available' }}
               </p>
 
-
               <form @submit.prevent="bookRoom(room)">
                 <label for="checkInDate">Check-In Date:</label>
-                <input type="date" id="checkInDate" v-model="bookingDetails.checkInDate" :min="today" required />
+                <input type="date" id="checkInDate" :value="bookingDetails[room.roomId]?.checkInDate"
+                  @input="updateBookingDetail(room.roomId, 'checkInDate', $event.target.value)" :min="today" required />
 
                 <label for="checkOutDate">Check-Out Date:</label>
-                <input type="date" id="checkOutDate" v-model="bookingDetails.checkOutDate"
-                  :min="bookingDetails.checkInDate || today" required />
-
+                <input type="date" id="checkOutDate" :value="bookingDetails[room.roomId]?.checkOutDate"
+                  @input="updateBookingDetail(room.roomId, 'checkOutDate', $event.target.value)"
+                  :min="bookingDetails[room.roomId]?.checkInDate || today" required />
 
                 <label for="numberOfGuests">Guests:</label>
-                <input type="number" id="numberOfGuests" v-model.number="bookingDetails.numberOfGuests" min="1"
-                  required />
+                <input type="number" id="numberOfGuests" :value="bookingDetails[room.roomId]?.numberOfGuests || 1"
+                  @input="updateBookingDetail(room.roomId, 'numberOfGuests', $event.target.value)" min="1" required />
 
                 <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" v-model.number="bookingDetails.quantity" min="1" required />
+                <input type="number" id="quantity" :value="bookingDetails[room.roomId]?.quantity || 1"
+                  @input="updateBookingDetail(room.roomId, 'quantity', $event.target.value)" min="1" required />
 
-                <button type="submit" class="btn-book-room">
-                  Book Room
-                </button>
+                <button type="submit" class="btn-book-room">Book Room</button>
               </form>
             </div>
           </div>
@@ -104,6 +96,10 @@
     </div>
 
     <button class="btn-view-bookings" @click="viewUserBookings">View Bookings</button>
+    <button v-if="isAdmin" class="btn-view-all-bookings" @click="viewAllBookings">
+      View All Bookings
+    </button>
+
     <button class="btn-logout" @click="logout">Logout</button>
   </div>
 </template>
@@ -111,7 +107,7 @@
 <script>
 import { GetHotels } from "@/scripts/HotelService";
 import axios from "@/scripts/myAxiosInterceptor";
-import { MakeBookingForUser, CancelBookingForUser } from "@/scripts/BookingService";
+import { MakeBookingForUser } from "@/scripts/BookingService";
 
 export default {
   name: "HotelsComponent",
@@ -120,15 +116,7 @@ export default {
       hotels: [],
       selectedHotel: null,
       rooms: [],
-      bookingDetails: {
-        hotelId: null,
-        roomId: null,
-        checkInDate: "",
-        checkOutDate: "",
-        numberOfGuests: 1,
-        quantity: 1,
-        status: 0,
-      },
+      bookingDetails: {},
       filters: {
         minPrice: 4000,
         maxPrice: 10000,
@@ -138,6 +126,7 @@ export default {
         isAvailable: "",
       },
       filtersApplied: false,
+      isAdmin: false,
     };
   },
   created() {
@@ -149,31 +138,12 @@ export default {
         console.error("Error fetching hotels:", err);
       });
   },
-  watch: {
-    'filters.minPrice'(newValue) {
-      // Allow adjustment while ensuring constraints
-      this.$nextTick(() => {
-        if (newValue > this.filters.maxPrice - 1000) {
-          this.filters.minPrice = this.filters.maxPrice - 1000;
-        }
-      });
-    },
-    'filters.maxPrice'(newValue) {
-      // Allow adjustment while ensuring constraints
-      this.$nextTick(() => {
-        if (newValue < this.filters.minPrice + 1000) {
-          this.filters.maxPrice = this.filters.minPrice + 1000;
-        }
-      });
-    },
-  },
   computed: {
     today() {
       const now = new Date();
-      return now.toISOString().split("T")[0]; // Returns date in YYYY-MM-DD format
+      return now.toISOString().split("T")[0];
     },
   },
-
   methods: {
     getImageSrc(hotelId) {
       try {
@@ -185,15 +155,12 @@ export default {
     setDefaultImage(event) {
       event.target.src = require("@/assets/default-img.jpg");
     },
-
     viewRooms(hotel) {
       this.selectedHotel = hotel;
       this.fetchRooms();
     },
     fetchRooms() {
       const params = { ...this.filters };
-      console.log("Fetching rooms with params:", params);
-
       let url = "http://localhost:5263/api/Room/filter";
       if (this.selectedHotel) {
         url = `http://localhost:5263/api/Hotel/${this.selectedHotel.hotelId}/rooms`;
@@ -202,28 +169,12 @@ export default {
       axios
         .get(url, { params })
         .then((response) => {
-          this.rooms = response.data.sort((a, b) => a.price - b.price); // Sort rooms by price
+          this.rooms = response.data.sort((a, b) => a.price - b.price);
           this.filtersApplied = true;
-          console.log("Rooms fetched and sorted:", this.rooms);
         })
         .catch((err) => {
           console.error("Error fetching rooms:", err);
         });
-    },
-    fetchAvailableRooms() {
-      axios
-        .get("http://localhost:5263/api/Booking/available-rooms")
-        .then((response) => {
-          this.rooms = response.data;
-          console.log("Available rooms fetched:", this.rooms);
-        })
-        .catch((err) => {
-          console.error("Error fetching available rooms:", err);
-        });
-    },
-    filterRooms() {
-      this.selectedHotel = null; // Clear selected hotel for global filtering
-      this.fetchRooms();
     },
     resetFilters() {
       this.filtersApplied = false;
@@ -231,19 +182,13 @@ export default {
       this.rooms = [];
     },
     bookRoom(room) {
-      this.bookingDetails.hotelId = this.selectedHotel?.hotelId;
-      this.bookingDetails.roomId = room.roomId;
-
-      if (
-        this.bookingDetails.checkInDate &&
-        this.bookingDetails.checkOutDate &&
-        this.bookingDetails.numberOfGuests > 0 &&
-        this.bookingDetails.quantity > 0
-      ) {
-        MakeBookingForUser(this.bookingDetails)
+      const details = this.bookingDetails[room.roomId] || {};
+      if (details.checkInDate && details.checkOutDate && details.numberOfGuests && details.quantity) {
+        const payload = { ...details, roomId: room.roomId, hotelId: this.selectedHotel?.hotelId };
+        MakeBookingForUser(payload)
           .then(() => {
             alert("Booking successful!");
-            this.resetBookingForm();
+            this.bookingDetails[room.roomId] = {};
           })
           .catch((err) => {
             console.error("Error making booking:", err);
@@ -253,28 +198,18 @@ export default {
         alert("Please fill in all booking details.");
       }
     },
-    cancelBooking(room) {
-      CancelBookingForUser(room.roomId)
-        .then(() => {
-          alert("Booking cancelled successfully!");
-          this.fetchAvailableRooms();
-        })
-        .catch((err) => {
-          console.error("Error cancelling booking:", err);
-          alert("Cancellation failed. Please try again.");
-        });
+    updateBookingDetail(roomId, field, value) {
+      if (!this.bookingDetails[roomId]) {
+        this.bookingDetails[roomId] = {
+          checkInDate: '',
+          checkOutDate: '',
+          numberOfGuests: 1,
+          quantity: 1,
+        };
+      }
+      this.bookingDetails[roomId][field] = value;
     },
-    resetBookingForm() {
-      this.bookingDetails = {
-        hotelId: null,
-        roomId: null,
-        checkInDate: "",
-        checkOutDate: "",
-        numberOfGuests: 1,
-        quantity: 1,
-        status: 0,
-      };
-    },
+
     viewUserBookings() {
       this.$router.push("/bookings");
     },
@@ -283,20 +218,12 @@ export default {
       this.$router.push("/");
     },
     getRoomType(type) {
-      switch (type) {
-        case 0:
-          return 'Single';
-        case 1:
-          return 'Double';
-        case 2:
-          return 'Suite';
-        default:
-          return 'Unknown';
-      }
+      return ["Single", "Double", "Suite"][type] || "Unknown";
     },
   },
 };
 </script>
+
 
 <style scoped>
 /* General Page Styling */
@@ -397,7 +324,7 @@ export default {
 
 .hotel-card {
   width: 250px;
-  height:350px;
+  height: 350px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
