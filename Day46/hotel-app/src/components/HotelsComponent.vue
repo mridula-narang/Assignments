@@ -34,13 +34,6 @@
           <label for="capacity">Capacity:</label>
           <input type="number" id="capacity" v-model.number="filters.capacity" />
 
-          <label for="isAvailable">Availability:</label>
-          <select id="isAvailable" v-model="filters.isAvailable">
-            <option value="">Any</option>
-            <option value="true">Available</option>
-            <option value="false">Not Available</option>
-          </select>
-
           <button type="submit">Filter</button>
         </form>
         <a href="#" class="clear-filters">Clear All Filters</a>

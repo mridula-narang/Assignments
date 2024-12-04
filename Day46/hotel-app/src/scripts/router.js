@@ -10,6 +10,7 @@ import GalleryComponent from "@/components/GalleryComponent.vue";
 import NotFoundComponent from "@/components/NotFoundComponent.vue";
 import { jwtDecode } from "jwt-decode";
 import AddHotelComponent from "@/components/AddHotelComponent.vue";
+import AddRoomComponent from "@/components/AddRoomComponent.vue";
 
 const routes = [
     { path: '/', component: HelloWorld },
@@ -23,6 +24,7 @@ const routes = [
     { path: '/gallery', component: GalleryComponent },
     { path: '/:pathMatch(.*)*', component: NotFoundComponent },
     { path: '/admin/add-hotel', component: AddHotelComponent },
+    {path:'/admin/add-room', component: AddRoomComponent}
 ];
 
 const router = createRouter({
@@ -61,7 +63,7 @@ router.beforeEach((to, from, next) => {
     // Restrict access to admin-only routes
     else if (to.path.startsWith('/admin') && !isAdmin) {
         alert("Access denied! Admins only.");
-        next({ path: '/' }); // Redirect to home if not an admin
+        next({ path: '/hotels' }); // Redirect to hotels if not an admin
     } else {
         next(); // Allow access for authenticated users (both normal and admin)
     }
