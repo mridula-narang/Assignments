@@ -52,14 +52,14 @@
   .gallery-container {
     padding: 40px 20px;
     text-align: center;
-    background-color: #FFF5F5; /* Light Pink */
+    background-color: #FFF5F5; 
   }
   
   .gallery-title {
     font-size: 2.5rem;
     margin-bottom: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #8B4513; /* Brown */
+    color: #8B4513;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
@@ -115,7 +115,7 @@
   }
   
   .image-title {
-    color: #FFFFFF; /* White */
+    color: #FFFFFF; 
     font-size: 1.25rem;
     font-weight: 600;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
@@ -136,7 +136,7 @@
   }
   
   .modal-content {
-    background-color: #FFFFFF; /* White */
+    background-color: #FFFFFF; 
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -152,13 +152,13 @@
   
   .modal-caption {
     font-size: 1.2rem;
-    color: #008B8B; /* Teal/Blue */
+    color: #008B8B; 
     margin-bottom: 20px;
     font-weight: 600;
   }
   
   .close-button {
-    background-color: #FF8C00; /* Orange */
+    background-color: #FF8C00; 
     color: #fff;
     border: none;
     padding: 12px 25px;
@@ -169,7 +169,7 @@
   }
   
   .close-button:hover {
-    background-color: #FFA500; /* Lighter Orange */
+    background-color: #FFA500; 
   }
   </style>
   

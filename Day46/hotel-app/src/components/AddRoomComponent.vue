@@ -75,7 +75,7 @@ export default {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f7f0e9; /* Matches the warm beige tone */
+  background-color: #f7f0e9; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,7 +88,7 @@ export default {
 
 h1 {
   font-size: 1.5rem;
-  color: #4a4a4a; /* Neutral complementary color */
+  color: #4a4a4a;
 }
 
 .room-form {
@@ -116,13 +116,13 @@ input {
 }
 
 input:focus {
-  border-color: #77c7c7; /* Matches the teal in the logo */
+  border-color: #77c7c7; 
   outline: none;
 }
 
 .submit-button {
   padding: 10px 15px;
-  background-color: #77c7c7; /* Teal from the logo */
+  background-color: #77c7c7; 
   color: white;
   border: none;
   border-radius: 4px;

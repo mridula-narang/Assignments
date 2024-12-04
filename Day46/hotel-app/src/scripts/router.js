@@ -11,7 +11,7 @@ import NotFoundComponent from "@/components/NotFoundComponent.vue";
 import { jwtDecode } from "jwt-decode";
 import AddHotelComponent from "@/components/AddHotelComponent.vue";
 import AddRoomComponent from "@/components/AddRoomComponent.vue";
-import ViewAllBookings from "@/components/ViewAllBookings.vue";
+import ForbiddenComponent from "@/components/ForbiddenComponent.vue";
 
 const routes = [
     { path: '/', component: HelloWorld },
@@ -24,9 +24,9 @@ const routes = [
     { path: '/payment/:bookingid', component: PaymentPageComponent },
     { path: '/gallery', component: GalleryComponent },
     { path: '/:pathMatch(.*)*', component: NotFoundComponent },
-    { path: '/admin/add-hotel', component: AddHotelComponent },
-    {path:'/admin/add-room', component: AddRoomComponent},
-    {path: '/admin/bookings', component: ViewAllBookings}
+    { path: '/admin/add-hotel', component: AddHotelComponent, meta: { requiresAdmin: true } },
+    {path:'/admin/add-room', component: AddRoomComponent, meta: { requiresAdmin: true }},
+    {path: '/forbidden', component: ForbiddenComponent}
 ];
 
 const router = createRouter({
@@ -34,7 +34,6 @@ const router = createRouter({
     routes,
 });
 
-// Combined global navigation guard
 router.beforeEach((to, from, next) => {
     const token = sessionStorage.getItem('Token');
     const isAuthenticated = !!token;
@@ -43,7 +42,6 @@ router.beforeEach((to, from, next) => {
     if (token) {
         try {
             const decodedToken = jwtDecode(token);
-            // Access the custom role claim
             isAdmin = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] === 'Admin';
         } catch (error) {
             console.error("Error decoding token:", error);
@@ -51,22 +49,25 @@ router.beforeEach((to, from, next) => {
     }
     
     console.log("Is Admin:", isAdmin);
-
-    // If the route does not require authentication (e.g., login, register), allow access
     if (!isAuthenticated && (to.path === '/' || to.path === '/login' || to.path === '/register')) {
-        next(); // Allow access to these routes
+        next(); 
     }
-    // If the user is not authenticated and tries to access a protected route
     else if (!isAuthenticated && to.path !== '/' && to.path !== '/login' && to.path !== '/register') {
-        next({ path: '/login' }); // Redirect to login if not authenticated
+        next({ path: '/login' }); 
     }
-    // Restrict access to admin-only routes
     else if (to.path.startsWith('/admin') && !isAdmin) {
         alert("Access denied! Admins only.");
-        next({ path: '/hotels' }); // Redirect to hotels if not an admin
+        next({ path: '/forbidden'}); 
     } else {
-        next(); // Allow access for authenticated users (both normal and admin)
+        next(); 
     }
+
+    if (to.meta.requiresAdmin && !isAdmin) {
+
+        next({ name: "Forbidden" });
+      } else {
+        next(); 
+      }
 });
 
 

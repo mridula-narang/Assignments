@@ -232,20 +232,20 @@ export default {
   text-align: center;
   padding: 20px;
   background-image: url('../assets/hotels-bg.jpg');
-  /* Replace with the actual image path */
+
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #b48c34;
 }
 
-/* Use gradient colors from the logo */
+
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
   background: linear-gradient(90deg, #f6a77a, #55c9b8);
-  /* Peach and teal gradient */
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -450,7 +450,7 @@ html {
   font-family: 'Arial', sans-serif;
   box-sizing: border-box;
   background: #f9f9f9;
-  /* Light background for contrast */
+
 }
 
 /* Navbar Styling */
@@ -460,10 +460,8 @@ html {
   align-items: center;
   padding: 10px 20px;
   background: linear-gradient(135deg, #f6a77a, #55c9b8);
-  /* Peach to teal gradient */
   color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Soft shadow */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -480,9 +478,7 @@ html {
   width: 40px;
   margin-right: 10px;
   border-radius: 50%;
-  /* Circular logo */
   border: 2px solid #fff;
-  /* White border around the logo */
 }
 
 .navbar .logo h1 {
@@ -512,7 +508,6 @@ html {
 
 .navbar ul li a:hover {
   color: #ffe0b5;
-  /* Soft peach hover effect */
 }
 
 /* Filter Sidebar Styling */
@@ -520,18 +515,12 @@ html {
   width: 300px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.95);
-  /* Slightly transparent white */
   border-radius: 12px;
-  /* Rounded corners */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  /* Subtle shadow */
   border: 2px solid transparent;
-  /* Border for gradient effect */
   background-clip: padding-box;
   position: sticky;
-  /* Stays in view on scroll */
   top: 20px;
-  /* Margin from the top */
   margin-right: 20px;
 }
 
@@ -545,10 +534,8 @@ html {
   bottom: 0;
   z-index: -1;
   margin: -2px;
-  /* Matches border width */
   border-radius: 14px;
   background: linear-gradient(135deg, #f6a77a, #55c9b8);
-  /* Peach to teal gradient */
 }
 
 /* Sidebar Title */
@@ -580,10 +567,8 @@ html {
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  /* Rounded corners */
   font-size: 1rem;
   background: rgba(245, 245, 245, 0.9);
-  /* Light grey background */
   color: #34495e;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -592,16 +577,13 @@ html {
 .filter-sidebar form input:focus,
 .filter-sidebar form select:focus {
   border-color: #55c9b8;
-  /* Teal focus */
   box-shadow: 0 0 5px rgba(85, 201, 184, 0.6);
-  /* Glow effect */
   outline: none;
 }
 
 /* Submit Button */
 .filter-sidebar form button {
   background: linear-gradient(90deg, #f6a77a, #55c9b8);
-  /* Peach to teal gradient */
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -615,11 +597,8 @@ html {
 
 .filter-sidebar form button:hover {
   background: linear-gradient(90deg, #e8965b, #3ba69c);
-  /* Darker gradient on hover */
   transform: translateY(-2px);
-  /* Slight lift on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Extra shadow on hover */
 }
 
 /* Clear Filter Link */
@@ -635,7 +614,6 @@ html {
 
 .filter-sidebar .clear-filters:hover {
   color: #3ba69c;
-  /* Darker teal on hover */
   text-decoration: underline;
 }
 
@@ -652,43 +630,32 @@ html {
 
   .filter-sidebar {
     width: 100%;
-    /* Full width on small screens */
     margin-right: 0;
     margin-bottom: 20px;
-    /* Spacing between sidebar and content */
   }
 }
 
 .room-card {
   width: 300px;
-  /* Slightly wider for a more spacious look */
   background: linear-gradient(135deg, #f6a77a, #55c9b8);
-  /* Peach to teal gradient */
   border-radius: 12px;
-  /* Rounded corners for a modern feel */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  /* Soft shadow for depth */
   padding: 20px;
   color: white;
-  /* White text for contrast */
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .room-card:hover {
   transform: translateY(-10px);
-  /* Slight lift on hover */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-  /* Deeper shadow on hover */
 }
 
 .room-card h3 {
   font-size: 1.5rem;
-  /* Larger title for emphasis */
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
-  /* Keep it white for readability */
 }
 
 .room-card p {
@@ -706,9 +673,7 @@ html {
 
 .room-card button {
   background-color: white;
-  /* White button for contrast */
   color: #55c9b8;
-  /* Teal text for consistency */
   border: none;
   border-radius: 8px;
   padding: 10px 15px;
@@ -720,11 +685,8 @@ html {
 
 .room-card button:hover {
   background-color: #ffe0b5;
-  /* Light peach hover effect */
   transform: scale(1.05);
-  /* Slight scale-up on hover */
   color: #f6a77a;
-  /* Peach text on hover */
 }
 
 /* Book Room Form Styling */
@@ -732,10 +694,8 @@ html {
   margin-top: 15px;
   padding: 15px;
   background-color: rgba(245, 245, 245, 0.95);
-  /* Soft white background */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow */
 }
 
 .room-card form label {
@@ -757,15 +717,12 @@ html {
 
 .room-card form input:focus {
   border-color: #55c9b8;
-  /* Teal border on focus */
   outline: none;
   box-shadow: 0 0 6px rgba(85, 201, 184, 0.5);
-  /* Glow effect */
 }
 
 .room-card form .btn-book-room {
   background: linear-gradient(90deg, #f6a77a, #55c9b8);
-  /* Gradient button */
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
@@ -780,14 +737,11 @@ html {
 
 .room-card form .btn-book-room:hover {
   background: linear-gradient(90deg, #e8965b, #3ba69c);
-  /* Darker gradient on hover */
   transform: translateY(-2px);
-  /* Subtle lift effect */
 }
 
 .room-card form .btn-book-room:active {
   transform: translateY(0);
-  /* Remove lift on click */
 }
 
 .room-card form .form-section {

@@ -2,13 +2,13 @@
 import { GetBookingById } from "@/scripts/BookingService";
 import { GetHotelById } from "@/scripts/HotelService";
 import { GetRoomById } from "@/scripts/RoomService";
-import axios from "axios"; // Add Axios for API calls
+import axios from "axios"; 
 
 export default {
   name: "UserBookingsComponent",
   data() {
     return {
-      bookings: [], // Bookings made by the user
+      bookings: [], 
     };
   },
   async created() {
@@ -26,12 +26,10 @@ export default {
         const response = await GetBookingById(userId);
         const bookings = response.data.sort((a, b) => b.bookingId - a.bookingId);
 
-        // Fetch hotel names and room names
         const bookingPromises = bookings.map(async (booking) => {
           const hotelResponse = await GetHotelById(booking.hotelId);
           const roomResponse = await GetRoomById(booking.roomId);
 
-          // Update booking with hotelName and roomName
           return {
             ...booking,
             hotelName: hotelResponse.data.name,
@@ -51,15 +49,14 @@ export default {
         return;
       }
 
-      if (newStatus === 1) { // Redirect to payment page for confirmation
+      if (newStatus === 1) { 
         this.$router.push({
-          path: "/payment/:bookingid", // Ensure this matches the route to your payment page
-          query: { bookingId }, // Pass the bookingId as a query parameter
+          path: "/payment/:bookingid", 
+          query: { bookingId }, 
         });
         return;
       }
 
-      // Proceed with status update for cancellation or other statuses
       try {
         await axios.put(`http://localhost:5263/api/Booking/${userId}`, null, {
           params: {
@@ -69,7 +66,6 @@ export default {
         });
         alert("Booking status updated successfully!");
 
-        // Refresh bookings after the update
         await this.fetchBookings();
       } catch (err) {
         console.error("Error updating booking status:", err);
@@ -150,16 +146,15 @@ body {
 .bookings-page {
   padding: 20px;
   background-image: url('../assets/booking-bg.jpeg');
-  /* Replace with your image path */
+
   background-size: cover;
-  /* Ensures the image covers the entire page */
+
   background-position: center;
-  /* Centers the image */
+
   background-attachment: fixed;
-  /* Parallax effect */
+
   color: #333;
   min-height: 100vh;
-  /* Ensures the background image covers full height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,7 +208,6 @@ body {
 
 .booking-card {
   background: rgba(255, 255, 255, 0.85);
-  /* Semi-transparent background for readability */
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 15px;

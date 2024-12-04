@@ -5,7 +5,7 @@ export default {
   name: "PaymentPageComponent",
   data() {
     return {
-      paymentType: "", // Credit or Debit
+      paymentType: "", 
       cardDetails: {
         cardNumber: "",
         expiryDate: "",
@@ -17,12 +17,12 @@ export default {
     };
   },
   created() {
-    // Get bookingId and userId from query parameters or session storage
+
     this.bookingId = this.$route.query.bookingId || null;
     this.userId = sessionStorage.getItem("userId");
     if (!this.bookingId || !this.userId) {
       alert("Booking or user information missing.");
-      this.$router.push("/bookings"); // Redirect back if invalid access
+      this.$router.push("/bookings"); 
     }
   },
   methods: {
@@ -33,18 +33,17 @@ export default {
       }
 
       try {
-        // Update booking status in the backend
+
         await axios.put(`http://localhost:5263/api/Booking/${this.userId}`, null, {
           params: {
             bookingId: this.bookingId,
-            status: 1, // Booking confirmed
+            status: 1, 
           },
         });
 
-        // Simulate sending confirmation email
+
         alert("Payment successful! Booking confirmed. Confirmation email sent.");
 
-        // Redirect to bookings page
         this.$router.push("/bookings");
       } catch (error) {
         console.error("Error processing payment:", error);
@@ -54,9 +53,9 @@ export default {
     isFormValid() {
       const { cardNumber, expiryDate, cvv, nameOnCard } = this.cardDetails;
       return (
-        /^\d{16}$/.test(cardNumber.replace(/\s/g, "")) && // 16-digit card number
-        /^\d{2}\/\d{2}$/.test(expiryDate) && // MM/YY format
-        /^\d{3}$/.test(cvv) && // 3-digit CVV
+        /^\d{16}$/.test(cardNumber.replace(/\s/g, "")) && 
+        /^\d{2}\/\d{2}$/.test(expiryDate) && 
+        /^\d{3}$/.test(cvv) && 
         nameOnCard.trim().length > 0
       );
     },
